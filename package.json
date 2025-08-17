@@ -6,6 +6,9 @@
   "author": "Mohamed Tahiri <mohamed.tahiri.pro@gmail.com>",
   "license": "MIT",
   "packageManager": "pnpm@10.5.1",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
