@@ -1,0 +1,20 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "outputs": ["next-env.d.ts"]
+    },
+    "lint:fix": {
+      "outputs": ["next-env.d.ts"]
+    },
+    "typecheck": {}
+  }
+}
