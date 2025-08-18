@@ -1,23 +1,32 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
+import { LanguageSelector } from '@/components/shared/language-selector'
 import { ModeToggle } from '@/components/shared/mode-toggle'
 import {
   Card,
-  CardContent,
+  CardDescription,
   CardHeader,
-  CardTitle,
-  CardDescription
+  CardTitle
 } from '@/components/ui/card'
 
 export default function Home() {
+  const t = useTranslations('HomePage')
+
   return (
     <div className="bg-background flex min-h-screen items-center justify-center p-8">
       <Card className="w-full max-w-md text-center">
         <CardHeader>
           <CardTitle className="text-4xl font-bold tracking-tight">
-            Mohamed Tahiri
+            {t('title')}
           </CardTitle>
-          <CardDescription className="flex flex-col items-center gap-2 text-lg">
-            Work in progress...
-            <ModeToggle />
+          <CardDescription className="flex flex-col items-center gap-4 text-lg">
+            {t('workInProgress')}
+            <div className="flex items-center gap-2">
+              <ModeToggle />
+              <LanguageSelector />
+            </div>
           </CardDescription>
         </CardHeader>
       </Card>
