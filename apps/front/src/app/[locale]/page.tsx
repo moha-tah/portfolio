@@ -3,7 +3,8 @@
 import { useTranslations } from 'next-intl'
 
 import { LanguageSelector } from '@/components/shared/language-selector'
-import { ModeToggle } from '@/components/shared/mode-toggle'
+import { ThemeSwitcherV1 } from '@/components/shared/theme-switcher-v1'
+import { ThemeSwitcherV2 } from '@/components/shared/theme-switcher-v2'
 import {
   Card,
   CardDescription,
@@ -24,7 +25,8 @@ export default function Home() {
           <CardDescription className="flex flex-col items-center gap-4 text-lg">
             {t('workInProgress')}
             <div className="flex items-center gap-2">
-              <ModeToggle />
+              {/* <ThemeSwitcherV1 /> */}
+              <ThemeSwitcherV2 />
               <LanguageSelector />
             </div>
           </CardDescription>

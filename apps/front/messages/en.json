@@ -3,5 +3,12 @@
     "title": "Mohamed Tahiri",
     "description": "Mohamed Tahiri's personal website",
     "workInProgress": "Work in progress..."
+  },
+  "shared": {
+    "modeToggle": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
   }
 }
