@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl'
 
 import { LanguageSelector } from '@/components/shared/language-selector'
-import { ThemeSwitcherV1 } from '@/components/shared/theme-switcher-v1'
+// import { ThemeSwitcherV1 } from '@/components/shared/theme-switcher-v1'
 import { ThemeSwitcherV2 } from '@/components/shared/theme-switcher-v2'
 import {
   Card,
