@@ -10,14 +10,30 @@ import { TextShimmer } from '../shared/text-shimmer'
 
 interface AnimatedTextProps {
   currentIndex: number
+  delay: number
+  duration: number
   passions: Passion[]
 }
 
-export function AnimatedText({ currentIndex, passions }: AnimatedTextProps) {
+export function AnimatedText({
+  currentIndex,
+  delay,
+  duration,
+  passions
+}: AnimatedTextProps) {
   const t = useTranslations('HomePage.hero')
 
   return (
-    <h1 className="max-w-2xl text-center text-5xl font-semibold tracking-tighter md:text-7xl">
+    <motion.h1
+      className="max-w-2xl text-center text-5xl font-semibold tracking-tighter md:text-7xl"
+      initial={{ opacity: 0, y: 50, filter: 'blur(10px)' }}
+      animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      transition={{
+        duration,
+        ease: [0.25, 0.1, 0.25, 1],
+        delay
+      }}
+    >
       <TextShimmer
         duration={2}
         className="[--base-color:var(--color-primary)] [--base-gradient-color:theme(colors.gray.600/90)] dark:[--base-color:var(--color-primary)]"
@@ -50,6 +66,6 @@ export function AnimatedText({ currentIndex, passions }: AnimatedTextProps) {
           </motion.span>
         ))}
       </span>
-    </h1>
+    </motion.h1>
   )
 }

@@ -7,6 +7,7 @@ import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 import { AnimatedText } from './animated-text'
 import { CallToAction } from './cta'
 import { Label } from './label'
+import { WordByWordText } from '../shared/word-by-word-text'
 
 export function Hero() {
   const { currentIndex, currentPassion, passions } = useAnimatedPassions()
@@ -18,10 +19,17 @@ export function Hero() {
         <div className="flex flex-col items-center justify-center gap-8 px-12 py-20 lg:py-40">
           <Label />
           <div className="flex flex-col gap-4">
-            <AnimatedText currentIndex={currentIndex} passions={passions} />
-            <p className="text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tight md:text-xl">
-              {t('readyToJoin')}
-            </p>
+            <AnimatedText
+              currentIndex={currentIndex}
+              delay={0.2}
+              duration={1}
+              passions={passions}
+            />
+            <WordByWordText
+              text={t('readyToJoin')}
+              className="text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tight md:text-xl"
+              delay={1}
+            />
           </div>
           <CallToAction currentPassion={currentPassion} t={t} />
         </div>
