@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center gap-8 py-20 lg:py-40">
+        <div className="flex flex-col items-center justify-center gap-8 px-12 py-20 lg:py-40">
           <Label />
           <div className="flex flex-col gap-4">
             <AnimatedText currentIndex={currentIndex} passions={passions} />

@@ -9,10 +9,10 @@
       "contactMe": "Contactez-moi",
       "passions": {
         "computerScience": "l'informatique",
-        "coding": "développement",
+        "coding": "le développement",
         "Python": "Python",
         "NextJS": "Next.js",
-        "Backend": "Backend",
+        "Backend": "le backend",
         "TypeScript": "TypeScript",
         "NestJS": "NestJS"
       }
