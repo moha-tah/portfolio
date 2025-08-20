@@ -6,7 +6,7 @@ import { getTranslations } from 'next-intl/server'
 
 import { ProvidersWrapper } from '@/components/providers/providers-wrapper'
 import { Background } from '@/components/shared/background'
-import { LanguageSelector } from '@/components/shared/language-selector'
+import { LanguageSwitcher } from '@/components/shared/language-switcher'
 import { ThemeSwitcherV2 } from '@/components/shared/theme-switcher-v2'
 import { Locale, locales } from '@/i18n/config'
 import { routing } from '@/i18n/routing'
@@ -69,7 +69,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           <div className="px-4 py-20">{children}</div>
           <div className="fixed top-5 right-5 flex flex-row gap-2">
             <ThemeSwitcherV2 />
-            <LanguageSelector />
+            <LanguageSwitcher />
           </div>
         </ProvidersWrapper>
       </body>

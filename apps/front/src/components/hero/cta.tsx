@@ -13,7 +13,7 @@ interface CallToActionProps {
 
 function ButtonShimmer() {
   return (
-    <div className="absolute -top-1/2 -left-14 h-[140px] w-10 -rotate-45 bg-gradient-to-r from-white/10 via-white/50 to-white/10 blur-sm transition-all delay-200 duration-500 ease-in-out group-hover:left-[150%] group-active:left-[150%]" />
+    <div className="absolute -top-1/2 -left-14 h-[140px] w-10 -rotate-45 bg-gradient-to-r from-white/10 via-white/50 to-white/10 blur-sm transition-all duration-300 ease-in-out group-hover:left-[150%] group-active:left-[150%]" />
   )
 }
 

@@ -25,17 +25,37 @@ const languages: { code: Locale; name: string; flag: string }[] = [
     name: 'Français',
     flag: 'fr'
   }
+  // {
+  //   code: 'de',
+  //   name: 'Deutsch',
+  //   flag: 'de'
+  // },
+  // {
+  //   code: 'ja',
+  //   name: '日本語',
+  //   flag: 'jp'
+  // },
+  // {
+  //   code: 'ar',
+  //   name: 'العربية',
+  //   flag: 'ae'
+  // },
+  // {
+  //   code: 'ko',
+  //   name: '한국어',
+  //   flag: 'kr'
+  // }
 ]
 
 export function Flag({ code }: { code: string }) {
   return <span className={`fi fi-${code} rounded`}></span>
 }
 
-interface LanguageSelectorProps {
+interface LanguageSwitcherProps {
   className?: string
 }
 
-export function LanguageSelector({ className }: LanguageSelectorProps) {
+export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const locale = useLocale()
   const router = useRouter()
 
