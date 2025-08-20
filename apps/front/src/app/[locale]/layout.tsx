@@ -23,11 +23,6 @@ const geistMono = Geist_Mono({
   subsets: ['latin']
 })
 
-interface LayoutProps {
-  children: React.ReactNode
-  params: Promise<{ locale: Locale }>
-}
-
 export async function generateStaticParams() {
   return locales.map((locale: Locale) => ({ locale }))
 }
@@ -53,7 +48,12 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default async function LocaleLayout({ children, params }: LayoutProps) {
+interface Props {
+  children: React.ReactNode
+  params: Promise<{ locale: Locale }>
+}
+
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) {
     notFound()

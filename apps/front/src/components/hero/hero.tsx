@@ -6,7 +6,7 @@ import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 
 import { AnimatedText } from './animated-text'
 import { CallToAction } from './cta'
-import { Label } from './label'
+import { HeroBadge } from './hero-badge'
 import { WordByWordText } from '../shared/word-by-word-text'
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
     <div className="w-full">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 px-12 py-20 lg:py-40">
-          <Label />
+          <HeroBadge />
           <div className="flex flex-col gap-4">
             <AnimatedText
               currentIndex={currentIndex}

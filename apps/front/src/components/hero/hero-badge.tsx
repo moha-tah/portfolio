@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
-import { Button } from '../ui/button'
+import { Badge } from '../ui/badge'
 
-interface LabelProps {
+interface Props {
   delay?: number
   duration?: number
 }
 
-export function Label({ delay = 0.1, duration = 0.6 }: LabelProps) {
+export function HeroBadge({ delay = 0.1, duration = 0.6 }: Props) {
   const t = useTranslations('HomePage.hero')
 
   return (
@@ -21,11 +21,9 @@ export function Label({ delay = 0.1, duration = 0.6 }: LabelProps) {
         delay
       }}
     >
-      <Button
+      <Badge
         variant="secondary"
-        size="sm"
-        className="gap-4 shadow-none"
-        tabIndex={-1}
+        className="hover:bg-secondary/80 h-8 cursor-default gap-1.5 rounded-md px-3 text-sm shadow-none transition-colors duration-200"
       >
         <div className="flex items-center gap-2">
           <span className="relative flex size-2">
@@ -34,7 +32,7 @@ export function Label({ delay = 0.1, duration = 0.6 }: LabelProps) {
           </span>
           {t('available')}
         </div>
-      </Button>
+      </Badge>
     </motion.div>
   )
 }

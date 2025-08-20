@@ -51,11 +51,11 @@ export function Flag({ code }: { code: string }) {
   return <span className={`fi fi-${code} rounded`}></span>
 }
 
-interface LanguageSwitcherProps {
+interface Props {
   className?: string
 }
 
-export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ className }: Props) {
   const locale = useLocale()
   const router = useRouter()
 

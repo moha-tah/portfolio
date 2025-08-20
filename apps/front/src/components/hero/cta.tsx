@@ -7,17 +7,17 @@ import { cn } from '@/lib/utils'
 import { Passion } from './passions'
 import { Button } from '../ui/button'
 
-interface CallToActionProps {
-  currentPassion: Passion
-  t: ReturnType<typeof useTranslations>
-  delay: number
-  duration?: number
-}
-
 function ButtonShimmer() {
   return (
     <div className="absolute -top-1/2 -left-14 h-[140px] w-10 -rotate-45 bg-gradient-to-r from-white/10 via-white/50 to-white/10 blur-sm transition-all duration-300 ease-in-out group-hover:left-[150%] group-active:left-[150%]" />
   )
+}
+
+interface Props {
+  currentPassion: Passion
+  t: ReturnType<typeof useTranslations>
+  delay: number
+  duration?: number
 }
 
 export function CallToAction({
@@ -25,7 +25,7 @@ export function CallToAction({
   t,
   delay,
   duration = 0.3
-}: CallToActionProps) {
+}: Props) {
   return (
     <div className="flex flex-col gap-6 select-none sm:flex-row">
       <motion.div

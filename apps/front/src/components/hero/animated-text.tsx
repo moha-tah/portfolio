@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import { Passion } from './passions'
 import { TextShimmer } from '../shared/text-shimmer'
 
-interface AnimatedTextProps {
+interface Props {
   currentIndex: number
   delay: number
   duration: number
@@ -20,7 +20,7 @@ export function AnimatedText({
   delay,
   duration,
   passions
-}: AnimatedTextProps) {
+}: Props) {
   const t = useTranslations('HomePage.hero')
 
   return (

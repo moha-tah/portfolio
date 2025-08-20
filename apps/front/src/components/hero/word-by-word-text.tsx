@@ -2,17 +2,13 @@
 
 import { motion } from 'framer-motion'
 
-interface WordByWordTextProps {
+interface Props {
   text: string
   className?: string
   delay?: number
 }
 
-export function WordByWordText({
-  text,
-  className = '',
-  delay = 0
-}: WordByWordTextProps) {
+export function WordByWordText({ text, className = '', delay = 0 }: Props) {
   const words = text.split(' ')
 
   const container = {

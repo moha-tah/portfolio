@@ -4,7 +4,7 @@ import React, { type JSX, useMemo } from 'react'
 
 import { cn } from '@/lib/utils'
 
-interface TextShimmerProps {
+interface Props {
   children: string
   as?: React.ElementType
   className?: string
@@ -18,7 +18,7 @@ export function TextShimmer({
   className,
   duration = 2,
   spread = 2
-}: TextShimmerProps) {
+}: Props) {
   const MotionComponent = motion.create(
     Component as keyof JSX.IntrinsicElements
   )
