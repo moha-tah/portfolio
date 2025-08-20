@@ -1,10 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 import { cn } from '@/lib/utils'
 
 import { Passion } from './passions'
+import { TextShimmer } from '../shared/text-shimmer'
 
 interface AnimatedTextProps {
   currentIndex: number
@@ -12,11 +14,18 @@ interface AnimatedTextProps {
 }
 
 export function AnimatedText({ currentIndex, passions }: AnimatedTextProps) {
+  const t = useTranslations('HomePage.hero')
+
   return (
     <h1 className="max-w-2xl text-center text-5xl font-semibold tracking-tighter md:text-7xl">
-      <span>Mohamed Tahiri,</span>
+      <TextShimmer
+        duration={2}
+        className="[--base-color:var(--color-primary)] [--base-gradient-color:theme(colors.gray.600/90)] dark:[--base-color:var(--color-primary)]"
+      >
+        {`${t('MohamedTahiri')},`}
+      </TextShimmer>
       <br />
-      <span>passionné de</span>
+      <span>{t('passionateAbout')}</span>
       <span className="relative flex w-full justify-center overflow-hidden text-center md:pt-1 md:pb-4">
         &nbsp;
         {passions.map((passion: Passion, index: number) => (
@@ -37,7 +46,7 @@ export function AnimatedText({ currentIndex, passions }: AnimatedTextProps) {
                   }
             }
           >
-            {passion.name}
+            {t(`passions.${passion.name}`)}
           </motion.span>
         ))}
       </span>

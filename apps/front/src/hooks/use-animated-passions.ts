@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+
 import { passionsList } from '@/components/hero/passions'
 
 const PASSION_DURATION = 2000
