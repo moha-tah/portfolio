@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Locale } from '@/i18n/config'
 import { useRouter } from '@/i18n/navigation'
+import { cn } from '@/lib/utils'
 
 const languages: { code: Locale; name: string; flag: string }[] = [
   {
@@ -24,13 +25,37 @@ const languages: { code: Locale; name: string; flag: string }[] = [
     name: 'Français',
     flag: 'fr'
   }
+  // {
+  //   code: 'de',
+  //   name: 'Deutsch',
+  //   flag: 'de'
+  // },
+  // {
+  //   code: 'ja',
+  //   name: '日本語',
+  //   flag: 'jp'
+  // },
+  // {
+  //   code: 'ar',
+  //   name: 'العربية',
+  //   flag: 'ae'
+  // },
+  // {
+  //   code: 'ko',
+  //   name: '한국어',
+  //   flag: 'kr'
+  // }
 ]
 
 export function Flag({ code }: { code: string }) {
   return <span className={`fi fi-${code} rounded`}></span>
 }
 
-export function LanguageSelector() {
+interface Props {
+  className?: string
+}
+
+export function LanguageSwitcher({ className }: Props) {
   const locale = useLocale()
   const router = useRouter()
 
@@ -46,7 +71,11 @@ export function LanguageSelector() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="default" className="gap-2">
+        <Button
+          variant="outline"
+          size="default"
+          className={cn('gap-2', className)}
+        >
           <Flag code={currentLanguage.flag} />
           <ChevronDown className="h-3 w-3" />
         </Button>

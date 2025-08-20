@@ -1,14 +1,30 @@
 {
   "HomePage": {
-    "title": "Mohamed Tahiri",
-    "description": "Site personnel de Mohamed Tahiri",
-    "workInProgress": "En cours de développement..."
+    "hero": {
+      "available": "Disponible",
+      "MohamedTahiri": "Mohamed Tahiri",
+      "passionateAbout": "passionné par",
+      "readyToJoin": "Prêt à rejoindre votre équipe pour un stage de 6 mois à partir de février 2026.",
+      "downloadResume": "Téléchargez mon CV",
+      "contactMe": "Contactez-moi",
+      "passions": {
+        "computerScience": "l'informatique",
+        "coding": "le code",
+        "Python": "Python",
+        "NextJS": "Next.js",
+        "Backend": "le backend",
+        "TypeScript": "TypeScript",
+        "NestJS": "NestJS"
+      }
+    }
   },
   "shared": {
+    "defaultTitle": "Mohamed Tahiri - Portfolio",
+    "defaultDescription": "Hi, I'm Mohamed Tahiri, a software engineer with a passion for building complex applications.",
     "modeToggle": {
-      "light": "Clair",
-      "dark": "Sombre",
-      "system": "Système"
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
     }
   }
 }
