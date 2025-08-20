@@ -7,7 +7,7 @@ export function Background() {
         src="/images/background-light.webp"
         alt=""
         fill
-        className="opacity-15 select-none dark:hidden"
+        className="opacity-15 transition-opacity duration-300 ease-in-out select-none dark:opacity-0"
         priority
         sizes="100vw"
         aria-hidden="true"
@@ -17,7 +17,7 @@ export function Background() {
         src="/images/background-dark.webp"
         alt=""
         fill
-        className="hidden opacity-5 select-none dark:block"
+        className="opacity-0 transition-opacity duration-300 ease-in-out select-none dark:opacity-5"
         priority
         sizes="100vw"
         aria-hidden="true"
