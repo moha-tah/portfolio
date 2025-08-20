@@ -7,7 +7,12 @@ export function Label() {
 
   return (
     <div>
-      <Button variant="secondary" size="sm" className="gap-4 shadow-none">
+      <Button
+        variant="secondary"
+        size="sm"
+        className="gap-4 shadow-none"
+        tabIndex={-1}
+      >
         <div className="flex items-center gap-2">
           <span className="relative flex size-3">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
