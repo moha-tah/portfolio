@@ -19,7 +19,7 @@ function ButtonShimmer() {
 
 export function CallToAction({ currentPassion, t }: CallToActionProps) {
   return (
-    <div className="flex flex-col gap-6 sm:flex-row">
+    <div className="flex flex-col gap-6 select-none sm:flex-row">
       <div className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95">
         <ButtonShimmer />
         <Button
