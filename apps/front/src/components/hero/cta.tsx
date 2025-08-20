@@ -13,6 +13,33 @@ function ButtonShimmer() {
   )
 }
 
+function ButtonWrapper({
+  children,
+  delay,
+  duration
+}: {
+  children: React.ReactNode
+  delay: number
+  duration: number
+}) {
+  return (
+    <div className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95">
+      <motion.div
+        initial={{ opacity: 0, y: 30, filter: 'blur(4px)' }}
+        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+        transition={{
+          duration,
+          ease: [0.25, 0.46, 0.45, 0.94] as const,
+          delay
+        }}
+      >
+        <ButtonShimmer />
+        {children}
+      </motion.div>
+    </div>
+  )
+}
+
 interface Props {
   currentPassion: Passion
   t: ReturnType<typeof useTranslations>
@@ -28,17 +55,7 @@ export function CallToAction({
 }: Props) {
   return (
     <div className="flex flex-col gap-6 select-none sm:flex-row">
-      <motion.div
-        className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95"
-        initial={{ opacity: 0, y: 30, filter: 'blur(4px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        transition={{
-          duration,
-          ease: [0.25, 0.46, 0.45, 0.94] as const,
-          delay
-        }}
-      >
-        <ButtonShimmer />
+      <ButtonWrapper delay={delay} duration={duration}>
         <Button
           size="xl"
           variant="secondary"
@@ -47,18 +64,8 @@ export function CallToAction({
           <File className="h-4 w-4" />
           {t('downloadResume')}
         </Button>
-      </motion.div>
-      <motion.div
-        className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95"
-        initial={{ opacity: 0, y: 30, filter: 'blur(4px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        transition={{
-          duration,
-          ease: [0.25, 0.46, 0.45, 0.94] as const,
-          delay: delay + 0.2
-        }}
-      >
-        <ButtonShimmer />
+      </ButtonWrapper>
+      <ButtonWrapper delay={delay + 0.2} duration={duration}>
         <Button
           size="xl"
           className={cn(
@@ -69,7 +76,7 @@ export function CallToAction({
           <PhoneCall className="h-4 w-4" />
           {t('contactMe')}
         </Button>
-      </motion.div>
+      </ButtonWrapper>
     </div>
   )
 }
