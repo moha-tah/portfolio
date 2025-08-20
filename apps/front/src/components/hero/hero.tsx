@@ -22,16 +22,22 @@ export function Hero() {
             <AnimatedText
               currentIndex={currentIndex}
               delay={0.2}
-              duration={1}
+              duration={0.5}
               passions={passions}
             />
             <WordByWordText
               text={t('readyToJoin')}
               className="text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tight md:text-xl"
-              delay={1}
+              delay={0.5}
+              duration={0.5}
             />
           </div>
-          <CallToAction currentPassion={currentPassion} t={t} />
+          <CallToAction
+            currentPassion={currentPassion}
+            t={t}
+            delay={1.5}
+            duration={0.5}
+          />
         </div>
       </div>
     </div>

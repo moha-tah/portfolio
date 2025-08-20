@@ -1,12 +1,26 @@
+import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
 import { Button } from '../ui/button'
 
-export function Label() {
+interface LabelProps {
+  delay?: number
+  duration?: number
+}
+
+export function Label({ delay = 0.1, duration = 0.6 }: LabelProps) {
   const t = useTranslations('HomePage.hero')
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
+      animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      transition={{
+        duration,
+        ease: 'easeOut' as const,
+        delay
+      }}
+    >
       <Button
         variant="secondary"
         size="sm"
@@ -21,6 +35,6 @@ export function Label() {
           {t('available')}
         </div>
       </Button>
-    </div>
+    </motion.div>
   )
 }

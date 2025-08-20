@@ -6,12 +6,14 @@ interface WordByWordTextProps {
   text: string
   className?: string
   delay?: number
+  duration?: number
 }
 
 export function WordByWordText({
   text,
   className = '',
-  delay = 0
+  delay = 0,
+  duration = 0.5
 }: WordByWordTextProps) {
   const words = text.split(' ')
 
@@ -27,24 +29,24 @@ export function WordByWordText({
   }
 
   const child = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      filter: 'blur(0px)',
-      transition: {
-        duration: 0.5,
-        ease: [0.25, 0.46, 0.45, 0.94] as const,
-        opacity: { duration: 0.6 },
-        filter: { duration: 0.5 }
-      }
-    },
     hidden: {
       opacity: 0,
       y: 30,
       filter: 'blur(4px)',
       transition: {
-        duration: 0.3,
+        duration,
         ease: 'easeInOut' as const
+      }
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: 'blur(0px)',
+      transition: {
+        duration,
+        ease: [0.25, 0.46, 0.45, 0.94] as const,
+        opacity: { duration },
+        filter: { duration }
       }
     }
   }
