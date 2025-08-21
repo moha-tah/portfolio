@@ -28,16 +28,28 @@ export function getGradientStyle(color: GradientColor): React.CSSProperties {
   const { r, g, b } = GRADIENT_COLORS[color]
 
   return {
-    // Light mode gradient
+    // Light mode gradient - base
     '--gradient-light': `radial-gradient(circle at 0% 0%, 
       rgba(${r}, ${g}, ${b}, 0.5) 0%, 
       rgba(${r}, ${g}, ${b}, ${TRANSITION_OPACITY}) 35%, 
       rgba(${LIGHT_END.r}, ${LIGHT_END.g}, ${LIGHT_END.b}, 1) 100%
     )`,
-    // Dark mode gradient
+    // Dark mode gradient - base
     '--gradient-dark': `radial-gradient(circle at 0% 0%, 
       rgba(${r}, ${g}, ${b}, 0.5) 0%, 
       rgba(${r}, ${g}, ${b}, ${TRANSITION_OPACITY}) 35%, 
+      rgba(${DARK_END.r}, ${DARK_END.g}, ${DARK_END.b}, 1) 100%
+    )`,
+    // Light mode gradient - hover (expanded)
+    '--gradient-light-hover': `radial-gradient(circle at 0% 0%, 
+      rgba(${r}, ${g}, ${b}, 0.6) 0%, 
+      rgba(${r}, ${g}, ${b}, ${TRANSITION_OPACITY * 1.2}) 50%, 
+      rgba(${LIGHT_END.r}, ${LIGHT_END.g}, ${LIGHT_END.b}, 1) 100%
+    )`,
+    // Dark mode gradient - hover (expanded)
+    '--gradient-dark-hover': `radial-gradient(circle at 0% 0%, 
+      rgba(${r}, ${g}, ${b}, 0.6) 0%, 
+      rgba(${r}, ${g}, ${b}, ${TRANSITION_OPACITY * 1.2}) 50%, 
       rgba(${DARK_END.r}, ${DARK_END.g}, ${DARK_END.b}, 1) 100%
     )`
   } as React.CSSProperties

@@ -43,7 +43,7 @@ export const BaseTestimonialCard = ({
   return (
     <Card
       className={cn(
-        'border-background relative border-2',
+        'relative border-0',
         className,
         cardGradient && 'gradient-card'
       )}
