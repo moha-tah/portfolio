@@ -19,7 +19,7 @@ export function Testimonials() {
           description={t('description')}
           delay={0.3}
         />
-        <AnimatedTestimonialsGrid testimonials={testimonials} delay={0.6} />
+        <AnimatedTestimonialsGrid testimonials={testimonials} delay={0} />
       </div>
     </section>
   )
