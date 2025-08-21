@@ -16,6 +16,40 @@
         "TypeScript": "TypeScript",
         "NestJS": "NestJS"
       }
+    },
+    "testimonials": {
+      "title": "What people I've worked with say about me",
+      "description": "I've worked with a lot of people and I've learned a lot from them. Here are some of the things they've said about me.",
+      "list": {
+        "first": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "Frontend Developer @ Décathlon"
+          },
+          "text": "\u201CI had the opportunity to work with Mohamed for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing high-performance and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting the deadlines of the projects we worked on together. I am confident that Mohamed will excel in his future missions, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.\u201D"
+        },
+        "second": {
+          "author": {
+            "name": "John Doe",
+            "handle": "Senior Software Architect @ Orange, IAD, etc."
+          },
+          "text": "\u201CI had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.\u201D"
+        },
+        "third": {
+          "author": {
+            "name": "Julien G. Lopes",
+            "handle": "Internship Tutor @ Napta"
+          },
+          "text": "\u201CAwaiting for a testimonial.\u201D"
+        },
+        "fourth": {
+          "author": {
+            "name": "Olivier Knell",
+            "handle": "Senior Engineering Manager @ Napta"
+          },
+          "text": "\u201CAwaiting for a testimonial.\u201D"
+        }
+      }
     }
   },
   "shared": {

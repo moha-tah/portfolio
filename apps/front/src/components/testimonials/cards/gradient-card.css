@@ -1,0 +1,43 @@
+/* Global CSS for gradient cards dark mode support */
+.gradient-card {
+  background: var(--gradient-light);
+  position: relative;
+  /* NO overflow: hidden to allow avatar scaling */
+  transition: all 0.3s ease-in-out;
+}
+
+.dark .gradient-card {
+  background: var(--gradient-dark) !important;
+}
+
+/* Hover effect using pseudo-element for smooth transitions */
+.gradient-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-light-hover);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit; /* Inherit border-radius from parent card */
+}
+
+.dark .gradient-card::before {
+  background: var(--gradient-dark-hover) !important;
+}
+
+.gradient-card:hover::before {
+  opacity: 1;
+}
+
+/* Content needs to be above pseudo-element, but NOT the TopLeftAvatar */
+.gradient-card > *:not([class*="spring-bounce"]):not([class*="absolute"]) {
+  position: relative;
+  z-index: 1;
+}
+
+/* TopLeftAvatar keeps its absolute positioning and high z-index for scaling */
+.gradient-card .spring-bounce-60 {
+  z-index: 15;
+}
