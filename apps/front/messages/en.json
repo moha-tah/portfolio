@@ -30,16 +30,15 @@
         },
         "second": {
           "author": {
-            "name": "Ibrahim Zehhaf",
+            "name": "John Doe",
             "handle": "Senior Software Architect @ Orange, IAD, etc."
           },
-          "text": "\u201CI had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.\u201D",
-          "href": "https://github.com/ibrahim-zehhaf"
+          "text": "\u201CI had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.\u201D"
         },
         "third": {
           "author": {
             "name": "Julien G. Lopes",
-            "handle": "Stage Tutor @ Napta"
+            "handle": "Internship Tutor @ Napta"
           },
           "text": "\u201CAwaiting for a testimonial.\u201D"
         },

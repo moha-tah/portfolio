@@ -53,11 +53,11 @@ export function getTestimonials(
       href: 'https://rabiemenad.fr'
     }),
     createTestimonial(t, 'second', {
-      avatar: 'https://github.com/ibrahim-zehhaf.png',
+      avatar: 'https://github.com/john-doe.png',
       companyName: 'Orange',
       companyAvatar: 'images/logos/orange.webp',
-      initials: 'IZ',
-      href: 'https://www.linkedin.com/in/ibrahimzehhaf'
+      initials: 'JD',
+      href: 'https://www.linkedin.com/in/john-doe'
     }),
     createTestimonial(t, 'third', {
       avatar: 'https://github.com/JulienGasparLopes.png',
