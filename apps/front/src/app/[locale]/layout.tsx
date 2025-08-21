@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 
+import { Footer } from '@/components/footer/footer'
 import { ProvidersWrapper } from '@/components/providers/providers-wrapper'
 import { Background } from '@/components/shared/background'
 import { LanguageSwitcher } from '@/components/shared/language-switcher'
@@ -67,6 +68,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <ProvidersWrapper>
           <Background />
           <div className="px-4 py-20">{children}</div>
+          <Footer />
+
+          {/* Debug dark mode & i18n*/}
           <div className="fixed top-5 right-5 flex flex-row gap-2">
             <ThemeSwitcherV2 />
             <LanguageSwitcher />

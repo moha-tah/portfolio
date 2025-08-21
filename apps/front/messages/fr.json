@@ -19,7 +19,38 @@
     },
     "testimonials": {
       "title": "Ce que les gens avec qui j'ai travaillé disent de moi",
-      "description": "J'ai travaillé avec beaucoup de gens et j'ai appris beaucoup de choses de leur part. Voici quelques-uns des commentaires qu'ils m'ont laissés."
+      "description": "J'ai travaillé avec beaucoup de gens et j'ai appris beaucoup de choses de leur part. Voici quelques-uns des commentaires qu'ils m'ont laissés.",
+      "list": {
+        "first": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "Développeur Frontend chez Décathlon"
+          },
+          "text": "J'ai eu l'opportunité de travailler avec Mohamed pendant un an et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets complets (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et scalables. Son attention au détail est remarquable : chaque livrable est propre, optimisé et durable.<newline></newline>Cette rigueur a été une qualité précieuse pour respecter les deadlines dans les projets que nous avons mené ensemble. Je suis convaincu que Mohamed saura exceller dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe qui souhaite avancer sereinement."
+        },
+        "second": {
+          "author": {
+            "name": "Ibrahim Zehhaf",
+            "handle": "Architecte Informatique passé chez Orange, IAD, etc."
+          },
+          "text": "J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration.",
+          "href": "https://github.com/ibrahim-zehhaf"
+        },
+        "third": {
+          "author": {
+            "name": "Julien G. Lopes",
+            "handle": "Tuteur de stage chez Napta"
+          },
+          "text": "En attente d'un témoignage."
+        },
+        "fourth": {
+          "author": {
+            "name": "Olivier Knell",
+            "handle": "Senior Engineering Manager chez Napta"
+          },
+          "text": "En attente d'un témoignage."
+        }
+      }
     }
   },
   "shared": {

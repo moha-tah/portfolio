@@ -14,12 +14,12 @@ export const TopLeftAvatar = ({
     <div className="spring-bounce-60 spring-duration-300 absolute -top-3 -left-3 z-10 transition-transform hover:scale-150">
       <Avatar className={cn('border-background border-2 shadow-lg', size)}>
         <AvatarImage
-          src={testimonial.author.avatar}
-          alt={testimonial.author.name}
+          src={testimonial.author.company.avatar}
+          alt={testimonial.author.company.name}
           className="object-cover"
         />
         <AvatarFallback className="text-xs font-medium">
-          {testimonial.author.initials}
+          {testimonial.author.company.name.slice(0, 2).toUpperCase()}
         </AvatarFallback>
       </Avatar>
     </div>

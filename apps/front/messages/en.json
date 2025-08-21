@@ -24,32 +24,31 @@
         "first": {
           "author": {
             "name": "Rabie Menad",
-            "handle": "Développeur Frontend chez Décathlon",
-            "avatar": "https://github.com/mena0018.png",
-            "initials": "RM"
+            "handle": "Frontend Developer @ Décathlon"
           },
-          "text": "J'ai eu l'opportunité de travailler avec Mohamed pendant un an et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets complets (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et scalables. Son attention au détail est remarquable : chaque livrable est propre, optimisé et durable.<newline></newline>Cette rigueur a été une qualité précieuse pour respecter les deadlines dans les projets que nous avons mené ensemble. Je suis convaincu que Mohamed saura exceller dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe qui souhaite avancer sereinement.",
-          "href": "https://rabiemenad.fr"
+          "text": "I had the opportunity to work with Mohamed for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing high-performance and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting the deadlines of the projects we worked on together. I am confident that Mohamed will excel in his future missions, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence."
         },
         "second": {
           "author": {
             "name": "Ibrahim Zehhaf",
-            "handle": "Architecte Informatique passé chez Orange, IAD, etc.",
-            "avatar": "https://github.com/ibrahim-zehhaf.png",
-            "initials": "IZ"
+            "handle": "Senior Software Architect @ Orange, IAD, etc."
           },
           "text": "I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.",
           "href": "https://github.com/ibrahim-zehhaf"
         },
         "third": {
           "author": {
-            "name": "Jane Doe",
-            "handle": "jane-doe",
-            "avatar": "https://github.com/jane-doe.png",
-            "initials": "JD"
+            "name": "Julien G. Lopes",
+            "handle": "Stage Tutor @ Napta"
           },
-          "text": "J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration.",
-          "href": "https://github.com/john-doe"
+          "text": "Awaiting for a testimonial."
+        },
+        "fourth": {
+          "author": {
+            "name": "Olivier Knell",
+            "handle": "Senior Engineering Manager @ Napta"
+          },
+          "text": "Awaiting for a testimonial."
         }
       }
     }

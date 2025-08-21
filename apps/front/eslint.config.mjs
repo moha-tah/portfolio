@@ -24,7 +24,12 @@ const eslintConfig = [
     ],
     plugins: ['@typescript-eslint', 'import', 'unused-imports'],
     parser: '@typescript-eslint/parser',
-    ignorePatterns: ['.turbo/', 'node_modules/', '.next/'],
+    ignorePatterns: [
+      '.turbo/',
+      'node_modules/',
+      '.next/',
+      'messages/*.d.json.ts'
+    ],
     rules: {
       '@typescript-eslint/no-unused-vars': [
         'warn',
