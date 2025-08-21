@@ -5,13 +5,8 @@ import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 
 import { Passion } from './passions'
+import { ButtonShimmer } from '../shared/button-shimmer'
 import { Button } from '../ui/button'
-
-function ButtonShimmer() {
-  return (
-    <div className="absolute -top-1/2 -left-14 h-[140px] w-10 -rotate-45 bg-gradient-to-r from-white/10 via-white/50 to-white/10 blur-sm transition-all duration-300 ease-in-out group-hover:left-[150%] group-active:left-[150%]" />
-  )
-}
 
 function ButtonWrapper({
   children,
@@ -23,20 +18,20 @@ function ButtonWrapper({
   duration: number
 }) {
   return (
-    <div className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95">
-      <motion.div
-        initial={{ opacity: 0, y: 30, filter: 'blur(4px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        transition={{
-          duration,
-          ease: [0.25, 0.46, 0.45, 0.94] as const,
-          delay
-        }}
-      >
+    <motion.div
+      initial={{ opacity: 0, y: 30, filter: 'blur(4px)' }}
+      animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      transition={{
+        duration,
+        ease: [0.25, 0.46, 0.45, 0.94] as const,
+        delay
+      }}
+    >
+      <div className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95">
         <ButtonShimmer />
         {children}
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   )
 }
 

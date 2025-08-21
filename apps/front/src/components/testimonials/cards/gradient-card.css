@@ -1,0 +1,8 @@
+/* Global CSS for gradient cards dark mode support */
+.gradient-card {
+  background: var(--gradient-light);
+}
+
+.dark .gradient-card {
+  background: var(--gradient-dark) !important;
+}

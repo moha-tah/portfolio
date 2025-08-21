@@ -6,7 +6,7 @@ import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 
 import { AnimatedText } from './animated-text'
 import { CallToAction } from './cta'
-import { HeroBadge } from './hero-badge'
+import { AnimatedBadge } from '../shared/animated-badge'
 import { WordByWordText } from '../shared/word-by-word-text'
 
 export function Hero() {
@@ -14,10 +14,16 @@ export function Hero() {
   const t = useTranslations('HomePage.hero')
 
   return (
-    <div className="w-full">
+    <section className="w-full">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 px-12 py-20 lg:py-40">
-          <HeroBadge />
+          <AnimatedBadge>
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex size-2 animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex size-2 rounded-full bg-green-500"></span>
+            </span>
+            {t('available')}
+          </AnimatedBadge>
           <div className="flex flex-col gap-4">
             <AnimatedText
               currentIndex={currentIndex}
@@ -27,7 +33,7 @@ export function Hero() {
             />
             <WordByWordText
               text={t('readyToJoin')}
-              className="text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tight md:text-xl"
+              className="subtitle"
               delay={0.5}
               duration={0.5}
             />
@@ -40,6 +46,6 @@ export function Hero() {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

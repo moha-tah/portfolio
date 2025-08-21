@@ -1,3 +1,5 @@
+'use server'
+
 import { Hero } from '@/components/hero/hero'
 import { Testimonials } from '@/components/testimonials/testimonials'
 

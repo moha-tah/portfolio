@@ -16,15 +16,19 @@
         "TypeScript": "TypeScript",
         "NestJS": "NestJS"
       }
+    },
+    "testimonials": {
+      "title": "Ce que les gens avec qui j'ai travaillé disent de moi",
+      "description": "J'ai travaillé avec beaucoup de gens et j'ai appris beaucoup de choses de leur part. Voici quelques-uns des commentaires qu'ils m'ont laissés."
     }
   },
   "shared": {
     "defaultTitle": "Mohamed Tahiri - Portfolio",
-    "defaultDescription": "Hi, I'm Mohamed Tahiri, a software engineer with a passion for building complex applications.",
+    "defaultDescription": "Bonjour, je suis Mohamed Tahiri, un ingénieur informatique passionné par le développement d'applications complexes.",
     "modeToggle": {
-      "light": "Light",
-      "dark": "Dark",
-      "system": "System"
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
     }
   }
 }

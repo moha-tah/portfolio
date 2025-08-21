@@ -16,6 +16,42 @@
         "TypeScript": "TypeScript",
         "NestJS": "NestJS"
       }
+    },
+    "testimonials": {
+      "title": "What people I've worked with say about me",
+      "description": "I've worked with a lot of people and I've learned a lot from them. Here are some of the things they've said about me.",
+      "list": {
+        "first": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "Développeur Frontend chez Décathlon",
+            "avatar": "https://github.com/mena0018.png",
+            "initials": "RM"
+          },
+          "text": "J'ai eu l'opportunité de travailler avec Mohamed pendant un an et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets complets (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et scalables. Son attention au détail est remarquable : chaque livrable est propre, optimisé et durable.<newline></newline>Cette rigueur a été une qualité précieuse pour respecter les deadlines dans les projets que nous avons mené ensemble. Je suis convaincu que Mohamed saura exceller dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe qui souhaite avancer sereinement.",
+          "href": "https://rabiemenad.fr"
+        },
+        "second": {
+          "author": {
+            "name": "Ibrahim Zehhaf",
+            "handle": "Architecte Informatique passé chez Orange, IAD, etc.",
+            "avatar": "https://github.com/ibrahim-zehhaf.png",
+            "initials": "IZ"
+          },
+          "text": "I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.",
+          "href": "https://github.com/ibrahim-zehhaf"
+        },
+        "third": {
+          "author": {
+            "name": "Jane Doe",
+            "handle": "jane-doe",
+            "avatar": "https://github.com/jane-doe.png",
+            "initials": "JD"
+          },
+          "text": "J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration.",
+          "href": "https://github.com/john-doe"
+        }
+      }
     }
   },
   "shared": {
