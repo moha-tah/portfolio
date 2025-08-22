@@ -91,5 +91,15 @@
       "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
     },
     "languageSwitch": "Changer de langue"
+  },
+  "me-contacter": "Me contacter",
+  "navbar": {
+    "contactMe": "Me contacter",
+    "sections": {
+      "hero": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "testimonials": "Témoignages"
+    }
   }
 }

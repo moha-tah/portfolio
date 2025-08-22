@@ -13,7 +13,6 @@ import { SocialIcons } from './social-icons'
 import { AnimatedBadge } from '../shared/animations/animated-badge'
 import { ScrollAnimatedSection } from '../shared/animations/scroll-animated-section'
 import { ShineBorder } from '../shared/shine-border'
-import { SparklesText } from '../shared/sparkles-text'
 import { Card } from '../ui/card'
 import { Separator } from '../ui/separator'
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
@@ -58,8 +57,9 @@ export function Footer() {
 
             {/* Title and Subtitle */}
             <div className="space-y-4 text-center">
-              <h2 className="text-foreground text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl">
-                <SparklesText>{t('contact.title')}</SparklesText>
+              <h2 className="text-foreground text-6xl font-bold tracking-tighter sm:text-7xl">
+                {t('contact.title')}
+                {/* <SparklesText>{t('contact.title')}</SparklesText> */}
               </h2>
               <p className="text-muted-foreground text-md font-medium md:text-lg">
                 {t('contact.subtitle.first')}

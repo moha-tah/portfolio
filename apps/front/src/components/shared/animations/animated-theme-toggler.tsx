@@ -5,6 +5,11 @@ import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger
+} from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 
 type props = {
@@ -63,16 +68,29 @@ export const AnimatedThemeToggler = ({ className }: props) => {
   }
 
   return (
-    <button
-      ref={buttonRef}
-      onClick={changeTheme}
-      className={cn(
-        'transition-transform duration-300 hover:scale-110 hover:rotate-12',
-        className
-      )}
-      aria-label={'theme.toggle'}
-    >
-      {currentTheme === 'dark' ? <SunDim /> : <Moon />}
-    </button>
+    <Tooltip>
+      <TooltipTrigger
+        ref={buttonRef}
+        onClick={changeTheme}
+        className={cn(
+          'transition-transform duration-300 hover:scale-110 hover:rotate-12',
+          className
+        )}
+        aria-label={'theme.toggle'}
+      >
+        {currentTheme === 'dark' ? (
+          <SunDim className="size-5 min-[430px]:size-6" />
+        ) : (
+          <Moon className="size-5 min-[430px]:size-6" />
+        )}
+      </TooltipTrigger>
+      <TooltipContent
+        side="bottom"
+        sideOffset={8}
+        className="rounded-full text-sm"
+      >
+        {currentTheme === 'dark' ? 'Light mode' : 'Dark mode'}
+      </TooltipContent>
+    </Tooltip>
   )
 }

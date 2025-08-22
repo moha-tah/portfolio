@@ -22,13 +22,13 @@ export const passionsList: Passion[] = [
   },
   {
     name: 'coding',
-    color: 'text-[#22C55E]',
-    backgroundColor: 'bg-[#22C55E] hover:bg-[#22C55E]/90'
+    color: 'text-[#F97316]',
+    backgroundColor: 'bg-[#F97316] hover:bg-[#F97316]/90'
   },
   {
     name: 'engineering',
-    color: 'text-[#05C99B]',
-    backgroundColor: 'bg-[#05C99B] hover:bg-[#05C99B]/90'
+    color: 'text-[#22C55E]',
+    backgroundColor: 'bg-[#22C55E] hover:bg-[#22C55E]/90'
   },
   {
     name: 'Python',
