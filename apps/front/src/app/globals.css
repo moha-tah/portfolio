@@ -138,6 +138,8 @@
   * {
     @apply border-border outline-ring/50;
 
+    scroll-behavior: smooth;
+
     /* Transitions when switching themes */
     transition: 
       background-color 0.3s ease-in-out,

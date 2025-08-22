@@ -14,7 +14,7 @@ export function Hero() {
   const t = useTranslations('HomePage.hero')
 
   return (
-    <section className="w-full">
+    <section id="hero" className="w-full">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 px-12 py-20 lg:py-40">
           <AnimatedBadge>
