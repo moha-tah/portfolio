@@ -1,3 +1,5 @@
+'use client'
+
 import { Folder, Home, MessageSquare, Milestone, Quote } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
