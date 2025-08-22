@@ -6,6 +6,7 @@ import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 
 import { AnimatedText } from './animated-text'
 import { CallToAction } from './cta'
+import { TextAnimate } from '../shared/animations/text-animate'
 import { AnimatedBadge } from '../shared/animations/animated-badge'
 import { WordByWordText } from '../shared/animations/word-by-word-text'
 
@@ -31,12 +32,16 @@ export function Hero() {
               duration={0.5}
               passions={passions}
             />
-            <WordByWordText
-              text={t('readyToJoin')}
-              className="subtitle"
+            <TextAnimate
               delay={0.5}
               duration={0.5}
-            />
+              className="subtitle"
+              animation="blurInUp"
+              by="word"
+              once
+            >
+              {t('readyToJoin')}
+            </TextAnimate>
           </div>
           <CallToAction
             currentPassion={currentPassion}

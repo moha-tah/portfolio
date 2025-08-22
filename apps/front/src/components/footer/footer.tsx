@@ -12,6 +12,8 @@ import { ContactForm } from './contact-form'
 import { SocialIcons } from './social-icons'
 import { AnimatedBadge } from '../shared/animations/animated-badge'
 import { ScrollAnimatedSection } from '../shared/animations/scroll-animated-section'
+import { ShineBorder } from '../shared/shine-border'
+import { SparklesText } from '../shared/sparkles-text'
 import { Card } from '../ui/card'
 import { Separator } from '../ui/separator'
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
@@ -37,13 +39,14 @@ export function Footer() {
 
   return (
     <ScrollAnimatedSection
-      className="flex flex-col items-center justify-center gap-8 p-4"
+      className="flex flex-col items-center justify-center gap-8 px-10"
       staggerChildren={0.15}
       delayChildren={0.2}
       duration={0.8}
       y={30}
     >
       <Card className="border-border/50 w-full rounded-3xl border p-8 md:w-2xl">
+        <ShineBorder shineColor={['#A07CFE', '#FE8FB5', '#FFBE7B']} />
         <div className="flex flex-col items-center space-y-6">
           <AnimatedBadge
             variant="secondary"
@@ -55,7 +58,7 @@ export function Footer() {
           {/* Title and Subtitle */}
           <div className="space-y-4 text-center">
             <h2 className="text-foreground text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl">
-              {t('contact.title')}
+              <SparklesText>{t('contact.title')}</SparklesText>
             </h2>
             <p className="text-muted-foreground text-md font-medium md:text-lg">
               {t('contact.subtitle.first')}
