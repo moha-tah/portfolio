@@ -13,11 +13,13 @@ interface ScrollAnimatedSectionProps {
   blur?: number
   staggerChildren?: number
   delayChildren?: number
+  id?: string
 }
 
 export function ScrollAnimatedSection({
   children,
   className,
+  id,
   delay = 0,
   duration = 0.6,
   y = 20,
@@ -63,6 +65,7 @@ export function ScrollAnimatedSection({
 
   return (
     <motion.section
+      id={id}
       ref={ref}
       className={className}
       initial="hidden"

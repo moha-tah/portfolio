@@ -1,0 +1,30 @@
+/* eslint-disable no-restricted-imports */
+import Link from 'next/link'
+
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+
+interface Props {
+  className?: string
+  children: React.ReactNode
+  href: string
+}
+
+export function SocialIcon({ children, href, className }: Props) {
+  return (
+    <Button
+      asChild
+      variant="outline"
+      size="icon"
+      className={cn(
+        'bg-background border-border size-12 rounded-xl',
+        'spring-bounce-60 spring-duration-300 hover:-translate-y-1 hover:scale-110',
+        className
+      )}
+    >
+      <Link href={href} target="_blank" rel="noopener noreferrer">
+        {children}
+      </Link>
+    </Button>
+  )
+}

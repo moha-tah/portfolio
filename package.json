@@ -21,6 +21,7 @@
     "turbo": "^2.5.6"
   },
   "dependencies": {
+    "input": "link:@/components/ui/input",
     "next-intl": "^4.3.4"
   }
 }

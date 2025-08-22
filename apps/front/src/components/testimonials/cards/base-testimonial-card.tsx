@@ -56,7 +56,7 @@ export const BaseTestimonialCard = ({
     rootMargin: '0px 0px -100px 0px'
   })
 
-  const MotionCard = motion(Card)
+  const MotionCard = motion.create(Card)
 
   if (enableScrollAnimation) {
     return (

@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 import { useScrollAnimation } from '@/hooks/use-scroll-animation'
 import { cn } from '@/lib/utils'
 
-import { ButtonShimmer } from '../button-shimmer'
 import { Badge } from '../../ui/badge'
+import { ButtonShimmer } from '../button-shimmer'
 
 interface ScrollAnimatedBadgeProps {
   variant?: 'default' | 'secondary'

@@ -24,25 +24,25 @@ export function AnimatedTestimonialsGrid({
       <BigTestimonial
         testimonial={testimonials[0]}
         gradientColor="blue"
-        enableScrollAnimation={true}
+        enableScrollAnimation
         animationDelay={delay}
       />
       <MediumTestimonial
         testimonial={testimonials[1]}
         gradientColor="orange"
-        enableScrollAnimation={true}
+        enableScrollAnimation
         animationDelay={delay + 0.1}
       />
       <SmallTestimonial
         testimonial={testimonials[2]}
         gradientColor="green"
-        enableScrollAnimation={true}
+        enableScrollAnimation
         animationDelay={delay + 0.2}
       />
       <SmallTestimonial
         testimonial={testimonials[3]}
         gradientColor="green"
-        enableScrollAnimation={true}
+        enableScrollAnimation
         animationDelay={delay + 0.3}
       />
     </div>
