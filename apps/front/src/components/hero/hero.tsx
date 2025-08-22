@@ -6,9 +6,8 @@ import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 
 import { AnimatedText } from './animated-text'
 import { CallToAction } from './cta'
-import { TextAnimate } from '../shared/animations/text-animate'
 import { AnimatedBadge } from '../shared/animations/animated-badge'
-import { WordByWordText } from '../shared/animations/word-by-word-text'
+import { TextAnimate } from '../shared/animations/text-animate'
 
 export function Hero() {
   const { currentIndex, currentPassion, passions } = useAnimatedPassions()

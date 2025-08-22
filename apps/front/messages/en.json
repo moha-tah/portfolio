@@ -55,7 +55,7 @@
     }
   },
   "footer": {
-    "badge": "Built by <linkToMe>Mohamed Tahiri</linkToMe>. Source code available on <linkToCode>GitHub</linkToCode>.",
+    "badge": "Built by <linkToMe>Mohamed Tahiri</linkToMe>. Source code on <linkToCode>GitHub</linkToCode>.",
     "contact": {
       "badge": "Contact",
       "title": "Get in touch",
