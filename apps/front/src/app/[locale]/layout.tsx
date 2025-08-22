@@ -8,6 +8,7 @@ import { Footer } from '@/components/footer/footer'
 import { ProvidersWrapper } from '@/components/providers/providers-wrapper'
 import { Background } from '@/components/shared/background'
 import { LanguageSwitcher } from '@/components/shared/language-switcher'
+import NoScriptBanner from '@/components/shared/no-script-banner'
 import { ThemeSwitcherV2 } from '@/components/shared/theme-switcher-v2'
 import { Locale, locales } from '@/i18n/config'
 import { routing } from '@/i18n/routing'
@@ -66,11 +67,12 @@ export default async function LocaleLayout({ children, params }: Props) {
         className={`${geistSans.variable} ${geistMono.variable} selection:bg-primary selection:text-background relative antialiased`}
       >
         <ProvidersWrapper>
+          <NoScriptBanner />
           <Background />
           <div className="px-4 py-20">{children}</div>
           <Footer />
 
-          {/* Debug dark mode & i18n*/}
+          {/* Debug dark mode & i18n */}
           <div className="fixed top-5 right-5 flex flex-row gap-2">
             <ThemeSwitcherV2 />
             <LanguageSwitcher />

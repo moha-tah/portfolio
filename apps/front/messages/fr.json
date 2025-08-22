@@ -30,11 +30,10 @@
         },
         "second": {
           "author": {
-            "name": "Ibrahim Zehhaf",
+            "name": "John Doe",
             "handle": "Architecte Informatique passé chez Orange, IAD, etc."
           },
-          "text": "« J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration. »",
-          "href": "https://github.com/ibrahim-zehhaf"
+          "text": "« J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration. »"
         },
         "third": {
           "author": {
@@ -60,6 +59,34 @@
       "light": "Clair",
       "dark": "Sombre",
       "system": "Système"
+    },
+    "noScriptBanner": {
+      "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
+    },
+    "footer": {
+      "badge": "signé Mohamed Tahiri.",
+      "contact": {
+        "badge": "Contact",
+        "title": "Prenons contact",
+        "subtitle": {
+          "first": "Pensez-vous que mon profil pourrait correspondre à vos besoins ?",
+          "second": "N'hésitez pas à remplir ce formulaire ou à me contacter directement via les liens ci-dessous."
+        },
+        "or": "ou",
+        "copyEmail": "Copier l'email",
+        "copied": "Copié dans le presse-papiers",
+        "form": {
+          "namePlaceholder": "Entrez votre nom",
+          "emailPlaceholder": "Entrez votre email",
+          "sendButton": "Envoyer le message"
+        },
+        "connect": {
+          "title": "Restons connectés !",
+          "phone": "+212 612345678",
+          "email": "hello@mohamedtahiri.com"
+        },
+        "copyright": "© Copyright 2024. Tous droits réservés."
+      }
     }
   }
 }

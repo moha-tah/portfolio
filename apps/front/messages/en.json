@@ -26,28 +26,28 @@
             "name": "Rabie Menad",
             "handle": "Frontend Developer @ Décathlon"
           },
-          "text": "\u201CI had the opportunity to work with Mohamed for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing high-performance and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting the deadlines of the projects we worked on together. I am confident that Mohamed will excel in his future missions, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.\u201D"
+          "text": "“I had the opportunity to work with Mohamed for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing high-performance and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting the deadlines of the projects we worked on together. I am confident that Mohamed will excel in his future missions, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.”"
         },
         "second": {
           "author": {
             "name": "John Doe",
             "handle": "Senior Software Architect @ Orange, IAD, etc."
           },
-          "text": "\u201CI had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.\u201D"
+          "text": "“I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.”"
         },
         "third": {
           "author": {
             "name": "Julien G. Lopes",
             "handle": "Internship Tutor @ Napta"
           },
-          "text": "\u201CAwaiting for a testimonial.\u201D"
+          "text": "“Awaiting for a testimonial.”"
         },
         "fourth": {
           "author": {
             "name": "Olivier Knell",
             "handle": "Senior Engineering Manager @ Napta"
           },
-          "text": "\u201CAwaiting for a testimonial.\u201D"
+          "text": "“Awaiting for a testimonial.”"
         }
       }
     }
@@ -59,6 +59,34 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
+    },
+    "noScriptBanner": {
+      "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."
+    },
+    "footer": {
+      "badge": "a Mohamed Tahiri production",
+      "contact": {
+        "badge": "Contact",
+        "title": "Get in touch",
+        "subtitle": {
+          "first": "Do you think my profile could be a good fit for your needs?",
+          "second": "Feel free to fill out this form or contact me directly through the links below."
+        },
+        "or": "or",
+        "copyEmail": "Copy email",
+        "copied": "Copied to clipboard",
+        "form": {
+          "namePlaceholder": "Enter your name",
+          "emailPlaceholder": "Enter your email",
+          "sendButton": "Send message"
+        },
+        "connect": {
+          "title": "Let's connect!",
+          "phone": "+212 612345678",
+          "email": "hello@mohamedtahiri.com"
+        },
+        "copyright": "© Copyright 2024. Rights Reserved."
+      }
     }
   }
 }

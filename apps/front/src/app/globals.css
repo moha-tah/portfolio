@@ -134,10 +134,10 @@
       stroke 0.3s ease-in-out;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans tracking-tighter;
   }
   
   .subtitle {
-    @apply text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tight md:text-xl;
+    @apply text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tighter md:text-xl;
   }
 }
