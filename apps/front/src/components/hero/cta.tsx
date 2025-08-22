@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { File, PhoneCall } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
+import { Link } from '@/i18n/navigation'
 import { cn } from '@/lib/utils'
 
 import { Passion } from './passions'
@@ -61,7 +62,7 @@ export function CallToAction({
         </Button>
       </ButtonWrapper>
       <ButtonWrapper delay={delay + 0.2} duration={duration}>
-        <a href="#contact">
+        <Link href="#contact">
           <Button
             size="xl"
             className={cn(
@@ -72,7 +73,7 @@ export function CallToAction({
             <PhoneCall className="h-4 w-4" />
             {t('contactMe')}
           </Button>
-        </a>
+        </Link>
       </ButtonWrapper>
     </div>
   )
