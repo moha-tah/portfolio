@@ -46,28 +46,28 @@ export function getTestimonials(
 ] {
   return [
     createTestimonial(t, 'first', {
-      avatar: 'https://github.com/mena0018.png',
+      avatar: 'images/profile-pictures/default.webp',
       companyName: 'Décathlon',
       companyAvatar: 'images/logos/decathlon.webp',
       initials: 'RM',
       href: 'https://rabiemenad.fr'
     }),
     createTestimonial(t, 'second', {
-      avatar: 'https://github.com/john-doe.png',
+      avatar: 'images/profile-pictures/default.webp',
       companyName: 'Orange',
       companyAvatar: 'images/logos/orange.webp',
       initials: 'JD',
       href: 'https://www.linkedin.com/in/john-doe'
     }),
     createTestimonial(t, 'third', {
-      avatar: 'https://github.com/JulienGasparLopes.png',
+      avatar: 'images/profile-pictures/default.webp',
       companyName: 'Napta',
       companyAvatar: 'images/logos/napta.webp',
       initials: 'JGL',
       href: 'https://www.linkedin.com/in/julien-gaspar-lopes-430191b5'
     }),
     createTestimonial(t, 'fourth', {
-      avatar: 'https://github.com/OlivierKnell.png',
+      avatar: 'images/profile-pictures/default.webp',
       companyName: 'Napta',
       companyAvatar: 'images/logos/napta.webp',
       initials: 'OK',

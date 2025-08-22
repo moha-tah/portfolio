@@ -2,5 +2,11 @@
   "eslint.workingDirectories": ["apps/front"],
   "i18n-ally.localesPaths": ["apps/front/messages"],
   "i18n-ally.keystyle": "nested",
-  "i18n-ally.sourceLanguage": "en"
+  "i18n-ally.sourceLanguage": "en",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

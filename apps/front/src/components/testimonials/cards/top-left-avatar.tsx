@@ -16,7 +16,10 @@ export const TopLeftAvatar = ({
         <AvatarImage
           src={testimonial.author.company.avatar}
           alt={testimonial.author.company.name}
+          width={48}
+          height={48}
           className="object-cover"
+          loading="lazy"
         />
         <AvatarFallback className="text-xs font-medium">
           {testimonial.author.company.name.slice(0, 2).toUpperCase()}

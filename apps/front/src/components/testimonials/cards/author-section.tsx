@@ -17,7 +17,7 @@ export const AuthorSection = ({
   const content = (
     <div
       className={cn(
-        'grid grid-cols-[auto_1fr] items-center gap-3 transition-transform duration-300 hover:scale-105',
+        'grid w-fit grid-cols-[auto_1fr] items-center gap-3 transition-transform duration-300 hover:scale-105',
         className
       )}
     >
@@ -45,7 +45,12 @@ export const AuthorSection = ({
 
   if (href) {
     return (
-      <a href={href} target="_blank">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-fit"
+      >
         {content}
       </a>
     )
