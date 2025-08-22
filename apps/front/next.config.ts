@@ -4,9 +4,6 @@ import createNextIntlPlugin from 'next-intl/plugin'
 const nextConfig: NextConfig = {
   // Force all user agents to receive blocking metadata
   htmlLimitedBots: /./,
-  compiler: {
-    removeConsole: true
-  },
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion']
   },

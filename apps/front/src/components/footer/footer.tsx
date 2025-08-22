@@ -38,7 +38,7 @@ export function Footer() {
   }
 
   return (
-    <footer id="footer">
+    <footer id="contact">
       <ScrollAnimatedSection
         className="flex flex-col items-center justify-center gap-8 px-10"
         staggerChildren={0.15}

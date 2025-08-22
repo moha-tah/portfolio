@@ -61,16 +61,18 @@ export function CallToAction({
         </Button>
       </ButtonWrapper>
       <ButtonWrapper delay={delay + 0.2} duration={duration}>
-        <Button
-          size="xl"
-          className={cn(
-            'w-full border-2 border-white/50 transition-colors duration-500 ease-in-out dark:border-black/50',
-            currentPassion.backgroundColor
-          )}
-        >
-          <PhoneCall className="h-4 w-4" />
-          {t('contactMe')}
-        </Button>
+        <a href="#contact">
+          <Button
+            size="xl"
+            className={cn(
+              'w-full border-2 border-white/50 transition-colors duration-500 ease-in-out dark:border-black/50',
+              currentPassion.backgroundColor
+            )}
+          >
+            <PhoneCall className="h-4 w-4" />
+            {t('contactMe')}
+          </Button>
+        </a>
       </ButtonWrapper>
     </div>
   )
