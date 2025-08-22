@@ -60,7 +60,7 @@
       "badge": "Contact",
       "title": "Prenons contact",
       "subtitle": {
-        "first": "Pensez-vous que mon profil pourrait correspondre à vos besoins\u00A0?",
+        "first": "Pensez-vous que mon profil pourrait correspondre à vos besoins ?",
         "second": "N'hésitez pas à remplir ce formulaire ou à me contacter directement via les liens ci-dessous."
       },
       "or": "ou",
@@ -89,6 +89,7 @@
     },
     "noScriptBanner": {
       "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
-    }
+    },
+    "languageSwitch": "Changer de langue"
   }
 }

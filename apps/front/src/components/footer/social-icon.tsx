@@ -8,9 +8,10 @@ interface Props {
   className?: string
   children: React.ReactNode
   href: string
+  props?: React.ComponentProps<typeof Button>
 }
 
-export function SocialIcon({ children, href, className }: Props) {
+export function SocialIcon({ children, href, className, ...props }: Props) {
   return (
     <Button
       asChild
@@ -21,6 +22,7 @@ export function SocialIcon({ children, href, className }: Props) {
         'spring-bounce-60 spring-duration-300 hover:-translate-y-1 hover:scale-110',
         className
       )}
+      {...props}
     >
       <Link href={href} target="_blank" rel="noopener noreferrer">
         {children}

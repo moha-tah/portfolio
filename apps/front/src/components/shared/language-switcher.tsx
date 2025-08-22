@@ -1,7 +1,7 @@
 'use client'
 
 import { ChevronDown } from 'lucide-react'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -58,6 +58,7 @@ interface Props {
 export function LanguageSwitcher({ className }: Props) {
   const locale = useLocale()
   const router = useRouter()
+  const t = useTranslations('shared')
 
   const currentLanguage = languages.find((lang) => lang.code === locale)
   if (!currentLanguage) {
@@ -75,6 +76,7 @@ export function LanguageSwitcher({ className }: Props) {
           variant="outline"
           size="default"
           className={cn('gap-2', className)}
+          aria-label={t('languageSwitch')}
         >
           <Flag code={currentLanguage.flag} />
           <ChevronDown className="h-3 w-3" />

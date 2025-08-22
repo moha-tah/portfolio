@@ -12,6 +12,7 @@ export function Background() {
         sizes="100vw"
         aria-hidden="true"
         draggable="false"
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
       />
       <Image
         src="/images/background-dark.webp"
@@ -22,6 +23,7 @@ export function Background() {
         sizes="100vw"
         aria-hidden="true"
         draggable="false"
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
       />
     </div>
   )

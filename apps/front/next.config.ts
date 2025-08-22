@@ -2,13 +2,22 @@ import { NextConfig } from 'next'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 const nextConfig: NextConfig = {
+  // Force all user agents to receive blocking metadata
+  htmlLimitedBots: /./,
+  compiler: {
+    removeConsole: true
+  },
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'framer-motion']
+  },
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'github.com'
       }
-    ]
+    ],
+    formats: ['image/webp']
   }
 }
 

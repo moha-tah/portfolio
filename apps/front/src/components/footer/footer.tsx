@@ -88,6 +88,7 @@ export function Footer() {
                   <TooltipTrigger
                     className="text-muted-foreground hover:text-foreground hover:bg-muted absolute left-full ml-1 rounded-md p-2 transition-colors md:ml-2"
                     onClick={copyEmail}
+                    aria-label={t('contact.copyEmail')}
                   >
                     <div className="relative size-4 md:size-5">
                       <Check

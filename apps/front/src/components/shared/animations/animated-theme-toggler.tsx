@@ -63,7 +63,15 @@ export const AnimatedThemeToggler = ({ className }: props) => {
   }
 
   return (
-    <button ref={buttonRef} onClick={changeTheme} className={cn(className)}>
+    <button
+      ref={buttonRef}
+      onClick={changeTheme}
+      className={cn(
+        'transition-transform duration-300 hover:scale-110 hover:rotate-12',
+        className
+      )}
+      aria-label={'theme.toggle'}
+    >
       {currentTheme === 'dark' ? <SunDim /> : <Moon />}
     </button>
   )
