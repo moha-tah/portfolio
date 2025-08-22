@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 import { useObfuscatedEmail } from '@/hooks/use-obfuscated-email'
 import { SOCIAL_LINKS } from '@/lib/constants'
+import { cn } from '@/lib/utils'
 
 import { ContactForm } from './contact-form'
 import { SocialIcons } from './social-icons'
@@ -42,7 +43,7 @@ export function Footer() {
       duration={0.8}
       y={30}
     >
-      <Card className="bg-muted/30 border-border/50 w-full max-w-xl rounded-3xl border p-8">
+      <Card className="border-border/50 w-full rounded-3xl border p-8 md:w-2xl">
         <div className="flex flex-col items-center space-y-6">
           <AnimatedBadge
             variant="secondary"
@@ -53,13 +54,13 @@ export function Footer() {
 
           {/* Title and Subtitle */}
           <div className="space-y-4 text-center">
-            <h2 className="text-foreground text-4xl font-bold tracking-tighter md:text-5xl">
+            <h2 className="text-foreground text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl">
               {t('contact.title')}
             </h2>
-            <p className="text-muted-foreground text-md max-w-sm font-medium">
+            <p className="text-muted-foreground text-md font-medium md:text-lg">
               {t('contact.subtitle.first')}
             </p>
-            <p className="text-muted-foreground text-md max-w-sm font-medium">
+            <p className="text-muted-foreground text-md font-medium md:text-lg">
               {t('contact.subtitle.second')}
             </p>
           </div>
@@ -84,11 +85,20 @@ export function Footer() {
                   className="text-muted-foreground hover:text-foreground hover:bg-muted absolute left-full ml-1 rounded-md p-2 transition-colors md:ml-2"
                   onClick={copyEmail}
                 >
-                  {copied ? (
-                    <Check className="size-4 md:size-5" />
-                  ) : (
-                    <Copy className="size-4 md:size-5" />
-                  )}
+                  <div className="relative size-4 md:size-5">
+                    <Check
+                      className={cn(
+                        'absolute size-4 transition-all duration-300 md:size-5',
+                        copied ? 'scale-100' : 'scale-0'
+                      )}
+                    />
+                    <Copy
+                      className={cn(
+                        'absolute size-4 transition-all duration-300 md:size-5',
+                        copied ? 'scale-0' : 'scale-100'
+                      )}
+                    />
+                  </div>
                 </TooltipTrigger>
                 <TooltipContent className="tracking-normal">
                   {copied ? t('contact.copied') : t('contact.copyEmail')}
@@ -101,7 +111,7 @@ export function Footer() {
         </div>
       </Card>
 
-      <span className="text-muted-foreground text-md">
+      <span className="text-muted-foreground md:text-md text-sm">
         {t.rich('badge', {
           linkToMe: (chunks) => (
             <a

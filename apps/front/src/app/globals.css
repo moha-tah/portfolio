@@ -136,8 +136,13 @@
   body {
     @apply bg-background text-foreground font-sans tracking-tighter;
   }
-  
+
   .subtitle {
     @apply text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tighter md:text-xl;
   }
+}
+
+::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
 }
