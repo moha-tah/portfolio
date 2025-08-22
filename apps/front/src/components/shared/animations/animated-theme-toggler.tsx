@@ -12,7 +12,9 @@ type props = {
 }
 
 export const AnimatedThemeToggler = ({ className }: props) => {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, systemTheme } = useTheme()
+
+  const currentTheme = theme === 'system' ? systemTheme : theme
 
   const buttonRef = useRef<HTMLButtonElement | null>(null)
 
@@ -21,7 +23,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
 
     await document.startViewTransition(() => {
       flushSync(() => {
-        setTheme(theme === 'dark' ? 'light' : 'dark')
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark')
       })
     }).ready
 
@@ -62,7 +64,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
 
   return (
     <button ref={buttonRef} onClick={changeTheme} className={cn(className)}>
-      {theme === 'dark' ? <SunDim /> : <Moon />}
+      {currentTheme === 'dark' ? <SunDim /> : <Moon />}
     </button>
   )
 }
