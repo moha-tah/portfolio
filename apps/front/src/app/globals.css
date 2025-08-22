@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
+/* @import 'tw-animate-css'; */
 @import 'flag-icons/css/flag-icons.min.css';
 
 @plugin 'tailwindcss-spring';
@@ -137,16 +137,10 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-
+  }
+  
+  html {
     scroll-behavior: smooth;
-
-    /* Transitions when switching themes */
-    transition: 
-      background-color 0.3s ease-in-out,
-      border-color 0.3s ease-in-out,
-      box-shadow 0.3s ease-in-out,
-      fill 0.3s ease-in-out,
-      stroke 0.3s ease-in-out;
   }
   body {
     @apply bg-background text-foreground font-sans tracking-tighter;
@@ -162,11 +156,3 @@
     mix-blend-mode: normal;
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
