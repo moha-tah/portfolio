@@ -1,6 +1,14 @@
 export type Passion = {
   // Name of the passion as a t-key
-  name: 'coding' | 'Python' | 'NextJS' | 'Backend' | 'TypeScript' | 'NestJS'
+  name:
+    | 'computerScience'
+    | 'coding'
+    | 'engineering'
+    | 'Python'
+    | 'NextJS'
+    | 'Backend'
+    | 'TypeScript'
+    | 'NestJS'
   color: string
   // needed by Tailwind at compile time
   backgroundColor: string
@@ -8,9 +16,19 @@ export type Passion = {
 
 export const passionsList: Passion[] = [
   {
+    name: 'computerScience',
+    color: 'text-[#05C99B]',
+    backgroundColor: 'bg-[#05C99B] hover:bg-[#05C99B]/90'
+  },
+  {
     name: 'coding',
     color: 'text-[#22C55E]',
     backgroundColor: 'bg-[#22C55E] hover:bg-[#22C55E]/90'
+  },
+  {
+    name: 'engineering',
+    color: 'text-[#05C99B]',
+    backgroundColor: 'bg-[#05C99B] hover:bg-[#05C99B]/90'
   },
   {
     name: 'Python',

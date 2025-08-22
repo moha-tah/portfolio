@@ -3,7 +3,7 @@
   background: var(--gradient-light);
   position: relative;
   /* NO overflow: hidden to allow avatar scaling */
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .dark .gradient-card {

@@ -15,7 +15,7 @@ export function SocialIcons({ email }: Props) {
   return (
     <div className="flex items-center gap-2">
       {/* LinkedIn */}
-      <SocialIcon className="hover:rotate-5" href={SOCIAL_LINKS.linkedIn}>
+      <SocialIcon className="hover:-rotate-5" href={SOCIAL_LINKS.linkedIn}>
         <Image
           src="icons/linkedin.svg"
           alt="Linkedin"
@@ -31,7 +31,7 @@ export function SocialIcons({ email }: Props) {
       </SocialIcon>
 
       {/* GitHub */}
-      <SocialIcon className="hover:-rotate-5" href={SOCIAL_LINKS.gitHub}>
+      <SocialIcon className="hover:rotate-5" href={SOCIAL_LINKS.gitHub}>
         <Image
           src="icons/github.svg"
           alt="GitHub"

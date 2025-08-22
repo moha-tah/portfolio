@@ -4,12 +4,13 @@
       "available": "Available",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "passionate about",
-      "readyToJoin": "Ready to join your team for a 6-month internship starting in February 2026.",
+      "readyToJoin": "Ready to join your team for a 6-month end-of-study internship starting in February 2026.",
       "downloadResume": "Download my resume",
       "contactMe": "Contact me",
       "passions": {
         "computerScience": "computer science",
         "coding": "coding",
+        "engineering": "engineering",
         "Python": "Python",
         "NextJS": "Next.js",
         "Backend": "Backend",
@@ -18,6 +19,7 @@
       }
     },
     "testimonials": {
+      "badge": "Testimonials",
       "title": "What people I've worked with say about me",
       "description": "I've worked with a lot of people and I've learned a lot from them. Here are some of the things they've said about me.",
       "list": {
@@ -52,6 +54,31 @@
       }
     }
   },
+  "footer": {
+    "badge": "Built by <linkToMe>Mohamed Tahiri</linkToMe>. Source code available on <linkToCode>GitHub</linkToCode>.",
+    "contact": {
+      "badge": "Contact",
+      "title": "Get in touch",
+      "subtitle": {
+        "first": "Do you think my profile could be a good fit for your needs?",
+        "second": "Feel free to fill out this form or contact me directly through the links below."
+      },
+      "or": "or",
+      "copyEmail": "Copy to clipboard",
+      "copied": "Copied to clipboard",
+      "form": {
+        "namePlaceholder": "Enter your name",
+        "emailPlaceholder": "Enter your email",
+        "sendButton": "Send message"
+      },
+      "connect": {
+        "title": "Let's connect!",
+        "phone": "+212 612345678",
+        "email": "hello@mohamedtahiri.com"
+      },
+      "copyright": "© Copyright 2024. Rights Reserved."
+    }
+  },
   "shared": {
     "defaultTitle": "Mohamed Tahiri - Portfolio",
     "defaultDescription": "Hi, I'm Mohamed Tahiri, a software engineer with a passion for building complex applications.",
@@ -62,31 +89,6 @@
     },
     "noScriptBanner": {
       "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."
-    },
-    "footer": {
-      "badge": "a Mohamed Tahiri production",
-      "contact": {
-        "badge": "Contact",
-        "title": "Get in touch",
-        "subtitle": {
-          "first": "Do you think my profile could be a good fit for your needs?",
-          "second": "Feel free to fill out this form or contact me directly through the links below."
-        },
-        "or": "or",
-        "copyEmail": "Copy email",
-        "copied": "Copied to clipboard",
-        "form": {
-          "namePlaceholder": "Enter your name",
-          "emailPlaceholder": "Enter your email",
-          "sendButton": "Send message"
-        },
-        "connect": {
-          "title": "Let's connect!",
-          "phone": "+212 612345678",
-          "email": "hello@mohamedtahiri.com"
-        },
-        "copyright": "© Copyright 2024. Rights Reserved."
-      }
     }
   }
 }
