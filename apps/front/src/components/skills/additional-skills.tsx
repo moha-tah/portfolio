@@ -11,20 +11,20 @@ const tools = [
   { name: 'Docker' },
   { name: 'GCP' },
   { name: 'Git' },
-  { name: 'n8n', shouldInvert: true },
+  { name: 'n8n', shouldInvertInDarkMode: true },
   { name: 'Java' },
   { name: 'HomeAssistant' },
   { name: 'Airflow' },
-  { name: 'shadcn', shouldInvert: true },
+  { name: 'shadcn', shouldInvertInDarkMode: true },
   { name: 'MongoDB' },
-  { name: 'Prisma', shouldInvert: true },
+  { name: 'Prisma', shouldInvertInDarkMode: true },
   { name: 'Slack' },
-  { name: 'Rive', shouldInvert: true },
-  { name: 'SQLAlchemy', shouldInvert: true },
+  { name: 'Rive', shouldInvertInDarkMode: true },
+  { name: 'SQLAlchemy', shouldInvertInDarkMode: true },
   { name: 'Supabase' },
-  { name: 'Unity', shouldInvert: true },
+  { name: 'Unity', shouldInvertInDarkMode: true },
   { name: 'Tailwind' },
-  { name: 'Vercel', shouldInvert: true }
+  { name: 'Vercel', shouldInvertInDarkMode: true }
 ]
 
 const firstRow = tools.slice(0, tools.length / 2)
@@ -33,11 +33,11 @@ const secondRow = tools.slice(tools.length / 2)
 const Icon = ({
   img,
   name,
-  shouldInvert = false
+  shouldInvertInDarkMode = false
 }: {
   img: string
   name: string
-  shouldInvert?: boolean
+  shouldInvertInDarkMode?: boolean
 }) => {
   return (
     <Tooltip>
@@ -49,7 +49,7 @@ const Icon = ({
             width={56}
             height={56}
             loading="lazy"
-            className={shouldInvert ? 'invert' : ''}
+            className={shouldInvertInDarkMode ? 'dark:invert' : ''}
           />
         </div>
       </TooltipTrigger>
@@ -60,14 +60,14 @@ const Icon = ({
 
 export function AdditionalSkills() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-visible">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:60s]">
         {firstRow.map((tool) => (
           <Icon
             key={tool.name}
             img={`/icons/${tool.name}.svg`}
             name={tool.name}
-            shouldInvert={tool.shouldInvert}
+            shouldInvertInDarkMode={tool.shouldInvertInDarkMode}
           />
         ))}
       </Marquee>
@@ -77,7 +77,7 @@ export function AdditionalSkills() {
             key={tool.name}
             img={`/icons/${tool.name}.svg`}
             name={tool.name}
-            shouldInvert={tool.shouldInvert}
+            shouldInvertInDarkMode={tool.shouldInvertInDarkMode}
           />
         ))}
       </Marquee>
