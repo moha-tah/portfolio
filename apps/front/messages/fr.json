@@ -52,6 +52,11 @@
           "text": "« En attente d'un témoignage. »"
         }
       }
+    },
+    "skills": {
+      "badge": "Boîte à outils",
+      "title": "Les technologies avec lesquelles je travaille",
+      "description": "Ci-dessous une liste non-exhaustive de technologies que j'utilise pour créer des solutions fiables et performantes."
     }
   },
   "footer": {
@@ -97,7 +102,7 @@
     "contactMe": "Me contacter",
     "sections": {
       "hero": "Accueil",
-      "about": "À propos",
+      "about": "À propos de moi",
       "projects": "Projets",
       "testimonials": "Témoignages"
     }

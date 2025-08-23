@@ -64,7 +64,11 @@ export const AnimatedThemeToggler = ({ className }: props) => {
   }, [])
 
   if (!mounted) {
-    return null
+    return (
+      <div className="size-5 min-[430px]:size-6">
+        {currentTheme === 'dark' ? <SunDim /> : <Moon />}
+      </div>
+    )
   }
 
   return (

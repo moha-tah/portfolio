@@ -22,8 +22,8 @@ function LinkWrapper({
 }) {
   return (
     <Tooltip>
-      <TooltipTrigger>
-        <Link href={href}>
+      <TooltipTrigger aria-label={name}>
+        <Link href={href} aria-label={name}>
           <div className="transition-all duration-300 hover:scale-115">
             {children}
           </div>
@@ -65,15 +65,19 @@ export function Navbar() {
             <Quote className={size} />
           </LinkWrapper>
         </div>
-        <Link href="#contact">
+        <Link href="#contact" aria-label={t('contactMe')}>
           <div className="group relative overflow-hidden rounded-4xl transition-all duration-300 hover:scale-95">
             <ButtonShimmer className="h-[120px]" />
-            <Button className="from-primary via-primary to-muted-foreground/50 hidden h-[60px] w-48 rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium shadow-none sm:block">
+            <Button
+              className="from-primary via-primary to-muted-foreground/50 hidden h-[60px] w-48 rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium shadow-none sm:block"
+              aria-label={t('contactMe')}
+            >
               {t('contactMe')}
             </Button>
             <Button
               size="icon"
               className="from-primary via-primary to-muted-foreground/50 h-[60px] rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium shadow-none sm:hidden"
+              aria-label={t('contactMe')}
             >
               <MessageSquare className={size} />
             </Button>

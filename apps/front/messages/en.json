@@ -52,6 +52,11 @@
           "text": "“Awaiting for a testimonial.”"
         }
       }
+    },
+    "skills": {
+      "badge": "Toolkit",
+      "title": "The technologies I work with",
+      "description": "Below is a non-exhaustive list of technologies I use to create reliable and performant solutions."
     }
   },
   "footer": {
@@ -96,7 +101,7 @@
     "contactMe": "Contact me",
     "sections": {
       "hero": "Home",
-      "about": "About",
+      "about": "About me",
       "projects": "Projects",
       "testimonials": "Testimonials"
     }
