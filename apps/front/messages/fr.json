@@ -84,7 +84,8 @@
       "lowLevel": {
         "name": "C, C++, C#, Go, etc.",
         "description": "Scripting et programmation bas-niveau."
-      }
+      },
+      "andOther": "et bien d'autres..."
     }
   },
   "footer": {

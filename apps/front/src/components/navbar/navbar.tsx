@@ -47,7 +47,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed bottom-8 z-50 flex w-full items-center justify-center sm:top-8 sm:bottom-auto">
-      <div className="bg-background flex h-fit w-11/12 items-center gap-2 rounded-full p-2 sm:mx-4 sm:w-[700px]">
+      <div className="border-muted-foreground/50 bg-background flex h-fit w-11/12 items-center gap-2 rounded-full border-2 p-2 sm:mx-4 sm:w-[700px]">
         <div className="bg-muted flex size-full flex-row items-center justify-between gap-4 rounded-4xl px-4 py-3 sm:px-8">
           <LanguageSwitcher className="hover:scale-110" />
           <AnimatedThemeToggler />

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
 
 import { Skill } from './skills-data'
+import { ButtonShimmer } from '../shared/button-shimmer'
 
 interface Props {
   skill: Skill
@@ -46,16 +47,26 @@ export function SkillCard({ skill }: Props) {
   return (
     <div
       ref={cardRef}
-      className="spring-duration-300 spring-bounce-60 border-muted-foreground/50 relative h-fit w-full rounded-2xl border-2 p-3 pr-8 hover:scale-105"
+      className="spring-duration-300 spring-bounce-60 border-muted-foreground/50 group relative h-fit w-full rounded-2xl border-2 p-3 pr-8 hover:scale-105"
     >
       <div className="relative z-10 flex items-center gap-3">
         {skill.icon}
         <div className="flex w-full flex-col">
-          <p className="text-secondary text-2xl font-medium">
+          <h2
+            className="text-secondary text-xl font-medium md:text-2xl"
+            style={{
+              width: `${skill.proficiency}%`
+            }}
+          >
             {/* @ts-expect-error - We know the key is valid */}
             {t(`${skill.name}.name`)}
-          </p>
-          <p className="dark:text-muted text-muted-foreground text-base font-medium">
+          </h2>
+          <p
+            className="dark:text-muted text-muted-foreground text-sm font-medium md:text-base"
+            style={{
+              width: `${skill.proficiency}%`
+            }}
+          >
             {/* @ts-expect-error - We know the key is valid */}
             {t(`${skill.name}.description`)}
           </p>
@@ -66,12 +77,16 @@ export function SkillCard({ skill }: Props) {
       </div>
       <div className="bg-muted absolute top-0 left-0 z-[1] h-full w-full rounded-2xl" />
 
+      {/* Current proficiency progress bar */}
       <div
-        className="bg-primary absolute top-0 left-0 z-[2] h-full rounded-l-2xl transition-all duration-1000 ease-out"
+        className="bg-primary absolute top-0 left-0 z-[2] h-full overflow-hidden rounded-l-2xl transition-all duration-1000 ease-out"
         style={{
           width: `${animatedWidth}%`
         }}
-      />
+      >
+        {/* When returning to its original place, the shimmer will be hidden */}
+        <ButtonShimmer className="-top-16 -left-32 h-[200px] w-14 transition-[left] duration-0 group-hover:duration-600 dark:bg-white" />
+      </div>
     </div>
   )
 }

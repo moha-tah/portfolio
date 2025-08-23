@@ -39,13 +39,13 @@ export function Footer() {
   return (
     <footer id="contact">
       <ScrollAnimatedSection
-        className="flex flex-col items-center justify-center gap-8 px-10"
+        className="flex flex-col items-center justify-center gap-20 px-10"
         staggerChildren={0.15}
         delayChildren={0.2}
         duration={0.8}
         y={30}
       >
-        <Card className="w-full rounded-3xl border p-8 md:w-2xl dark:bg-radial-[at_50%_100%] dark:from-white/10 dark:via-transparent dark:via-70% dark:to-transparent">
+        <Card className="w-full rounded-3xl p-8 md:w-2xl dark:bg-radial-[at_50%_100%] dark:from-white/10 dark:via-transparent dark:via-70% dark:to-transparent">
           <ShineBorder shineColor={['#A07CFE', '#FE8FB5', '#FFBE7B']} />
           <div className="flex flex-col items-center space-y-6">
             <AnimatedBadge
