@@ -75,7 +75,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <Background />
 
           <Navbar />
-          <div className="py-20">{children}</div>
+          <div className="py-12 sm:py-20">{children}</div>
           <Footer />
 
           {/* Debug dark mode & i18n */}
