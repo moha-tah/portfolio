@@ -5,6 +5,7 @@ import { Folder, Home, MessageSquare, Milestone, Quote } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 
+import { useIsWidthAbove } from '@/hooks/use-is-width-above'
 import { Link } from '@/i18n/navigation'
 
 import { AnimatedThemeToggler } from '../shared/animations/animated-theme-toggler'
@@ -44,11 +45,14 @@ function LinkWrapper({
 
 export function Navbar() {
   const t = useTranslations('navbar')
-  const [isDesktop, setIsDesktop] = useState(false)
+  const isMobile = !useIsWidthAbove(640)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
-    setIsDesktop(window.innerWidth >= 640)
+    setIsMounted(true)
   }, [])
+
+  if (!isMounted) return null
 
   const size = 'size-5 min-[430px]:size-6'
 
@@ -56,7 +60,7 @@ export function Navbar() {
     <motion.nav
       className="fixed bottom-8 z-50 flex w-full items-center justify-center sm:top-8 sm:bottom-auto"
       initial={{
-        y: isDesktop ? -100 : 100,
+        y: isMobile ? 100 : -100,
         opacity: 0
       }}
       animate={{
@@ -68,7 +72,7 @@ export function Navbar() {
         ease: 'easeOut'
       }}
     >
-      <div className="border-muted-foreground/50 bg-background flex h-fit w-11/12 items-center gap-2 rounded-full border-2 p-2 sm:mx-4 sm:w-[700px]">
+      <div className="border-muted-foreground/50 bg-background flex h-fit w-11/12 items-center gap-1 rounded-full border-2 p-2 min-[380px]:gap-2 sm:mx-4 sm:w-[700px]">
         <div className="bg-muted flex size-full flex-row items-center justify-between gap-4 rounded-4xl px-4 py-3 sm:px-8">
           <LanguageSwitcher className="hover:scale-110" />
           <AnimatedThemeToggler />

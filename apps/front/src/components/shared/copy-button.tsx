@@ -2,7 +2,7 @@
 
 import { TooltipContent } from '@radix-ui/react-tooltip'
 import { Check, Copy } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -18,6 +18,7 @@ interface Props {
 
 export function CopyButton({ text, copyText, copiedText }: Props) {
   const [copied, setCopied] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   const copy = async () => {
     try {
@@ -31,8 +32,12 @@ export function CopyButton({ text, copyText, copiedText }: Props) {
     }
   }
 
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   // Only show when HTTPS because we can't copy to clipboard in HTTP context
-  if (typeof window !== 'undefined' && !window.isSecureContext) return null
+  if (!mounted || !window.isSecureContext) return null
 
   return (
     <Tooltip>

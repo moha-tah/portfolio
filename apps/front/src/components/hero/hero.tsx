@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section id="hero" className="w-full">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center gap-8 px-12 sm:py-20 lg:py-32">
+        <div className="flex flex-col items-center justify-center gap-8 px-12 pb-28 sm:py-20 lg:py-32">
           <AnimatedBadge>
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-2 animate-ping rounded-full bg-green-400 opacity-75"></span>
