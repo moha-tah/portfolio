@@ -76,46 +76,47 @@ jobs:
           fi
 
       - name: Send Discord notification
-        uses: Ilshidur/action-discord@master
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        with:
-          args: |
-            {
-              "embeds": [{
-                "title": "🚀 Lighthouse CI Results",
-                "description": "Performance audit completed for the latest deployment",
-                "color": ${{ steps.color.outputs.color }},
-                "fields": [
-                  {
-                    "name": "🎯 Performance",
-                    "value": "${{ steps.scores.outputs.performance }}%",
-                    "inline": true
-                  },
-                  {
-                    "name": "♿ Accessibility",
-                    "value": "${{ steps.scores.outputs.accessibility }}%",
-                    "inline": true
-                  },
-                  {
-                    "name": "✅ Best Practices",
-                    "value": "${{ steps.scores.outputs.best_practices }}%",
-                    "inline": true
-                  },
-                  {
-                    "name": "🔍 SEO",
-                    "value": "${{ steps.scores.outputs.seo }}%",
-                    "inline": true
-                  },
-                  {
-                    "name": "🌐 Deployed URL",
-                    "value": "${{ steps.scores.outputs.url }}",
-                    "inline": false
-                  }
-                ],
-                "footer": {
-                  "text": "Portfolio CI/CD • ${{ github.sha }}"
-                },
-                "timestamp": "${{ github.event.head_commit.timestamp }}"
-              }]
-            }
+        run: |
+          URL="${{ github.event_name == 'workflow_dispatch' && github.event.inputs.url || steps.vercel_preview_url.outputs.url }}"
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
+          
+          curl -H "Content-Type: application/json" \
+               -d '{
+                 "embeds": [{
+                   "title": "🚀 Lighthouse CI Results",
+                   "description": "Performance audit completed for the latest deployment",
+                   "color": ${{ steps.color.outputs.color }},
+                   "fields": [
+                     {
+                       "name": "🎯 Performance",
+                       "value": "${{ steps.scores.outputs.performance }}%",
+                       "inline": true
+                     },
+                     {
+                       "name": "♿ Accessibility", 
+                       "value": "${{ steps.scores.outputs.accessibility }}%",
+                       "inline": true
+                     },
+                     {
+                       "name": "✅ Best Practices",
+                       "value": "${{ steps.scores.outputs.best_practices }}%", 
+                       "inline": true
+                     },
+                     {
+                       "name": "🔍 SEO",
+                       "value": "${{ steps.scores.outputs.seo }}%",
+                       "inline": true
+                     },
+                     {
+                       "name": "🌐 Deployed URL",
+                       "value": "'$URL'",
+                       "inline": false
+                     }
+                   ],
+                   "footer": {
+                     "text": "Portfolio CI/CD • ${{ github.sha }}"
+                   },
+                   "timestamp": "'$TIMESTAMP'"
+                 }]
+               }' \
+               "${{ secrets.DISCORD_WEBHOOK_URL }}"
