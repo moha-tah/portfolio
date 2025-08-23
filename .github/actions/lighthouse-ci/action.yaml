@@ -97,15 +97,15 @@ runs:
                      "inline": true
                    },
                    {
-                     "name": "🔗 Deployed URL",
+                     "name": "🌐 Deployed URL",
                      "value": "${{ inputs.url }}",
                      "inline": false
                    }
                  ],
                  "footer": {
-                   "text": "Portfolio CI/CD " ${{ github.sha }}"
+                   "text": "Portfolio CI/CD • ${{ github.sha }}"
                  },
-                 "timestamp": "'$TIMESTAMP'"
+                 "timestamp": "'"$TIMESTAMP"'"
                }]
              }' \
              "${{ inputs.discord-webhook }}"
