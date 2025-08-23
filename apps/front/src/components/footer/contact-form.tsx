@@ -1,10 +1,19 @@
 import { useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
 
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 
 export function ContactForm() {
   const t = useTranslations('footer.contact.form')
+
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) return null
 
   return (
     <div className="w-full space-y-3 md:w-sm">

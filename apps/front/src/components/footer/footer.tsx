@@ -1,40 +1,22 @@
 'use client'
 
-import { Check, Copy } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { useState } from 'react'
 
 import { useObfuscatedEmail } from '@/hooks/use-obfuscated-email'
 import { SOCIAL_LINKS } from '@/lib/constants'
-import { cn } from '@/lib/utils'
 
 import { ContactForm } from './contact-form'
 import { SocialIcons } from './social-icons'
 import { AnimatedBadge } from '../shared/animations/animated-badge'
 import { ScrollAnimatedSection } from '../shared/animations/scroll-animated-section'
+import { CopyButton } from '../shared/copy-button'
 import { ShineBorder } from '../shared/shine-border'
 import { Card } from '../ui/card'
 import { Separator } from '../ui/separator'
-import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
-
-const COPY_DURATION_MS = 2000
 
 export function Footer() {
   const t = useTranslations('footer')
   const email = useObfuscatedEmail()
-  const [copied, setCopied] = useState(false)
-
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(email)
-      setCopied(true)
-      setTimeout(() => {
-        setCopied(false)
-      }, COPY_DURATION_MS)
-    } catch (err) {
-      console.error('Failed to copy email:', err)
-    }
-  }
 
   return (
     <footer id="contact">
@@ -84,31 +66,11 @@ export function Footer() {
                 <p className="text-foreground text-2xl font-semibold tracking-tighter md:text-3xl">
                   {email}
                 </p>
-                <Tooltip>
-                  <TooltipTrigger
-                    className="text-muted-foreground hover:text-foreground hover:bg-muted absolute left-full ml-1 rounded-md p-2 transition-colors md:ml-2"
-                    onClick={copyEmail}
-                    aria-label={t('contact.copyEmail')}
-                  >
-                    <div className="relative size-4 md:size-5">
-                      <Check
-                        className={cn(
-                          'absolute size-4 transition-all duration-300 md:size-5',
-                          copied ? 'scale-100' : 'scale-0'
-                        )}
-                      />
-                      <Copy
-                        className={cn(
-                          'absolute size-4 transition-all duration-300 md:size-5',
-                          copied ? 'scale-0' : 'scale-100'
-                        )}
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent className="tracking-normal">
-                    {copied ? t('contact.copied') : t('contact.copyEmail')}
-                  </TooltipContent>
-                </Tooltip>
+                <CopyButton
+                  text={email}
+                  copyText={t('contact.copyEmail')}
+                  copiedText={t('contact.copied')}
+                />
               </div>
             </div>
 

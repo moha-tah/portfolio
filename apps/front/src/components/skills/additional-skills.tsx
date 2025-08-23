@@ -61,7 +61,7 @@ const Icon = ({
 export function AdditionalSkills() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover className="[--duration:60s]">
+      <Marquee className="[--duration:60s]">
         {firstRow.map((tool) => (
           <Icon
             key={tool.name}
@@ -71,7 +71,7 @@ export function AdditionalSkills() {
           />
         ))}
       </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:60s]">
+      <Marquee reverse className="[--duration:60s]">
         {secondRow.map((tool) => (
           <Icon
             key={tool.name}

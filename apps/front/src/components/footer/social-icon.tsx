@@ -19,7 +19,7 @@ export function SocialIcon({ children, href, className, ...props }: Props) {
       size="icon"
       className={cn(
         'bg-background border-border size-12 rounded-xl',
-        'spring-bounce-60 spring-duration-300 hover:-translate-y-1 hover:scale-110',
+        'spring-bounce-60 spring-duration-300 hover:-translate-y-1 hover:scale-110 active:-translate-y-1 active:scale-110',
         className
       )}
       {...props}

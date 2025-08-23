@@ -1,7 +1,9 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { Folder, Home, MessageSquare, Milestone, Quote } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
 
 import { Link } from '@/i18n/navigation'
 
@@ -42,16 +44,35 @@ function LinkWrapper({
 
 export function Navbar() {
   const t = useTranslations('navbar')
+  const [isDesktop, setIsDesktop] = useState(false)
+
+  useEffect(() => {
+    setIsDesktop(window.innerWidth >= 640)
+  }, [])
 
   const size = 'size-5 min-[430px]:size-6'
 
   return (
-    <nav className="fixed bottom-8 z-50 flex w-full items-center justify-center sm:top-8 sm:bottom-auto">
+    <motion.nav
+      className="fixed bottom-8 z-50 flex w-full items-center justify-center sm:top-8 sm:bottom-auto"
+      initial={{
+        y: isDesktop ? -100 : 100,
+        opacity: 0
+      }}
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      transition={{
+        duration: 0.6,
+        ease: 'easeOut'
+      }}
+    >
       <div className="border-muted-foreground/50 bg-background flex h-fit w-11/12 items-center gap-2 rounded-full border-2 p-2 sm:mx-4 sm:w-[700px]">
         <div className="bg-muted flex size-full flex-row items-center justify-between gap-4 rounded-4xl px-4 py-3 sm:px-8">
           <LanguageSwitcher className="hover:scale-110" />
           <AnimatedThemeToggler />
-          {/* <Separator className="h-6 bg-red-500" orientation="vertical" /> */}
+          {/* <Separator className="h-6" orientation="vertical" /> */}
           <LinkWrapper href="/#hero" name={t('sections.hero')}>
             <Home className={size} />
           </LinkWrapper>
@@ -84,6 +105,6 @@ export function Navbar() {
           </div>
         </Link>
       </div>
-    </nav>
+    </motion.nav>
   )
 }

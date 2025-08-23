@@ -1,6 +1,6 @@
 'use client'
 
-import { Moon, SunDim } from 'lucide-react'
+import { Loader, Moon, SunDim } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
@@ -57,18 +57,20 @@ export const AnimatedThemeToggler = ({ className }: props) => {
   }
 
   const [mounted, setMounted] = useState(false)
+  const [showIcon, setShowIcon] = useState(false)
 
   // Prevent hydration mismatch
   useEffect(() => {
     setMounted(true)
+    const timer = setTimeout(() => {
+      setShowIcon(true)
+    }, 100)
+
+    return () => clearTimeout(timer)
   }, [])
 
   if (!mounted) {
-    return (
-      <div className="size-5 min-[430px]:size-6">
-        {currentTheme === 'dark' ? <SunDim /> : <Moon />}
-      </div>
-    )
+    return <Loader className="size-5 animate-pulse min-[430px]:size-6" />
   }
 
   return (
@@ -82,11 +84,18 @@ export const AnimatedThemeToggler = ({ className }: props) => {
         )}
         aria-label={'theme.toggle'}
       >
-        {currentTheme === 'dark' ? (
-          <SunDim className="size-5 min-[430px]:size-6" />
-        ) : (
-          <Moon className="size-5 min-[430px]:size-6" />
-        )}
+        <div
+          className={cn(
+            'transition-all duration-500 ease-out',
+            showIcon ? 'scale-100 opacity-100' : 'scale-75 opacity-0'
+          )}
+        >
+          {currentTheme === 'dark' ? (
+            <SunDim className="size-6 text-white min-[430px]:size-7" />
+          ) : (
+            <Moon className="size-5 min-[430px]:size-6" />
+          )}
+        </div>
       </TooltipTrigger>
       <TooltipContent
         side="bottom"

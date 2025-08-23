@@ -19,7 +19,7 @@ export function Skills() {
       staggerChildren={0.1}
       delayChildren={0.2}
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-screen">
         <div className="mb-16 px-4 text-center">
           <ScrollAnimatedBadge delay={0.1} className="mb-6">
             {t('badge')}
