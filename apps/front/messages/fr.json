@@ -52,6 +52,40 @@
           "text": "« En attente d'un témoignage. »"
         }
       }
+    },
+    "skills": {
+      "badge": "Boîte à outils",
+      "title": "Les technologies avec lesquelles je travaille",
+      "description": "Ci-dessous une liste non-exhaustive de technologies que j'utilise pour créer des solutions fiables et performantes.",
+      "python": {
+        "name": "Python",
+        "description": "Création de systèmes robustes et de pipelines de données."
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "Création d'applications web full-stack performantes."
+      },
+      "postgreSQL": {
+        "name": "PostgreSQL",
+        "description": "Création de bases de données complexes, scalables et efficaces."
+      },
+      "nextJs": {
+        "name": "Next.js",
+        "description": "Création de sites web performants."
+      },
+      "nestJs": {
+        "name": "NestJS",
+        "description": "Création d'API complexes et sécurisées."
+      },
+      "ciCd": {
+        "name": "CI/CD, GitHub Actions, Shell",
+        "description": "Automatisation de workflows et de tâches."
+      },
+      "lowLevel": {
+        "name": "C, C++, C#, Go, etc.",
+        "description": "Scripting et programmation bas-niveau."
+      },
+      "andOther": "et bien d'autres..."
     }
   },
   "footer": {
@@ -97,7 +131,7 @@
     "contactMe": "Me contacter",
     "sections": {
       "hero": "Accueil",
-      "about": "À propos",
+      "about": "À propos de moi",
       "projects": "Projets",
       "testimonials": "Témoignages"
     }

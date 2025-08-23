@@ -11,11 +11,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger
-} from '@/components/ui/tooltip'
 import { Locale } from '@/i18n/config'
 import { useRouter } from '@/i18n/navigation'
 import { cn } from '@/lib/utils'
@@ -76,7 +71,7 @@ export function LanguageSwitcher({ className }: Props) {
     router.replace('/', { locale: languageCode })
   }
 
-  const dropdownMenu = (
+  return (
     <div>
       <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
         <DropdownMenuTrigger className="px-0" asChild>
@@ -111,24 +106,6 @@ export function LanguageSwitcher({ className }: Props) {
           ))}
         </DropdownMenuContent>
       </DropdownMenu>
-    </div>
-  )
-
-  return (
-    <div>
-      <div className="hidden sm:block">
-        <Tooltip>
-          <TooltipTrigger asChild>{dropdownMenu}</TooltipTrigger>
-          <TooltipContent
-            side="bottom"
-            sideOffset={8}
-            className="rounded-full text-sm"
-          >
-            {t('languageSwitch')}
-          </TooltipContent>
-        </Tooltip>
-      </div>
-      <div className="block sm:hidden">{dropdownMenu}</div>
     </div>
   )
 }

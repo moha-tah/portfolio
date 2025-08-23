@@ -1,6 +1,6 @@
 'use client'
 
-import { Moon, SunDim } from 'lucide-react'
+import { Loader, Moon, SunDim } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
@@ -64,7 +64,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
   }, [])
 
   if (!mounted) {
-    return null
+    return <Loader className="size-5 animate-pulse min-[430px]:size-6" />
   }
 
   return (
@@ -79,7 +79,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
         aria-label={'theme.toggle'}
       >
         {currentTheme === 'dark' ? (
-          <SunDim className="size-5 min-[430px]:size-6" />
+          <SunDim className="size-6 text-white min-[430px]:size-7" />
         ) : (
           <Moon className="size-5 min-[430px]:size-6" />
         )}

@@ -7,11 +7,16 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion']
   },
+  allowedDevOrigins: ['192.168.1.25'],
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'github.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatar.vercel.sh'
       }
     ],
     formats: ['image/webp']
