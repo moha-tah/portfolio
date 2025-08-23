@@ -32,7 +32,7 @@ export const skillsData: Skill[] = [
     color: 'rgba(0, 0, 139, 0.6)',
     icon: (
       <Image
-        src="/icons/typescript.svg"
+        src="/icons/TyoeScript.svg"
         alt="TypeScript"
         width={56}
         height={56}
