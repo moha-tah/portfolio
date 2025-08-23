@@ -16,12 +16,17 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "typecheck": "turbo run typecheck",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "prepare": "husky",
+    "post-merge": "git-pull-run --pattern \"pnpm-lock.yaml\" --command \"pnpm -w install\""
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "turbo": "^2.5.6"
   },
   "dependencies": {
+    "git-pull-run": "^1.6.2",
     "input": "link:@/components/ui/input",
     "next-intl": "^4.3.4"
   }
