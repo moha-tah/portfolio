@@ -1,0 +1,111 @@
+name: "Lighthouse CI with Discord"
+description: "Run Lighthouse CI and send results to Discord"
+inputs:
+  url:
+    description: "URL to run Lighthouse on"
+    required: true
+  discord-webhook:
+    description: "Discord webhook URL"
+    required: true
+  config-path:
+    description: "Path to Lighthouse config file"
+    required: false
+    default: "./lighthouserc.json"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Run Lighthouse CI
+      id: lighthouse
+      uses: treosh/lighthouse-ci-action@v12
+      with:
+        urls: ${{ inputs.url }}
+        configPath: ${{ inputs.config-path }}
+        uploadArtifacts: false
+        temporaryPublicStorage: false
+
+    - name: Extract Lighthouse scores
+      id: scores
+      shell: bash
+      run: |
+        echo "Extracting Lighthouse scores..."
+
+        # Parse the lighthouse results and extract scores
+        PERF=$(echo '${{ steps.lighthouse.outputs.manifest }}' | jq -r '.[0].summary.performance')
+        ACCESSIBILITY=$(echo '${{ steps.lighthouse.outputs.manifest }}' | jq -r '.[0].summary.accessibility')
+        BEST_PRACTICES=$(echo '${{ steps.lighthouse.outputs.manifest }}' | jq -r '.[0].summary["best-practices"]')
+        SEO=$(echo '${{ steps.lighthouse.outputs.manifest }}' | jq -r '.[0].summary.seo')
+
+        # Convert to percentage
+        PERF_PERCENT=$(echo "scale=0; $PERF * 100" | bc)
+        ACCESSIBILITY_PERCENT=$(echo "scale=0; $ACCESSIBILITY * 100" | bc)
+        BEST_PRACTICES_PERCENT=$(echo "scale=0; $BEST_PRACTICES * 100" | bc)
+        SEO_PERCENT=$(echo "scale=0; $SEO * 100" | bc)
+
+        # Calculate average for color determination
+        AVERAGE=$(echo "scale=0; ($PERF + $ACCESSIBILITY + $BEST_PRACTICES + $SEO) * 25" | bc)
+
+        echo "performance=$PERF_PERCENT" >> $GITHUB_OUTPUT
+        echo "accessibility=$ACCESSIBILITY_PERCENT" >> $GITHUB_OUTPUT
+        echo "best_practices=$BEST_PRACTICES_PERCENT" >> $GITHUB_OUTPUT
+        echo "seo=$SEO_PERCENT" >> $GITHUB_OUTPUT
+        echo "average=$AVERAGE" >> $GITHUB_OUTPUT
+
+    - name: Determine embed color
+      id: color
+      shell: bash
+      run: |
+        AVERAGE=${{ steps.scores.outputs.average }}
+        if [ $AVERAGE -ge 90 ]; then
+          echo "color=3066993" >> $GITHUB_OUTPUT  # Green
+        elif [ $AVERAGE -ge 70 ]; then
+          echo "color=15844367" >> $GITHUB_OUTPUT # Orange
+        else
+          echo "color=15158332" >> $GITHUB_OUTPUT # Red
+        fi
+
+    - name: Send Discord notification
+      shell: bash
+      run: |
+        TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
+
+        curl -H "Content-Type: application/json" \
+             -d '{
+               "embeds": [{
+                 "title": "🔍 Lighthouse CI Results",
+                 "description": "Performance audit completed for the latest deployment",
+                 "color": ${{ steps.color.outputs.color }},
+                 "fields": [
+                   {
+                     "name": "🚀 Performance",
+                     "value": "${{ steps.scores.outputs.performance }}%",
+                     "inline": true
+                   },
+                   {
+                     "name": "👁️ Accessibility", 
+                     "value": "${{ steps.scores.outputs.accessibility }}%",
+                     "inline": true
+                   },
+                   {
+                     "name": "💡 Best Practices",
+                     "value": "${{ steps.scores.outputs.best_practices }}%", 
+                     "inline": true
+                   },
+                   {
+                     "name": "🔍 SEO",
+                     "value": "${{ steps.scores.outputs.seo }}%",
+                     "inline": true
+                   },
+                   {
+                     "name": "🔗 Deployed URL",
+                     "value": "${{ inputs.url }}",
+                     "inline": false
+                   }
+                 ],
+                 "footer": {
+                   "text": "Portfolio CI/CD " ${{ github.sha }}"
+                 },
+                 "timestamp": "'$TIMESTAMP'"
+               }]
+             }' \
+             "${{ inputs.discord-webhook }}"
