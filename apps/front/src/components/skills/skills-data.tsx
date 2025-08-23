@@ -11,7 +11,7 @@ export interface Skill {
 
 export const skillsData: Skill[] = [
   {
-    name: 'Python',
+    name: 'python',
     description: 'Building robust backend systems and data pipelines',
     proficiency: 90,
     color: 'rgba(218, 165, 32, 0.6)',
@@ -26,7 +26,7 @@ export const skillsData: Skill[] = [
     )
   },
   {
-    name: 'TypeScript',
+    name: 'typeScript',
     description: 'Building high-performance full-stack web applications',
     proficiency: 85,
     color: 'rgba(0, 0, 139, 0.6)',
@@ -41,7 +41,7 @@ export const skillsData: Skill[] = [
     )
   },
   {
-    name: 'PostgreSQL',
+    name: 'postgreSQL',
     description: 'Building complex, scalable and efficient databases',
     proficiency: 75,
     color: 'rgba(30, 144, 255, 0.6)',
@@ -56,7 +56,7 @@ export const skillsData: Skill[] = [
     )
   },
   {
-    name: 'NestJS',
+    name: 'nestJs',
     description: 'Building high-performance backend applications',
     proficiency: 70,
     color: 'rgba(220, 38, 57, 0.6)',
@@ -71,8 +71,8 @@ export const skillsData: Skill[] = [
     )
   },
   {
-    name: 'Next.js',
-    description: 'Building high-performance full-stack web applications',
+    name: 'nextJs',
+    description: 'Building high-performance frontend applications',
     proficiency: 70,
     color: 'rgba(255, 255, 255, 0.1)',
     icon: (
@@ -86,7 +86,7 @@ export const skillsData: Skill[] = [
     )
   },
   {
-    name: 'CI/CD, GitHub Actions, Shell',
+    name: 'ciCd',
     description: 'Automating workflows and tasks',
     proficiency: 60,
     color: 'rgba(122, 34, 255, 0.6)',
@@ -101,7 +101,7 @@ export const skillsData: Skill[] = [
     )
   },
   {
-    name: 'C, C++, C#, Go, etc.',
+    name: 'lowLevel',
     description: 'Scripting and low-level programming',
     proficiency: 55,
     color: 'rgba(122, 34, 255, 0.6)',

@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
 
 import { Skill } from './skills-data'
@@ -12,6 +13,8 @@ export function SkillCard({ skill }: Props) {
   const [isVisible, setIsVisible] = useState(false)
   const [animatedWidth, setAnimatedWidth] = useState(0)
   const cardRef = useRef<HTMLDivElement>(null)
+
+  const t = useTranslations('HomePage.skills')
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,9 +51,13 @@ export function SkillCard({ skill }: Props) {
       <div className="relative z-10 flex items-center gap-3">
         {skill.icon}
         <div className="flex w-full flex-col">
-          <p className="text-secondary text-2xl font-medium">{skill.name}</p>
+          <p className="text-secondary text-2xl font-medium">
+            {/* @ts-expect-error - We know the key is valid */}
+            {t(`${skill.name}.name`)}
+          </p>
           <p className="dark:text-muted text-muted-foreground text-base font-medium">
-            {skill.description}
+            {/* @ts-expect-error - We know the key is valid */}
+            {t(`${skill.name}.description`)}
           </p>
         </div>
         <span className="bg-muted-foreground/70 text-secondary rounded-full px-3 py-1 text-base font-medium backdrop-blur-md">

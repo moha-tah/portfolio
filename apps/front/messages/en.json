@@ -56,7 +56,35 @@
     "skills": {
       "badge": "Toolkit",
       "title": "The technologies I work with",
-      "description": "Below is a non-exhaustive list of technologies I use to create reliable and performant solutions."
+      "description": "Below is a non-exhaustive list of technologies I use to create reliable and performant solutions.",
+      "python": {
+        "name": "Python",
+        "description": "Building robust backend systems and data pipelines."
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "Building high-performance full-stack web applications."
+      },
+      "postgreSQL": {
+        "name": "PostgreSQL",
+        "description": "Building complex, scalable and efficient databases."
+      },
+      "nextJs": {
+        "name": "Next.js",
+        "description": "Building high-performance websites."
+      },
+      "nestJs": {
+        "name": "NestJS",
+        "description": "Building complex & secure APIs."
+      },
+      "ciCd": {
+        "name": "CI/CD, GitHub Actions, Shell",
+        "description": "Automating workflows and tasks."
+      },
+      "lowLevel": {
+        "name": "C, C++, C#, Go, etc.",
+        "description": "Scripting and low-level programming."
+      }
     }
   },
   "footer": {
