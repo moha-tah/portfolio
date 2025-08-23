@@ -22,7 +22,7 @@ export function SocialIcons({ email }: Props) {
       >
         <Image
           src="icons/LinkedIn.svg"
-          alt="Linkedin"
+          alt="LinkedIn"
           width={20}
           height={20}
           className="dark:invert"
