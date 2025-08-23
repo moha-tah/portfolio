@@ -1,0 +1,1 @@
+pnpm run typecheck --filter=[origin/main]
