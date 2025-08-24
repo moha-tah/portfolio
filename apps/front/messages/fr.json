@@ -86,6 +86,11 @@
         "description": "Scripting et programmation bas-niveau."
       },
       "andOther": "et bien d'autres..."
+    },
+    "aboutMe": {
+      "badge": "À propos de moi",
+      "title": "Un court résumé de mon parcours",
+      "description": "Un parcours chronologique de mes expériences et réalisations clés, illustrant mon évolution en tant qu’étudiant en ingénierie informatique et développeur."
     }
   },
   "footer": {

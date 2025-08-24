@@ -86,6 +86,10 @@
         "description": "Scripting und Low-Level-Programmierung."
       },
       "andOther": "und viele mehr..."
+    },
+    "aboutMe": {
+      "badge": "Über mich",
+      "title": ""
     }
   },
   "footer": {

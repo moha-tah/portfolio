@@ -86,6 +86,10 @@
         "description": "スクリプティングと低レベルプログラミング。"
       },
       "andOther": "その他多数..."
+    },
+    "aboutMe": {
+      "badge": "私について",
+      "title": ""
     }
   },
   "footer": {

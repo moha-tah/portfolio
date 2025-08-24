@@ -86,6 +86,11 @@
         "description": "Scripting and low-level programming."
       },
       "andOther": "and many more..."
+    },
+    "aboutMe": {
+      "badge": "About me",
+      "title": "A Snapshot of My Career",
+      "description": "A chronological journey through my key experiences and achievements, highlighting my growth as a computer engineering student and developer."
     }
   },
   "footer": {

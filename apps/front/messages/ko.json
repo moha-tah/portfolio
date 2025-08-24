@@ -86,6 +86,10 @@
         "description": "스크립팅 및 저수준 프로그래밍."
       },
       "andOther": "그리고 더 많은 기술들..."
+    },
+    "aboutMe": {
+      "badge": "나에 대해",
+      "title": ""
     }
   },
   "footer": {
