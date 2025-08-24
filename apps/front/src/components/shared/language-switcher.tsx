@@ -74,7 +74,7 @@ export function LanguageSwitcher({ className }: Props) {
               {lng.flag ? (
                 <Flag code={lng.flag} />
               ) : (
-                <span className="text-md font-bold tracking-wider">
+                <span className="text-md ml-1 font-bold tracking-wider">
                   {lng.code.toUpperCase()}
                 </span>
               )}
