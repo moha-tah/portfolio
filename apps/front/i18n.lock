@@ -59,6 +59,7 @@ checksums:
     footer/contact/form/namePlaceholder: cd95fbdd0533f2c2e8edf9d9bd9aa8df
     footer/contact/form/emailPlaceholder: 39931962707c99b99a5a073ab579396b
     footer/contact/form/sendButton: 19e7006870c6e407dece25ee8c9d5333
+    footer/contact/form/companyPlaceholder: 36ad7bed737d4edff8d43da3b790caca
     footer/contact/connect/title: bcdb818e96f44f4f05ff358d2384631a
     footer/contact/connect/phone: 932385f6fb46ea2703b03c8ddea98888
     footer/contact/connect/email: 2d038a2d1ff1842a462109e1659ce586
