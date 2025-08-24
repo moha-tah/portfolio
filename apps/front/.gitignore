@@ -42,3 +42,6 @@ next-env.d.ts
 
 # generated files for next-intl
 messages/*.d.json.ts
+
+# i18n
+i18n.cache
