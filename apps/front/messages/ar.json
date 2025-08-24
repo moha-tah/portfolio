@@ -1,0 +1,139 @@
+{
+  "HomePage": {
+    "hero": {
+      "available": "متاح",
+      "MohamedTahiri": "Mohamed Tahiri",
+      "passionateAbout": "شغوف بـ",
+      "readyToJoin": "مستعد للانضمام إلى فريقكم لتدريب نهاية الدراسة لمدة 6 أشهر ابتداءً من فبراير 2026.",
+      "downloadResume": "تحميل سيرتي الذاتية",
+      "contactMe": "تواصل معي",
+      "passions": {
+        "computerScience": "علوم الكمبيوتر",
+        "coding": "البرمجة",
+        "engineering": "الهندسة",
+        "Python": "Python",
+        "NextJS": "Next.js",
+        "Backend": "Backend",
+        "TypeScript": "TypeScript",
+        "NestJS": "NestJS"
+      }
+    },
+    "testimonials": {
+      "badge": "الشهادات",
+      "title": "ما يقوله الأشخاص الذين عملت معهم عني",
+      "description": "لقد عملت مع الكثير من الأشخاص وتعلمت الكثير منهم. إليكم بعض ما قالوه عني.",
+      "list": {
+        "first": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "مطور واجهات أمامية @ Décathlon"
+          },
+          "text": "\"أتيحت لي الفرصة للعمل مع محمد لمدة عام، ولا يسعني إلا أن أوصي به بشدة لمشاريعه المستقبلية.<newline></newline>إنه مهندس متعدد المهارات، قادر على التعامل مع المواضيع من البداية إلى النهاية (DevOps، الواجهة الأمامية، الخلفية، إلخ) مع تصميم حلول عالية الأداء وقابلة للتوسع. اهتمامه بالتفاصيل ملحوظ: كل ما يقدمه نظيف ومُحسّن ومستدام.<newline></newline>كانت هذه الدقة أصلاً قيماً في الوفاء بمواعيد المشاريع التي عملنا عليها معاً. أنا واثق من أن محمد سيتفوق في مهامه المستقبلية، بفضل مهاراته واحترافيته وموقفه الإيجابي.<newline></newline>إنه حقاً أصل قيم لأي فريق يتطلع للمضي قدماً بثقة.\""
+        },
+        "second": {
+          "author": {
+            "name": "John Doe",
+            "handle": "كبير مهندسي البرمجيات @ Orange، IAD، إلخ."
+          },
+          "text": "\"كان لي شرف العمل مع محمد وأستطيع أن أشهد على استقلاليته والجودة الاستثنائية لعمله.<newline></newline>لقد كان دائماً موثوقاً به للغاية وساهم بشكل كبير خلال فترة التعاون بأكملها.\""
+        },
+        "third": {
+          "author": {
+            "name": "Julien G. Lopes",
+            "handle": "مشرف التدريب @ Napta"
+          },
+          "text": "\"في انتظار شهادة.\""
+        },
+        "fourth": {
+          "author": {
+            "name": "Olivier Knell",
+            "handle": "مدير هندسي أول @ Napta"
+          },
+          "text": "\"في انتظار شهادة.\""
+        }
+      }
+    },
+    "skills": {
+      "badge": "مجموعة الأدوات",
+      "title": "التقنيات التي أعمل بها",
+      "description": "فيما يلي قائمة غير شاملة بالتقنيات التي أستخدمها لإنشاء حلول موثوقة وعالية الأداء.",
+      "python": {
+        "name": "Python",
+        "description": "بناء أنظمة خلفية قوية وخطوط معالجة البيانات."
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "بناء تطبيقات ويب متكاملة عالية الأداء."
+      },
+      "postgreSQL": {
+        "name": "PostgreSQL",
+        "description": "بناء قواعد بيانات معقدة وقابلة للتوسع وفعالة."
+      },
+      "nextJs": {
+        "name": "Next.js",
+        "description": "بناء مواقع ويب عالية الأداء."
+      },
+      "nestJs": {
+        "name": "NestJS",
+        "description": "بناء واجهات برمجة تطبيقات معقدة وآمنة."
+      },
+      "ciCd": {
+        "name": "CI/CD، GitHub Actions، Shell",
+        "description": "أتمتة سير العمل والمهام."
+      },
+      "lowLevel": {
+        "name": "C، C++، C#، Go، إلخ.",
+        "description": "البرمجة النصية والبرمجة منخفضة المستوى."
+      },
+      "andOther": "والكثير غيرها..."
+    }
+  },
+  "footer": {
+    "badge": "تم بناؤه بواسطة <linkToMe>محمد الطاهري</linkToMe>. الكود المصدري على <linkToCode>GitHub</linkToCode>.",
+    "contact": {
+      "badge": "تواصل",
+      "title": "ابقَ على تواصل",
+      "subtitle": {
+        "first": "هل تعتقد أن ملفي الشخصي قد يكون مناسبًا لاحتياجاتك؟",
+        "second": "لا تتردد في ملء هذا النموذج أو الاتصال بي مباشرة من خلال الروابط أدناه."
+      },
+      "or": "أو",
+      "copyEmail": "نسخ إلى الحافظة",
+      "copied": "تم النسخ إلى الحافظة",
+      "form": {
+        "namePlaceholder": "أدخل اسمك",
+        "emailPlaceholder": "أدخل بريدك الإلكتروني",
+        "sendButton": "إرسال رسالة",
+        "companyPlaceholder": "أدخل اسم شركتك"
+      },
+      "connect": {
+        "title": "لنتواصل!",
+        "phone": "+212 612345678",
+        "email": "hello@mohamedtahiri.com"
+      },
+      "copyright": "© حقوق النشر 2024. جميع الحقوق محفوظة."
+    }
+  },
+  "shared": {
+    "defaultTitle": "محمد الطاهري - معرض الأعمال",
+    "defaultDescription": "مرحبًا، أنا محمد الطاهري، مهندس برمجيات شغوف ببناء التطبيقات المعقدة.",
+    "modeToggle": {
+      "light": "فاتح",
+      "dark": "داكن",
+      "system": "النظام"
+    },
+    "noScriptBanner": {
+      "message": "جافا سكريبت معطل في متصفحك. يرجى تفعيله لمشاهدة هذا الموقع بأفضل شكل."
+    },
+    "languageSwitch": "تغيير اللغة"
+  },
+  "navbar": {
+    "contactMe": "اتصل بي",
+    "sections": {
+      "hero": "الرئيسية",
+      "about": "عني",
+      "projects": "المشاريع",
+      "testimonials": "الشهادات"
+    }
+  }
+}

@@ -17,6 +17,7 @@
     "lint:fix": "turbo run lint:fix",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
+    "translate": "turbo run translate --filter=front",
     "prepare": "husky",
     "post-merge": "git-pull-run --pattern \"pnpm-lock.yaml\" --command \"pnpm -w install\""
   },

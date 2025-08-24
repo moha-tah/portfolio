@@ -27,7 +27,7 @@ export function ContactForm() {
         className="bg-background border-border h-12 rounded-4xl text-base"
       />
       <Input
-        placeholder={'Entrez le nom de votre entreprise'}
+        placeholder={t('companyPlaceholder')}
         className="bg-background border-border h-12 rounded-4xl text-base"
       />
       <Button className="bg-foreground text-background hover:bg-foreground/90 h-12 w-full rounded-4xl text-base">

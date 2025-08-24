@@ -56,11 +56,11 @@ export function Footer() {
             {/* or + Email */}
             <div className="space-y-4 text-center">
               <div className="flex items-center justify-center gap-4">
-                <Separator className="max-w-1/3 md:max-w-1/2" />
+                <Separator className="max-w-16 md:max-w-20" />
                 <h3 className="text-muted-foreground text-lg font-medium">
                   {t('contact.or')}
                 </h3>
-                <Separator className="max-w-1/3 md:max-w-1/2" />
+                <Separator className="max-w-16 md:max-w-20" />
               </div>
               <div className="relative flex justify-center">
                 <p className="text-foreground text-2xl font-semibold tracking-tighter md:text-3xl">
