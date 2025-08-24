@@ -6,6 +6,13 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
 
 const tools = [
   { name: 'Figma' },
+  { name: 'AWS' },
+  { name: 'CSS' },
+  { name: 'HTML5' },
+  { name: 'Postman' },
+  { name: 'S3' },
+  { name: 'Swagger' },
+  { name: 'TypeORM' },
   { name: 'AppsScript' },
   { name: 'Claude' },
   { name: 'Docker' },
