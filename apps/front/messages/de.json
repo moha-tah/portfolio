@@ -1,0 +1,138 @@
+{
+  "HomePage": {
+    "hero": {
+      "available": "Verfügbar",
+      "MohamedTahiri": "Mohamed Tahiri",
+      "passionateAbout": "begeistert von",
+      "readyToJoin": "Bereit, ab Februar 2026 für ein 6-monatiges Abschlusspraktikum in Ihr Team einzusteigen.",
+      "downloadResume": "Meinen Lebenslauf herunterladen",
+      "contactMe": "Kontaktieren Sie mich",
+      "passions": {
+        "computerScience": "Informatik",
+        "coding": "Programmierung",
+        "engineering": "Engineering",
+        "Python": "Python",
+        "NextJS": "Next.js",
+        "Backend": "Backend",
+        "TypeScript": "TypeScript",
+        "NestJS": "NestJS"
+      }
+    },
+    "testimonials": {
+      "badge": "Referenzen",
+      "title": "Was Menschen, mit denen ich zusammengearbeitet habe, über mich sagen",
+      "description": "Ich habe mit vielen Menschen zusammengearbeitet und viel von ihnen gelernt. Hier sind einige ihrer Aussagen über mich.",
+      "list": {
+        "first": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "Frontend-Entwickler @ Décathlon"
+          },
+          "text": "\"Ich hatte die Gelegenheit, ein Jahr lang mit Mohamed zusammenzuarbeiten, und ich kann ihn für seine zukünftigen Projekte nur wärmstens empfehlen.<newline></newline>Er ist ein vielseitiger Ingenieur, der in der Lage ist, End-to-End-Themen (DevOps, Frontend, Backend usw.) zu bearbeiten und dabei leistungsstarke und skalierbare Lösungen zu entwickeln. Seine Liebe zum Detail ist bemerkenswert: Jedes Ergebnis ist sauber, optimiert und nachhaltig.<newline></newline>Diese Genauigkeit war ein wertvoller Vorteil bei der Einhaltung der Fristen für die Projekte, an denen wir gemeinsam gearbeitet haben. Ich bin überzeugt, dass Mohamed dank seiner Fähigkeiten, seiner Professionalität und seiner positiven Einstellung in seinen zukünftigen Aufgaben erfolgreich sein wird.<newline></newline>Ein echter Gewinn für jedes Team, das mit Zuversicht vorankommen möchte.\""
+        },
+        "second": {
+          "author": {
+            "name": "John Doe",
+            "handle": "Senior Software Architekt @ Orange, IAD, etc."
+          },
+          "text": "\"Ich hatte das Vergnügen, mit Mohamed zusammenzuarbeiten, und ich kann seine Selbstständigkeit und die außergewöhnliche Qualität seiner Arbeit bestätigen.<newline></newline>Er war immer sehr zuverlässig und hat während der gesamten Zusammenarbeit wesentlich dazu beigetragen.\""
+        },
+        "third": {
+          "author": {
+            "name": "Julien G. Lopes",
+            "handle": "Praktikumsbetreuer @ Napta"
+          },
+          "text": "\"Warte auf ein Testimonial.\""
+        },
+        "fourth": {
+          "author": {
+            "name": "Olivier Knell",
+            "handle": "Senior Engineering Manager @ Napta"
+          },
+          "text": "\"Warte auf ein Testimonial.\""
+        }
+      }
+    },
+    "skills": {
+      "badge": "Toolkit",
+      "title": "Die Technologien, mit denen ich arbeite",
+      "description": "Unten finden Sie eine nicht vollständige Liste der Technologien, die ich verwende, um zuverlässige und leistungsstarke Lösungen zu erstellen.",
+      "python": {
+        "name": "Python",
+        "description": "Entwicklung robuster Backend-Systeme und Datenpipelines."
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "Entwicklung leistungsstarker Full-Stack-Webanwendungen."
+      },
+      "postgreSQL": {
+        "name": "PostgreSQL",
+        "description": "Aufbau komplexer, skalierbarer und effizienter Datenbanken."
+      },
+      "nextJs": {
+        "name": "Next.js",
+        "description": "Entwicklung leistungsstarker Websites."
+      },
+      "nestJs": {
+        "name": "NestJS",
+        "description": "Entwicklung komplexer & sicherer APIs."
+      },
+      "ciCd": {
+        "name": "CI/CD, GitHub Actions, Shell",
+        "description": "Automatisierung von Workflows und Aufgaben."
+      },
+      "lowLevel": {
+        "name": "C, C++, C#, Go, etc.",
+        "description": "Scripting und Low-Level-Programmierung."
+      },
+      "andOther": "und viele mehr..."
+    }
+  },
+  "footer": {
+    "badge": "Erstellt von <linkToMe>Mohamed Tahiri</linkToMe>. Quellcode auf <linkToCode>GitHub</linkToCode>.",
+    "contact": {
+      "badge": "Kontakt",
+      "title": "Nehmen Sie Kontakt auf",
+      "subtitle": {
+        "first": "Denken Sie, dass mein Profil gut zu Ihren Anforderungen passen könnte?",
+        "second": "Füllen Sie gerne dieses Formular aus oder kontaktieren Sie mich direkt über die unten stehenden Links."
+      },
+      "or": "oder",
+      "copyEmail": "In die Zwischenablage kopieren",
+      "copied": "In die Zwischenablage kopiert",
+      "form": {
+        "namePlaceholder": "Geben Sie Ihren Namen ein",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+        "sendButton": "Nachricht senden"
+      },
+      "connect": {
+        "title": "Lassen Sie uns in Kontakt treten!",
+        "phone": "+212 612345678",
+        "email": "hello@mohamedtahiri.com"
+      },
+      "copyright": "© Copyright 2024. Alle Rechte vorbehalten."
+    }
+  },
+  "shared": {
+    "defaultTitle": "Mohamed Tahiri - Portfolio",
+    "defaultDescription": "Hallo, ich bin Mohamed Tahiri, ein Softwareingenieur mit einer Leidenschaft für die Entwicklung komplexer Anwendungen.",
+    "modeToggle": {
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "noScriptBanner": {
+      "message": "JavaScript ist in Ihrem Browser deaktiviert. Bitte aktivieren Sie es, um diese Website optimal zu nutzen."
+    },
+    "languageSwitch": "Sprache ändern"
+  },
+  "navbar": {
+    "contactMe": "Kontaktieren Sie mich",
+    "sections": {
+      "hero": "Startseite",
+      "about": "Über mich",
+      "projects": "Projekte",
+      "testimonials": "Referenzen"
+    }
+  }
+}

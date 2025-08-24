@@ -1,0 +1,138 @@
+{
+  "HomePage": {
+    "hero": {
+      "available": "利用可能",
+      "MohamedTahiri": "Mohamed Tahiri",
+      "passionateAbout": "情熱を持っている",
+      "readyToJoin": "2026年2月から始まる6ヶ月間の卒業研究インターンシップであなたのチームに参加する準備ができています。",
+      "downloadResume": "履歴書をダウンロード",
+      "contactMe": "お問い合わせ",
+      "passions": {
+        "computerScience": "コンピュータサイエンス",
+        "coding": "コーディング",
+        "engineering": "エンジニアリング",
+        "Python": "Python",
+        "NextJS": "Next.js",
+        "Backend": "バックエンド",
+        "TypeScript": "TypeScript",
+        "NestJS": "NestJS"
+      }
+    },
+    "testimonials": {
+      "badge": "推薦の声",
+      "title": "一緒に働いた人々が私について言っていること",
+      "description": "多くの人々と働き、彼らから多くのことを学びました。以下は彼らが私について言ったことの一部です。",
+      "list": {
+        "first": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "フロントエンド開発者 @ Décathlon"
+          },
+          "text": "「私はMohamedと1年間一緒に働く機会がありましたが、彼の将来のプロジェクトについて強く推薦できます。<newline></newline>彼は多才なエンジニアであり、高性能でスケーラブルなソリューションを設計しながら、エンドツーエンドのトピック（DevOps、フロントエンド、バックエンドなど）を扱うことができます。彼の細部への注意は顕著です：すべての成果物はクリーンで、最適化され、持続可能です。<newline></newline>この厳格さは、私たちが一緒に取り組んだプロジェクトの期限を守るための貴重な資産でした。Mohamedは彼のスキル、プロフェッショナリズム、そして前向きな姿勢のおかげで、将来のミッションで優れた成果を上げることを確信しています。<newline></newline>自信を持って前進したいチームにとって真の資産です。」"
+        },
+        "second": {
+          "author": {
+            "name": "John Doe",
+            "handle": "シニアソフトウェアアーキテクト @ Orange, IAD, etc."
+          },
+          "text": "「私はMohamedと一緒に働く喜びを持ち、彼の自律性と仕事の卓越した品質を証明できます。<newline></newline>彼はいつも非常に信頼性が高く、コラボレーション期間全体を通じて大きく貢献してきました。」"
+        },
+        "third": {
+          "author": {
+            "name": "Julien G. Lopes",
+            "handle": "インターンシップチューター @ Napta"
+          },
+          "text": "「推薦文をお待ちしております。」"
+        },
+        "fourth": {
+          "author": {
+            "name": "Olivier Knell",
+            "handle": "シニアエンジニアリングマネージャー @ Napta"
+          },
+          "text": "「推薦文をお待ちしております。」"
+        }
+      }
+    },
+    "skills": {
+      "badge": "ツールキット",
+      "title": "私が使用するテクノロジー",
+      "description": "以下は、信頼性の高いパフォーマンスの良いソリューションを作成するために使用しているテクノロジーの一部です。",
+      "python": {
+        "name": "Python",
+        "description": "堅牢なバックエンドシステムとデータパイプラインの構築。"
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "高性能なフルスタックWebアプリケーションの構築。"
+      },
+      "postgreSQL": {
+        "name": "PostgreSQL",
+        "description": "複雑でスケーラブルかつ効率的なデータベースの構築。"
+      },
+      "nextJs": {
+        "name": "Next.js",
+        "description": "高性能なウェブサイトの構築。"
+      },
+      "nestJs": {
+        "name": "NestJS",
+        "description": "複雑で安全なAPIの構築。"
+      },
+      "ciCd": {
+        "name": "CI/CD、GitHub Actions、Shell",
+        "description": "ワークフローとタスクの自動化。"
+      },
+      "lowLevel": {
+        "name": "C、C++、C#、Goなど",
+        "description": "スクリプティングと低レベルプログラミング。"
+      },
+      "andOther": "その他多数..."
+    }
+  },
+  "footer": {
+    "badge": "<linkToMe>Mohamed Tahiri</linkToMe>が制作。ソースコードは<linkToCode>GitHub</linkToCode>にあります。",
+    "contact": {
+      "badge": "お問い合わせ",
+      "title": "ご連絡ください",
+      "subtitle": {
+        "first": "私のプロフィールがあなたのニーズに合うと思いますか？",
+        "second": "このフォームに記入するか、以下のリンクから直接ご連絡ください。"
+      },
+      "or": "または",
+      "copyEmail": "クリップボードにコピー",
+      "copied": "クリップボードにコピーしました",
+      "form": {
+        "namePlaceholder": "お名前を入力してください",
+        "emailPlaceholder": "メールアドレスを入力してください",
+        "sendButton": "メッセージを送信"
+      },
+      "connect": {
+        "title": "つながりましょう！",
+        "phone": "+212 612345678",
+        "email": "hello@mohamedtahiri.com"
+      },
+      "copyright": "© Copyright 2024. 無断複製禁止。"
+    }
+  },
+  "shared": {
+    "defaultTitle": "Mohamed Tahiri - ポートフォリオ",
+    "defaultDescription": "こんにちは、Mohamed Tahiriです。複雑なアプリケーション開発に情熱を持つソフトウェアエンジニアです。",
+    "modeToggle": {
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    },
+    "noScriptBanner": {
+      "message": "お使いのブラウザでJavaScriptが無効になっています。このウェブサイトを最適な状態で表示するには有効にしてください。"
+    },
+    "languageSwitch": "言語を変更"
+  },
+  "navbar": {
+    "contactMe": "お問い合わせ",
+    "sections": {
+      "hero": "ホーム",
+      "about": "自己紹介",
+      "projects": "プロジェクト",
+      "testimonials": "推薦の声"
+    }
+  }
+}

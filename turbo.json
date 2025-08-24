@@ -20,6 +20,10 @@
     },
     "test": {
       "dependsOn": ["^build"]
+    },
+    "translate": {
+      "dependsOn": ["^build"],
+      "outputs": ["apps/front/messages/*.json", "apps/front/i18n.lock"]
     }
   }
 }

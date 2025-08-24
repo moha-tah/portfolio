@@ -1,0 +1,22 @@
+name: Auto Translate i18n
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    name: Auto Translate i18n
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lingodotdev/lingo.dev@main
+        with:
+          api-key: ${{ secrets.LINGODOTDEV_API_KEY }}
+          working-directory: "apps/front"
+          commit-message: "chore(i18n): :globe_with_meridians: update translations"

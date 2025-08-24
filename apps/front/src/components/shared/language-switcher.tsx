@@ -11,42 +11,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
-import { Locale } from '@/i18n/config'
+import { Locale, languages } from '@/i18n/config'
 import { useRouter } from '@/i18n/navigation'
 import { cn } from '@/lib/utils'
-
-const languages: { code: Locale; name: string; flag: string }[] = [
-  {
-    code: 'en',
-    name: 'English',
-    flag: 'gb'
-  },
-  {
-    code: 'fr',
-    name: 'Français',
-    flag: 'fr'
-  }
-  // {
-  //   code: 'de',
-  //   name: 'Deutsch',
-  //   flag: 'de'
-  // },
-  // {
-  //   code: 'ja',
-  //   name: '日本語',
-  //   flag: 'jp'
-  // },
-  // {
-  //   code: 'ar',
-  //   name: 'العربية',
-  //   flag: 'ae'
-  // },
-  // {
-  //   code: 'ko',
-  //   name: '한국어',
-  //   flag: 'kr'
-  // }
-]
 
 export function Flag({ code }: { code: string }) {
   return <span className={`fi fi-${code} rounded text-lg`}></span>
@@ -62,7 +29,7 @@ export function LanguageSwitcher({ className }: Props) {
   const t = useTranslations('shared')
   const [isOpen, setIsOpen] = useState(false)
 
-  const currentLanguage = languages.find((lang) => lang.code === locale)
+  const currentLanguage = languages.find((lng) => lng.code === locale)
   if (!currentLanguage) {
     throw new Error(`Language ${locale} not found`)
   }
@@ -87,20 +54,33 @@ export function LanguageSwitcher({ className }: Props) {
                 isOpen && 'rotate-180'
               )}
             />
-            <Flag code={currentLanguage.flag} />
+            {currentLanguage.flag ? (
+              <Flag code={currentLanguage.flag} />
+            ) : (
+              <span className="text-lg font-bold tracking-wider">
+                {currentLanguage.code.toUpperCase()}
+              </span>
+            )}
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start" className="min-w-[120px]">
-          {languages.map((language) => (
+          {languages.map((lng) => (
             <DropdownMenuItem
-              key={language.code}
-              onClick={() => handleLanguageChange(language.code)}
+              key={lng.code}
+              onClick={() => handleLanguageChange(lng.code)}
               className="cursor-pointer gap-3"
-              disabled={language.code === locale}
+              disabled={lng.code === locale}
             >
-              <Flag code={language.flag} />
+              {lng.flag ? (
+                <Flag code={lng.flag} />
+              ) : (
+                <span className="text-md font-bold tracking-wider">
+                  {lng.code.toUpperCase()}
+                </span>
+              )}
+
               <span className="text-md font-medium tracking-normal">
-                {language.name}
+                {lng.name}
               </span>
             </DropdownMenuItem>
           ))}
