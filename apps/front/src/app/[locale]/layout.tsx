@@ -6,6 +6,7 @@ import { getTranslations } from 'next-intl/server'
 
 import { Footer } from '@/components/footer/footer'
 import { Navbar } from '@/components/navbar/navbar'
+import { ScrollProgress } from '@/components/navbar/scroll-progress'
 import { ProvidersWrapper } from '@/components/providers/providers-wrapper'
 // import { AnimatedThemeToggler } from '@/components/shared/animations/animated-theme-toggler'
 import { Background } from '@/components/shared/background'
@@ -72,6 +73,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       >
         <ProvidersWrapper>
           <NoScriptBanner />
+          <ScrollProgress />
           <Background />
 
           <Navbar />
