@@ -79,7 +79,7 @@ export function SkillCard({ skill }: Props) {
 
       {/* Current proficiency progress bar */}
       <div
-        className="bg-secondary-foreground absolute top-0 left-0 z-[2] h-full overflow-hidden rounded-l-2xl transition-all duration-1000 ease-out"
+        className="bg-secondary-foreground absolute top-0 left-0 z-[2] h-full overflow-hidden rounded-l-xl bg-[radial-gradient(ellipse_at_0%_0%,hsl(0_0%_100%_/_0.15)_0%,transparent_80%)] transition-all duration-1000 ease-out"
         style={{
           width: `${animatedWidth}%`
         }}

@@ -109,13 +109,7 @@
         "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
         "sendButton": "Nachricht senden",
         "companyPlaceholder": "Geben Sie den Namen Ihrer Firma ein"
-      },
-      "connect": {
-        "title": "Lassen Sie uns in Kontakt treten!",
-        "phone": "+212 612345678",
-        "email": "hello@mohamedtahiri.com"
-      },
-      "copyright": "© Copyright 2024. Alle Rechte vorbehalten."
+      }
     }
   },
   "shared": {

@@ -90,7 +90,34 @@
     "aboutMe": {
       "badge": "About me",
       "title": "A Snapshot of My Career",
-      "description": "A chronological journey through my key experiences and achievements, highlighting my growth as a computer engineering student and developer."
+      "description": "A chronological journey through my key experiences and achievements, highlighting my growth as a computer engineering student and developer.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "First years @ UTC",
+            "subtitle": "Sept. 2021 - June 2024",
+            "description": "Built strong foundations in computer science, covering algorithms, software engineering, and systems architecture. Explored various domains before specializing in computer engineering.",
+            "learnMoreText": "Learn more about UTC"
+          },
+          {
+            "title": "Internship @ Napta",
+            "subtitle": "Sept. 2024 - Feb. 2025",
+            "description": "Worked as a Data Engineer and a Backend Engineer (Python, Flask, PostgreSQL, Airflow) to build scalable and efficient data pipelines for a startup. I've had the opportunity to collaborate within an agile team of 12 developers. I've learned a lot from senior engineers and gained a lot of experience about the corporate world.",
+            "learnMoreText": "Learn more about Napta"
+          },
+          {
+            "title": "Projects to gain experience",
+            "subtitle": "Sept. 2024 - Present",
+            "description": "After my courses, I worked 20 hours per week as a full-stack developer (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS) to gain experience, contributing to the development of scalable web applications using TypeScript, NestJS, and PostgreSQL. Improved CI/CD pipelines and collaborated within an agile team of 6 developers. The project is still in development and will be released in October 2025."
+          },
+          {
+            "title": "Last year @ UTC (ISI)",
+            "subtitle": "Feb. 2025 - Feb. 2026",
+            "description": "Specialized in Computer Systems Engineering (ISI), focusing on distributed systems, advanced backend design, and architecture to prepare for a career as a software engineer. The last step of my studies will be a 6-month internship beginning in February 2026.",
+            "learnMoreText": "Learn more about my specialty “ISI”"
+          }
+        ]
+      }
     }
   },
   "footer": {
@@ -110,13 +137,7 @@
         "emailPlaceholder": "Enter your email",
         "sendButton": "Send message",
         "companyPlaceholder": "Enter the name of your company"
-      },
-      "connect": {
-        "title": "Let's connect!",
-        "phone": "+212 612345678",
-        "email": "hello@mohamedtahiri.com"
-      },
-      "copyright": "© Copyright 2024. Rights Reserved."
+      }
     }
   },
   "shared": {

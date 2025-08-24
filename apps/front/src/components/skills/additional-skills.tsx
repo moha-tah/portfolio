@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Marquee } from '@/components/shared/marquee'
+import { cn } from '@/lib/utils'
 
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
 
@@ -49,14 +50,17 @@ const Icon = ({
   return (
     <Tooltip>
       <TooltipTrigger>
-        <div className="mx-4 flex size-20 items-center justify-center rounded-full p-5">
+        <div className="mx-4 flex size-14 items-center justify-center rounded-full p-2 select-none sm:size-20 sm:p-4">
           <Image
             src={img}
             alt={name}
-            width={56}
-            height={56}
+            width={40}
+            height={40}
             loading="lazy"
-            className={shouldInvertInDarkMode ? 'dark:invert' : ''}
+            className={cn(
+              shouldInvertInDarkMode ? 'dark:invert' : '',
+              'object-contain'
+            )}
           />
         </div>
       </TooltipTrigger>
@@ -67,12 +71,12 @@ const Icon = ({
 
 export function AdditionalSkills() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden select-none">
       <Marquee className="[--duration:60s]">
         {firstRow.map((tool) => (
           <Icon
             key={tool.name}
-            img={`/icons/${tool.name}.svg`}
+            img={`/icons/skills/${tool.name}.svg`}
             name={tool.name}
             shouldInvertInDarkMode={tool.shouldInvertInDarkMode}
           />
@@ -82,7 +86,7 @@ export function AdditionalSkills() {
         {secondRow.map((tool) => (
           <Icon
             key={tool.name}
-            img={`/icons/${tool.name}.svg`}
+            img={`/icons/skills/${tool.name}.svg`}
             name={tool.name}
             shouldInvertInDarkMode={tool.shouldInvertInDarkMode}
           />

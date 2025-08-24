@@ -110,13 +110,7 @@
         "emailPlaceholder": "Entrez votre email",
         "sendButton": "Envoyer le message",
         "companyPlaceholder": "Entrez le nom de votre entreprise"
-      },
-      "connect": {
-        "title": "Restons connectés !",
-        "phone": "+212 612345678",
-        "email": "hello@mohamedtahiri.com"
-      },
-      "copyright": "© Copyright 2024. Tous droits réservés."
+      }
     }
   },
   "shared": {

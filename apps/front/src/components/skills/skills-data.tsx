@@ -17,7 +17,7 @@ export const skillsData: Skill[] = [
     color: 'rgba(218, 165, 32, 0.6)',
     icon: (
       <Image
-        src="/icons/Python.svg"
+        src="/icons/skills/Python.svg"
         alt="Python"
         width={56}
         height={56}
@@ -32,7 +32,7 @@ export const skillsData: Skill[] = [
     color: 'rgba(0, 0, 139, 0.6)',
     icon: (
       <Image
-        src="/icons/TypeScript.svg"
+        src="/icons/skills/TypeScript.svg"
         alt="TypeScript"
         width={56}
         height={56}
@@ -47,7 +47,7 @@ export const skillsData: Skill[] = [
     color: 'rgba(30, 144, 255, 0.6)',
     icon: (
       <Image
-        src="/icons/PostgreSQL.svg"
+        src="/icons/skills/PostgreSQL.svg"
         alt="PostgreSQL"
         width={56}
         height={56}
@@ -62,7 +62,7 @@ export const skillsData: Skill[] = [
     color: 'rgba(220, 38, 57, 0.6)',
     icon: (
       <Image
-        src="/icons/NestJS.svg"
+        src="/icons/skills/NestJS.svg"
         alt="NestJS"
         width={56}
         height={56}
@@ -77,7 +77,7 @@ export const skillsData: Skill[] = [
     color: 'rgba(255, 255, 255, 0.1)',
     icon: (
       <Image
-        src="/icons/NextJs.svg"
+        src="/icons/skills/NextJs.svg"
         alt="Next.js"
         width={56}
         height={56}

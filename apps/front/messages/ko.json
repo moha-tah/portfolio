@@ -109,13 +109,7 @@
         "emailPlaceholder": "이메일을 입력하세요",
         "sendButton": "메시지 보내기",
         "companyPlaceholder": "회사의 이름을 입력하십시오"
-      },
-      "connect": {
-        "title": "연결해요!",
-        "phone": "+212 612345678",
-        "email": "hello@mohamedtahiri.com"
-      },
-      "copyright": "© Copyright 2024. 모든 권리 보유."
+      }
     }
   },
   "shared": {

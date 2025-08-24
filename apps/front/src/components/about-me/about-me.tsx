@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 
+import { Timeline } from './timeline'
 import { ScrollAnimatedBadge } from '../shared/animations/scroll-animated-badge'
 import { ScrollAnimatedSection } from '../shared/animations/scroll-animated-section'
 import { ScrollAnimatedText } from '../shared/animations/scroll-animated-text'
@@ -10,7 +11,7 @@ export function AboutMe() {
   return (
     <ScrollAnimatedSection
       id="about"
-      className="w-full py-24"
+      className="w-full pt-8"
       staggerChildren={0.1}
       delayChildren={0.2}
     >
@@ -26,6 +27,7 @@ export function AboutMe() {
             delay={0.2}
           />
         </div>
+        <Timeline />
       </div>
     </ScrollAnimatedSection>
   )

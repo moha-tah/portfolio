@@ -109,13 +109,7 @@
         "emailPlaceholder": "メールアドレスを入力してください",
         "sendButton": "メッセージを送信",
         "companyPlaceholder": "あなたの会社の名前を入力してください"
-      },
-      "connect": {
-        "title": "つながりましょう！",
-        "phone": "+212 612345678",
-        "email": "hello@mohamedtahiri.com"
-      },
-      "copyright": "© Copyright 2024. 無断複製禁止。"
+      }
     }
   },
   "shared": {
