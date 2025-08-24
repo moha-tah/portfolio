@@ -103,7 +103,8 @@
       "form": {
         "namePlaceholder": "Geben Sie Ihren Namen ein",
         "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
-        "sendButton": "Nachricht senden"
+        "sendButton": "Nachricht senden",
+        "companyPlaceholder": "Geben Sie den Namen Ihrer Firma ein"
       },
       "connect": {
         "title": "Lassen Sie uns in Kontakt treten!",

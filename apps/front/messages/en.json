@@ -103,7 +103,8 @@
       "form": {
         "namePlaceholder": "Enter your name",
         "emailPlaceholder": "Enter your email",
-        "sendButton": "Send message"
+        "sendButton": "Send message",
+        "companyPlaceholder": "Enter the name of your company"
       },
       "connect": {
         "title": "Let's connect!",

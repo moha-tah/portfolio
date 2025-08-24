@@ -103,7 +103,8 @@
       "form": {
         "namePlaceholder": "أدخل اسمك",
         "emailPlaceholder": "أدخل بريدك الإلكتروني",
-        "sendButton": "إرسال رسالة"
+        "sendButton": "إرسال رسالة",
+        "companyPlaceholder": "أدخل اسم شركتك"
       },
       "connect": {
         "title": "لنتواصل!",

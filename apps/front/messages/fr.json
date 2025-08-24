@@ -103,7 +103,8 @@
       "form": {
         "namePlaceholder": "Entrez votre nom",
         "emailPlaceholder": "Entrez votre email",
-        "sendButton": "Envoyer le message"
+        "sendButton": "Envoyer le message",
+        "companyPlaceholder": "Entrez le nom de votre entreprise"
       },
       "connect": {
         "title": "Restons connectés !",

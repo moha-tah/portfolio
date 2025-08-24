@@ -103,7 +103,8 @@
       "form": {
         "namePlaceholder": "이름을 입력하세요",
         "emailPlaceholder": "이메일을 입력하세요",
-        "sendButton": "메시지 보내기"
+        "sendButton": "메시지 보내기",
+        "companyPlaceholder": "회사의 이름을 입력하십시오"
       },
       "connect": {
         "title": "연결해요!",

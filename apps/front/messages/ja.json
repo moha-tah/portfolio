@@ -4,7 +4,7 @@
       "available": "利用可能",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "情熱を持っている",
-      "readyToJoin": "2026年2月から始まる6ヶ月間の卒業研究インターンシップであなたのチームに参加する準備ができています。",
+      "readyToJoin": "2026年2月から始まる 6ヶ月間の卒業研究インターンシップで あなたのチームに参加する準備ができています。",
       "downloadResume": "履歴書をダウンロード",
       "contactMe": "お問い合わせ",
       "passions": {
@@ -103,7 +103,8 @@
       "form": {
         "namePlaceholder": "お名前を入力してください",
         "emailPlaceholder": "メールアドレスを入力してください",
-        "sendButton": "メッセージを送信"
+        "sendButton": "メッセージを送信",
+        "companyPlaceholder": "あなたの会社の名前を入力してください"
       },
       "connect": {
         "title": "つながりましょう！",
