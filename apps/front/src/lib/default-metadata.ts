@@ -44,6 +44,7 @@ export async function getDefaultMetadata() {
       description,
       siteName: title,
       locale,
+      url: baseUrl,
       type: 'website',
       images: [
         {
