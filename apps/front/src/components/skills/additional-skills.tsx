@@ -23,6 +23,7 @@ const tools = [
   { name: 'Java' },
   { name: 'HomeAssistant' },
   { name: 'Airflow' },
+  { name: 'Algolia' },
   { name: 'shadcn', shouldInvertInDarkMode: true },
   { name: 'MongoDB' },
   { name: 'Prisma', shouldInvertInDarkMode: true },

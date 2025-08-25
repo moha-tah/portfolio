@@ -14,7 +14,7 @@ export function Skills() {
 
   return (
     <ScrollAnimatedSection
-      id="projects" // TODO: change to "skills"
+      id="skills"
       className="w-full pt-8"
       staggerChildren={0.1}
       delayChildren={0.2}
@@ -33,12 +33,15 @@ export function Skills() {
         </div>
 
         <div className="mx-auto flex max-w-[700px] flex-col items-center gap-2 px-4">
+          <span className="text-muted-foreground w-full text-start text-sm">
+            {t('note')}
+          </span>
           {skillsData.map((skill) => (
             <SkillCard key={skill.name} skill={skill} />
           ))}
         </div>
 
-        <h2 className="pt-8 pb-4 text-center text-4xl font-medium tracking-tighter lg:text-5xl">
+        <h2 className="py-8 text-center text-4xl font-medium tracking-tighter lg:text-5xl">
           {t('andOther')}
         </h2>
 

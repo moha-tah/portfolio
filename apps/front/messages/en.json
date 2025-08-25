@@ -57,6 +57,7 @@
       "badge": "Toolkit",
       "title": "The technologies I work with",
       "description": "Below is a non-exhaustive list of technologies I use to create reliable and performant solutions.",
+      "note": "Note: The indicated duration reflects the time I've actively worked with the technology in school, in personal projects and in my internship, rather than traditional 'years of experience'.",
       "python": {
         "name": "Python",
         "description": "Building robust backend systems and data pipelines."
@@ -85,7 +86,10 @@
         "name": "C, C++, C#, Go, etc.",
         "description": "Scripting and low-level programming."
       },
-      "andOther": "and many more..."
+      "andOther": "and many more...",
+      "years": "{count, plural, one {1 year} other {# years}}",
+      "months": "{count, plural, one {1 month} other {# months}}",
+      "moreThanOneYear": "> 1 year"
     },
     "aboutMe": {
       "badge": "About me",
