@@ -57,6 +57,7 @@
       "badge": "Toolkit",
       "title": "Die Technologien, mit denen ich arbeite",
       "description": "Unten finden Sie eine nicht vollständige Liste der Technologien, die ich verwende, um zuverlässige und leistungsstarke Lösungen zu erstellen.",
+      "note": "Hinweis: Die angegebene Dauer spiegelt die Zeit wider, in der ich aktiv mit der Technologie in der Schule, in persönlichen Projekten und in meinem Praktikum gearbeitet habe, und nicht die traditionellen 'Jahre an Erfahrung'.",
       "python": {
         "name": "Python",
         "description": "Entwicklung robuster Backend-Systeme und Datenpipelines."
@@ -85,11 +86,42 @@
         "name": "C, C++, C#, Go, etc.",
         "description": "Scripting und Low-Level-Programmierung."
       },
-      "andOther": "und viele mehr..."
+      "andOther": "und viele mehr...",
+      "years": "{count, plural, one {1 Jahr} other {# Jahre}}",
+      "months": "{count, plural, one {1 Monat} other {# Monate}}",
+      "moreThanOneYear": "> 1 Jahr"
     },
     "aboutMe": {
       "badge": "Über mich",
-      "title": ""
+      "title": "Ein Überblick meiner Karriere",
+      "description": "Eine chronologische Reise durch meine wichtigsten Erfahrungen und Erfolge, die meine Entwicklung als Student der Informatik und Entwickler hervorhebt.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "Erste Jahre an der UTC",
+            "subtitle": "Sept. 2021 - Juni 2024",
+            "description": "Aufbau solider Grundlagen in der Informatik, einschließlich Algorithmen, Software-Engineering und Systemarchitektur. Erkundung verschiedener Bereiche vor der Spezialisierung auf Informatik.",
+            "learnMoreText": "Mehr über UTC erfahren"
+          },
+          {
+            "title": "Praktikum bei Napta",
+            "subtitle": "Sept. 2024 - Feb. 2025",
+            "description": "Arbeit als Data Engineer und Backend-Entwickler (Python, Flask, PostgreSQL, Airflow) zum Aufbau skalierbarer und effizienter Datenpipelines für ein Startup. Ich hatte die Gelegenheit, in einem agilen Team von 12 Entwicklern zusammenzuarbeiten. Ich habe viel von erfahrenen Ingenieuren gelernt und viele Erfahrungen über die Unternehmenswelt gesammelt.",
+            "learnMoreText": "Mehr über Napta erfahren"
+          },
+          {
+            "title": "Projekte zum Sammeln von Erfahrungen",
+            "subtitle": "Sept. 2024 - Heute",
+            "description": "Nach meinen Kursen arbeitete ich 20 Stunden pro Woche als Full-Stack-Entwickler (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS), um Erfahrungen zu sammeln und zur Entwicklung skalierbarer Webanwendungen mit TypeScript, NestJS und PostgreSQL beizutragen. Verbesserte CI/CD-Pipelines und Zusammenarbeit in einem agilen Team von 6 Entwicklern. Das Projekt befindet sich noch in der Entwicklung und wird im Oktober 2025 veröffentlicht."
+          },
+          {
+            "title": "Letztes Jahr an der UTC (ISI)",
+            "subtitle": "Feb. 2025 - Feb. 2026",
+            "description": "Spezialisierung auf Computer Systems Engineering (ISI) mit Schwerpunkt auf verteilte Systeme, fortgeschrittenes Backend-Design und Architektur zur Vorbereitung auf eine Karriere als Software-Ingenieur. Der letzte Schritt meines Studiums wird ein 6-monatiges Praktikum sein, das im Februar 2026 beginnt.",
+            "learnMoreText": "Erfahren Sie mehr über meine Spezialisierung \"ISI\""
+          }
+        ]
+      }
     }
   },
   "footer": {

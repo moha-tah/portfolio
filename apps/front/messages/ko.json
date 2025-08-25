@@ -57,6 +57,7 @@
       "badge": "도구 모음",
       "title": "제가 사용하는 기술들",
       "description": "아래는 신뢰할 수 있고 성능이 뛰어난 솔루션을 만들기 위해 사용하는 기술들의 비포괄적인 목록입니다.",
+      "note": "참고: 표시된 기간은 전통적인 '경력 연수'가 아닌, 학교, 개인 프로젝트 및 인턴십에서 해당 기술을 적극적으로 사용한 시간을 반영합니다.",
       "python": {
         "name": "Python",
         "description": "견고한 백엔드 시스템과 데이터 파이프라인 구축."
@@ -85,11 +86,42 @@
         "name": "C, C++, C#, Go 등",
         "description": "스크립팅 및 저수준 프로그래밍."
       },
-      "andOther": "그리고 더 많은 기술들..."
+      "andOther": "그리고 더 많은 기술들...",
+      "years": "{count, plural, one {1년} other {#년}}",
+      "months": "{count, plural, one {1개월} other {#개월}}",
+      "moreThanOneYear": "> 1년"
     },
     "aboutMe": {
       "badge": "나에 대해",
-      "title": ""
+      "title": "내 경력의 스냅샷",
+      "description": "컴퓨터 공학 학생이자 개발자로서의 성장을 강조하는 주요 경험과 성취를 시간순으로 정리한 여정입니다.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "UTC 초기 학년",
+            "subtitle": "2021년 9월 - 2024년 6월",
+            "description": "알고리즘, 소프트웨어 엔지니어링, 시스템 아키텍처를 포함한 컴퓨터 과학의 강력한 기초를 쌓았습니다. 컴퓨터 공학으로 전문화하기 전에 다양한 분야를 탐구했습니다.",
+            "learnMoreText": "UTC에 대해 더 알아보기"
+          },
+          {
+            "title": "Napta 인턴십",
+            "subtitle": "2024년 9월 - 2025년 2월",
+            "description": "스타트업을 위한 확장 가능하고 효율적인 데이터 파이프라인을 구축하기 위해 데이터 엔지니어 및 백엔드 엔지니어(Python, Flask, PostgreSQL, Airflow)로 일했습니다. 12명의 개발자로 구성된 애자일 팀 내에서 협업할 기회가 있었습니다. 시니어 엔지니어들로부터 많은 것을 배웠고 기업 세계에 대한 많은 경험을 쌓았습니다.",
+            "learnMoreText": "Napta에 대해 더 알아보기"
+          },
+          {
+            "title": "경험을 쌓기 위한 프로젝트",
+            "subtitle": "2024년 9월 - 현재",
+            "description": "수업 후, 경험을 쌓기 위해 풀스택 개발자(NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS)로 주당 20시간 일하며 TypeScript, NestJS, PostgreSQL을 사용한 확장 가능한 웹 애플리케이션 개발에 기여했습니다. CI/CD 파이프라인을 개선하고 6명의 개발자로 구성된 애자일 팀 내에서 협업했습니다. 이 프로젝트는 여전히 개발 중이며 2025년 10월에 출시될 예정입니다."
+          },
+          {
+            "title": "UTC 마지막 학년 (ISI)",
+            "subtitle": "2025년 2월 - 2026년 2월",
+            "description": "소프트웨어 엔지니어로서의 경력을 준비하기 위해 분산 시스템, 고급 백엔드 설계 및 아키텍처에 중점을 둔 컴퓨터 시스템 공학(ISI)을 전공했습니다. 학업의 마지막 단계는 2026년 2월부터 시작되는 6개월 인턴십이 될 것입니다.",
+            "learnMoreText": "제 전문 분야 \"ISI\"에 대해 더 알아보기"
+          }
+        ]
+      }
     }
   },
   "footer": {

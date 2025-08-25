@@ -33,6 +33,7 @@ checksums:
     HomePage/skills/badge: 7faf2ab216c560480105ef41f2264f11
     HomePage/skills/title: 4503710f360eac6ce17caf1c22c1bbfd
     HomePage/skills/description: 24a88f82b6ce8b8d893b14d55c0afa6e
+    HomePage/skills/note: 5d9c0c00b3750d4c074971f802d4c8b6
     HomePage/skills/python/name: f396d32607ee0981634cb9f9b7665617
     HomePage/skills/python/description: b957df3689d771f8099d18c1ff2e85a2
     HomePage/skills/typeScript/name: d63d2a97f55baa75f353987658ddb0a0
@@ -48,6 +49,27 @@ checksums:
     HomePage/skills/lowLevel/name: dede0ae4c7e576528084aee06b252005
     HomePage/skills/lowLevel/description: d733e9ab5f4f038bca84485cf3ccf4ba
     HomePage/skills/andOther: a76a7b4f474d4b93dcff81ca6297b789
+    HomePage/skills/years: 894754a0fd1ccd6e4dd95a7dd62088eb
+    HomePage/skills/months: d4e5fc570ca0d0d76ced2e3f9de48951
+    HomePage/skills/moreThanOneYear: 0874e1a3d9641cf2f56503773acd06ef
+    HomePage/aboutMe/badge: 2143f5406d1eec5b83cff6daa4ba873f
+    HomePage/aboutMe/title: aa6383d6319ba85ab9fc0898b520ebb0
+    HomePage/aboutMe/description: 48de7f2a83f30b502941e97f409576d3
+    HomePage/aboutMe/timeline/steps/0/title: 5e0dd31ca3757808223b477d665924a5
+    HomePage/aboutMe/timeline/steps/0/subtitle: e56bdb36c9e118ae793af60dc3963970
+    HomePage/aboutMe/timeline/steps/0/description: c31055f08e6014a2b70ad737b38c761a
+    HomePage/aboutMe/timeline/steps/0/learnMoreText: db5a5649de0618752254a8cf194a29a5
+    HomePage/aboutMe/timeline/steps/1/title: 040b65fd6abc14f0b7da2df94bb5bb28
+    HomePage/aboutMe/timeline/steps/1/subtitle: 2eecaff68af6bf96a0043ab7df454cd5
+    HomePage/aboutMe/timeline/steps/1/description: 1eb46c6be1ebb979e62d72404a58241c
+    HomePage/aboutMe/timeline/steps/1/learnMoreText: 7ed5e09a2a6e49cfaa443ae20ddb9aaf
+    HomePage/aboutMe/timeline/steps/2/title: 61d284baafcdc62d510815ae9601153a
+    HomePage/aboutMe/timeline/steps/2/subtitle: 9167132979ec56288770d91ceee221d5
+    HomePage/aboutMe/timeline/steps/2/description: 9b2a7645abb061d596a62cfb14e53102
+    HomePage/aboutMe/timeline/steps/3/title: 0790c9d25d14608ac24ecd77c9bf7bbf
+    HomePage/aboutMe/timeline/steps/3/subtitle: c16e732e592463f16ea4adec70fd16ff
+    HomePage/aboutMe/timeline/steps/3/description: 0f08b7dd2c72fc02ae1f5bef164b995c
+    HomePage/aboutMe/timeline/steps/3/learnMoreText: 16436b5c2eca54588807921d905a2652
     footer/badge: 8b48aa9cca77a080eceeca20cebb42b5
     footer/contact/badge: 9afa39bc47019ee6dec6c74b6273967c
     footer/contact/title: 35323605e31c113fd664486afc33f3eb
@@ -60,10 +82,6 @@ checksums:
     footer/contact/form/emailPlaceholder: 39931962707c99b99a5a073ab579396b
     footer/contact/form/sendButton: 19e7006870c6e407dece25ee8c9d5333
     footer/contact/form/companyPlaceholder: 36ad7bed737d4edff8d43da3b790caca
-    footer/contact/connect/title: bcdb818e96f44f4f05ff358d2384631a
-    footer/contact/connect/phone: 932385f6fb46ea2703b03c8ddea98888
-    footer/contact/connect/email: 2d038a2d1ff1842a462109e1659ce586
-    footer/contact/copyright: c77c22a2f0134e6f152968c447c4e019
     shared/defaultTitle: 1accc730981190f693eba5d86c78f39c
     shared/defaultDescription: e7805c55c1a7217e3b53a80b9e70394d
     shared/modeToggle/light: bb78ea2c6edd8662676c81a8a13ecb93
