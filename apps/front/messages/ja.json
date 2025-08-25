@@ -145,8 +145,8 @@
     }
   },
   "shared": {
-    "defaultTitle": "Mohamed Tahiri - ポートフォリオ",
-    "defaultDescription": "こんにちは、Mohamed Tahiriです。複雑なアプリケーション開発に情熱を持つソフトウェアエンジニアです。",
+    "defaultTitle": "Mohamed Tahiri",
+    "defaultDescription": "UTC（フランス）のコンピューターエンジニアリング学生は、コンピューターシステムに特化し、複雑なソフトウェアの開発に情熱を傾けています。",
     "modeToggle": {
       "light": "ライト",
       "dark": "ダーク",

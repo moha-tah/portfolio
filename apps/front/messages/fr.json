@@ -145,8 +145,8 @@
     }
   },
   "shared": {
-    "defaultTitle": "Mohamed Tahiri - Portfolio",
-    "defaultDescription": "Bonjour, je suis Mohamed Tahiri, un ingénieur informatique passionné par le développement d'applications complexes.",
+    "defaultTitle": "Mohamed Tahiri",
+    "defaultDescription": "Étudiant en ingénierie informatique à l’UTC (France), spécialisé en systèmes informatiques et passionné par le développement de logiciels complexes.",
     "modeToggle": {
       "light": "Clair",
       "dark": "Sombre",
