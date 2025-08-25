@@ -13,10 +13,10 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col items-center justify-center gap-8 px-4 pt-8"
+      className="flex flex-col items-center justify-center gap-8 px-6 pt-8"
     >
       <ScrollAnimatedBadge delay={0.1}>{t('badge')}</ScrollAnimatedBadge>
-      <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
+      <div className="mx-auto max-w-6xl space-y-8 md:space-y-16">
         <ScrollAnimatedText
           title={t('title')}
           description={t('description')}

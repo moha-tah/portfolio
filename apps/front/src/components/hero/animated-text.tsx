@@ -47,7 +47,7 @@ export function AnimatedText({
         {passions.map((passion: Passion, index: number) => (
           <motion.span
             key={index}
-            className={cn('absolute font-bold', passion.color)}
+            className={cn('absolute font-bold text-nowrap', passion.color)}
             initial={{ opacity: 0, y: '-100' }}
             transition={{ type: 'spring', stiffness: 50 }}
             animate={

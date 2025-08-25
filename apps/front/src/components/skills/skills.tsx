@@ -20,7 +20,7 @@ export function Skills() {
       delayChildren={0.2}
     >
       <div className="mx-auto max-w-screen">
-        <div className="mb-16 px-4 text-center">
+        <div className="mb-16 px-6 text-center">
           <ScrollAnimatedBadge delay={0.1} className="mb-6">
             {t('badge')}
           </ScrollAnimatedBadge>
@@ -32,7 +32,7 @@ export function Skills() {
           />
         </div>
 
-        <div className="mx-auto flex max-w-[700px] flex-col items-center gap-2 px-4">
+        <div className="mx-auto flex max-w-[700px] flex-col items-center gap-2 px-6">
           <span className="text-muted-foreground w-full text-start text-sm">
             {t('note')}
           </span>

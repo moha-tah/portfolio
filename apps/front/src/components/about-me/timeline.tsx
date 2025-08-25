@@ -26,7 +26,7 @@ export function Timeline() {
   })
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-8 sm:pt-12">
+    <div className="mx-auto max-w-6xl pt-8 sm:px-8 sm:pt-12">
       <div ref={timelineRef} className="relative">
         <TimelineLine progress={lineProgress} />
 

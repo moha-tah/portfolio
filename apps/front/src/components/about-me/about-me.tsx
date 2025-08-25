@@ -11,12 +11,12 @@ export function AboutMe() {
   return (
     <ScrollAnimatedSection
       id="about"
-      className="w-full pt-8"
+      className="w-full px-6 pt-8"
       staggerChildren={0.1}
       delayChildren={0.2}
     >
       <div className="mx-auto max-w-screen">
-        <div className="mb-16 px-4 text-center">
+        <div className="mb-16 text-center">
           <ScrollAnimatedBadge delay={0.1} className="mb-6">
             {t('badge')}
           </ScrollAnimatedBadge>
