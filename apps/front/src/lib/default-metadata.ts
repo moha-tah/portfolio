@@ -1,15 +1,7 @@
-import { Viewport } from 'next'
 import { getLocale, getTranslations } from 'next-intl/server'
 
 import { METADATA_KEYWORDS } from '@/lib/constants'
 import { env } from '@/lib/env'
-
-export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#00FF00' },
-    { media: '(prefers-color-scheme: dark)', color: '#FF0000' }
-  ]
-}
 
 export async function getDefaultMetadata() {
   const t = await getTranslations('shared')

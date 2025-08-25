@@ -1,6 +1,6 @@
 import '../globals.css'
 
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
@@ -27,6 +27,10 @@ const geistMono = Geist_Mono({
   display: 'swap'
 })
 
+export const viewport: Viewport = {
+  themeColor: 'var(--color-background)'
+}
+
 export async function generateStaticParams() {
   return locales.map((locale: Locale) => ({ locale }))
 }
@@ -48,9 +52,6 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <meta name="theme-color" content="var(--color-background)" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} selection:bg-primary selection:text-background relative antialiased`}
       >
