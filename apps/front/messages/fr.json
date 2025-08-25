@@ -57,6 +57,7 @@
       "badge": "Boîte à outils",
       "title": "Les technologies avec lesquelles je travaille",
       "description": "Ci-dessous une liste non-exhaustive de technologies que j'utilise pour créer des solutions fiables et performantes.",
+      "note": "Remarque : La durée indiquée correspond à mon expérience pratique avec chaque technologie (école, projets personnels et stage), et non à des 'années d'expérience' traditionnelles.",
       "python": {
         "name": "Python",
         "description": "Création de systèmes robustes et de pipelines de données."
@@ -85,12 +86,42 @@
         "name": "C, C++, C#, Go, etc.",
         "description": "Scripting et programmation bas-niveau."
       },
-      "andOther": "et bien d'autres..."
+      "andOther": "et bien d'autres...",
+      "years": "{count, plural, one {1 an} other {# ans}}",
+      "months": "{count, plural, one {1 mois} other {# mois}}",
+      "moreThanOneYear": "> 1 an"
     },
     "aboutMe": {
       "badge": "À propos de moi",
-      "title": "Un court résumé de mon parcours",
-      "description": "Un parcours chronologique de mes expériences et réalisations clés, illustrant mon évolution en tant qu’étudiant en ingénierie informatique et développeur."
+      "title": "Un aperçu de mon parcours",
+      "description": "Un voyage chronologique à travers mes principales expériences et réalisations, mettant en lumière mon évolution en tant qu'étudiant en ingénierie informatique et développeur.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "Premières années à l'UTC",
+            "subtitle": "Sept. 2021 - Juin 2024",
+            "description": "Acquisition de bases solides en informatique, couvrant les algorithmes, l'ingénierie logicielle et l'architecture des systèmes. Exploration de divers domaines avant de me spécialiser en ingénierie informatique.",
+            "learnMoreText": "En savoir plus sur l'UTC"
+          },
+          {
+            "title": "Stage chez Napta",
+            "subtitle": "Sept. 2024 - Fév. 2025",
+            "description": "Travail en tant qu'ingénieur Data et Backend (Python, Flask, PostgreSQL, Airflow) pour concevoir des pipelines de données évolutifs et performants dans une startup. Collaboration au sein d'une équipe agile de 12 développeurs. J'ai beaucoup appris auprès d'ingénieurs seniors et acquis une solide expérience du monde professionnel.",
+            "learnMoreText": "En savoir plus sur Napta"
+          },
+          {
+            "title": "Projets pour acquérir de l'expérience",
+            "subtitle": "Sept. 2024 - Présent",
+            "description": "En parallèle de mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS) afin d'acquérir de l'expérience, contribuant au développement d'applications web évolutives en TypeScript, NestJS et PostgreSQL. Amélioration des pipelines CI/CD et collaboration au sein d'une équipe agile de 6 développeurs. Le projet est toujours en cours et sera publié en octobre 2025."
+          },
+          {
+            "title": "Dernière année à l'UTC (ISI)",
+            "subtitle": "Fév. 2025 - Fév. 2026",
+            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec un focus sur les systèmes distribués, la conception avancée de backend et l'architecture, afin de préparer ma carrière d'ingénieur logiciel. La dernière étape de mon cursus sera un stage de 6 mois débutant en février 2026.",
+            "learnMoreText": "En savoir plus sur ma spécialité « ISI »"
+          }
+        ]
+      }
     }
   },
   "footer": {
