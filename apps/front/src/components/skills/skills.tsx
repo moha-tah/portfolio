@@ -14,7 +14,7 @@ export function Skills() {
 
   return (
     <ScrollAnimatedSection
-      id="projects" // TODO: replace by "skills"
+      id="projects" // TODO: change to "skills"
       className="w-full pt-8"
       staggerChildren={0.1}
       delayChildren={0.2}
