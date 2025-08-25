@@ -145,8 +145,8 @@
     }
   },
   "shared": {
-    "defaultTitle": "Mohamed Tahiri - 포트폴리오",
-    "defaultDescription": "안녕하세요, 저는 복잡한 애플리케이션 구축에 열정을 가진 소프트웨어 엔지니어 Mohamed Tahiri입니다.",
+    "defaultTitle": "Mohamed Tahiri",
+    "defaultDescription": "컴퓨터 시스템을 전문으로하고 복잡한 소프트웨어 개발에 열정을 가진 UTC (France)의 컴퓨터 공학 학생.",
     "modeToggle": {
       "light": "라이트",
       "dark": "다크",

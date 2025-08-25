@@ -145,8 +145,8 @@
     }
   },
   "shared": {
-    "defaultTitle": "Mohamed Tahiri - Portfolio",
-    "defaultDescription": "Hallo, ich bin Mohamed Tahiri, ein Softwareingenieur mit einer Leidenschaft für die Entwicklung komplexer Anwendungen.",
+    "defaultTitle": "Mohamed Tahiri",
+    "defaultDescription": "Computer Engineering Student bei UTC (Frankreich), spezialisiert auf Computersysteme und leidenschaftlich für die Entwicklung komplexer Software.",
     "modeToggle": {
       "light": "Hell",
       "dark": "Dunkel",

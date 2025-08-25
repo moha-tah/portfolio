@@ -1,7 +1,7 @@
 import { createEnv } from '@t3-oss/env-nextjs'
 import { z } from 'zod'
 
-if (process.env.VERCEL_ENV) {
+if (process.env.VERCEL_ENV && !process.env.NEXT_PUBLIC_FRONT_URL) {
   process.env.NEXT_PUBLIC_FRONT_URL = `https://${process.env.VERCEL_URL}`
 }
 
