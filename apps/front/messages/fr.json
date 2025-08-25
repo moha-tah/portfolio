@@ -86,6 +86,11 @@
         "description": "Scripting et programmation bas-niveau."
       },
       "andOther": "et bien d'autres..."
+    },
+    "aboutMe": {
+      "badge": "À propos de moi",
+      "title": "Un court résumé de mon parcours",
+      "description": "Un parcours chronologique de mes expériences et réalisations clés, illustrant mon évolution en tant qu’étudiant en ingénierie informatique et développeur."
     }
   },
   "footer": {
@@ -105,13 +110,7 @@
         "emailPlaceholder": "Entrez votre email",
         "sendButton": "Envoyer le message",
         "companyPlaceholder": "Entrez le nom de votre entreprise"
-      },
-      "connect": {
-        "title": "Restons connectés !",
-        "phone": "+212 612345678",
-        "email": "hello@mohamedtahiri.com"
-      },
-      "copyright": "© Copyright 2024. Tous droits réservés."
+      }
     }
   },
   "shared": {

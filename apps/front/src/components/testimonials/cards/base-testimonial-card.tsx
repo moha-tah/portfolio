@@ -16,6 +16,7 @@ export interface TestimonialAuthor {
   avatar: string
   initials: string
   company: {
+    url: string
     name: string
     avatar: string
   }

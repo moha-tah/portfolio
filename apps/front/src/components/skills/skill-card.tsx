@@ -3,7 +3,8 @@
 import { useTranslations } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
 
-import { Skill } from './skills-data'
+import { Skill } from '@/types/skill'
+
 import { ButtonShimmer } from '../shared/button-shimmer'
 
 interface Props {
@@ -71,15 +72,19 @@ export function SkillCard({ skill }: Props) {
             {t(`${skill.name}.description`)}
           </p>
         </div>
-        <span className="bg-muted-foreground/70 text-secondary rounded-full px-3 py-1 text-base font-medium backdrop-blur-md">
-          {skill.proficiency}%
+        <span className="bg-muted-foreground/70 text-secondary rounded-full px-3 py-1 text-base font-medium text-nowrap backdrop-blur-md">
+          {skill.months >= 12
+            ? skill.months == 18
+              ? t('moreThanOneYear')
+              : t('years', { count: Math.floor(skill.months / 12) })
+            : t('months', { count: skill.months })}
         </span>
       </div>
       <div className="bg-muted absolute top-0 left-0 z-[1] h-full w-full rounded-2xl" />
 
       {/* Current proficiency progress bar */}
       <div
-        className="bg-secondary-foreground absolute top-0 left-0 z-[2] h-full overflow-hidden rounded-l-2xl transition-all duration-1000 ease-out"
+        className="bg-secondary-foreground absolute top-0 left-0 z-[2] h-full overflow-hidden rounded-l-xl bg-[radial-gradient(ellipse_at_0%_0%,hsl(0_0%_100%_/_0.15)_0%,transparent_80%)] transition-all duration-1000 ease-out"
         style={{
           width: `${animatedWidth}%`
         }}
