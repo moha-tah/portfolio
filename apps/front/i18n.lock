@@ -70,6 +70,19 @@ checksums:
     HomePage/aboutMe/timeline/steps/3/subtitle: c16e732e592463f16ea4adec70fd16ff
     HomePage/aboutMe/timeline/steps/3/description: 0f08b7dd2c72fc02ae1f5bef164b995c
     HomePage/aboutMe/timeline/steps/3/learnMoreText: 16436b5c2eca54588807921d905a2652
+    HomePage/faq/badge: 47e0ee2eb40b4e7e732e05e2233fc71c
+    HomePage/faq/title: 212c5c784d5580b2f8b9481cb102cb4c
+    HomePage/faq/description: cd9482c8ebd75df2a1016e38bcc8ff46
+    HomePage/faq/questions/0/question: 837019d4c11dac47b7106e14121450c2
+    HomePage/faq/questions/0/answer: f7954172dd8828ab36d4c6a415740677
+    HomePage/faq/questions/1/question: b95299a3d3ff4c75a84a54204f138507
+    HomePage/faq/questions/1/answer: a49b11945f067feca7fc06f8247660e8
+    HomePage/faq/questions/2/question: f252e836a05d884e060d3e2d7dcbce74
+    HomePage/faq/questions/2/answer: d1a7737fc5491a8bf7a49f9321112487
+    HomePage/faq/questions/3/question: cd21e5b12a620d6a155f78d4f0b06939
+    HomePage/faq/questions/3/answer: b9f6852c175ff4e4455ff874bd42c53a
+    HomePage/faq/questions/4/question: 6a2136b6dba6ea508b09850929621e05
+    HomePage/faq/questions/4/answer: c36ef57dd7f486004ab97f6155ab0e50
     footer/badge: 8b48aa9cca77a080eceeca20cebb42b5
     footer/contact/badge: 9afa39bc47019ee6dec6c74b6273967c
     footer/contact/title: 35323605e31c113fd664486afc33f3eb
@@ -87,6 +100,7 @@ checksums:
     shared/modeToggle/light: bb78ea2c6edd8662676c81a8a13ecb93
     shared/modeToggle/dark: 73e6e208ba628b26e90fcf6dce15e1b2
     shared/modeToggle/system: 803281c327a02a2feba182f4a2b38311
+    shared/modeToggle/toggle: cf4f92cd5b5304031f4cd10b8ad93a2b
     shared/noScriptBanner/message: 0c08704849d9594520639071d518b9aa
     shared/languageSwitch: 53bea3a813015ca3bf2e4cc6a269fb74
     navbar/contactMe: a6e7fa10e8e1473c3cfae16f81e564fd
@@ -94,3 +108,4 @@ checksums:
     navbar/sections/about: 2143f5406d1eec5b83cff6daa4ba873f
     navbar/sections/projects: fe8af5cfb3c95cb35534872a325b225e
     navbar/sections/testimonials: e958aa3d3743031e2cbfbfd8f1e381f6
+    navbar/sections/faq: 47e0ee2eb40b4e7e732e05e2233fc71c

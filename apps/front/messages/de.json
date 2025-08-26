@@ -122,6 +122,33 @@
           }
         ]
       }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "description": "Hier finden Sie alle wichtigen Informationen über die Dauer, Verfügbarkeit und Möglichkeiten im Zusammenhang mit meinem Praktikum, die Ihnen einen klaren Überblick über mein Profil geben.",
+      "questions": [
+        {
+          "question": "Wie lange dauert das Praktikum und wann sind Sie verfügbar?",
+          "answer": "Ich suche ein 5-6 monatiges Praktikum und werde ab Februar 2026 verfügbar sein."
+        },
+        {
+          "question": "Sind Sie offen für eine Vollzeitstelle nach dem Praktikum?",
+          "answer": "Absolut. Wenn die Zusammenarbeit gut läuft, bin ich mehr als offen dafür, in Vollzeit weiterzumachen."
+        },
+        {
+          "question": "Sind Sie offen für internationale Möglichkeiten?",
+          "answer": "Ja, ich würde mich freuen, einem internationalen Team beizutreten — neue Kulturen und Arbeitsweisen zu erkunden ist etwas, das ich schätze."
+        },
+        {
+          "question": "In welchen Bereichen möchten Sie sich weiterentwickeln?",
+          "answer": "Ich begeistere mich für Softwarearchitektur, Backend-Entwicklung und Cybersicherheit — zuverlässige, skalierbare Lösungen zu entwickeln ist das, was mich antreibt."
+        },
+        {
+          "question": "Welche Sprachen sprechen Sie fließend?",
+          "answer": "Ich spreche Französisch (Muttersprache), da ich aus Paris komme, und ich spreche auch fließend Englisch."
+        }
+      ]
     }
   },
   "footer": {
@@ -164,7 +191,8 @@
       "hero": "Startseite",
       "about": "Über mich",
       "projects": "Projekte",
-      "testimonials": "Referenzen"
+      "testimonials": "Referenzen",
+      "faq": "FAQ"
     }
   }
 }
