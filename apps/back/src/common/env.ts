@@ -7,9 +7,15 @@ const envSchema = z.object({
   FRONT_URL: z.url(),
   DATABASE_URL: z.url(),
   DISCORD_WEBHOOK_URL: z.url(),
-  SEND_WEBHOOKS: z.boolean().default(true),
+  SEND_WEBHOOKS: z
+    .string()
+    .default('true')
+    .transform((value) => value === 'true'),
   RESEND_API_KEY: z.string(),
-  SEND_EMAILS: z.boolean().default(true)
+  SEND_EMAILS: z
+    .string()
+    .default('true')
+    .transform((value) => value === 'true')
 })
 
 export type Environment = z.infer<typeof envSchema>

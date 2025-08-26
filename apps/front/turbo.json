@@ -6,15 +6,25 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
+      "with": ["api:watch"],
       "cache": false,
       "persistent": true
     },
+
     "lint": {
       "outputs": ["next-env.d.ts"]
     },
     "lint:fix": {
       "outputs": ["next-env.d.ts"]
     },
-    "typecheck": {}
+    "typecheck": {},
+
+    "api:generate": {
+      "outputs": ["src/lib/api/schema.d.ts"]
+    },
+    "api:watch": {
+      "cache": false,
+      "persistent": true
+    }
   }
 }

@@ -37,6 +37,11 @@ async function bootstrap() {
     })
   )
 
+  app.enableCors({
+    origin: configService.get<string>('FRONT_URL'),
+    credentials: true
+  })
+
   await app.listen(configService.get('PORT'))
 
   logger.debug('--------------------------------')
