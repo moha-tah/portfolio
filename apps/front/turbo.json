@@ -9,6 +9,7 @@
   ],
   "tasks": {
     "build": {
+      "env": ["NODE_ENV", "VERCEL_ENV", "VERCEL_URL"],
       "dependsOn": ["^build", "api:generate"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
@@ -27,6 +28,7 @@
     "typecheck": {},
 
     "api:generate": {
+      "dependsOn": ["back#swagger:generate"],
       "outputs": ["src/lib/api/schema.d.ts"]
     },
     "api:watch": {

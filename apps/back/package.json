@@ -20,7 +20,8 @@
     "db:migrate": "prisma migrate dev",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:reset": "prisma migrate reset",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "swagger:generate": "nest start --entryFile generate-swagger"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",

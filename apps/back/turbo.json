@@ -15,6 +15,9 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
+    },
+    "swagger:generate": {
+      "outputs": ["swagger.json"]
     }
   }
 }
