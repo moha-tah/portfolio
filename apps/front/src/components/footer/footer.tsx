@@ -28,7 +28,13 @@ export function Footer() {
         y={30}
       >
         <Card className="w-full rounded-3xl p-8 md:w-2xl dark:bg-radial-[at_50%_100%] dark:from-white/10 dark:via-transparent dark:via-70% dark:to-transparent">
-          <ShineBorder shineColor={['#A07CFE', '#FE8FB5', '#FFBE7B']} />
+          <ShineBorder
+            shineColor={[
+              'var(--color-secondary)',
+              'var(--color-secondary-accent)',
+              'var(--color-secondary)'
+            ]}
+          />
           <div className="flex flex-col items-center space-y-6">
             <AnimatedBadge
               variant="secondary"
@@ -38,15 +44,15 @@ export function Footer() {
             </AnimatedBadge>
 
             {/* Title and Subtitle */}
-            <div className="space-y-4 text-center">
-              <h2 className="text-foreground text-6xl font-bold tracking-tighter sm:text-7xl">
+            <div className="text-center">
+              <h2 className="text-foreground pb-4 text-5xl font-bold tracking-tighter sm:text-6xl">
                 {t('contact.title')}
                 {/* <SparklesText>{t('contact.title')}</SparklesText> */}
               </h2>
-              <p className="text-muted-foreground text-md font-medium md:text-lg">
+              <p className="text-muted-foreground text-md max-w-lg font-medium md:text-lg">
                 {t('contact.subtitle.first')}
               </p>
-              <p className="text-muted-foreground text-md font-medium md:text-lg">
+              <p className="text-muted-foreground text-md max-w-lg font-medium md:text-lg">
                 {t('contact.subtitle.second')}
               </p>
             </div>

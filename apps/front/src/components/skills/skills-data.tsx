@@ -75,7 +75,7 @@ export const skillsData: Skill[] = [
         alt="Next.js"
         width={56}
         height={56}
-        className="invert select-none dark:invert-0"
+        className="select-none dark:invert"
       />
     )
   },
@@ -90,7 +90,7 @@ export const skillsData: Skill[] = [
         alt="GitHub"
         width={56}
         height={56}
-        className="invert select-none dark:invert-0"
+        className="select-none dark:invert"
       />
     )
   },
@@ -99,6 +99,12 @@ export const skillsData: Skill[] = [
     description: 'Scripting and low-level programming',
     proficiency: 60,
     months: 4,
-    icon: <SquareTerminal width={70} height={70} className="text-secondary" />
+    icon: (
+      <SquareTerminal
+        width={56}
+        height={56}
+        className="text-primary select-none"
+      />
+    )
   }
 ]

@@ -72,7 +72,7 @@ export function Navbar() {
         ease: 'easeOut'
       }}
     >
-      <div className="border-muted-foreground/50 bg-background flex h-fit w-11/12 items-center gap-1 rounded-full border-2 p-2 min-[380px]:gap-2 sm:mx-4 sm:w-[700px]">
+      <div className="border-secondary-accent/30 bg-background flex h-fit w-11/12 items-center gap-1 rounded-full border-2 p-2 min-[380px]:gap-2 sm:mx-4 sm:w-[700px]">
         <div className="bg-muted flex size-full flex-row items-center justify-between gap-4 rounded-4xl px-4 py-3 sm:px-8">
           <LanguageSwitcher className="hover:scale-110" />
           <AnimatedThemeToggler />
@@ -94,14 +94,14 @@ export function Navbar() {
           <div className="group relative overflow-hidden rounded-4xl transition-all duration-300 hover:scale-95">
             <ButtonShimmer className="h-[120px]" />
             <Button
-              className="from-primary via-primary to-muted-foreground/50 hidden h-[60px] w-48 rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium shadow-none sm:block"
+              className="from-secondary via-secondary to-secondary-accent hidden h-[60px] w-48 rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium text-white shadow-none sm:block"
               aria-label={t('contactMe')}
             >
               {t('contactMe')}
             </Button>
             <Button
               size="icon"
-              className="from-primary via-primary to-muted-foreground/50 h-[60px] rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium shadow-none sm:hidden"
+              className="from-secondary via-secondary to-secondary-accent h-[60px] rounded-4xl bg-radial-[at_0%_100%] px-8 py-3 text-lg font-medium text-white shadow-none sm:hidden"
               aria-label={t('contactMe')}
             >
               <MessageSquare className={size} />

@@ -15,7 +15,7 @@ interface Props {
   passions: Passion[]
 }
 
-export function AnimatedText({
+export function AnimatedTitle({
   currentIndex,
   delay,
   duration,
@@ -41,13 +41,13 @@ export function AnimatedText({
         {`${t('MohamedTahiri')},`}
       </TextShimmer>
       <br />
-      <span>{t('passionateAbout')}</span>
-      <span className="relative flex w-full justify-center overflow-hidden text-center md:pt-1 md:pb-4">
+      <span className="text-5xl md:text-6xl">{t('passionateAbout')}</span>
+      <span className="relative flex w-full justify-center overflow-hidden text-center text-5xl md:pt-1 md:pb-4 md:text-6xl">
         &nbsp;
         {passions.map((passion: Passion, index: number) => (
           <motion.span
             key={index}
-            className={cn('absolute font-bold text-nowrap', passion.color)}
+            className={cn('absolute font-bold text-nowrap', 'text-secondary')}
             initial={{ opacity: 0, y: '-100' }}
             transition={{ type: 'spring', stiffness: 50 }}
             animate={
