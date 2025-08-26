@@ -122,6 +122,33 @@
           }
         ]
       }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Here you’ll find all the key information about the duration, availability, and opportunities related to my internship, giving you a clear overview of my profile.",
+      "questions": [
+        {
+          "question": "What is the duration of the internship and when are you available?",
+          "answer": "I'm looking for a 5-6 month internship and will be available starting February 2026."
+        },
+        {
+          "question": "Are you open to a full-time position after the internship?",
+          "answer": "Absolutely. If the collaboration goes well, I'm more than open to continuing full-time."
+        },
+        {
+          "question": "Are you open to international opportunities?",
+          "answer": "Yes, I'd be thrilled to join an international team — exploring new cultures and ways of working is something I value."
+        },
+        {
+          "question": "In which fields do you want to grow?",
+          "answer": "I'm passionate about software architecture, backend development, and cybersecurity — building reliable, scalable solutions is what drives me."
+        },
+        {
+          "question": "Which languages do you speak fluently?",
+          "answer": "I speak French (native) as I am from Paris, I am also fluent in English."
+        }
+      ]
     }
   },
   "footer": {
@@ -163,7 +190,8 @@
       "hero": "Home",
       "about": "About me",
       "projects": "Projects",
-      "testimonials": "Testimonials"
+      "testimonials": "Testimonials",
+      "faq": "FAQ"
     }
   }
 }

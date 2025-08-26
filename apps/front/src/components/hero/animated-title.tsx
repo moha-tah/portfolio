@@ -3,8 +3,6 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
-import { cn } from '@/lib/utils'
-
 import { Passion } from './passions'
 import { TextShimmer } from '../shared/text-shimmer'
 
@@ -47,18 +45,20 @@ export function AnimatedTitle({
         {passions.map((passion: Passion, index: number) => (
           <motion.span
             key={index}
-            className={cn('absolute font-bold text-nowrap', 'text-secondary')}
-            initial={{ opacity: 0, y: '-100' }}
+            className="from-secondary-accent via-secondary to-secondary absolute bg-radial-[at_0%_0%] bg-clip-text font-bold text-nowrap text-transparent"
+            initial={{ opacity: 0, y: '-100', filter: 'blur(10px)' }}
             transition={{ type: 'spring', stiffness: 50 }}
             animate={
               currentIndex === index
                 ? {
                     y: 0,
-                    opacity: 1
+                    opacity: 1,
+                    filter: 'blur(0px)'
                   }
                 : {
                     y: currentIndex > index ? -150 : 150,
-                    opacity: 0
+                    opacity: 0,
+                    filter: 'blur(10px)'
                   }
             }
           >
