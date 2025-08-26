@@ -45,3 +45,6 @@ messages/*.d.json.ts
 
 # i18n
 i18n.cache
+
+# generated api schema
+src/lib/api/schema.d.ts

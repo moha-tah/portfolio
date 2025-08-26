@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/unbound-method */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
+
 /* eslint-disable @typescript-eslint/require-await */
 import { Test, TestingModule } from '@nestjs/testing'
 import { ContactService } from '../contact.service'
@@ -101,7 +101,9 @@ describe('ContactService', () => {
 
   describe('postForm', () => {
     beforeEach(() => {
-      prismaService.contactFormEntry.create.mockResolvedValue(mockPrismaResult)
+      ;(prismaService.contactFormEntry.create as jest.Mock).mockResolvedValue(
+        mockPrismaResult
+      )
       discordWebhookService.sendContactFormNotification.mockResolvedValue()
       resendService.sendContactNotification.mockResolvedValue()
     })
@@ -149,7 +151,7 @@ describe('ContactService', () => {
           message: undefined
         }
 
-        prismaService.contactFormEntry.create.mockResolvedValue(
+        ;(prismaService.contactFormEntry.create as jest.Mock).mockResolvedValue(
           prismaResultWithoutMessage
         )
 
@@ -188,7 +190,7 @@ describe('ContactService', () => {
           message: null
         }
 
-        prismaService.contactFormEntry.create.mockResolvedValue(
+        ;(prismaService.contactFormEntry.create as jest.Mock).mockResolvedValue(
           prismaResultWithNullMessage
         )
 
@@ -314,7 +316,9 @@ describe('ContactService', () => {
     describe('database failure scenarios', () => {
       it('should propagate database errors and stop execution', async () => {
         const databaseError = new Error('Database connection lost')
-        prismaService.contactFormEntry.create.mockRejectedValue(databaseError)
+        ;(prismaService.contactFormEntry.create as jest.Mock).mockRejectedValue(
+          databaseError
+        )
 
         await expect(service.postForm(mockPostContactDto)).rejects.toThrow(
           'Database connection lost'
@@ -330,7 +334,9 @@ describe('ContactService', () => {
 
       it('should handle unique constraint violation', async () => {
         const uniqueError = new Error('Unique constraint failed')
-        prismaService.contactFormEntry.create.mockRejectedValue(uniqueError)
+        ;(prismaService.contactFormEntry.create as jest.Mock).mockRejectedValue(
+          uniqueError
+        )
 
         await expect(service.postForm(mockPostContactDto)).rejects.toThrow(
           'Unique constraint failed'
@@ -363,7 +369,7 @@ describe('ContactService', () => {
           message: 'Complex message with special chars: éàü'
         }
 
-        prismaService.contactFormEntry.create.mockResolvedValue(
+        ;(prismaService.contactFormEntry.create as jest.Mock).mockResolvedValue(
           complexPrismaResult
         )
 
@@ -380,7 +386,9 @@ describe('ContactService', () => {
       it('should call services in the correct order', async () => {
         const callOrder: string[] = []
 
-        prismaService.contactFormEntry.create.mockImplementation(async () => {
+        ;(
+          prismaService.contactFormEntry.create as jest.Mock
+        ).mockImplementation(async () => {
           callOrder.push('prisma')
           return mockPrismaResult
         })
@@ -405,7 +413,9 @@ describe('ContactService', () => {
         let discordStarted = false
         let resendStarted = false
 
-        prismaService.contactFormEntry.create.mockImplementation(async () => {
+        ;(
+          prismaService.contactFormEntry.create as jest.Mock
+        ).mockImplementation(async () => {
           await new Promise((resolve) => setTimeout(resolve, 10))
           prismaCompleted = true
           return mockPrismaResult
