@@ -2,7 +2,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "api:generate"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
