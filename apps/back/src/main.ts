@@ -46,6 +46,7 @@ async function bootstrap() {
 
   logger.debug('--------------------------------')
   logger.debug('\x1b[34m🌍 ENV:\x1b[0m ' + configService.get('NODE_ENV'))
+  logger.debug('\x1b[34m🌍 PORT:\x1b[0m ' + configService.get('PORT'))
   logger.debug('\x1b[32m🔙 Back URL:\x1b[0m ' + configService.get('BACK_URL'))
   logger.debug('\x1b[31m🌐 Front URL:\x1b[0m ' + configService.get('FRONT_URL'))
   logger.debug(

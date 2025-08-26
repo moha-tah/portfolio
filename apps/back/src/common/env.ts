@@ -2,7 +2,10 @@ import { z } from 'zod'
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['production', 'development', 'preview', 'local', 'test']),
-  PORT: z.number().default(3000),
+  PORT: z
+    .string()
+    .default('3000')
+    .transform((val) => parseInt(val, 10)),
   BACK_URL: z.url(),
   FRONT_URL: z.url(),
   DATABASE_URL: z.url(),
