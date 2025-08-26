@@ -11,7 +11,8 @@ export default tseslint.config(
       '.prettierrc.mjs',
       'jest.config.mjs',
       'node_modules',
-      'dist'
+      'dist',
+      'generated'
     ]
   },
   eslint.configs.recommended,

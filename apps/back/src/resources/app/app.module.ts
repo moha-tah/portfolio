@@ -5,6 +5,9 @@ import { ConfigModule } from '@nestjs/config'
 import { validate } from 'common/env'
 import { PrismaService } from 'database/prisma.service'
 import { ContactModule } from 'resources/contact/contact.module'
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler'
+import { throttlerConfig } from 'common/throttler.config'
+import { APP_GUARD } from '@nestjs/core'
 
 @Module({
   imports: [
@@ -13,9 +16,17 @@ import { ContactModule } from 'resources/contact/contact.module'
       envFilePath: ['.env'],
       validate: validate
     }),
+    ThrottlerModule.forRoot(throttlerConfig),
     ContactModule
   ],
   controllers: [AppController],
-  providers: [AppService, PrismaService]
+  providers: [
+    AppService,
+    {
+      provide: APP_GUARD,
+      useClass: ThrottlerGuard
+    },
+    PrismaService
+  ]
 })
 export class AppModule {}

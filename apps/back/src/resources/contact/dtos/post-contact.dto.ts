@@ -1,11 +1,11 @@
-import { IsNotEmpty, IsOptional, IsString } from 'class-validator'
+import { IsEmail, IsNotEmpty, IsOptional, IsString } from 'class-validator'
 
 export class PostContactDto {
   /**
    * The email field of the form.
    * @example "john.doe@example.com"
    */
-  @IsString()
+  @IsEmail()
   @IsNotEmpty()
   email: string
 

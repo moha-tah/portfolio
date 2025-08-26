@@ -2,10 +2,14 @@ import { Injectable } from '@nestjs/common'
 import { PostContactDto } from './dtos/post-contact.dto'
 import { PrismaService } from 'database/prisma.service'
 import { GetContactDto } from './dtos/get-contact.dto'
+import { DiscordWebhookService } from 'common/services/discord-webhook.service'
 
 @Injectable()
 export class ContactService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly discordWebhook: DiscordWebhookService
+  ) {}
 
   async postForm(postContactDto: PostContactDto): Promise<GetContactDto> {
     const contactFormEntry = await this.prisma.contactFormEntry.create({
@@ -16,6 +20,8 @@ export class ContactService {
         message: postContactDto.message
       }
     })
+
+    await this.discordWebhook.sendContactFormNotification(postContactDto)
 
     return {
       id: contactFormEntry.id,

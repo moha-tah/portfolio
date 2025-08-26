@@ -5,7 +5,9 @@ const envSchema = z.object({
   PORT: z.number().default(3000),
   BACK_URL: z.url(),
   FRONT_URL: z.url(),
-  DATABASE_URL: z.url()
+  DATABASE_URL: z.url(),
+  DISCORD_WEBHOOK_URL: z.url(),
+  RESEND_API_KEY: z.string()
 })
 
 export type Environment = z.infer<typeof envSchema>
