@@ -17,6 +17,9 @@
       "outputs": ["dist/**"]
     },
     "db:generate": {},
+    "db:migrate:deploy": {
+      "dependsOn": ["db:generate"]
+    },
     "swagger:generate": {
       "dependsOn": ["db:generate"],
       "outputs": ["swagger.json"]
