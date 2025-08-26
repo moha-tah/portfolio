@@ -4,7 +4,8 @@ const envSchema = z.object({
   NODE_ENV: z.enum(['production', 'deployment', 'preview', 'local', 'test']),
   PORT: z.number().default(3000),
   BACK_URL: z.url(),
-  FRONT_URL: z.url()
+  FRONT_URL: z.url(),
+  DATABASE_URL: z.url()
 })
 
 export type Environment = z.infer<typeof envSchema>
