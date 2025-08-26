@@ -16,7 +16,11 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
+    "db:generate": {
+      "outputs": ["prisma/generated/**"]
+    },
     "swagger:generate": {
+      "dependsOn": ["db:generate"],
       "outputs": ["swagger.json"]
     }
   }
