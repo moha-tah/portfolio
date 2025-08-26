@@ -1,16 +1,5 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": [
-    "NODE_ENV",
-    "VERCEL_URL",
-    "VERCEL_ENV",
-    "NEXT_PUBLIC_FRONT_URL",
-    "NEXT_PUBLIC_BACK_URL",
-    "SEND_WEBHOOKS",
-    "SEND_EMAILS",
-    "DISCORD_WEBHOOK_URL",
-    "RESEND_API_KEY"
-  ],
   "ui": "tui",
   "tasks": {
     "build": {

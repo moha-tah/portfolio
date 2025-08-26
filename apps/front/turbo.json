@@ -1,5 +1,12 @@
 {
   "extends": ["//"],
+  "globalEnv": [
+    "NODE_ENV",
+    "VERCEL_URL",
+    "VERCEL_ENV",
+    "NEXT_PUBLIC_FRONT_URL",
+    "NEXT_PUBLIC_BACK_URL"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build", "api:generate"],

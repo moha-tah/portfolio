@@ -1,0 +1,20 @@
+{
+  "extends": ["//"],
+  "globalEnv": [
+    "NODE_ENV",
+    "PORT",
+    "BACK_URL",
+    "FRONT_URL",
+    "DATABASE_URL",
+    "SEND_WEBHOOKS",
+    "SEND_EMAILS",
+    "DISCORD_WEBHOOK_URL",
+    "RESEND_API_KEY"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    }
+  }
+}
