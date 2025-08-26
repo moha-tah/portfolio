@@ -122,6 +122,33 @@
           }
         ]
       }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Foire aux questions",
+      "description": "Retrouvez ici toutes les informations clés concernant la durée, la disponibilité, et les opportunités liées à mon stage afin de vous donner une vision claire de ma candidature.",
+      "questions": [
+        {
+          "question": "Quelle est la durée du stage et quand es-tu disponible ?",
+          "answer": "Je recherche un stage de 5 à 6 mois et je suis disponible dès février 2026."
+        },
+        {
+          "question": "Es-tu ouvert à un CDI après le stage ?",
+          "answer": "Absolument. Si la collaboration se passe bien, je suis plus que partant pour continuer en CDI."
+        },
+        {
+          "question": "Es-tu ouvert à des opportunités à l'international ?",
+          "answer": "Oui, rejoindre une équipe internationale me motive particulièrement — découvrir de nouvelles cultures et méthodes de travail est un vrai plus pour moi."
+        },
+        {
+          "question": "Dans quels domaines souhaites-tu évoluer ?",
+          "answer": "Je suis passionné par l'architecture logicielle, le développement backend et la cybersécurité — créer des solutions fiables et évolutives, c’est ce qui me motive."
+        },
+        {
+          "question": "Quelles langues parles-tu couramment ?",
+          "answer": "Je parle couramment le français et l'anglais."
+        }
+      ]
     }
   },
   "footer": {
@@ -150,7 +177,8 @@
     "modeToggle": {
       "light": "Clair",
       "dark": "Sombre",
-      "system": "Système"
+      "system": "Système",
+      "toggle": "Changer le thème"
     },
     "noScriptBanner": {
       "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
@@ -163,7 +191,8 @@
       "hero": "Accueil",
       "about": "À propos de moi",
       "projects": "Projets",
-      "testimonials": "Témoignages"
+      "testimonials": "Témoignages",
+      "faq": "FAQ"
     }
   }
 }

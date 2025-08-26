@@ -30,7 +30,7 @@ export function ContactForm() {
         placeholder={t('companyPlaceholder')}
         className="bg-background border-border h-12 rounded-4xl text-base"
       />
-      <Button className="bg-foreground text-background hover:bg-foreground/90 h-12 w-full rounded-4xl text-base">
+      <Button className="from-secondary-accent via-secondary to-secondary h-12 w-full rounded-4xl bg-radial-[at_0%_0%] text-base text-white">
         {t('sendButton')}
       </Button>
     </div>

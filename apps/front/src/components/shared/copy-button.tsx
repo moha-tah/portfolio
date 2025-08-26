@@ -1,12 +1,11 @@
 'use client'
 
-import { TooltipContent } from '@radix-ui/react-tooltip'
 import { Check, Copy } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 import { cn } from '@/lib/utils'
 
-import { Tooltip, TooltipTrigger } from '../ui/tooltip'
+import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
 
 const COPY_DURATION_MS = 2000
 

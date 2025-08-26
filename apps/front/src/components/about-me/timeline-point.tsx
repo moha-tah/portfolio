@@ -17,7 +17,7 @@ export function TimelinePoint({
     <motion.div
       className={cn(
         'absolute -top-2 left-1/2 z-10 h-4 w-4 -translate-x-1/2 rounded-full transition-colors duration-300',
-        isActive ? 'bg-primary' : 'bg-secondary'
+        isActive ? 'bg-secondary-accent' : 'bg-muted'
       )}
       animate={{
         scale: isActive ? 1.2 : 1

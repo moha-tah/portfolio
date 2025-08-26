@@ -1,6 +1,7 @@
 'use client'
 
 import { Loader, Moon, SunDim } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
@@ -18,6 +19,7 @@ type props = {
 
 export const AnimatedThemeToggler = ({ className }: props) => {
   const { theme, setTheme, systemTheme } = useTheme()
+  const t = useTranslations('shared.modeToggle')
 
   const currentTheme = theme === 'system' ? systemTheme : theme
 
@@ -76,7 +78,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
           'transition-transform duration-300 hover:scale-110 hover:rotate-12',
           className
         )}
-        aria-label={'theme.toggle'}
+        aria-label={t('toggle')}
       >
         {currentTheme === 'dark' ? (
           <SunDim className="size-6 text-white min-[430px]:size-7" />
@@ -89,7 +91,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
         sideOffset={8}
         className="rounded-full text-sm"
       >
-        {currentTheme === 'dark' ? 'Light mode' : 'Dark mode'}
+        {currentTheme === 'dark' ? t('light') : t('dark')}
       </TooltipContent>
     </Tooltip>
   )

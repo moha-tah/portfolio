@@ -1,0 +1,78 @@
+'use client'
+
+import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
+
+import { useScrollAnimation } from '@/hooks/use-scroll-animation'
+
+interface FaqItemProps {
+  question: string
+  answer: string
+  delay?: number
+}
+
+export function FaqItem({ question, answer, delay = 0 }: FaqItemProps) {
+  const [isOpen, setIsOpen] = useState(false)
+  const { ref, isInView } = useScrollAnimation({
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  })
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
+      animate={
+        isInView
+          ? { opacity: 1, y: 0, filter: 'blur(0px)' }
+          : { opacity: 0, y: 20, filter: 'blur(4px)' }
+      }
+      transition={{
+        duration: 0.6,
+        ease: 'easeOut',
+        delay
+      }}
+      className="bg-card border-secondary-accent/20 overflow-hidden rounded-4xl border shadow-lg"
+    >
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="hover:bg-accent/50 flex w-full items-center justify-between p-6 text-left transition-colors duration-200"
+      >
+        <h3 className="text-foreground pr-4 text-xl font-medium">{question}</h3>
+        <div className="bg-secondary-accent/20 relative flex size-8 shrink-0 items-center justify-center rounded-full">
+          <motion.div
+            className="bg-foreground h-0.5 w-4"
+            initial={false}
+            animate={{ rotate: 0 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+          />
+          <motion.div
+            className="bg-foreground absolute h-4 w-0.5"
+            initial={false}
+            animate={{ rotate: isOpen ? 90 : 0 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+          />
+        </div>
+      </button>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: [0.25, 0.46, 0.45, 0.94]
+            }}
+            className="overflow-hidden"
+          >
+            <div className="border-border border-t px-6 pt-4 pb-6">
+              <p className="text-foreground leading-relaxed">{answer}</p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  )
+}

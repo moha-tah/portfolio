@@ -47,7 +47,7 @@ export function TimelineCard({
         delay: 0
       }}
     >
-      <div className="border-secondary bg-background rounded-4xl border p-8 shadow-lg">
+      <div className="border-secondary-accent bg-background shadow-custom rounded-4xl border p-8">
         <div className="mb-4">
           <span className="text-secondary-foreground text-sm font-medium">
             {step.subtitle}
