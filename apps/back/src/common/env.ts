@@ -7,7 +7,9 @@ const envSchema = z.object({
   FRONT_URL: z.url(),
   DATABASE_URL: z.url(),
   DISCORD_WEBHOOK_URL: z.url(),
-  RESEND_API_KEY: z.string()
+  SEND_WEBHOOKS: z.boolean().default(true),
+  RESEND_API_KEY: z.string(),
+  SEND_EMAILS: z.boolean().default(true)
 })
 
 export type Environment = z.infer<typeof envSchema>

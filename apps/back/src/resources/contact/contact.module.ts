@@ -3,9 +3,15 @@ import { ContactService } from './contact.service'
 import { ContactController } from './contact.controller'
 import { PrismaService } from 'database/prisma.service'
 import { DiscordWebhookService } from 'common/services/discord-webhook.service'
+import { ResendService } from 'common/services/resend.service'
 
 @Module({
   controllers: [ContactController],
-  providers: [ContactService, PrismaService, DiscordWebhookService]
+  providers: [
+    ContactService,
+    PrismaService,
+    DiscordWebhookService,
+    ResendService
+  ]
 })
 export class ContactModule {}
