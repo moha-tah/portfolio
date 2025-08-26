@@ -21,6 +21,11 @@ const envSchema = z.object({
 export type Environment = z.infer<typeof envSchema>
 
 export function validate(config: Record<string, unknown>): Environment {
+  // Skip validation when deploying the frontend to vercel
+  if (process.env.VERCEL_ENV) {
+    return config as unknown as Environment
+  }
+
   try {
     const validatedConfig = envSchema.parse(config)
     return validatedConfig
