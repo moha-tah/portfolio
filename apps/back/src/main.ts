@@ -26,6 +26,7 @@ async function bootstrap() {
   app.use(
     '/docs',
     apiReference({
+      title: 'API Docs - Mohamed Tahiri',
       content: document
     })
   )
