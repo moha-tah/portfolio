@@ -4,13 +4,13 @@ import { useTranslations } from 'next-intl'
 
 import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 
-import { AnimatedText } from './animated-text'
+import { AnimatedTitle } from './animated-title'
 import { CallToAction } from './cta'
 import { AnimatedBadge } from '../shared/animations/animated-badge'
 import { TextAnimate } from '../shared/animations/text-animate'
 
 export function Hero() {
-  const { currentIndex, currentPassion, passions } = useAnimatedPassions()
+  const { currentIndex, passions } = useAnimatedPassions()
   const t = useTranslations('HomePage.hero')
 
   return (
@@ -25,7 +25,7 @@ export function Hero() {
             {t('available')}
           </AnimatedBadge>
           <div className="flex flex-col gap-4">
-            <AnimatedText
+            <AnimatedTitle
               currentIndex={currentIndex}
               delay={0.2}
               duration={0.5}
@@ -42,12 +42,7 @@ export function Hero() {
               {t('readyToJoin')}
             </TextAnimate>
           </div>
-          <CallToAction
-            currentPassion={currentPassion}
-            t={t}
-            delay={1.5}
-            duration={0.5}
-          />
+          <CallToAction t={t} delay={1.5} duration={0.5} />
         </div>
       </div>
     </section>

@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { cn } from '@/lib/utils'
 
-import { Passion } from './passions'
 import { ButtonShimmer } from '../shared/button-shimmer'
 import { Button } from '../ui/button'
 
@@ -28,7 +27,7 @@ function ButtonWrapper({
         delay
       }}
     >
-      <div className="group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full transition-transform hover:scale-110 hover:-rotate-3 active:scale-95">
+      <div className="shadow-custom group spring-bounce-60 spring-duration-300 relative overflow-hidden rounded-full bg-transparent transition-transform hover:scale-110 hover:-rotate-3 active:scale-95">
         <ButtonShimmer />
         {children}
       </div>
@@ -37,25 +36,18 @@ function ButtonWrapper({
 }
 
 interface Props {
-  currentPassion: Passion
   t: ReturnType<typeof useTranslations>
   delay: number
   duration?: number
 }
 
-export function CallToAction({
-  currentPassion,
-  t,
-  delay,
-  duration = 0.3
-}: Props) {
+export function CallToAction({ t, delay, duration = 0.3 }: Props) {
   return (
     <div className="flex flex-col gap-6 select-none sm:flex-row">
       <ButtonWrapper delay={delay} duration={duration}>
         <Button
           size="xl"
-          variant="secondary"
-          className="dark:to-background/90 dark:from-muted/90 border border-black/50 bg-gradient-to-b from-white to-gray-300 dark:border-white/50"
+          className="from-primary via-primary to-muted-foreground/50 dark:to-muted/70 border-muted-foreground/50 dark:border-muted/70 border-2 bg-radial-[at_100%_100%]"
         >
           <File className="h-4 w-4" />
           {t('downloadResume')}
@@ -66,8 +58,7 @@ export function CallToAction({
           <Button
             size="xl"
             className={cn(
-              'w-full border-2 border-white/50 transition-colors duration-500 ease-in-out dark:border-black/50',
-              currentPassion.backgroundColor
+              'border-secondary-accent from-secondary via-secondary to-secondary-accent w-full border-2 bg-radial-[at_100%_100%] text-white transition-colors duration-500 ease-in-out'
             )}
           >
             <PhoneCall className="h-4 w-4" />

@@ -3,8 +3,6 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
-import { cn } from '@/lib/utils'
-
 import { Passion } from './passions'
 import { TextShimmer } from '../shared/text-shimmer'
 
@@ -15,7 +13,7 @@ interface Props {
   passions: Passion[]
 }
 
-export function AnimatedText({
+export function AnimatedTitle({
   currentIndex,
   delay,
   duration,
@@ -41,24 +39,26 @@ export function AnimatedText({
         {`${t('MohamedTahiri')},`}
       </TextShimmer>
       <br />
-      <span>{t('passionateAbout')}</span>
-      <span className="relative flex w-full justify-center overflow-hidden text-center md:pt-1 md:pb-4">
+      <span className="text-5xl md:text-6xl">{t('passionateAbout')}</span>
+      <span className="relative flex w-full justify-center overflow-hidden text-center text-5xl md:pt-1 md:pb-4 md:text-6xl">
         &nbsp;
         {passions.map((passion: Passion, index: number) => (
           <motion.span
             key={index}
-            className={cn('absolute font-bold text-nowrap', passion.color)}
-            initial={{ opacity: 0, y: '-100' }}
+            className="from-secondary-accent via-secondary to-secondary absolute bg-radial-[at_0%_0%] bg-clip-text font-bold text-nowrap text-transparent"
+            initial={{ opacity: 0, y: '-100', filter: 'blur(10px)' }}
             transition={{ type: 'spring', stiffness: 50 }}
             animate={
               currentIndex === index
                 ? {
                     y: 0,
-                    opacity: 1
+                    opacity: 1,
+                    filter: 'blur(0px)'
                   }
                 : {
                     y: currentIndex > index ? -150 : 150,
-                    opacity: 0
+                    opacity: 0,
+                    filter: 'blur(10px)'
                   }
             }
           >
