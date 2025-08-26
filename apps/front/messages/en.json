@@ -177,7 +177,8 @@
     "modeToggle": {
       "light": "Light",
       "dark": "Dark",
-      "system": "System"
+      "system": "System",
+      "toggle": "Change theme"
     },
     "noScriptBanner": {
       "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."

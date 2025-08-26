@@ -38,7 +38,7 @@ export function Footer() {
           <div className="flex flex-col items-center space-y-6">
             <AnimatedBadge
               variant="secondary"
-              className="bg-foreground text-background"
+              className="from-secondary-accent via-secondary to-secondary bg-radial-[at_0%_0%] text-white"
             >
               {t('contact.badge')}
             </AnimatedBadge>

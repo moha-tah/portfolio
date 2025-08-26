@@ -150,7 +150,8 @@
     "modeToggle": {
       "light": "ライト",
       "dark": "ダーク",
-      "system": "システム"
+      "system": "システム",
+      "toggle": "テーマを変更します"
     },
     "noScriptBanner": {
       "message": "お使いのブラウザでJavaScriptが無効になっています。このウェブサイトを最適な状態で表示するには有効にしてください。"

@@ -26,7 +26,7 @@ function LinkWrapper({
   return (
     <Tooltip>
       <TooltipTrigger aria-label={name}>
-        <Link href={href} aria-label={name}>
+        <Link href={href} aria-label={name} className="cursor-default">
           <div className="transition-all duration-300 hover:scale-115">
             {children}
           </div>
@@ -90,7 +90,11 @@ export function Navbar() {
             <Quote className={size} />
           </LinkWrapper>
         </div>
-        <Link href="#contact" aria-label={t('contactMe')}>
+        <Link
+          href="#contact"
+          aria-label={t('contactMe')}
+          className="cursor-default"
+        >
           <div className="group relative overflow-hidden rounded-4xl transition-all duration-300 hover:scale-95">
             <ButtonShimmer className="h-[120px]" />
             <Button

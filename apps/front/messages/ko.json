@@ -150,7 +150,8 @@
     "modeToggle": {
       "light": "라이트",
       "dark": "다크",
-      "system": "시스템"
+      "system": "시스템",
+      "toggle": "테마 변경"
     },
     "noScriptBanner": {
       "message": "브라우저에서 JavaScript가 비활성화되어 있습니다. 이 웹사이트를 최상의 상태로 보려면 활성화해 주세요."
