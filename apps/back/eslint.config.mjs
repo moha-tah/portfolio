@@ -12,6 +12,7 @@ export default tseslint.config(
       'jest.config.mjs',
       'node_modules',
       'dist',
+      'coverage',
       'generated'
     ]
   },

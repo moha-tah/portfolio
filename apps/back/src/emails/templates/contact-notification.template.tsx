@@ -21,7 +21,6 @@ interface ContactNotificationTemplateProps {
 export const ContactNotificationTemplate: React.FC<
   ContactNotificationTemplateProps
 > = ({ contact }: ContactNotificationTemplateProps) => {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return (
     <Html>
       <Head />

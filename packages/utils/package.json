@@ -1,0 +1,45 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "author": "Mohamed Tahiri",
+  "description": "Shared package for utils between frontend and backend",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/**"
+  ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "src/*"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    },
+    "./constants": {
+      "require": "./dist/constants.js",
+      "import": "./dist/constants.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint",
+    "lint:fix": "pnpm lint --fix",
+    "clean": "rm -rf dist node_modules"
+  },
+  "keywords": [],
+  "packageManager": "pnpm@10.5.1",
+  "devDependencies": {
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^3.3.1"
+  }
+}

@@ -29,6 +29,9 @@
         "RESEND_API_KEY"
       ]
     },
+    "dev": {
+      "with": ["utils#dev"]
+    },
     "db:generate": {
       "env": ["DATABASE_URL"]
     },

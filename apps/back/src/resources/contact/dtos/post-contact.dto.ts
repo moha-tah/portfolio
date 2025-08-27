@@ -1,4 +1,11 @@
-import { IsEmail, IsNotEmpty, IsOptional, IsString } from 'class-validator'
+import {
+  IsEmail,
+  IsNotEmpty,
+  IsOptional,
+  IsString,
+  Length
+} from 'class-validator'
+import { SharedConstants } from 'utils'
 
 export class PostContactDto {
   /**
@@ -14,7 +21,10 @@ export class PostContactDto {
    * @example "John Doe"
    */
   @IsString()
-  @IsNotEmpty()
+  @Length(
+    SharedConstants.Contact.MIN_NAME_LENGTH,
+    SharedConstants.Contact.MAX_NAME_LENGTH
+  )
   name: string
 
   /**
@@ -22,7 +32,10 @@ export class PostContactDto {
    * @example "Acme Inc."
    */
   @IsString()
-  @IsNotEmpty()
+  @Length(
+    SharedConstants.Contact.MIN_COMPANY_LENGTH,
+    SharedConstants.Contact.MAX_COMPANY_LENGTH
+  )
   company: string
 
   /**
@@ -31,6 +44,9 @@ export class PostContactDto {
    */
   @IsOptional()
   @IsString()
-  @IsNotEmpty()
+  @Length(
+    SharedConstants.Contact.MIN_MESSAGE_LENGTH,
+    SharedConstants.Contact.MAX_MESSAGE_LENGTH
+  )
   message?: string | null
 }

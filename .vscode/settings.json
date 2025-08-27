@@ -1,7 +1,7 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "files.insertFinalNewline": true,
-  "eslint.workingDirectories": ["apps/front"],
+  "eslint.workingDirectories": ["apps/front", "apps/back", "packages/utils"],
   "i18n-ally.localesPaths": ["apps/front/messages"],
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sourceLanguage": "en",
