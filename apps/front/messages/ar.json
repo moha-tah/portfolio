@@ -166,8 +166,21 @@
       "form": {
         "namePlaceholder": "أدخل اسمك",
         "emailPlaceholder": "أدخل بريدك الإلكتروني",
+        "companyPlaceholder": "أدخل اسم شركتك",
+        "messagePlaceholder": "أدخل رسالتك (اختياري)",
         "sendButton": "إرسال رسالة",
-        "companyPlaceholder": "أدخل اسم شركتك"
+        "sendingButton": "جارٍ الإرسال...",
+        "successMessage": "تم إرسال الرسالة بنجاح!",
+        "errorMessage": "حدث خطأ...",
+        "validation": {
+          "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح.",
+          "nameMinLength": "يجب أن يكون الاسم {min} أحرف على الأقل.",
+          "nameMaxLength": "يجب ألا يتجاوز الاسم {max} حرفًا.",
+          "companyMinLength": "يجب أن يكون اسم الشركة {min} أحرف على الأقل.",
+          "companyMaxLength": "يجب ألا يتجاوز اسم الشركة {max} حرفًا.",
+          "messageMinLength": "يجب أن تكون الرسالة {min} أحرف على الأقل.",
+          "messageMaxLength": "يجب ألا تتجاوز الرسالة {max} حرفًا."
+        }
       }
     }
   },

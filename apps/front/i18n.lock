@@ -93,8 +93,19 @@ checksums:
     footer/contact/copied: 6a3c394a9a51646bad2f72d7311b242d
     footer/contact/form/namePlaceholder: cd95fbdd0533f2c2e8edf9d9bd9aa8df
     footer/contact/form/emailPlaceholder: 39931962707c99b99a5a073ab579396b
-    footer/contact/form/sendButton: 19e7006870c6e407dece25ee8c9d5333
     footer/contact/form/companyPlaceholder: 36ad7bed737d4edff8d43da3b790caca
+    footer/contact/form/messagePlaceholder: 33e73ad1e947846d8c99ab79822c0c6e
+    footer/contact/form/sendButton: 19e7006870c6e407dece25ee8c9d5333
+    footer/contact/form/sendingButton: 313baf79716ca9d57de864eaac4a602a
+    footer/contact/form/successMessage: 61fc4af5418581db1b4241042effd316
+    footer/contact/form/errorMessage: 587191a1921a4abea1edaae38b1bb548
+    footer/contact/form/validation/emailInvalid: 4157c206eb09e5f58cd1804be8689c55
+    footer/contact/form/validation/nameMinLength: 27963fec1e174e80df9a17047fa2ebff
+    footer/contact/form/validation/nameMaxLength: 62a113de7bcca03e52cdcecb5ebc45cd
+    footer/contact/form/validation/companyMinLength: 15b91ed11d66c41c480ae6e16f944810
+    footer/contact/form/validation/companyMaxLength: fe90b1d98a86ee28755dff599f3601e4
+    footer/contact/form/validation/messageMinLength: 6efae8e1df83a68c78c6d8b90f7c024c
+    footer/contact/form/validation/messageMaxLength: 214d03697f6c7b0b7bd20082a356b66a
     shared/defaultTitle: 75f4e31a7d0b5ae401d387bccc56c9c1
     shared/defaultDescription: d06d24ed0610c2ccd8cd94ffce58d947
     shared/modeToggle/light: bb78ea2c6edd8662676c81a8a13ecb93

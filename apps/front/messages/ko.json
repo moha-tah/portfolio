@@ -166,8 +166,21 @@
       "form": {
         "namePlaceholder": "이름을 입력하세요",
         "emailPlaceholder": "이메일을 입력하세요",
+        "companyPlaceholder": "회사의 이름을 입력하십시오",
+        "messagePlaceholder": "메시지 입력 (선택사항)",
         "sendButton": "메시지 보내기",
-        "companyPlaceholder": "회사의 이름을 입력하십시오"
+        "sendingButton": "전송 중...",
+        "successMessage": "메시지가 성공적으로 전송되었습니다!",
+        "errorMessage": "오류가 발생했습니다...",
+        "validation": {
+          "emailInvalid": "유효한 이메일 주소를 입력해 주세요.",
+          "nameMinLength": "이름은 최소 {min}자 이상이어야 합니다.",
+          "nameMaxLength": "이름은 {max}자를 초과할 수 없습니다.",
+          "companyMinLength": "회사명은 최소 {min}자 이상이어야 합니다.",
+          "companyMaxLength": "회사명은 {max}자를 초과할 수 없습니다.",
+          "messageMinLength": "메시지는 최소 {min}자 이상이어야 합니다.",
+          "messageMaxLength": "메시지는 {max}자를 초과할 수 없습니다."
+        }
       }
     }
   },

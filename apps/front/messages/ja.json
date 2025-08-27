@@ -166,8 +166,21 @@
       "form": {
         "namePlaceholder": "お名前を入力してください",
         "emailPlaceholder": "メールアドレスを入力してください",
+        "companyPlaceholder": "あなたの会社の名前を入力してください",
+        "messagePlaceholder": "メッセージを入力（任意）",
         "sendButton": "メッセージを送信",
-        "companyPlaceholder": "あなたの会社の名前を入力してください"
+        "sendingButton": "送信中...",
+        "successMessage": "メッセージが正常に送信されました！",
+        "errorMessage": "エラーが発生しました...",
+        "validation": {
+          "emailInvalid": "有効なメールアドレスを入力してください。",
+          "nameMinLength": "名前は最低{min}文字必要です。",
+          "nameMaxLength": "名前は{max}文字を超えることはできません。",
+          "companyMinLength": "会社名は最低{min}文字必要です。",
+          "companyMaxLength": "会社名は{max}文字を超えることはできません。",
+          "messageMinLength": "メッセージは最低{min}文字必要です。",
+          "messageMaxLength": "メッセージは{max}文字を超えることはできません。"
+        }
       }
     }
   },

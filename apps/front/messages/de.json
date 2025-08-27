@@ -166,8 +166,21 @@
       "form": {
         "namePlaceholder": "Geben Sie Ihren Namen ein",
         "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+        "companyPlaceholder": "Geben Sie den Namen Ihrer Firma ein",
+        "messagePlaceholder": "Geben Sie Ihre Nachricht ein (optional)",
         "sendButton": "Nachricht senden",
-        "companyPlaceholder": "Geben Sie den Namen Ihrer Firma ein"
+        "sendingButton": "Wird gesendet...",
+        "successMessage": "Nachricht erfolgreich gesendet!",
+        "errorMessage": "Ein Fehler ist aufgetreten...",
+        "validation": {
+          "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+          "nameMinLength": "Der Name muss mindestens {min} Zeichen lang sein.",
+          "nameMaxLength": "Der Name darf {max} Zeichen nicht überschreiten.",
+          "companyMinLength": "Der Firmenname muss mindestens {min} Zeichen lang sein.",
+          "companyMaxLength": "Der Firmenname darf {max} Zeichen nicht überschreiten.",
+          "messageMinLength": "Die Nachricht muss mindestens {min} Zeichen lang sein.",
+          "messageMaxLength": "Die Nachricht darf {max} Zeichen nicht überschreiten."
+        }
       }
     }
   },
