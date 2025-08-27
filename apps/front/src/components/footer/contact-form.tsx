@@ -14,7 +14,7 @@ import { Textarea } from '../ui/textarea'
 
 export function ContactForm() {
   const t = useTranslations('footer.contact.form')
-  const { form, onSubmit, isLoading, isSuccess, isError, reset } =
+  const { form, onSubmit, isLoading, isSuccess, isError, error, reset } =
     useContactForm()
 
   const [isMounted, setIsMounted] = useState(false)
@@ -57,10 +57,12 @@ export function ContactForm() {
     }
 
     if (isError) {
+      const isRateLimit =
+        error instanceof Error && error.message === 'Rate limit exceeded'
       return (
         <>
           <XCircle className="mr-1 h-4 w-4" />
-          {t('errorMessage')}
+          {isRateLimit ? t('rateLimitMessage') : t('errorMessage')}
         </>
       )
     }

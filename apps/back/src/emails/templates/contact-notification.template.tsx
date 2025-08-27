@@ -96,13 +96,14 @@ export const ContactNotificationTemplate: React.FC<
             </Section>
 
             <Text style={paragraph}>
-              I will get back to you within <strong>24-48 hours</strong> after
-              receiving your message. If your request is urgent, please contact
-              me directly at&nbsp;
-              <Link href="mailto:me@mohamedtahiri.com" style={link}>
-                me@mohamedtahiri.com
-              </Link>
-              .
+              I will get back to you within <strong>24 hours</strong> after
+              receiving your message.
+            </Text>
+
+            <Text style={paragraph}>
+              Best regards,
+              <br />
+              Mohamed Tahiri
             </Text>
           </Section>
 
@@ -119,10 +120,6 @@ export const ContactNotificationTemplate: React.FC<
               <Link href="mailto:me@mohamedtahiri.com" style={footerLink}>
                 me@mohamedtahiri.com
               </Link>
-            </Text>
-            <Text style={footerText}>
-              This email was automatically sent in response to your contact
-              request.
             </Text>
           </Section>
         </Container>
@@ -237,12 +234,6 @@ const messageValue = {
   padding: '12px',
   borderRadius: '6px',
   border: '1px solid #e2e8f0'
-}
-
-const link = {
-  color: '#3b82f6',
-  textDecoration: 'underline',
-  fontWeight: '500'
 }
 
 const footer = {

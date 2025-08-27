@@ -172,6 +172,7 @@
         "sendingButton": "送信中...",
         "successMessage": "メッセージが正常に送信されました！",
         "errorMessage": "エラーが発生しました...",
+        "rateLimitMessage": "メッセージはすでに送信されました！",
         "validation": {
           "emailInvalid": "有効なメールアドレスを入力してください。",
           "nameMinLength": "名前は最低{min}文字必要です。",

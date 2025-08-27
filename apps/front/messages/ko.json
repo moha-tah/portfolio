@@ -172,6 +172,7 @@
         "sendingButton": "전송 중...",
         "successMessage": "메시지가 성공적으로 전송되었습니다!",
         "errorMessage": "오류가 발생했습니다...",
+        "rateLimitMessage": "메시지가 이미 전송되었습니다!",
         "validation": {
           "emailInvalid": "유효한 이메일 주소를 입력해 주세요.",
           "nameMinLength": "이름은 최소 {min}자 이상이어야 합니다.",

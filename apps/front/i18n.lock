@@ -99,6 +99,7 @@ checksums:
     footer/contact/form/sendingButton: 313baf79716ca9d57de864eaac4a602a
     footer/contact/form/successMessage: 61fc4af5418581db1b4241042effd316
     footer/contact/form/errorMessage: 587191a1921a4abea1edaae38b1bb548
+    footer/contact/form/rateLimitMessage: 761b1e970b1618b20d63f0910341be9b
     footer/contact/form/validation/emailInvalid: 4157c206eb09e5f58cd1804be8689c55
     footer/contact/form/validation/nameMinLength: 27963fec1e174e80df9a17047fa2ebff
     footer/contact/form/validation/nameMaxLength: 62a113de7bcca03e52cdcecb5ebc45cd
