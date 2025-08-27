@@ -4,5 +4,5 @@ export default {
   endOfLine: 'auto',
   tabWidth: 2,
   semi: false,
-  singleQuote: true,
+  singleQuote: true
 }

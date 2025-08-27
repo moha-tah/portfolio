@@ -14,7 +14,7 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
-      "with": ["api:watch"],
+      "with": ["api:watch", "utils#dev"],
       "cache": false,
       "persistent": true
     },

@@ -16,6 +16,7 @@
     "api:watch": "chokidar '../back/swagger.json' -c 'pnpm api:generate' --initial"
   },
   "dependencies": {
+    "utils": "workspace:*",
     "@next/eslint-plugin-next": "^15.4.6",
     "@radix-ui/react-avatar": "^1.1.10",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
