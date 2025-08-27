@@ -1,19 +1,29 @@
-import { Injectable } from '@nestjs/common'
+import { Injectable, BadRequestException } from '@nestjs/common'
 import { PostContactDto } from './dtos/post-contact.dto'
 import { PrismaService } from 'database/prisma.service'
 import { GetContactDto } from './dtos/get-contact.dto'
 import { DiscordWebhookService } from 'common/services/discord-webhook.service'
 import { ResendService } from 'common/services/resend.service'
+import { TurnstileService } from 'common/services/turnstile.service'
 
 @Injectable()
 export class ContactService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly discordWebhook: DiscordWebhookService,
-    private readonly resend: ResendService
+    private readonly resend: ResendService,
+    private readonly turnstile: TurnstileService
   ) {}
 
   async postForm(postContactDto: PostContactDto): Promise<GetContactDto> {
+    // Verify Turnstile token before proceeding
+    const isValidToken = await this.turnstile.verifyToken(
+      postContactDto.turnstileToken
+    )
+    if (!isValidToken) {
+      throw new BadRequestException('Invalid or expired security token')
+    }
+
     const contactFormEntry = await this.prisma.contactFormEntry.create({
       data: {
         email: postContactDto.email,

@@ -181,7 +181,8 @@
           "companyMaxLength": "회사명은 {max}자를 초과할 수 없습니다.",
           "messageMinLength": "메시지는 최소 {min}자 이상이어야 합니다.",
           "messageMaxLength": "메시지는 {max}자를 초과할 수 없습니다."
-        }
+        },
+        "turnstileError": "보안 문자 보안 점검에 실패했습니다. \n다시 시도하십시오."
       }
     }
   },

@@ -181,7 +181,8 @@
           "companyMaxLength": "会社名は{max}文字を超えることはできません。",
           "messageMinLength": "メッセージは最低{min}文字必要です。",
           "messageMaxLength": "メッセージは{max}文字を超えることはできません。"
-        }
+        },
+        "turnstileError": "CAPTCHAセキュリティチェックに失敗しました。\nもう一度やり直してください。"
       }
     }
   },

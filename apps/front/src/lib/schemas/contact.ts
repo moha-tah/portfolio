@@ -6,6 +6,7 @@ export function getContactFormSchema(
   t: ReturnType<typeof useTranslations<'footer.contact.form'>>
 ) {
   return z.object({
+    turnstileToken: z.string().min(1, 'Turnstile token is required'),
     email: z.email(t('validation.emailInvalid')),
     name: z
       .string()

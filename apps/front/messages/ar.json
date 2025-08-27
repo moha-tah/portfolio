@@ -181,7 +181,8 @@
           "companyMaxLength": "يجب ألا يتجاوز اسم الشركة {max} حرفًا.",
           "messageMinLength": "يجب أن تكون الرسالة {min} أحرف على الأقل.",
           "messageMaxLength": "يجب ألا تتجاوز الرسالة {max} حرفًا."
-        }
+        },
+        "turnstileError": "لقد فشلت في فحص أمن CAPTCHA. \nمن فضلك حاول مرة أخرى."
       }
     }
   },

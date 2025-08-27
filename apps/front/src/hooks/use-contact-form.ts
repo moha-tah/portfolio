@@ -21,7 +21,8 @@ export function useContactForm() {
       email: '',
       name: '',
       company: '',
-      message: ''
+      message: '',
+      turnstileToken: ''
     }
   })
 

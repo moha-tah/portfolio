@@ -24,7 +24,7 @@ export class ResendService {
 
   async sendContactNotification(contact: PostContactDto): Promise<void> {
     if (!this.isEnabled) {
-      this.logger.debug('Resend is disabled.')
+      this.logger.debug('Resend email dry run.')
       return
     }
 

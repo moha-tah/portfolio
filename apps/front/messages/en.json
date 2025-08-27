@@ -181,7 +181,8 @@
           "companyMaxLength": "Company must not exceed {max} characters.",
           "messageMinLength": "Message must be at least {min} characters.",
           "messageMaxLength": "Message must not exceed {max} characters."
-        }
+        },
+        "turnstileError": "You failed the CAPTCHA security check. Please try again."
       }
     }
   },
