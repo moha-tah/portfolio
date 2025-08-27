@@ -22,6 +22,7 @@ export function ContactForm() {
 
   const [isMounted, setIsMounted] = useState(false)
   const [turnstileError, setTurnstileError] = useState<string | null>(null)
+  const [turnstileExecuted, setTurnstileExecuted] = useState(false)
 
   useEffect(() => {
     setIsMounted(true)
@@ -89,7 +90,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="w-full md:w-sm">
-      <div className="space-y-3">
+      <div className="space-y-3 pb-3">
         <div>
           <Input
             autoComplete="name"
@@ -100,9 +101,16 @@ export function ContactForm() {
               form.formState.errors.name && 'border-red-500'
             )}
             disabled={isDisabled}
+            onFocus={() => {
+              if (!turnstileExecuted) {
+                // @ts-expect-error - Turnstile Lib is not typed correctly, I've opened an issue here: https://github.com/JedPattersonn/next-turnstile/issues/11
+                window.turnstile.execute('#turnstile-widget', {})
+                setTurnstileExecuted(true)
+              }
+            }}
           />
           {form.formState.errors.name && (
-            <p className="mt-1 text-xs text-red-500">
+            <p className="mt-1 px-4 text-xs text-red-500">
               {form.formState.errors.name.message}
             </p>
           )}
@@ -110,9 +118,9 @@ export function ContactForm() {
 
         <div>
           <Input
-            autoComplete="email"
             {...form.register('email')}
             type="email"
+            autoComplete="email"
             placeholder={t('emailPlaceholder')}
             className={cn(
               'bg-background border-border h-12 rounded-4xl px-4 text-sm sm:text-base',
@@ -121,7 +129,7 @@ export function ContactForm() {
             disabled={isDisabled}
           />
           {form.formState.errors.email && (
-            <p className="mt-1 text-xs text-red-500">
+            <p className="mt-1 px-4 text-xs text-red-500">
               {form.formState.errors.email.message}
             </p>
           )}
@@ -129,8 +137,8 @@ export function ContactForm() {
 
         <div>
           <Input
-            autoComplete="organization"
             {...form.register('company')}
+            autoComplete="organization"
             placeholder={t('companyPlaceholder')}
             className={cn(
               'bg-background border-border h-12 rounded-4xl px-4 text-sm sm:text-base',
@@ -139,7 +147,7 @@ export function ContactForm() {
             disabled={isDisabled}
           />
           {form.formState.errors.company && (
-            <p className="mt-1 text-xs text-red-500">
+            <p className="mt-1 px-4 text-xs text-red-500">
               {form.formState.errors.company.message}
             </p>
           )}
@@ -157,14 +165,19 @@ export function ContactForm() {
             disabled={isDisabled}
           />
           {form.formState.errors.message && (
-            <p className="mt-1 text-xs text-red-500">
+            <p className="mt-1 px-4 text-xs text-red-500">
               {form.formState.errors.message.message}
             </p>
           )}
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-sm flex-col items-center pt-3 pb-1">
+      <div
+        className={cn(
+          'mx-auto flex max-w-sm flex-col items-center pb-1',
+          !turnstileExecuted && 'hidden'
+        )}
+      >
         <Turnstile
           siteKey={env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
           onVerify={(token) => {
@@ -176,6 +189,7 @@ export function ContactForm() {
             form.setValue('turnstileToken', '')
           }}
           language={locale}
+          execution="execute"
           // appearance="interaction-only"
         />
         {turnstileError && (
