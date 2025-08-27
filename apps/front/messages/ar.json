@@ -172,6 +172,7 @@
         "sendingButton": "جارٍ الإرسال...",
         "successMessage": "تم إرسال الرسالة بنجاح!",
         "errorMessage": "حدث خطأ...",
+        "rateLimitMessage": "تم إرسال الرسالة بالفعل!",
         "validation": {
           "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح.",
           "nameMinLength": "يجب أن يكون الاسم {min} أحرف على الأقل.",
