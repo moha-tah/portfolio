@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'avatar.vercel.sh'
+        hostname: 'www.shutterstock.com'
       }
     ],
     formats: ['image/webp']

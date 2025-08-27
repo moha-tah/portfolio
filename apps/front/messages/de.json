@@ -200,6 +200,11 @@
     },
     "languageSwitch": "Sprache ändern"
   },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+    "goHome": "Zurück zur Startseite"
+  },
   "navbar": {
     "contactMe": "Kontaktieren Sie mich",
     "sections": {

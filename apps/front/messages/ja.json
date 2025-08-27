@@ -200,6 +200,11 @@
     },
     "languageSwitch": "言語を変更"
   },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動されました。",
+    "goHome": "ホームに戻る"
+  },
   "navbar": {
     "contactMe": "お問い合わせ",
     "sections": {

@@ -26,6 +26,7 @@ const tools = [
   { name: 'HomeAssistant' },
   { name: 'Airflow' },
   { name: 'Algolia' },
+  { name: 'Go' },
   { name: 'shadcn', darkInvert: true },
   { name: 'MongoDB' },
   { name: 'Prisma', darkInvert: true },

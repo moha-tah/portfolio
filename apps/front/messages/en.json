@@ -18,6 +18,28 @@
         "NestJS": "NestJS"
       }
     },
+    "projects": {
+      "badge": "Projects",
+      "title": "My projects",
+      "description": "Here are some of the projects I've worked on.",
+      "projects": [
+        {
+          "title": "Sumo Spheres Game",
+          "shortDescription": "A multiplayer game built with Unity and C#.",
+          "description": "A multiplayer game built with Unity and C#."
+        },
+        {
+          "title": "Distributed Systems in Go",
+          "shortDescription": "A distributed system built with Go.",
+          "description": "A distributed system built with Go."
+        },
+        {
+          "title": "Project in Progress",
+          "shortDescription": "A project in progress.",
+          "description": "A project in progress."
+        }
+      ]
+    },
     "testimonials": {
       "badge": "Testimonials",
       "title": "What people I've worked with say about me",
@@ -199,6 +221,11 @@
       "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."
     },
     "languageSwitch": "Change language"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go back home"
   },
   "navbar": {
     "contactMe": "Contact me",

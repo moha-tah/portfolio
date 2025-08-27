@@ -21,7 +21,7 @@ export function SocialIcons({ email }: Props) {
         aria-label="LinkedIn"
       >
         <Image
-          src="icons/LinkedIn.svg"
+          src="/icons/LinkedIn.svg"
           alt="LinkedIn"
           width={20}
           height={20}
@@ -41,7 +41,7 @@ export function SocialIcons({ email }: Props) {
         aria-label="GitHub"
       >
         <Image
-          src="icons/GitHub.svg"
+          src="/icons/GitHub.svg"
           alt="GitHub"
           width={20}
           height={20}
