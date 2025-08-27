@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   translate:
-    if: ${{ github.event.label.name == 'to translate' }}
+    if: ${{ github.event.label.name == 'To translate' }}
     name: Auto Translate i18n
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
           commit-message: "chore(i18n): :globe_with_meridians: update translations"
 
   remove-label:
-    if: ${{ github.event.label.name == 'to translate' }}
+    if: ${{ github.event.label.name == 'To translate' }}
     runs-on: ubuntu-latest
     steps:
       - name: Remove label
