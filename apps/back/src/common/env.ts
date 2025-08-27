@@ -18,7 +18,8 @@ const envSchema = z.object({
   SEND_EMAILS: z
     .string()
     .default('true')
-    .transform((value) => value === 'true')
+    .transform((value) => value === 'true'),
+  TURNSTILE_SECRET_KEY: z.string()
 })
 
 export type Environment = z.infer<typeof envSchema>

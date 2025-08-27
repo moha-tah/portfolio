@@ -6,6 +6,7 @@ import { ContactService } from '../contact.service'
 import { PrismaService } from 'database/prisma.service'
 import { DiscordWebhookService } from 'common/services/discord-webhook.service'
 import { ResendService } from 'common/services/resend.service'
+import { TurnstileService } from 'common/services/turnstile.service'
 import { PostContactDto } from '../dtos/post-contact.dto'
 import { GetContactDto } from '../dtos/get-contact.dto'
 
@@ -14,13 +15,15 @@ describe('ContactService', () => {
   let prismaService: jest.Mocked<PrismaService>
   let discordWebhookService: jest.Mocked<DiscordWebhookService>
   let resendService: jest.Mocked<ResendService>
+  let turnstileService: jest.Mocked<TurnstileService>
   let consoleErrorSpy: jest.SpyInstance
 
   const mockPostContactDto: PostContactDto = {
     email: 'test@example.com',
     name: 'John Doe',
     company: 'Test Company',
-    message: 'Test message'
+    message: 'Test message',
+    turnstileToken: 'valid-turnstile-token'
   }
 
   const mockPrismaResult = {
@@ -56,6 +59,10 @@ describe('ContactService', () => {
       sendContactNotification: jest.fn()
     }
 
+    const mockTurnstileService = {
+      verifyToken: jest.fn()
+    }
+
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         ContactService,
@@ -70,6 +77,10 @@ describe('ContactService', () => {
         {
           provide: ResendService,
           useValue: mockResendService
+        },
+        {
+          provide: TurnstileService,
+          useValue: mockTurnstileService
         }
       ]
     }).compile()
@@ -84,6 +95,9 @@ describe('ContactService', () => {
     resendService = module.get<ResendService>(
       ResendService
     ) as jest.Mocked<ResendService>
+    turnstileService = module.get<TurnstileService>(
+      TurnstileService
+    ) as jest.Mocked<TurnstileService>
 
     consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
   })
@@ -106,12 +120,16 @@ describe('ContactService', () => {
       )
       discordWebhookService.sendContactFormNotification.mockResolvedValue()
       resendService.sendContactNotification.mockResolvedValue()
+      turnstileService.verifyToken.mockResolvedValue(true)
     })
 
     describe('successful scenarios', () => {
       it('should successfully create a contact form entry with all notifications', async () => {
         const result = await service.postForm(mockPostContactDto)
 
+        expect(turnstileService.verifyToken).toHaveBeenCalledWith(
+          mockPostContactDto.turnstileToken
+        )
         expect(prismaService.contactFormEntry.create).toHaveBeenCalledWith({
           data: {
             email: mockPostContactDto.email,
@@ -134,7 +152,8 @@ describe('ContactService', () => {
         const dtoWithoutMessage: PostContactDto = {
           email: 'nomessage@test.com',
           name: 'No Message User',
-          company: 'No Message Co'
+          company: 'No Message Co',
+          turnstileToken: 'valid-turnstile-token'
         }
         const prismaResultWithoutMessage = {
           ...mockPrismaResult,
@@ -173,7 +192,8 @@ describe('ContactService', () => {
           email: 'null@test.com',
           name: 'Null User',
           company: 'Null Co',
-          message: null
+          message: null,
+          turnstileToken: 'valid-turnstile-token'
         }
         const prismaResultWithNullMessage = {
           ...mockPrismaResult,
@@ -205,6 +225,43 @@ describe('ContactService', () => {
           }
         })
         expect(result).toEqual(expectedResult)
+      })
+    })
+
+    describe('Turnstile validation failure scenarios', () => {
+      it('should throw BadRequestException when Turnstile token is invalid', async () => {
+        turnstileService.verifyToken.mockResolvedValue(false)
+
+        await expect(service.postForm(mockPostContactDto)).rejects.toThrow(
+          'Invalid or expired security token'
+        )
+
+        expect(turnstileService.verifyToken).toHaveBeenCalledWith(
+          mockPostContactDto.turnstileToken
+        )
+        expect(prismaService.contactFormEntry.create).not.toHaveBeenCalled()
+        expect(
+          discordWebhookService.sendContactFormNotification
+        ).not.toHaveBeenCalled()
+        expect(resendService.sendContactNotification).not.toHaveBeenCalled()
+        expect(consoleErrorSpy).not.toHaveBeenCalled()
+      })
+
+      it('should throw BadRequestException when Turnstile service fails', async () => {
+        turnstileService.verifyToken.mockResolvedValue(false)
+
+        await expect(service.postForm(mockPostContactDto)).rejects.toThrow(
+          'Invalid or expired security token'
+        )
+
+        expect(turnstileService.verifyToken).toHaveBeenCalledWith(
+          mockPostContactDto.turnstileToken
+        )
+        expect(prismaService.contactFormEntry.create).not.toHaveBeenCalled()
+        expect(
+          discordWebhookService.sendContactFormNotification
+        ).not.toHaveBeenCalled()
+        expect(resendService.sendContactNotification).not.toHaveBeenCalled()
       })
     })
 

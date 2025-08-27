@@ -3,7 +3,8 @@ import {
   IsNotEmpty,
   IsOptional,
   IsString,
-  Length
+  Length,
+  MaxLength
 } from 'class-validator'
 import { SharedConstants } from 'utils'
 
@@ -49,4 +50,13 @@ export class PostContactDto {
     SharedConstants.Contact.MAX_MESSAGE_LENGTH
   )
   message?: string | null
+
+  /**
+   * Turnstile token for bot protection.
+   * @example "0.aBc1dE2fG3hI4jK5lM6nO7pQ8rS9tU0vW1xY2z"
+   */
+  @IsNotEmpty()
+  @IsString()
+  @MaxLength(2048)
+  turnstileToken: string
 }
