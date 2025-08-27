@@ -6,4 +6,7 @@ export default {
   "apps/back/**/*.{ts,js}": (files) => [
     `pnpm lint:fix --filter=back -- ${files.join(" ")}`,
   ],
+  "packages/utils/**/*.{ts,tsx}": (files) => [
+    `pnpm lint:fix --filter=utils --  ${files.join(" ")}`,
+  ],
 };
