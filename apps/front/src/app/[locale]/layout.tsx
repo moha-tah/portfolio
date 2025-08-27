@@ -8,12 +8,12 @@ import { hasLocale } from 'next-intl'
 import { Footer } from '@/components/footer/footer'
 import { Navbar } from '@/components/navbar/navbar'
 import { ScrollProgress } from '@/components/navbar/scroll-progress'
-import { ProvidersWrapper } from '@/components/providers/providers-wrapper'
 import { Background } from '@/components/shared/background'
 import NoScriptBanner from '@/components/shared/no-script-banner'
 import { Locale, locales } from '@/i18n/config'
 import { routing } from '@/i18n/routing'
 import { getDefaultMetadata } from '@/lib/default-metadata'
+import { ProvidersWrapper } from '@/lib/providers/providers-wrapper'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

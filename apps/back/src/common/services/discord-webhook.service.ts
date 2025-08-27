@@ -27,12 +27,14 @@ export interface DiscordWebhookPayload {
 export class DiscordWebhookService {
   private readonly logger = new Logger(DiscordWebhookService.name)
   private readonly webhookUrl: string
+  private readonly isEnabled: boolean
   private readonly httpClient: AxiosInstance
 
   constructor(
     private readonly configService: ConfigService<Environment, true>
   ) {
     this.webhookUrl = this.configService.get('DISCORD_WEBHOOK_URL')
+    this.isEnabled = this.configService.get('SEND_WEBHOOKS')
     this.httpClient = axios.create({
       timeout: 10000,
       headers: {
@@ -42,6 +44,11 @@ export class DiscordWebhookService {
   }
 
   async sendMessage(payload: DiscordWebhookPayload): Promise<void> {
+    if (!this.isEnabled) {
+      this.logger.debug('Discord webhook is disabled.')
+      return
+    }
+
     const maxRetries = 3
     let lastError: Error | null = null
 
