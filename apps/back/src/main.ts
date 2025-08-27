@@ -27,7 +27,17 @@ async function bootstrap() {
     '/docs',
     apiReference({
       title: 'API Docs - Mohamed Tahiri',
-      content: document
+      content: document,
+      servers: [
+        {
+          url: 'https://api.mohamedtahiri.com',
+          description: 'Production'
+        },
+        configService.get('NODE_ENV') === 'local' && {
+          url: `http://localhost:${configService.get('PORT')}`,
+          description: 'Local development'
+        }
+      ]
     })
   )
 

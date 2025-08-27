@@ -16,8 +16,24 @@
       "dependsOn": ["^build", "db:generate"],
       "outputs": ["dist/**"]
     },
-    "db:generate": {},
+    "start": {
+      "env": [
+        "PORT",
+        "NODE_ENV",
+        "DATABASE_URL",
+        "BACK_URL",
+        "FRONT_URL",
+        "SEND_WEBHOOKS",
+        "SEND_EMAILS",
+        "DISCORD_WEBHOOK_URL",
+        "RESEND_API_KEY"
+      ]
+    },
+    "db:generate": {
+      "env": ["DATABASE_URL"]
+    },
     "db:migrate:deploy": {
+      "env": ["DATABASE_URL"],
       "dependsOn": ["db:generate"]
     },
     "swagger:generate": {
