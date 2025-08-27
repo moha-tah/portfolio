@@ -11,16 +11,23 @@ import * as React from 'react'
 export class ResendService {
   private readonly logger = new Logger(ResendService.name)
   private readonly apiKey: string
+  private readonly isEnabled: boolean
   private readonly resend: Resend
 
   constructor(
     private readonly configService: ConfigService<Environment, true>
   ) {
     this.apiKey = this.configService.get('RESEND_API_KEY')
+    this.isEnabled = this.configService.get('SEND_EMAILS')
     this.resend = new Resend(this.apiKey)
   }
 
   async sendContactNotification(contact: PostContactDto): Promise<void> {
+    if (!this.isEnabled) {
+      this.logger.debug('Resend is disabled.')
+      return
+    }
+
     const maxRetries = 3
     let lastError: Error | null = null
 

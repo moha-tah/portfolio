@@ -166,8 +166,21 @@
       "form": {
         "namePlaceholder": "Enter your name",
         "emailPlaceholder": "Enter your email",
+        "companyPlaceholder": "Enter the name of your company",
+        "messagePlaceholder": "Enter your message (optional)",
         "sendButton": "Send message",
-        "companyPlaceholder": "Enter the name of your company"
+        "sendingButton": "Sending...",
+        "successMessage": "Message sent successfully!",
+        "errorMessage": "An error occurred...",
+        "validation": {
+          "emailInvalid": "Please enter a valid email address.",
+          "nameMinLength": "Name must be at least {min} characters.",
+          "nameMaxLength": "Name must not exceed {max} characters.",
+          "companyMinLength": "Company must be at least {min} characters.",
+          "companyMaxLength": "Company must not exceed {max} characters.",
+          "messageMinLength": "Message must be at least {min} characters.",
+          "messageMaxLength": "Message must not exceed {max} characters."
+        }
       }
     }
   },

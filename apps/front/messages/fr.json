@@ -166,14 +166,27 @@
       "form": {
         "namePlaceholder": "Entrez votre nom",
         "emailPlaceholder": "Entrez votre email",
+        "companyPlaceholder": "Entrez le nom de votre entreprise",
+        "messagePlaceholder": "Entrez votre message (optionnel)",
         "sendButton": "Envoyer le message",
-        "companyPlaceholder": "Entrez le nom de votre entreprise"
+        "sendingButton": "Envoi en cours...",
+        "successMessage": "Message envoyé avec succès !",
+        "errorMessage": "Une erreur s'est produite...",
+        "validation": {
+          "emailInvalid": "Veuillez entrer une adresse email valide.",
+          "nameMinLength": "Le nom doit contenir au moins {min} caractères.",
+          "nameMaxLength": "Le nom ne doit pas dépasser {max} caractères.",
+          "companyMinLength": "L'entreprise doit contenir au moins {min} caractères.",
+          "companyMaxLength": "L'entreprise ne doit pas dépasser {max} caractères.",
+          "messageMinLength": "Le message doit contenir au moins {min} caractères.",
+          "messageMaxLength": "Le message ne doit pas dépasser {max} caractères."
+        }
       }
     }
   },
   "shared": {
     "defaultTitle": "Mohamed Tahiri",
-    "defaultDescription": "Étudiant en ingénierie informatique à l’UTC (France), spécialisé en systèmes informatiques et passionné par le développement de logiciels complexes.",
+    "defaultDescription": "Étudiant en ingénierie informatique à l'UTC (France), spécialisé en systèmes informatiques et passionné par le développement de logiciels complexes.",
     "modeToggle": {
       "light": "Clair",
       "dark": "Sombre",
