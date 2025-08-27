@@ -1,20 +1,39 @@
 {
   "extends": ["//"],
+  "globalEnv": [
+    "NODE_ENV",
+    "VERCEL_URL",
+    "VERCEL_ENV",
+    "NEXT_PUBLIC_FRONT_URL",
+    "NEXT_PUBLIC_BACK_URL"
+  ],
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "env": ["NODE_ENV", "VERCEL_ENV", "VERCEL_URL"],
+      "dependsOn": ["^build", "api:generate"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
+      "with": ["api:watch"],
       "cache": false,
       "persistent": true
     },
+
     "lint": {
       "outputs": ["next-env.d.ts"]
     },
     "lint:fix": {
       "outputs": ["next-env.d.ts"]
     },
-    "typecheck": {}
+    "typecheck": {},
+
+    "api:generate": {
+      "dependsOn": ["back#swagger:generate"],
+      "outputs": ["src/lib/api/schema.d.ts"]
+    },
+    "api:watch": {
+      "cache": false,
+      "persistent": true
+    }
   }
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Mohamed Tahiri's portfolio",
   "private": true,
-  "author": "Mohamed Tahiri <mohamed.tahiri.pro@gmail.com>",
+  "author": "Mohamed Tahiri <me@mohamedtahiri.com>",
   "license": "MIT",
   "packageManager": "pnpm@10.5.1",
   "engines": {

@@ -1,0 +1,41 @@
+import { z } from 'zod'
+
+const envSchema = z.object({
+  NODE_ENV: z.enum(['production', 'development', 'preview', 'local', 'test']),
+  PORT: z
+    .string()
+    .default('3000')
+    .transform((val) => parseInt(val, 10)),
+  BACK_URL: z.url(),
+  FRONT_URL: z.url(),
+  DATABASE_URL: z.url(),
+  DISCORD_WEBHOOK_URL: z.url(),
+  SEND_WEBHOOKS: z
+    .string()
+    .default('true')
+    .transform((value) => value === 'true'),
+  RESEND_API_KEY: z.string(),
+  SEND_EMAILS: z
+    .string()
+    .default('true')
+    .transform((value) => value === 'true')
+})
+
+export type Environment = z.infer<typeof envSchema>
+
+export function validate(config: Record<string, unknown>): Environment {
+  // Skip validation when deploying the frontend to vercel
+  if (process.env.VERCEL_ENV) {
+    return config as unknown as Environment
+  }
+
+  try {
+    const validatedConfig = envSchema.parse(config)
+    return validatedConfig
+  } catch (err) {
+    if (err instanceof Error) {
+      throw new Error(`Invalid environment variable: ${err.message}`)
+    }
+    throw err
+  }
+}

@@ -28,7 +28,8 @@ const eslintConfig = [
       '.turbo/',
       'node_modules/',
       '.next/',
-      'messages/*.d.json.ts'
+      'messages/*.d.json.ts',
+      'src/lib/api/schema.d.ts'
     ],
     rules: {
       '@typescript-eslint/no-unused-vars': [
