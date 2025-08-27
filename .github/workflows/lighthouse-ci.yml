@@ -24,7 +24,7 @@ jobs:
         id: vercel_preview_url
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          max_timeout: 180
+          max_timeout: 300
           environment: production
           check_interval: 10
 

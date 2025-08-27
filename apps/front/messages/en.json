@@ -172,6 +172,7 @@
         "sendingButton": "Sending...",
         "successMessage": "Message sent successfully!",
         "errorMessage": "An error occurred...",
+        "rateLimitMessage": "Message already sent!",
         "validation": {
           "emailInvalid": "Please enter a valid email address.",
           "nameMinLength": "Name must be at least {min} characters.",

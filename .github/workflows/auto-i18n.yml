@@ -2,15 +2,15 @@ name: Auto Translate i18n
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [labeled]
 
 permissions:
   contents: write
 
 jobs:
   translate:
+    if: ${{ github.event.label.name == 'to translate' }}
     name: Auto Translate i18n
     runs-on: ubuntu-latest
     steps:
@@ -22,3 +22,13 @@ jobs:
           api-key: ${{ secrets.LINGODOTDEV_API_KEY }}
           working-directory: "apps/front"
           commit-message: "chore(i18n): :globe_with_meridians: update translations"
+
+  remove-label:
+    if: ${{ github.event.label.name == 'to translate' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove label
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          github_token: ${{ github.token }}
+          labels: to translate
