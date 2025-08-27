@@ -165,7 +165,7 @@ export function ContactForm() {
       </div>
 
       <div className="mx-auto flex max-w-sm flex-col items-center pt-3 pb-1">
-        <Turnstile
+        {/* <Turnstile
           siteKey={env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
           onVerify={(token) => {
             setTurnstileError(null)
@@ -177,7 +177,7 @@ export function ContactForm() {
           }}
           language={locale}
           // appearance="interaction-only"
-        />
+        /> */}
         {turnstileError && (
           <p className="text-center text-sm text-red-500">{turnstileError}</p>
         )}
