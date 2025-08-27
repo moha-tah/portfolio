@@ -181,7 +181,8 @@
           "companyMaxLength": "L'entreprise ne doit pas dépasser {max} caractères.",
           "messageMinLength": "Le message doit contenir au moins {min} caractères.",
           "messageMaxLength": "Le message ne doit pas dépasser {max} caractères."
-        }
+        },
+        "turnstileError": "Vous avez échoué le contrôle de sécurité CAPTCHA. \nVeuillez réessayer."
       }
     }
   },

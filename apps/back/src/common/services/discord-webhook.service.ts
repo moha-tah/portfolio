@@ -45,7 +45,7 @@ export class DiscordWebhookService {
 
   async sendMessage(payload: DiscordWebhookPayload): Promise<void> {
     if (!this.isEnabled) {
-      this.logger.debug('Discord webhook is disabled.')
+      this.logger.debug('Discord webhook dry run.')
       return
     }
 

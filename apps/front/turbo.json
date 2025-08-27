@@ -5,11 +5,19 @@
     "VERCEL_URL",
     "VERCEL_ENV",
     "NEXT_PUBLIC_FRONT_URL",
-    "NEXT_PUBLIC_BACK_URL"
+    "NEXT_PUBLIC_BACK_URL",
+    "NEXT_PUBLIC_TURNSTILE_SITE_KEY"
   ],
   "tasks": {
     "build": {
-      "env": ["NODE_ENV", "VERCEL_ENV", "VERCEL_URL"],
+      "env": [
+        "NODE_ENV",
+        "VERCEL_ENV",
+        "VERCEL_URL",
+        "NEXT_PUBLIC_FRONT_URL",
+        "NEXT_PUBLIC_BACK_URL",
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY"
+      ],
       "dependsOn": ["^build", "api:generate"],
       "outputs": [".next/**", "!.next/cache/**"]
     },

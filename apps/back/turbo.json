@@ -9,7 +9,8 @@
     "SEND_WEBHOOKS",
     "SEND_EMAILS",
     "DISCORD_WEBHOOK_URL",
-    "RESEND_API_KEY"
+    "RESEND_API_KEY",
+    "TURNSTILE_SECRET_KEY"
   ],
   "tasks": {
     "build": {
@@ -26,7 +27,8 @@
         "SEND_WEBHOOKS",
         "SEND_EMAILS",
         "DISCORD_WEBHOOK_URL",
-        "RESEND_API_KEY"
+        "RESEND_API_KEY",
+        "TURNSTILE_SECRET_KEY"
       ]
     },
     "dev": {

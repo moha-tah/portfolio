@@ -22,15 +22,11 @@ export class TurnstileService {
     })!
   }
 
-  async verifyToken(token: string, remoteIp?: string): Promise<boolean> {
+  async verifyToken(token: string): Promise<boolean> {
     try {
       const formData = new URLSearchParams()
       formData.append('secret', this.secretKey)
       formData.append('response', token)
-
-      if (remoteIp) {
-        formData.append('remoteip', remoteIp)
-      }
 
       const response = await fetch(
         'https://challenges.cloudflare.com/turnstile/v0/siteverify',
@@ -40,7 +36,6 @@ export class TurnstileService {
             'Content-Type': 'application/x-www-form-urlencoded'
           },
           body: formData,
-          // Set reasonable timeout for the request
           signal: AbortSignal.timeout(10000)
         }
       )
@@ -52,8 +47,7 @@ export class TurnstileService {
         return false
       }
 
-      const result: TurnstileVerifyResponse =
-        (await response.json()) as TurnstileVerifyResponse
+      const result = (await response.json()) as TurnstileVerifyResponse
 
       if (!result.success && result['error-codes']) {
         this.logger.warn(

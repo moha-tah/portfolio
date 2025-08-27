@@ -181,7 +181,8 @@
           "companyMaxLength": "Der Firmenname darf {max} Zeichen nicht überschreiten.",
           "messageMinLength": "Die Nachricht muss mindestens {min} Zeichen lang sein.",
           "messageMaxLength": "Die Nachricht darf {max} Zeichen nicht überschreiten."
-        }
+        },
+        "turnstileError": "Sie haben die CAPTCHA -Sicherheitsprüfung nicht bestanden. \nBitte versuchen Sie es erneut."
       }
     }
   },

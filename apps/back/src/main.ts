@@ -29,13 +29,13 @@ async function bootstrap() {
       title: 'API Docs - Mohamed Tahiri',
       content: document,
       servers: [
-        {
-          url: 'https://api.mohamedtahiri.com',
-          description: 'Production'
-        },
         configService.get('NODE_ENV') === 'local' && {
           url: `http://localhost:${configService.get('PORT')}`,
           description: 'Local development'
+        },
+        {
+          url: 'https://api.mohamedtahiri.com',
+          description: 'Production'
         }
       ]
     })

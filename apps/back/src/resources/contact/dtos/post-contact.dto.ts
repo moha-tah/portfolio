@@ -41,7 +41,7 @@ export class PostContactDto {
 
   /**
    * The message field of the form.
-   * @example "Hello !"
+   * @example "Hello ! I want to contact you."
    */
   @IsOptional()
   @IsString()
