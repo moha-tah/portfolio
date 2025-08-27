@@ -92,6 +92,7 @@ export function ContactForm() {
       <div className="space-y-3">
         <div>
           <Input
+            autoComplete="name"
             {...form.register('name')}
             placeholder={t('namePlaceholder')}
             className={cn(
@@ -109,6 +110,7 @@ export function ContactForm() {
 
         <div>
           <Input
+            autoComplete="email"
             {...form.register('email')}
             type="email"
             placeholder={t('emailPlaceholder')}
@@ -127,6 +129,7 @@ export function ContactForm() {
 
         <div>
           <Input
+            autoComplete="organization"
             {...form.register('company')}
             placeholder={t('companyPlaceholder')}
             className={cn(
@@ -144,6 +147,7 @@ export function ContactForm() {
 
         <div>
           <Textarea
+            autoComplete="off"
             {...form.register('message')}
             placeholder={t('messagePlaceholder')}
             className={cn(
