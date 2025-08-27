@@ -5,11 +5,14 @@ import Image from 'next/image'
 import { Project } from './get-projets'
 import { ProjectInfo } from './project-info'
 
-interface Props extends Project {
-  _?: number
-}
-
-export function ProjectItem({ slug, title, description, image, link }: Props) {
+export function ProjectItem({
+  slug,
+  title,
+  description,
+  image,
+  link,
+  iconUrl
+}: Project) {
   return (
     <div className="flex flex-col gap-4">
       <div className="group overflow-hidden rounded-4xl">
@@ -22,6 +25,7 @@ export function ProjectItem({ slug, title, description, image, link }: Props) {
         />
       </div>
       <ProjectInfo
+        iconUrl={iconUrl}
         slug={slug}
         title={title}
         description={description}

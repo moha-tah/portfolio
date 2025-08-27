@@ -1,4 +1,4 @@
-import { ArrowUpRight, MoveUpRight } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 
 import { Link } from '@/i18n/navigation'
@@ -6,22 +6,29 @@ import { Link } from '@/i18n/navigation'
 import { Button } from '../ui/button'
 
 interface Props {
+  iconUrl: string
   slug: string
   title: string
   description: string
   link?: string
 }
 
-export function ProjectInfo({ slug, title, description, link }: Props) {
+export function ProjectInfo({
+  iconUrl,
+  slug,
+  title,
+  description,
+  link
+}: Props) {
   return (
-    <div className="bg-background rounded-4xl p-3">
+    <div className="rounded-4xl bg-red-300 p-3">
       <div className="flex h-fit w-full items-center gap-4">
         <Image
-          src={`/icons/skills/Go.svg`}
+          src={iconUrl}
           alt={title}
-          width={60}
-          height={60}
-          className="object-cover"
+          width={56}
+          height={56}
+          className="rounded-lg object-cover"
         />
 
         <div className="flex flex-col">

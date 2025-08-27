@@ -10,6 +10,7 @@ interface StaticPartProject {
   slug: string
   image: string
   link?: string
+  iconUrl: string
 }
 
 const staticProjects: StaticPartProject[] = [
@@ -17,18 +18,21 @@ const staticProjects: StaticPartProject[] = [
     slug: 'unity-multiplayer-game',
     image:
       'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
-    link: 'https://github.com/moha-tah/Sumo-Spheres-Game'
+    link: 'https://github.com/moha-tah/Sumo-Spheres-Game',
+    iconUrl: '/icons/skills/Unity.svg'
   },
   {
     slug: 'distributed-systems-in-go',
     image:
       'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
-    link: 'https://github.com/4l3x4ndre/Distributed-System-with-Verification'
+    link: 'https://github.com/4l3x4ndre/Distributed-System-with-Verification',
+    iconUrl: '/icons/skills/Go.svg'
   },
   {
     slug: 'project-in-progress',
     image:
-      'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg'
+      'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
+    iconUrl: '/icons/skills/TypeScript.svg'
   }
 ]
 
