@@ -45,7 +45,7 @@ export function AnimatedTitle({
         {passions.map((passion: Passion, index: number) => (
           <motion.span
             key={index}
-            className="from-secondary-accent via-secondary to-secondary absolute bg-radial-[at_0%_0%] bg-clip-text font-bold text-nowrap text-transparent"
+            className="base-radial-gradient absolute bg-clip-text font-bold text-nowrap text-transparent"
             initial={{ opacity: 0, y: '-100', filter: 'blur(10px)' }}
             transition={{ type: 'spring', stiffness: 50 }}
             animate={

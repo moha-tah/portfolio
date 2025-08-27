@@ -170,6 +170,10 @@
   .subtitle {
     @apply text-muted-foreground max-w-2xl text-center text-lg leading-relaxed tracking-tighter md:text-xl;
   }
+
+  .base-radial-gradient {
+    @apply from-secondary-accent via-secondary to-secondary bg-radial-[at_0%_0%];
+  }
 }
 
 ::view-transition-old(root),

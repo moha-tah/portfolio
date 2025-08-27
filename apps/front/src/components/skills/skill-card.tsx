@@ -74,7 +74,7 @@ export function SkillCard({ skill }: Props) {
             </p>
           </div>
         </div>
-        <span className="bg-muted-foreground/70 text-primary-foreground rounded-full px-3 py-1 text-base font-medium text-nowrap backdrop-blur-md">
+        <span className="base-radial-gradient rounded-full px-3 py-1 text-base font-medium text-nowrap text-white backdrop-blur-md">
           {skill.months >= 12
             ? skill.months == 18
               ? t('moreThanOneYear')

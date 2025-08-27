@@ -47,7 +47,7 @@ export function ScrollAnimatedBadge({
       <Badge
         variant={variant}
         className={cn(
-          'shadow-custom h-8 cursor-default gap-1.5 rounded-4xl px-3 text-sm transition-colors duration-200',
+          'base-radial-gradient shadow-custom h-8 cursor-default gap-1.5 rounded-4xl px-3 text-sm text-white transition-colors duration-200',
           className
         )}
       >

@@ -17,23 +17,25 @@ const tools = [
   { name: 'AppsScript' },
   { name: 'Claude' },
   { name: 'Docker' },
+  { name: 'Railway', darkInvert: true },
   { name: 'GCP' },
   { name: 'Git' },
-  { name: 'n8n', shouldInvertInDarkMode: true },
+  { name: 'n8n', darkInvert: true },
   { name: 'Java' },
+  { name: 'Cloudflare' },
   { name: 'HomeAssistant' },
   { name: 'Airflow' },
   { name: 'Algolia' },
-  { name: 'shadcn', shouldInvertInDarkMode: true },
+  { name: 'shadcn', darkInvert: true },
   { name: 'MongoDB' },
-  { name: 'Prisma', shouldInvertInDarkMode: true },
+  { name: 'Prisma', darkInvert: true },
   { name: 'Slack' },
-  { name: 'Rive', shouldInvertInDarkMode: true },
-  { name: 'SQLAlchemy', shouldInvertInDarkMode: true },
+  { name: 'Rive', darkInvert: true },
+  { name: 'SQLAlchemy', darkInvert: true },
   { name: 'Supabase' },
-  { name: 'Unity', shouldInvertInDarkMode: true },
+  { name: 'Unity', darkInvert: true },
   { name: 'Tailwind' },
-  { name: 'Vercel', shouldInvertInDarkMode: true }
+  { name: 'Vercel', darkInvert: true }
 ]
 
 const firstRow = tools.slice(0, tools.length / 2)
@@ -42,11 +44,11 @@ const secondRow = tools.slice(tools.length / 2)
 const Icon = ({
   img,
   name,
-  shouldInvertInDarkMode = false
+  darkInvert = false
 }: {
   img: string
   name: string
-  shouldInvertInDarkMode?: boolean
+  darkInvert?: boolean
 }) => {
   return (
     <Tooltip>
@@ -58,10 +60,7 @@ const Icon = ({
             width={40}
             height={40}
             loading="lazy"
-            className={cn(
-              shouldInvertInDarkMode ? 'dark:invert' : '',
-              'object-contain'
-            )}
+            className={cn(darkInvert ? 'dark:invert' : '', 'object-contain')}
           />
         </div>
       </TooltipTrigger>
@@ -79,7 +78,7 @@ export function AdditionalSkills() {
             key={tool.name}
             img={`/icons/skills/${tool.name}.svg`}
             name={tool.name}
-            shouldInvertInDarkMode={tool.shouldInvertInDarkMode}
+            darkInvert={tool.darkInvert}
           />
         ))}
       </Marquee>
@@ -89,7 +88,7 @@ export function AdditionalSkills() {
             key={tool.name}
             img={`/icons/skills/${tool.name}.svg`}
             name={tool.name}
-            shouldInvertInDarkMode={tool.shouldInvertInDarkMode}
+            darkInvert={tool.darkInvert}
           />
         ))}
       </Marquee>

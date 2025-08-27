@@ -12,7 +12,7 @@ export function TimelineLine({ progress }: TimelineLineProps) {
       <div className="bg-muted absolute inset-0" />
 
       <motion.div
-        className="bg-secondary-accent absolute top-0 left-0 w-full"
+        className="bg-secondary absolute top-0 left-0 w-full"
         initial={{ height: '0%' }}
         animate={{ height: `${progress * 100}%` }}
         transition={{
