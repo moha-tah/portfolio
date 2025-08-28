@@ -4,6 +4,9 @@ interface TranslatedPartProject {
   title: string
   shortDescription: string
   description: string
+  goal: string
+  features: string
+  stack: string[]
 }
 
 interface StaticPartProject {
@@ -11,6 +14,7 @@ interface StaticPartProject {
   image: string
   link?: string
   iconUrl: string
+  invertIcon?: boolean
 }
 
 const staticProjects: StaticPartProject[] = [
@@ -19,7 +23,8 @@ const staticProjects: StaticPartProject[] = [
     image:
       'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
     link: 'https://github.com/moha-tah/Sumo-Spheres-Game',
-    iconUrl: '/icons/skills/Unity.svg'
+    iconUrl: '/icons/skills/Unity.svg',
+    invertIcon: true
   },
   {
     slug: 'distributed-systems-in-go',
@@ -38,7 +43,9 @@ const staticProjects: StaticPartProject[] = [
 
 export interface Project extends TranslatedPartProject, StaticPartProject {}
 
-export function getProjects(t: ReturnType<typeof useTranslations>): Project[] {
+export function getProjects(
+  t: ReturnType<typeof useTranslations<'HomePage.projects'>>
+): Project[] {
   const translatedProjects = t.raw('projects') as TranslatedPartProject[]
 
   return translatedProjects.map((project, index) => ({

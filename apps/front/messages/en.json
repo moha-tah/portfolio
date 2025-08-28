@@ -22,21 +22,42 @@
       "badge": "Projects",
       "title": "My projects",
       "description": "Here are some of the projects I've worked on.",
+      "summary": "Summary",
+      "whyThisProject": "Why this project?",
+      "features": "Features",
+      "viewProject": "View code",
       "projects": [
         {
           "title": "Sumo Spheres Game",
           "shortDescription": "A multiplayer game built with Unity and C#.",
-          "description": "A multiplayer game built with Unity and C#."
+          "description": "A multiplayer game built with Unity and C#. A multiplayer game built with Unity and C#. A multiplayer game built with Unity and C#. A multiplayer game built with Unity and C#.",
+          "goal": "The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. ",
+          "features": "The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. ",
+          "stack": ["Unity", "C#", "Game Development", "Multiplayer", "Hosting"]
         },
         {
           "title": "Distributed Systems in Go",
           "shortDescription": "A distributed system built with Go.",
-          "description": "A distributed system built with Go."
+          "description": "A distributed system built with Go. A distributed system built with Go. A distributed system built with Go. A distributed system built with Go.",
+          "goal": "The goal of the project was to create a distributed system with Go.",
+          "features": "The features of the project are: - A distributed system with Go.",
+          "stack": ["Go", "Distributed Systems", "Parallelism"]
         },
         {
           "title": "Project in Progress",
           "shortDescription": "A project in progress.",
-          "description": "A project in progress."
+          "description": "A project in progress. A project in progress. A project in progress. A project in progress.",
+          "goal": "The goal of the project was to create a project in progress.",
+          "features": "The features of the project are: - A project in progress.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Security",
+            "JWT Authentication",
+            "GitHub Actions",
+            "Deep Search"
+          ]
         }
       ]
     },

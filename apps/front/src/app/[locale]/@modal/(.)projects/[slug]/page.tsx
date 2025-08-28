@@ -1,22 +1,20 @@
 'use client'
 
 import { useParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
+import { getProject } from '@/components/projects/get-project'
+import { ProjectModalItem } from '@/components/projects/project-modal-item'
 import { DialogWrapper } from '@/components/shared/dialog-wrapper'
 import { DrawerWrapper } from '@/components/shared/drawer-wrapper'
-import { ScrollArea } from '@/components/ui/scroll-area'
 import { useIsWidthAbove } from '@/hooks/use-is-width-above'
 
 export default function ProjectModal() {
   const isMobile = !useIsWidthAbove(768)
-  const { slug } = useParams()
+  const { slug } = useParams<{ slug: string }>()
+  const t = useTranslations('HomePage.projects')
 
-  const project = {
-    id: '1',
-    title: 'Project 1',
-    description: 'Description 1',
-    image: 'https://via.placeholder.com/150'
-  }
+  const project = getProject(slug, t)
 
   if (!project) {
     const content = (
@@ -44,43 +42,20 @@ export default function ProjectModal() {
     }
   }
 
-  const content = (
-    <ScrollArea className="h-2/3 overflow-y-hidden">
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-      <h1 className="mb-4 text-2xl">Project {slug}</h1>
-    </ScrollArea>
-  )
+  const content = <ProjectModalItem project={project!} />
 
   return isMobile ? (
-    <DrawerWrapper title={`Project ${slug}`} description={`Project ${slug}`}>
+    <DrawerWrapper
+      title={project!.title}
+      description={project!.shortDescription}
+    >
       {content}
     </DrawerWrapper>
   ) : (
-    <DialogWrapper title={`Project ${slug}`} description={`Project ${slug}`}>
+    <DialogWrapper
+      title={project!.title}
+      description={project!.shortDescription}
+    >
       {content}
     </DialogWrapper>
   )

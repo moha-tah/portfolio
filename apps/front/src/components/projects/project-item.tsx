@@ -5,16 +5,17 @@ import Image from 'next/image'
 import { useViewportIntersection } from '@/hooks/use-viewport-intersection'
 import { cn } from '@/lib/utils'
 
-import { Project } from './get-projets'
+import { Project } from './get-projects'
 import { ProjectInfo } from './project-info'
 
 export function ProjectItem({
   slug,
   title,
-  description,
+  shortDescription,
   image,
   link,
-  iconUrl
+  iconUrl,
+  invertIcon
 }: Project) {
   const { ref, isIntersecting } = useViewportIntersection()
 
@@ -41,9 +42,10 @@ export function ProjectItem({
       >
         <ProjectInfo
           iconUrl={iconUrl}
+          invertIcon={invertIcon}
           slug={slug}
           title={title}
-          description={description}
+          shortDescription={shortDescription}
           link={link}
         />
       </div>

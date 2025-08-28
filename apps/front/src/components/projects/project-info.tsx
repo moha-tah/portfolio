@@ -8,23 +8,28 @@ import { Button } from '../ui/button'
 
 interface Props {
   iconUrl: string
+  invertIcon?: boolean
   slug: string
   title: string
-  description: string
+  shortDescription: string
   link?: string
   className?: string
 }
 
 export function ProjectInfo({
   iconUrl,
+  invertIcon = false,
   slug,
   title,
-  description,
+  shortDescription,
   className
 }: Props) {
   return (
     <div
-      className={cn('shadow-custom rounded-4xl bg-white p-2 sm:p-3', className)}
+      className={cn(
+        'shadow-custom bg-background rounded-4xl p-2 sm:p-3',
+        className
+      )}
     >
       <div className="flex h-fit w-full items-center gap-4">
         <Image
@@ -32,15 +37,18 @@ export function ProjectInfo({
           alt={title}
           width={50}
           height={50}
-          className="hidden size-12 rounded-lg sm:block"
+          className={cn(
+            'hidden size-12 rounded-lg sm:block',
+            invertIcon && 'dark:invert'
+          )}
         />
 
         <div className="flex min-w-0 flex-1 flex-col">
-          <p className="truncate font-medium text-black sm:text-lg sm:font-semibold">
+          <p className="text-foreground truncate font-medium sm:text-lg sm:font-semibold">
             {title}
           </p>
-          <p className="text-muted-foreground dark:text-muted/80 hidden truncate text-sm sm:block">
-            {description}
+          <p className="text-muted-foreground hidden truncate text-sm sm:block">
+            {shortDescription}
           </p>
         </div>
 

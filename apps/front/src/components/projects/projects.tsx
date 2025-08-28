@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import { getProjects } from './get-projets'
+import { getProjects } from './get-projects'
 import { ProjectItem } from './project-item'
 import { ScrollAnimatedBadge } from '../shared/animations/scroll-animated-badge'
 import { ScrollAnimatedSection } from '../shared/animations/scroll-animated-section'
