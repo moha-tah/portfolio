@@ -11,8 +11,8 @@ export default async function Home() {
   return (
     <div className="flex flex-col items-center justify-center gap-12 sm:gap-24">
       <Hero />
-      <Projects />
       <AboutMe />
+      <Projects />
       <Skills />
       <Testimonials />
       <FAQ />

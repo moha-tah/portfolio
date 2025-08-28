@@ -14,7 +14,7 @@ export function Projects() {
   return (
     <ScrollAnimatedSection
       id="projects"
-      className="w-full max-w-6xl px-6 pt-8"
+      className="w-full max-w-7xl px-6 pt-8"
       staggerChildren={0.1}
       delayChildren={0.2}
     >

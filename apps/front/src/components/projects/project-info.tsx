@@ -2,6 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 
 import { Link } from '@/i18n/navigation'
+import { cn } from '@/lib/utils'
 
 import { Button } from '../ui/button'
 
@@ -11,6 +12,7 @@ interface Props {
   title: string
   description: string
   link?: string
+  className?: string
 }
 
 export function ProjectInfo({
@@ -18,45 +20,39 @@ export function ProjectInfo({
   slug,
   title,
   description,
-  link
+  className
 }: Props) {
   return (
-    <div className="rounded-4xl bg-red-300 p-3">
+    <div
+      className={cn('shadow-custom rounded-4xl bg-white p-2 sm:p-3', className)}
+    >
       <div className="flex h-fit w-full items-center gap-4">
         <Image
           src={iconUrl}
           alt={title}
-          width={56}
-          height={56}
-          className="rounded-lg object-cover"
+          width={50}
+          height={50}
+          className="hidden size-12 rounded-lg sm:block"
         />
 
-        <div className="flex flex-col">
-          <p className="text-lg font-bold">{title}</p>
-          <p className="text-muted-foreground text-sm">{description}</p>
+        <div className="flex min-w-0 flex-1 flex-col">
+          <p className="truncate font-medium text-black sm:text-lg sm:font-semibold">
+            {title}
+          </p>
+          <p className="text-muted-foreground dark:text-muted/80 hidden truncate text-sm sm:block">
+            {description}
+          </p>
         </div>
 
-        <div className="flex h-full flex-1 items-center justify-end gap-2">
-          {link && (
-            <Button variant="outline" size="icon" asChild>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/icons/GitHub.svg"
-                  alt="GitHub icon"
-                  className="dark:invert"
-                  width={20}
-                  height={20}
-                />
-              </a>
-            </Button>
-          )}
-          <Button asChild className="gap-1 rounded-full">
-            <Link href={`/projects/${slug}`}>
-              View
-              <ArrowUpRight size={20} className="stroke-2" />
-            </Link>
-          </Button>
-        </div>
+        <Button
+          asChild
+          className="dark:border-muted/50 base-radial-gradient h-8 gap-1 rounded-full border px-14 text-base text-white shadow-none transition-all duration-300 hover:scale-105 sm:h-12 sm:font-semibold sm:has-[>svg]:px-6"
+        >
+          <Link href={`/projects/${slug}`}>
+            View
+            <ArrowUpRight size={20} className="stroke-2 sm:stroke-3" />
+          </Link>
+        </Button>
       </div>
     </div>
   )

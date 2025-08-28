@@ -14,23 +14,23 @@ export function ProjectItem({
   iconUrl
 }: Project) {
   return (
-    <div className="flex flex-col gap-4">
-      <div className="group overflow-hidden rounded-4xl">
-        <Image
-          src={image}
-          alt={title}
-          height={525}
-          width={525}
-          className="scale-110 object-contain transition-transform duration-300 ease-in-out group-hover:scale-100"
+    <div className="group relative flex flex-col gap-4 overflow-hidden rounded-4xl">
+      <Image
+        src={image}
+        alt={title}
+        height={650}
+        width={650}
+        className="scale-110 object-contain transition-transform duration-500 ease-in-out group-hover:scale-100"
+      />
+      <div className="spring-bounce-20 spring-duration-500 absolute bottom-0 left-1/2 w-full -translate-x-1/2 p-3 transition-transform sm:-bottom-24 sm:group-hover:-translate-y-24">
+        <ProjectInfo
+          iconUrl={iconUrl}
+          slug={slug}
+          title={title}
+          description={description}
+          link={link}
         />
       </div>
-      <ProjectInfo
-        iconUrl={iconUrl}
-        slug={slug}
-        title={title}
-        description={description}
-        link={link}
-      />
     </div>
   )
 }
