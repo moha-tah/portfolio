@@ -20,7 +20,7 @@ const tools = [
   { name: 'Railway', darkInvert: true },
   { name: 'GCP' },
   { name: 'Git' },
-  { name: 'n8n', darkInvert: true },
+  // { name: 'n8n', darkInvert: true },
   { name: 'Java' },
   { name: 'Cloudflare' },
   { name: 'HomeAssistant' },

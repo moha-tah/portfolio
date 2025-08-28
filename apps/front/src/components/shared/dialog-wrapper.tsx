@@ -27,7 +27,7 @@ export const DialogWrapper = ({
     <Dialog defaultOpen={true} open={true} onOpenChange={router.back}>
       <DialogContent
         aria-describedby={title}
-        className="rounded-4xl dark:bg-radial-[at_100%_100%] dark:from-white/10 dark:via-transparent dark:via-70% dark:to-transparent"
+        className="rounded-4xl dark:bg-radial-[at_80%_90%] dark:from-white/10 dark:via-transparent dark:via-70% dark:to-transparent"
       >
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
