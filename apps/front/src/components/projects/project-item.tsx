@@ -30,7 +30,7 @@ export function ProjectItem({
         height={650}
         width={650}
         className={cn(
-          'object-contain transition-transform duration-500 ease-in-out hover:scale-100',
+          'h-[525px] w-[700px] object-cover transition-transform duration-500 ease-in-out hover:scale-100',
           isIntersecting ? 'scale-[1.02]' : 'scale-105'
         )}
       />

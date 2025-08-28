@@ -20,23 +20,20 @@ interface StaticPartProject {
 export const staticProjects: StaticPartProject[] = [
   {
     slug: 'unity-multiplayer-game',
-    image:
-      'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
+    image: '/images/projects/sumo-spheres.jpg',
     link: 'https://github.com/moha-tah/Sumo-Spheres-Game',
     iconUrl: '/icons/skills/Unity.svg',
     invertIcon: true
   },
   {
     slug: 'distributed-systems-in-go',
-    image:
-      'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
+    image: '/images/projects/distributed-systems.png',
     link: 'https://github.com/4l3x4ndre/Distributed-System-with-Verification',
     iconUrl: '/icons/skills/Go.svg'
   },
   {
     slug: 'project-in-progress',
-    image:
-      'https://www.shutterstock.com/image-photo/lake-palms-mahe-island-seychelles-260nw-119831752.jpg',
+    image: '/images/projects/project-in-progress.jpg',
     iconUrl: '/icons/skills/TypeScript.svg'
   }
 ]

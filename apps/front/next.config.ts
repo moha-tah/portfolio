@@ -13,10 +13,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'github.com'
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.shutterstock.com'
       }
     ],
     formats: ['image/webp']
