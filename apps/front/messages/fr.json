@@ -18,6 +18,58 @@
         "NestJS": "NestJS"
       }
     },
+    "projects": {
+      "badge": "Projets",
+      "title": "Mes projets",
+      "description": "Voici quelques-uns des projets sur lesquels j'ai travaillé.",
+      "summary": "Résumé",
+      "whyThisProject": "Pourquoi ce projet ?",
+      "features": "Fonctionnalités",
+      "viewCode": "Voir le code",
+      "closedSource": "Code fermé",
+      "viewDetails": "Voir les détails",
+      "backToProjects": "Retour aux projets",
+      "projects": [
+        {
+          "title": "Jeu Sumo Spheres",
+          "shortDescription": "Un jeu multijoueur développé avec Unity et C#.",
+          "description": "Un jeu d'arène multijoueur en ligne où les joueurs contrôlent des sphères pour se pousser mutuellement hors de la carte.",
+          "goal": "Concevoir et implémenter un jeu multijoueur rapide en utilisant Unity et C#, en mettant l'accent sur une jouabilité basée sur la physique et des interactions en ligne fluides.",
+          "features": "Fonctionnalités principales : matchmaking multijoueur en temps réel, mouvement et collisions basés sur la physique, arènes personnalisables et sessions de jeu hébergées sur serveur.",
+          "stack": [
+            "Unity",
+            "C#",
+            "Développement de jeux",
+            "Multijoueur",
+            "Hébergement"
+          ]
+        },
+        {
+          "title": "Systèmes Distribués en Go",
+          "shortDescription": "Un système distribué développé avec Go.",
+          "description": "Un magasin de paires clé-valeur distribué, conçu pour gérer un débit élevé de données avec tolérance aux pannes.",
+          "goal": "Apprendre et implémenter les concepts clés des systèmes distribués tels que la réplication, le consensus et la scalabilité en utilisant Go.",
+          "features": "Fonctionnalités principales : élection de leader avec Raft, réplication des données entre nœuds, tolérance aux pannes et API client pour les applications externes.",
+          "stack": ["Go", "Systèmes distribués", "Parallélisme"]
+        },
+        {
+          "title": "Projet en cours",
+          "shortDescription": "Un projet en cours de développement.",
+          "description": "Ceci est une description volontairement longue pour tester le comportement de l'interface avec de grandes quantités de texte. Au fil du développement, ce projet a connu de nombreuses itérations, chacune visant à améliorer les performances, la scalabilité et l'expérience utilisateur. L'équipe s'est concentrée sur la mise en œuvre des bonnes pratiques en ingénierie logicielle, telles que l'intégration continue, les tests automatisés et l'architecture modulaire, afin d'assurer une maintenabilité à long terme. De plus, une attention particulière a été portée aux retours des utilisateurs, qui ont guidé l'amélioration des fonctionnalités principales et inspiré l'ajout de nouvelles fonctionnalités. Cette description détaillée continue avec des informations sur la pile technologique, les décisions de conception, les modèles architecturaux et les enseignements tirés, offrant une vue d'ensemble complète qui garantit que l'application peut gérer du contenu étendu sans problème dans l'interface.",
+          "goal": "Développer une plateforme web évolutive avec un backend sécurisé, une authentification robuste et des capacités de recherche optimisées.",
+          "features": "Fonctionnalités prévues : authentification basée sur JWT, contrôle d'accès basé sur les rôles, pipelines CI/CD et moteur de recherche avancé avec filtres et classement.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Sécurité",
+            "Authentification JWT",
+            "GitHub Actions",
+            "Recherche avancée"
+          ]
+        }
+      ]
+    },
     "testimonials": {
       "badge": "Témoignages",
       "title": "Ce que les gens avec qui j'ai travaillé disent de moi",

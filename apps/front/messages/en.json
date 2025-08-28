@@ -25,30 +25,33 @@
       "summary": "Summary",
       "whyThisProject": "Why this project?",
       "features": "Features",
-      "viewProject": "View code",
+      "viewCode": "View code",
+      "closedSource": "Closed Source",
+      "viewDetails": "View details",
+      "backToProjects": "Back to projects",
       "projects": [
         {
           "title": "Sumo Spheres Game",
           "shortDescription": "A multiplayer game built with Unity and C#.",
-          "description": "A multiplayer game built with Unity and C#. A multiplayer game built with Unity and C#. A multiplayer game built with Unity and C#. A multiplayer game built with Unity and C#.",
-          "goal": "The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. The goal of the project was to create a multiplayer game with Unity and C#. ",
-          "features": "The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. The features of the project are: - A multiplayer game with Unity and C#. ",
+          "description": "An online multiplayer arena game where players control spheres to push each other out of the map.",
+          "goal": "Design and implement a fast-paced multiplayer game using Unity and C#, focusing on physics-based gameplay and smooth online interactions.",
+          "features": "Key features include: real-time multiplayer matchmaking, physics-based movement and collisions, customizable arenas, and server-hosted game sessions.",
           "stack": ["Unity", "C#", "Game Development", "Multiplayer", "Hosting"]
         },
         {
           "title": "Distributed Systems in Go",
           "shortDescription": "A distributed system built with Go.",
-          "description": "A distributed system built with Go. A distributed system built with Go. A distributed system built with Go. A distributed system built with Go.",
-          "goal": "The goal of the project was to create a distributed system with Go.",
-          "features": "The features of the project are: - A distributed system with Go.",
+          "description": "A distributed key-value store built to handle high-throughput data with fault tolerance.",
+          "goal": "Learn and implement core concepts of distributed systems such as replication, consensus, and scalability using Go.",
+          "features": "Key features include: leader election using Raft, data replication across nodes, fault tolerance, and a client API for external applications.",
           "stack": ["Go", "Distributed Systems", "Parallelism"]
         },
         {
           "title": "Project in Progress",
           "shortDescription": "A project in progress.",
-          "description": "A project in progress. A project in progress. A project in progress. A project in progress.",
-          "goal": "The goal of the project was to create a project in progress.",
-          "features": "The features of the project are: - A project in progress.",
+          "description": "This is an intentionally long description to test the UI behavior with large amounts of text. Over the course of development, this project has undergone numerous iterations, each aimed at improving performance, scalability, and user experience. The team focused on implementing best practices in software engineering, such as continuous integration, automated testing, and modular architecture, to ensure long-term maintainability. Furthermore, significant attention was given to user feedback, which guided the refinement of core features and inspired the addition of new functionalities. This extended description continues with details about the technology stack, design decisions, architectural patterns, and lessons learned, offering a comprehensive overview that ensures the application can handle extended content gracefully within the interface.",
+          "goal": "Develop a scalable web platform with a secure backend, robust authentication, and optimized search capabilities.",
+          "features": "Planned features include: JWT-based authentication, role-based access control, CI/CD pipelines, and an advanced search engine with filters and ranking.",
           "stack": [
             "Next.js",
             "NestJS",

@@ -17,7 +17,7 @@ interface StaticPartProject {
   invertIcon?: boolean
 }
 
-const staticProjects: StaticPartProject[] = [
+export const staticProjects: StaticPartProject[] = [
   {
     slug: 'unity-multiplayer-game',
     image:

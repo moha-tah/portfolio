@@ -27,7 +27,7 @@ export const DrawerWrapper = ({
 
   return (
     <Drawer open={open} onOpenChange={setOpen} onClose={router.back}>
-      <DrawerContent aria-describedby={title}>
+      <DrawerContent aria-describedby={title} className="items-center">
         <DrawerHeader>
           <DrawerTitle>{title}</DrawerTitle>
           <DrawerDescription>{description}</DrawerDescription>
