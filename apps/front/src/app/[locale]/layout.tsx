@@ -40,11 +40,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 interface Props {
+  modal: React.ReactNode
   children: React.ReactNode
   params: Promise<{ locale: Locale }>
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({ children, params, modal }: Props) {
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) {
     notFound()
@@ -60,6 +61,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <ScrollProgress />
           <Background />
           <Navbar />
+          {modal}
           <div className="py-12 sm:py-24">{children}</div>
           <Footer />
         </ProvidersWrapper>
