@@ -28,9 +28,9 @@ export function ProjectItem({
         src={image}
         alt={title}
         height={650}
-        width={650}
+        width={865}
         className={cn(
-          'h-[525px] w-[700px] object-cover transition-transform duration-500 ease-in-out hover:scale-100',
+          'h-[375px] w-[500px] object-cover transition-transform duration-500 ease-in-out hover:scale-100 sm:h-[525px] sm:w-[700px] lg:h-[650px] lg:w-[865px]',
           isIntersecting ? 'scale-[1.02]' : 'scale-105'
         )}
       />

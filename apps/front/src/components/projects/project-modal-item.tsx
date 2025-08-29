@@ -33,7 +33,11 @@ export function ProjectModalItem({ project, withScrollArea = true }: Props) {
     <div className="max-w-screen px-6 md:px-0">
       <div className="flex flex-wrap gap-2 pb-4">
         {project.stack.map((skill) => (
-          <Badge key={skill} variant="secondary" className="text-white">
+          <Badge
+            key={skill}
+            variant="secondary"
+            className="text-xs text-white sm:text-sm"
+          >
             {skill}
           </Badge>
         ))}

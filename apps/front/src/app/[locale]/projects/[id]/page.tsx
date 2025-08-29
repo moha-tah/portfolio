@@ -102,7 +102,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               alt={project.title}
               width={1200}
               height={600}
-              className="h-64 w-full object-cover md:h-96"
+              className="w-full object-cover"
               priority
             />
           </div>

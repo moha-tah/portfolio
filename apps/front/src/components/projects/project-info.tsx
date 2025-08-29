@@ -43,7 +43,7 @@ export function ProjectInfo({
           )}
         />
 
-        <div className="flex min-w-0 flex-1 flex-col">
+        <div className="flex min-w-0 flex-1 flex-col pl-2">
           <p className="text-foreground truncate font-medium sm:text-lg sm:font-semibold">
             {title}
           </p>
