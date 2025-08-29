@@ -220,7 +220,7 @@
     }
   },
   "footer": {
-    "badge": "Site signé <linkToMe>Mohamed Tahiri</linkToMe>. Code source sur <linkToCode>GitHub</linkToCode>.",
+    "badge": "Site fait par <linkToMe>Mohamed Tahiri</linkToMe>. Code source sur <linkToCode>GitHub</linkToCode>.",
     "contact": {
       "badge": "Contact",
       "title": "Prenons contact",
