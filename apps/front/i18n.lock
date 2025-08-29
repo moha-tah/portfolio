@@ -15,6 +15,74 @@ checksums:
     HomePage/hero/passions/Backend: 3fbd08ffd1724ca0549c7036a5543165
     HomePage/hero/passions/TypeScript: d63d2a97f55baa75f353987658ddb0a0
     HomePage/hero/passions/NestJS: a51e2989741bba2644267a2c1bf3a151
+    HomePage/aboutMe/badge: 2143f5406d1eec5b83cff6daa4ba873f
+    HomePage/aboutMe/title: aa6383d6319ba85ab9fc0898b520ebb0
+    HomePage/aboutMe/description: e4ce9ce93ce8028a94b377ac6c390cd5
+    HomePage/aboutMe/timeline/steps/0/title: 5e0dd31ca3757808223b477d665924a5
+    HomePage/aboutMe/timeline/steps/0/subtitle: e56bdb36c9e118ae793af60dc3963970
+    HomePage/aboutMe/timeline/steps/0/description: 119fe8d53d4df105fcaa4c59de3fd62f
+    HomePage/aboutMe/timeline/steps/0/learnMoreText: db5a5649de0618752254a8cf194a29a5
+    HomePage/aboutMe/timeline/steps/1/title: e79f81f7839d6467853a9eb0e3664b0b
+    HomePage/aboutMe/timeline/steps/1/subtitle: 809266f646428a90a5338399fdb5885a
+    HomePage/aboutMe/timeline/steps/1/description: c56d209b3f93087c0ddad0e37bf6429b
+    HomePage/aboutMe/timeline/steps/1/learnMoreText: 5553a8763e8c63d5f15f0ae470c0a780
+    HomePage/aboutMe/timeline/steps/2/title: 040b65fd6abc14f0b7da2df94bb5bb28
+    HomePage/aboutMe/timeline/steps/2/subtitle: 2eecaff68af6bf96a0043ab7df454cd5
+    HomePage/aboutMe/timeline/steps/2/description: 14fc0a7eaa89c04f04af0afd26751a19
+    HomePage/aboutMe/timeline/steps/2/learnMoreText: 7ed5e09a2a6e49cfaa443ae20ddb9aaf
+    HomePage/aboutMe/timeline/steps/3/title: 5a0ad59b0005f86f1b43e3bc10abdfa6
+    HomePage/aboutMe/timeline/steps/3/subtitle: 9167132979ec56288770d91ceee221d5
+    HomePage/aboutMe/timeline/steps/3/description: c7d71e2d0b66c6625945b3800d949c78
+    HomePage/aboutMe/timeline/steps/4/title: 0790c9d25d14608ac24ecd77c9bf7bbf
+    HomePage/aboutMe/timeline/steps/4/subtitle: c16e732e592463f16ea4adec70fd16ff
+    HomePage/aboutMe/timeline/steps/4/description: 5a08616b59ce870afbcb99e71ca8efad
+    HomePage/aboutMe/timeline/steps/4/learnMoreText: 16436b5c2eca54588807921d905a2652
+    HomePage/projects/badge: fe8af5cfb3c95cb35534872a325b225e
+    HomePage/projects/title: cca8437b3dcdddaf8648c8b07c998688
+    HomePage/projects/description: 1fe095903fcfe5642694fe09bd1eb3e9
+    HomePage/projects/summary: 13eb7b8a239fb4702dfdaee69100a220
+    HomePage/projects/whyThisProject: 472239fd646f53d86d63e9959e8bf932
+    HomePage/projects/features: 341ff316a339b106a178f0b8d362951b
+    HomePage/projects/viewCode: 933581d6443499f63c26b70257bd0760
+    HomePage/projects/closedSource: 8b1268b414bc98fc84c8cac1a38a6531
+    HomePage/projects/viewDetails: 885f3ad1c2e448d104a45c0291b79ba5
+    HomePage/projects/backToProjects: 1e6900d1bda00c970b18ed2c828e0b30
+    HomePage/projects/projects/0/title: 6bcde2ebc990de724d03ee7cacf6e596
+    HomePage/projects/projects/0/shortDescription: 23a2aae1ccad0cfbd35b3ea36acc06bc
+    HomePage/projects/projects/0/description: 7f617c0e512f7aa01a5afc46762320f7
+    HomePage/projects/projects/0/goal: 3b2a27c5f4fb746d54184681ea37a779
+    HomePage/projects/projects/0/features: 10a2600a9fc44eafebead5337849e04a
+    HomePage/projects/projects/0/stack/0: 6f3c79ede015c6cf2890e7361e5f6fd4
+    HomePage/projects/projects/0/stack/1: 49bc1ac3f70ea329006882f0b791b9c1
+    HomePage/projects/projects/0/stack/2: cd88d949088b474065aa9123d9405529
+    HomePage/projects/projects/0/stack/3: 445dbff330ffae601b5789bf7c21310d
+    HomePage/projects/projects/0/stack/4: 61e24616658dbc78508be37421aed76d
+    HomePage/projects/projects/0/stack/5: c33b6a3ab0eb78c2e37bb500b4498742
+    HomePage/projects/projects/0/stack/6: d6c4288280a622135ef93a225bfff1a6
+    HomePage/projects/projects/1/title: 6526ff87db7308c758491f446052e8b4
+    HomePage/projects/projects/1/shortDescription: 1712863e833c6fe51e6ebf68d93f7141
+    HomePage/projects/projects/1/description: 5557e80d343443f6bc23f1a029c79398
+    HomePage/projects/projects/1/goal: 70828744ccc9d8bd1503f43250bd3193
+    HomePage/projects/projects/1/features: 32d735347885c9cd93820f022b50d0f6
+    HomePage/projects/projects/1/stack/0: fab52944eac83f39473becf87aba4351
+    HomePage/projects/projects/1/stack/1: 19df6559af13aeeea62fcc45a40f5495
+    HomePage/projects/projects/1/stack/2: 1d1473df8cfd1eea9663d7b27106a28c
+    HomePage/projects/projects/1/stack/3: 8ba3424e48dba8e5c1d91a6ec26c39ac
+    HomePage/projects/projects/1/stack/4: e84d98fc88c1e695142a4dea0f99ad93
+    HomePage/projects/projects/1/stack/5: 48e97965b90c5a76473723dd3681cae5
+    HomePage/projects/projects/1/stack/6: a5c9281e08aa67da3be865428d75d084
+    HomePage/projects/projects/2/title: b26e4d3e1f6b728a158b4d80f0f4b0c3
+    HomePage/projects/projects/2/shortDescription: e76c92a7611be0c856fc6879790d24db
+    HomePage/projects/projects/2/description: 2ded50c8997484c70e130ec423c7627d
+    HomePage/projects/projects/2/goal: 9c7462af3d1b0e719fb6a35c58900d93
+    HomePage/projects/projects/2/features: 9e4cbba042032d6b9c3b935a73c791cd
+    HomePage/projects/projects/2/stack/0: 9104a97c2178733d73fd8df641a6a432
+    HomePage/projects/projects/2/stack/1: a51e2989741bba2644267a2c1bf3a151
+    HomePage/projects/projects/2/stack/2: 97e0286c2825524efb93ba79d0ff0b48
+    HomePage/projects/projects/2/stack/3: 4b34923fef858a2b9a4a914c3e822889
+    HomePage/projects/projects/2/stack/4: b836a3bccda9c2a573382518de4cc123
+    HomePage/projects/projects/2/stack/5: 2a48a79d821c16b4fd317b1bad5bdfd9
+    HomePage/projects/projects/2/stack/6: 0da880d957cec6f58741b296fb35be20
     HomePage/testimonials/badge: e958aa3d3743031e2cbfbfd8f1e381f6
     HomePage/testimonials/title: bf53e8dee0e5db47b9351062bbc8f953
     HomePage/testimonials/description: 4529b990e81e6124930dffd7e6e95a1d
@@ -52,26 +120,8 @@ checksums:
     HomePage/skills/years: 894754a0fd1ccd6e4dd95a7dd62088eb
     HomePage/skills/months: d4e5fc570ca0d0d76ced2e3f9de48951
     HomePage/skills/moreThanOneYear: 0874e1a3d9641cf2f56503773acd06ef
-    HomePage/aboutMe/badge: 2143f5406d1eec5b83cff6daa4ba873f
-    HomePage/aboutMe/title: aa6383d6319ba85ab9fc0898b520ebb0
-    HomePage/aboutMe/description: 48de7f2a83f30b502941e97f409576d3
-    HomePage/aboutMe/timeline/steps/0/title: 5e0dd31ca3757808223b477d665924a5
-    HomePage/aboutMe/timeline/steps/0/subtitle: e56bdb36c9e118ae793af60dc3963970
-    HomePage/aboutMe/timeline/steps/0/description: c31055f08e6014a2b70ad737b38c761a
-    HomePage/aboutMe/timeline/steps/0/learnMoreText: db5a5649de0618752254a8cf194a29a5
-    HomePage/aboutMe/timeline/steps/1/title: 040b65fd6abc14f0b7da2df94bb5bb28
-    HomePage/aboutMe/timeline/steps/1/subtitle: 2eecaff68af6bf96a0043ab7df454cd5
-    HomePage/aboutMe/timeline/steps/1/description: 1eb46c6be1ebb979e62d72404a58241c
-    HomePage/aboutMe/timeline/steps/1/learnMoreText: 7ed5e09a2a6e49cfaa443ae20ddb9aaf
-    HomePage/aboutMe/timeline/steps/2/title: 61d284baafcdc62d510815ae9601153a
-    HomePage/aboutMe/timeline/steps/2/subtitle: 9167132979ec56288770d91ceee221d5
-    HomePage/aboutMe/timeline/steps/2/description: 9b2a7645abb061d596a62cfb14e53102
-    HomePage/aboutMe/timeline/steps/3/title: 0790c9d25d14608ac24ecd77c9bf7bbf
-    HomePage/aboutMe/timeline/steps/3/subtitle: c16e732e592463f16ea4adec70fd16ff
-    HomePage/aboutMe/timeline/steps/3/description: 0f08b7dd2c72fc02ae1f5bef164b995c
-    HomePage/aboutMe/timeline/steps/3/learnMoreText: 16436b5c2eca54588807921d905a2652
     HomePage/faq/badge: 47e0ee2eb40b4e7e732e05e2233fc71c
-    HomePage/faq/title: 212c5c784d5580b2f8b9481cb102cb4c
+    HomePage/faq/title: e598091d132f890c37a6d4ed94f6d794
     HomePage/faq/description: cd9482c8ebd75df2a1016e38bcc8ff46
     HomePage/faq/questions/0/question: 837019d4c11dac47b7106e14121450c2
     HomePage/faq/questions/0/answer: f7954172dd8828ab36d4c6a415740677
@@ -116,6 +166,9 @@ checksums:
     shared/modeToggle/toggle: cf4f92cd5b5304031f4cd10b8ad93a2b
     shared/noScriptBanner/message: 0c08704849d9594520639071d518b9aa
     shared/languageSwitch: 53bea3a813015ca3bf2e4cc6a269fb74
+    notFound/title: 5b1dea4722f8fd52b68f7ac5ce89875d
+    notFound/description: 65ad307ba26227fe44343f17e52138de
+    notFound/goHome: 377f3be7cfb6c1ffb55a75d90ce91f2f
     navbar/contactMe: a6e7fa10e8e1473c3cfae16f81e564fd
     navbar/sections/hero: 104a3db3b671c04e167eafbe21e57881
     navbar/sections/about: 2143f5406d1eec5b83cff6daa4ba873f

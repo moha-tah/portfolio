@@ -18,6 +18,44 @@
         "NestJS": "NestJS"
       }
     },
+    "aboutMe": {
+      "badge": "À propos de moi",
+      "title": "Un aperçu de mon parcours",
+      "description": "Un parcours chronologique à travers mes expériences et réalisations clés, mettant en évidence mon évolution en tant qu'étudiant en génie informatique.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "Premières années à l'UTC",
+            "subtitle": "Sept. 2021 - Juin 2024",
+            "description": "Acquisition de bases solides en informatique, couvrant les algorithmes, les structures de données, le génie logiciel et l'architecture des systèmes.",
+            "learnMoreText": "En savoir plus sur l'UTC"
+          },
+          {
+            "title": "Programmation compétitive",
+            "subtitle": "Sept. 2023 - Juin 2024",
+            "description": "Au sein du club de programmation de mon université, j'enseignais la programmation compétitive. Nous avons exploré les algorithmes, les structures de données et les techniques de résolution de problèmes en utilisant LeetCode. Lors d'une compétition, mon équipe et moi avons terminé à la 6ème place sur environ 70 équipes.",
+            "learnMoreText": "Notre page Instagram"
+          },
+          {
+            "title": "Stage chez Napta",
+            "subtitle": "Sept. 2024 - Fév. 2025",
+            "description": "J'ai travaillé comme ingénieur de données et ingénieur backend (Python, Flask, PostgreSQL, Airflow...) pour construire des pipelines de données efficaces. J'ai collaboré au sein d'une équipe agile de 7 ingénieurs seniors.",
+            "learnMoreText": "En savoir plus sur Napta"
+          },
+          {
+            "title": "Projet pour acquérir de l'expérience",
+            "subtitle": "Sept. 2024 - Présent",
+            "description": "Après mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, JWT, S3, PostgreSQL, Next.js...) contribuant au développement d'une application web avec 8 ingénieurs. Plus d'informations dans la section Projets ci-dessous."
+          },
+          {
+            "title": "Dernière année à l'UTC (ISI)",
+            "subtitle": "Fév. 2025 - Fév. 2026",
+            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec un accent sur les systèmes distribués, la conception backend avancée et l'architecture. La dernière étape de mes études sera un stage de 6 mois débutant en février 2026.",
+            "learnMoreText": "En savoir plus sur ma spécialité \"ISI\""
+          }
+        ]
+      }
+    },
     "projects": {
       "badge": "Projets",
       "title": "Mes projets",
@@ -41,7 +79,9 @@
             "C#",
             "Développement de jeux",
             "Multijoueur",
-            "Hébergement"
+            "Hébergement",
+            "Sockets UDP",
+            "Optimisation"
           ]
         },
         {
@@ -50,7 +90,15 @@
           "description": "Un magasin de paires clé-valeur distribué, conçu pour gérer un débit élevé de données avec tolérance aux pannes.",
           "goal": "Apprendre et implémenter les concepts clés des systèmes distribués tels que la réplication, le consensus et la scalabilité en utilisant Go.",
           "features": "Fonctionnalités principales : élection de leader avec Raft, réplication des données entre nœuds, tolérance aux pannes et API client pour les applications externes.",
-          "stack": ["Go", "Systèmes distribués", "Parallélisme"]
+          "stack": [
+            "Go",
+            "Systèmes distribués",
+            "Parallélisme",
+            "Algorithmes d'élection",
+            "Snapshots",
+            "Détection de collision",
+            "Horloges logiques"
+          ]
         },
         {
           "title": "Projet en cours",
@@ -142,38 +190,6 @@
       "years": "{count, plural, one {1 an} other {# ans}}",
       "months": "{count, plural, one {1 mois} other {# mois}}",
       "moreThanOneYear": "> 1 an"
-    },
-    "aboutMe": {
-      "badge": "À propos de moi",
-      "title": "Un aperçu de mon parcours",
-      "description": "Un voyage chronologique à travers mes principales expériences et réalisations, mettant en lumière mon évolution en tant qu'étudiant en ingénierie informatique et développeur.",
-      "timeline": {
-        "steps": [
-          {
-            "title": "Premières années à l'UTC",
-            "subtitle": "Sept. 2021 - Juin 2024",
-            "description": "Acquisition de bases solides en informatique, couvrant les algorithmes, l'ingénierie logicielle et l'architecture des systèmes. Exploration de divers domaines avant de me spécialiser en ingénierie informatique.",
-            "learnMoreText": "En savoir plus sur l'UTC"
-          },
-          {
-            "title": "Stage chez Napta",
-            "subtitle": "Sept. 2024 - Fév. 2025",
-            "description": "Travail en tant qu'ingénieur Data et Backend (Python, Flask, PostgreSQL, Airflow) pour concevoir des pipelines de données évolutifs et performants dans une startup. Collaboration au sein d'une équipe agile de 12 développeurs. J'ai beaucoup appris auprès d'ingénieurs seniors et acquis une solide expérience du monde professionnel.",
-            "learnMoreText": "En savoir plus sur Napta"
-          },
-          {
-            "title": "Projets pour acquérir de l'expérience",
-            "subtitle": "Sept. 2024 - Présent",
-            "description": "En parallèle de mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS) afin d'acquérir de l'expérience, contribuant au développement d'applications web évolutives en TypeScript, NestJS et PostgreSQL. Amélioration des pipelines CI/CD et collaboration au sein d'une équipe agile de 6 développeurs. Le projet est toujours en cours et sera publié en octobre 2025."
-          },
-          {
-            "title": "Dernière année à l'UTC (ISI)",
-            "subtitle": "Fév. 2025 - Fév. 2026",
-            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec un focus sur les systèmes distribués, la conception avancée de backend et l'architecture, afin de préparer ma carrière d'ingénieur logiciel. La dernière étape de mon cursus sera un stage de 6 mois débutant en février 2026.",
-            "learnMoreText": "En savoir plus sur ma spécialité « ISI »"
-          }
-        ]
-      }
     },
     "faq": {
       "badge": "FAQ",
