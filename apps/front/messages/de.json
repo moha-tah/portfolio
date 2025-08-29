@@ -18,6 +18,106 @@
         "NestJS": "NestJS"
       }
     },
+    "aboutMe": {
+      "badge": "Über mich",
+      "title": "Ein Überblick meiner Karriere",
+      "description": "Eine chronologische Reise durch meine wichtigsten Erfahrungen und Erfolge, die meine Entwicklung als Student der Informatik hervorhebt.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "Erste Jahre an der UTC",
+            "subtitle": "Sept. 2021 - Juni 2024",
+            "description": "Aufbau solider Grundlagen in der Informatik, einschließlich Algorithmen, Datenstrukturen, Software-Engineering und Systemarchitektur.",
+            "learnMoreText": "Mehr über UTC erfahren"
+          },
+          {
+            "title": "Wettbewerbsprogrammierung",
+            "subtitle": "Sept. 2023 - Juni 2024",
+            "description": "Im Programmierclub meiner Universität unterrichtete ich Wettbewerbsprogrammierung. Wir haben Algorithmen, Datenstrukturen und Problemlösungstechniken mit LeetCode erforscht. Bei einem Wettbewerb belegte mein Team und ich den 6. Platz von etwa 70 Teams.",
+            "learnMoreText": "Unsere Instagram-Seite"
+          },
+          {
+            "title": "Praktikum @ Napta",
+            "subtitle": "Sept. 2024 - Feb. 2025",
+            "description": "Arbeitete als Data Engineer und Backend Engineer (Python, Flask, PostgreSQL, Airflow...), um effiziente Datenpipelines zu erstellen. Zusammenarbeit in einem agilen Team von 7 Senior-Ingenieuren.",
+            "learnMoreText": "Mehr über Napta erfahren"
+          },
+          {
+            "title": "Projekt zum Sammeln von Erfahrungen",
+            "subtitle": "Sept. 2024 - Heute",
+            "description": "Nach meinen Kursen arbeitete ich 20 Stunden pro Woche als Full-Stack-Entwickler (NestJS, JWT, S3, PostgreSQL, Next.js...) und trug zur Entwicklung einer Web-App mit 8 Ingenieuren bei. Weitere Informationen im Abschnitt Projekte unten."
+          },
+          {
+            "title": "Letztes Jahr @ UTC (ISI)",
+            "subtitle": "Feb. 2025 - Feb. 2026",
+            "description": "Spezialisierung auf Computer Systems Engineering (ISI) mit Schwerpunkt auf verteilten Systemen, fortgeschrittenem Backend-Design und Architektur. Der letzte Schritt meines Studiums wird ein 6-monatiges Praktikum sein, das im Februar 2026 beginnt.",
+            "learnMoreText": "Mehr über meine Spezialisierung \"ISI\" erfahren"
+          }
+        ]
+      }
+    },
+    "projects": {
+      "badge": "Projekte",
+      "title": "Einige Projekte, an denen ich gearbeitet habe",
+      "description": "Entdecken Sie eine Auswahl von Projekten, bei denen ich meine Fähigkeiten eingesetzt habe, um reale Herausforderungen zu lösen. Jedes Projekt spiegelt meine Leidenschaft für die Entwicklung wirkungsvoller, gut konstruierter Lösungen wider.",
+      "summary": "Zusammenfassung",
+      "whyThisProject": "Warum dieses Projekt?",
+      "features": "Funktionen",
+      "viewCode": "Code ansehen",
+      "closedSource": "Geschlossene Quelle",
+      "viewDetails": "Details anzeigen",
+      "backToProjects": "Zurück zu Projekten",
+      "projects": [
+        {
+          "title": "Mein größtes Projekt",
+          "shortDescription": "Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden.",
+          "description": "Dieses Projekt ist eine Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden. Wenn du beispielsweise Student bist, kannst du nach Kursen in Paris und Umgebung suchen, basierend auf Filtern (Preis, Entfernung usw.) und dem Ranking der Kurse. Das Projekt befindet sich noch in der Entwicklung und wird im Oktober 2025 veröffentlicht.",
+          "goal": "Dieses Projekt ist eine großartige Gelegenheit, mehr über Frontend mit Next.js, Backend mit NestJS, Datenbank mit PostgreSQL, Suchmaschine mit Algolia, CI/CD mit GitHub Actions, JWT-Authentifizierung, rollenbasierte Endpunkte usw. zu lernen. Als Nebenprojekt ist es eine tolle Möglichkeit, während meines Studiums mehr zu lernen.",
+          "features": "Zu den wichtigsten Funktionen dieses Projekts gehören ein sicheres NestJS-Backend mit JWT-Authentifizierung und rollenbasierten Endpunkten, die mit einer auf AWS gehosteten PostgreSQL-Datenbank verbunden sind, eine KI-gestützte Suchmaschine mit Filtern und Ranking, die mit Algolia erstellt wurde, sowie eine moderne Codebasis mit Produktions-, Entwicklungs- und Vorschauumgebungen. Es umfasst auch ein Chatsystem mit Echtzeit-Messaging, ein Back-Office-Dashboard für Lehrer zur Verwaltung ihrer Kurse und ein Dashboard für Studenten zur Verwaltung ihres Fortschritts.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Sicherheit",
+            "JWT-Authentifizierung",
+            "GitHub Actions",
+            "Deep Search"
+          ]
+        },
+        {
+          "title": "Ein Online-Multiplayer-Spiel",
+          "shortDescription": "Spiel entwickelt mit C# & Unity zum Erlernen von UDP-Sockets und Optimierung.",
+          "description": "Dieses Projekt ist ein Online-Multiplayer-Arena-Spiel, bei dem Spieler Kugeln steuern, um sich gegenseitig aus der Karte zu drängen. Das Spiel hat zwei Modi: einen Solo-Modus (offline), in dem man gegen KIs in einem rundenbasierten System kämpft, und einen Multiplayer-Modus, in dem man in Echtzeit mit Freunden über ein Lobby-System spielen kann. Das Spiel ist auf Windows und Mac spielbar und kann in meinem GitHub-Repository heruntergeladen werden.",
+          "goal": "Ich habe dieses Projekt durchgeführt, um mehr über Spieleentwicklung zu lernen, aber insbesondere darüber, wie Server funktionieren und wie sie schnell und effizient ohne Latenz arbeiten können. Dieses Projekt war eine großartige Gelegenheit, mehr über Sockets, UDP vs. TCP, die Absicherung eines Servers gegen Betrug und die Optimierung der an die Clients zu sendenden Daten sowie der serverseitig zu berechnenden Daten zu lernen.",
+          "features": "Zu den Hauptfunktionen gehören physikbasierte Bewegungen und realistische Kollisionen. Im Solo-Modus kämpft man gegen KI-gesteuerte Kugeln, die nach jeder Runde stärker und schneller werden. Der Online-Modus kann mit etwa 10 Spielern ohne wahrnehmbare Latenz gespielt werden. Man kann eine private Lobby erstellen, um mit bekannten Personen zu spielen, und die Spieleinstellungen anpassen (Punktzahl, Name usw.).",
+          "stack": [
+            "Unity",
+            "C#",
+            "Spieleentwicklung",
+            "Multiplayer",
+            "Hosting",
+            "UDP-Sockets",
+            "Optimierung"
+          ]
+        },
+        {
+          "title": "Ein dezentrales verteiltes System",
+          "shortDescription": "Low-Level-Projekt mit gemeinsamer Datenbank, Wahlalgorithmen und Kollisionserkennung.",
+          "description": "Dieses Projekt implementiert ein vollständig dezentrales verteiltes System, in dem mehrere Arten von Knoten zusammenarbeiten, um Daten über verschiedene Standorte hinweg zu sammeln, zu überprüfen und zu nutzen. Das System modelliert ein reales Szenario, in dem Geräte Sensordaten sammeln, deren Genauigkeit überprüfen und Vorhersagen erstellen, während die korrekte Koordination und Konsistenz über geografisch getrennte Knoten hinweg sichergestellt wird.",
+          "goal": "Dieses Projekt war eine großartige Gelegenheit, mehr über verteilte Systeme, Wahlalgorithmen, Snapshots, Kollisionserkennung und die Verwendung logischer Uhren zur Gewährleistung der Konsistenz zwischen Replikaten zu lernen. Die Kernidee besteht darin, dass Sensoren fehlerhafte Daten liefern können, die die Benutzer stören. Daher werden Verifizierer-Systeme integriert, um langsam jeden Datenpunkt nacheinander zu aktualisieren. Das Ziel ist es, die Auswirkungen der Verifizierer-Parameter auf das Benutzerverhalten zu beobachten.",
+          "features": "Das System verwendet eine dezentralisierte Architektur ohne zentrale Datenbank, bei der jeder Knoten sein eigenes lokales Replikat verwaltet und aktualisiert. Um die Konsistenz der Replikate zu gewährleisten, koordinieren sich die Knoten über eine verteilte Warteschlange, die logische Uhren einsetzt, um alle Aktualisierungen zu serialisieren. Für die gemeinsame Datenverwaltung konzentrieren sich die Knoten auf ein gleitendes Fenster der letzten 15 Tage von Temperaturmessungen. Die Peer-to-Peer-Kommunikation ermöglicht direkte Nachrichten zwischen den Knoten, um Aktualisierungen zu verbreiten und Aktionen effizient zu koordinieren.",
+          "stack": [
+            "Go",
+            "Verteilte Systeme",
+            "Parallelismus",
+            "Wahlalgorithmen",
+            "Snapshots",
+            "Kollisionserkennung",
+            "Logische Uhren"
+          ]
+        }
+      ]
+    },
     "testimonials": {
       "badge": "Referenzen",
       "title": "Was Menschen, mit denen ich zusammengearbeitet habe, über mich sagen",
@@ -91,41 +191,9 @@
       "months": "{count, plural, one {1 Monat} other {# Monate}}",
       "moreThanOneYear": "> 1 Jahr"
     },
-    "aboutMe": {
-      "badge": "Über mich",
-      "title": "Ein Überblick meiner Karriere",
-      "description": "Eine chronologische Reise durch meine wichtigsten Erfahrungen und Erfolge, die meine Entwicklung als Student der Informatik und Entwickler hervorhebt.",
-      "timeline": {
-        "steps": [
-          {
-            "title": "Erste Jahre an der UTC",
-            "subtitle": "Sept. 2021 - Juni 2024",
-            "description": "Aufbau solider Grundlagen in der Informatik, einschließlich Algorithmen, Software-Engineering und Systemarchitektur. Erkundung verschiedener Bereiche vor der Spezialisierung auf Informatik.",
-            "learnMoreText": "Mehr über UTC erfahren"
-          },
-          {
-            "title": "Praktikum bei Napta",
-            "subtitle": "Sept. 2024 - Feb. 2025",
-            "description": "Arbeit als Data Engineer und Backend-Entwickler (Python, Flask, PostgreSQL, Airflow) zum Aufbau skalierbarer und effizienter Datenpipelines für ein Startup. Ich hatte die Gelegenheit, in einem agilen Team von 12 Entwicklern zusammenzuarbeiten. Ich habe viel von erfahrenen Ingenieuren gelernt und viele Erfahrungen über die Unternehmenswelt gesammelt.",
-            "learnMoreText": "Mehr über Napta erfahren"
-          },
-          {
-            "title": "Projekte zum Sammeln von Erfahrungen",
-            "subtitle": "Sept. 2024 - Heute",
-            "description": "Nach meinen Kursen arbeitete ich 20 Stunden pro Woche als Full-Stack-Entwickler (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS), um Erfahrungen zu sammeln und zur Entwicklung skalierbarer Webanwendungen mit TypeScript, NestJS und PostgreSQL beizutragen. Verbesserte CI/CD-Pipelines und Zusammenarbeit in einem agilen Team von 6 Entwicklern. Das Projekt befindet sich noch in der Entwicklung und wird im Oktober 2025 veröffentlicht."
-          },
-          {
-            "title": "Letztes Jahr an der UTC (ISI)",
-            "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "Spezialisierung auf Computer Systems Engineering (ISI) mit Schwerpunkt auf verteilte Systeme, fortgeschrittenes Backend-Design und Architektur zur Vorbereitung auf eine Karriere als Software-Ingenieur. Der letzte Schritt meines Studiums wird ein 6-monatiges Praktikum sein, das im Februar 2026 beginnt.",
-            "learnMoreText": "Erfahren Sie mehr über meine Spezialisierung \"ISI\""
-          }
-        ]
-      }
-    },
     "faq": {
       "badge": "FAQ",
-      "title": "Häufig gestellte Fragen",
+      "title": "Mehr erfahren",
       "description": "Hier finden Sie alle wichtigen Informationen über die Dauer, Verfügbarkeit und Möglichkeiten im Zusammenhang mit meinem Praktikum, die Ihnen einen klaren Überblick über mein Profil geben.",
       "questions": [
         {
@@ -199,6 +267,18 @@
       "message": "JavaScript ist in Ihrem Browser deaktiviert. Bitte aktivieren Sie es, um diese Website optimal zu nutzen."
     },
     "languageSwitch": "Sprache ändern"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+    "goHome": "Zurück zur Startseite"
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut oder kehren Sie zur Startseite zurück.",
+    "technicalDetails": "Technische Details",
+    "tryAgain": "Erneut versuchen",
+    "goHome": "Zurück zur Startseite"
   },
   "navbar": {
     "contactMe": "Kontaktieren Sie mich",

@@ -18,15 +18,42 @@ export function Footer() {
   const t = useTranslations('footer')
   const email = useObfuscatedEmail()
 
+  const header = (
+    <>
+      <AnimatedBadge
+        variant="secondary"
+        className="base-radial-gradient text-white"
+      >
+        {t('contact.badge')}
+      </AnimatedBadge>
+
+      {/* Title and Subtitle */}
+      <div className="flex flex-col items-center justify-center text-center">
+        <h2 className="text-foreground pt-6 pb-6 text-5xl font-bold tracking-tighter sm:pb-4 sm:text-6xl">
+          {t('contact.title')}
+          {/* <SparklesText>{t('contact.title')}</SparklesText> */}
+        </h2>
+        <p className="text-muted-foreground text-md max-w-lg font-medium md:text-lg">
+          {t('contact.subtitle.first')}
+        </p>
+        <p className="text-muted-foreground text-md max-w-lg font-medium md:text-lg">
+          {t('contact.subtitle.second')}
+        </p>
+      </div>
+    </>
+  )
+
   return (
     <footer id="contact">
       <ScrollAnimatedSection
-        className="flex flex-col items-center justify-center gap-20 px-10"
+        className="flex flex-col items-center justify-center gap-6 px-10"
         staggerChildren={0.15}
         delayChildren={0.2}
         duration={0.8}
         y={30}
       >
+        <div className="mb-10 p-3 sm:mb-0 sm:hidden md:w-2xl">{header}</div>
+
         <Card className="w-full rounded-3xl p-8 md:w-2xl dark:bg-radial-[at_50%_100%] dark:from-white/10 dark:via-transparent dark:via-70% dark:to-transparent">
           <ShineBorder
             shineColor={[
@@ -35,28 +62,9 @@ export function Footer() {
               'var(--color-secondary)'
             ]}
           />
+          <div className="hidden sm:block">{header}</div>
+
           <div className="flex flex-col items-center space-y-6">
-            <AnimatedBadge
-              variant="secondary"
-              className="base-radial-gradient text-white"
-            >
-              {t('contact.badge')}
-            </AnimatedBadge>
-
-            {/* Title and Subtitle */}
-            <div className="text-center">
-              <h2 className="text-foreground pb-4 text-5xl font-bold tracking-tighter sm:text-6xl">
-                {t('contact.title')}
-                {/* <SparklesText>{t('contact.title')}</SparklesText> */}
-              </h2>
-              <p className="text-muted-foreground text-md max-w-lg font-medium md:text-lg">
-                {t('contact.subtitle.first')}
-              </p>
-              <p className="text-muted-foreground text-md max-w-lg font-medium md:text-lg">
-                {t('contact.subtitle.second')}
-              </p>
-            </div>
-
             <ContactForm />
 
             {/* or + Email */}
@@ -84,32 +92,34 @@ export function Footer() {
           </div>
         </Card>
 
-        <span className="text-muted-foreground md:text-md pb-4 text-sm">
-          {t.rich('badge', {
-            linkToMe: (chunks) => (
-              <a
-                href={SOCIAL_LINKS.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="hover:text-foreground font-semibold underline hover:no-underline">
-                  {chunks}
-                </span>
-              </a>
-            ),
-            linkToCode: (chunks) => (
-              <a
-                href={`${SOCIAL_LINKS.gitHub}/portfolio`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="hover:text-foreground font-semibold underline hover:no-underline">
-                  {chunks}
-                </span>
-              </a>
-            )
-          })}
-        </span>
+        <div className="mt-16">
+          <span className="text-muted-foreground md:text-md pb-4 text-sm">
+            {t.rich('badge', {
+              linkToMe: (chunks) => (
+                <a
+                  href={SOCIAL_LINKS.linkedIn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="hover:text-foreground font-semibold underline hover:no-underline">
+                    {chunks}
+                  </span>
+                </a>
+              ),
+              linkToCode: (chunks) => (
+                <a
+                  href={`${SOCIAL_LINKS.gitHub}/portfolio`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="hover:text-foreground font-semibold underline hover:no-underline">
+                    {chunks}
+                  </span>
+                </a>
+              )
+            })}
+          </span>
+        </div>
       </ScrollAnimatedSection>
     </footer>
   )

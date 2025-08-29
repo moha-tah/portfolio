@@ -40,6 +40,14 @@ export function ContactForm() {
 
   if (!isMounted) return null
 
+  const executeTurnstile = () => {
+    if (!turnstileExecuted) {
+      // @ts-expect-error - Turnstile Lib is not typed correctly, I've opened an issue here: https://github.com/JedPattersonn/next-turnstile/issues/11
+      window.turnstile.execute('#turnstile-widget', {})
+      setTurnstileExecuted(true)
+    }
+  }
+
   const isDisabled = isLoading || isSuccess
 
   const getButtonContent = () => {
@@ -101,13 +109,7 @@ export function ContactForm() {
               form.formState.errors.name && 'border-red-500'
             )}
             disabled={isDisabled}
-            onFocus={() => {
-              if (!turnstileExecuted) {
-                // @ts-expect-error - Turnstile Lib is not typed correctly, I've opened an issue here: https://github.com/JedPattersonn/next-turnstile/issues/11
-                window.turnstile.execute('#turnstile-widget', {})
-                setTurnstileExecuted(true)
-              }
-            }}
+            onFocus={executeTurnstile}
           />
           {form.formState.errors.name && (
             <p className="mt-1 px-4 text-xs text-red-500">
@@ -127,6 +129,7 @@ export function ContactForm() {
               form.formState.errors.email && 'border-red-500'
             )}
             disabled={isDisabled}
+            onFocus={executeTurnstile}
           />
           {form.formState.errors.email && (
             <p className="mt-1 px-4 text-xs text-red-500">
@@ -145,6 +148,7 @@ export function ContactForm() {
               form.formState.errors.company && 'border-red-500'
             )}
             disabled={isDisabled}
+            onFocus={executeTurnstile}
           />
           {form.formState.errors.company && (
             <p className="mt-1 px-4 text-xs text-red-500">
@@ -163,6 +167,7 @@ export function ContactForm() {
               form.formState.errors.message && 'border-red-500'
             )}
             disabled={isDisabled}
+            onFocus={executeTurnstile}
           />
           {form.formState.errors.message && (
             <p className="mt-1 px-4 text-xs text-red-500">

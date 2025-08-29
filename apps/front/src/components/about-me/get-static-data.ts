@@ -5,6 +5,7 @@ export function getStaticData(locale: string): Omit<TimelineData, 'steps'> {
     urls: [
       locale === 'fr' ? 'https://www.utc.fr/' : 'https://www.utc.fr/en/',
       'https://www.napta.io/',
+      'https://www.instagram.com/utcode_',
       null,
       locale === 'fr'
         ? 'https://www.utc.fr/formations/diplome-dingenieur/genie-informatique-gi/filiere-ingenierie-des-systemes-informatiques-isi/'
@@ -12,6 +13,7 @@ export function getStaticData(locale: string): Omit<TimelineData, 'steps'> {
     ],
     iconUrls: [
       '/images/logos/utc.webp',
+      '/images/logos/utcode.webp',
       '/images/logos/napta.webp',
       null,
       '/images/logos/utc.webp'

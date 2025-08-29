@@ -48,39 +48,31 @@ export function SkillCard({ skill }: Props) {
   return (
     <div
       ref={cardRef}
-      className="spring-duration-300 spring-bounce-60 border-muted-foreground/50 group relative h-fit w-full rounded-2xl border-2 p-3 pr-8 hover:scale-[1.01]"
+      className="spring-duration-300 spring-bounce-60 border-muted-foreground/50 group relative h-fit w-full overflow-hidden rounded-2xl border-2 p-3 hover:scale-[1.01]"
     >
       <div className="relative z-10 flex w-full items-center gap-3">
-        <div className="flex w-full items-center gap-3">
-          {skill.icon}
-          <div
-            className="flex w-full flex-col"
-            style={{
-              maxWidth: `${skill.proficiency}% `
-            }}
-          >
-            <h2 className="text-primary truncate text-xl font-medium text-nowrap md:text-2xl">
+        <div className="flex min-w-0 flex-1 items-center gap-3">
+          <div className="flex-shrink-0">{skill.icon}</div>
+          <div className="flex min-w-0 flex-1 flex-col">
+            <h2 className="text-primary truncate text-xl font-medium md:text-2xl">
               {/* @ts-expect-error - We know the key is valid */}
               {t(`${skill.name}.name`)}
             </h2>
-            <p
-              className="text-muted-foreground hidden text-sm font-medium sm:block md:text-base"
-              style={{
-                width: `${skill.proficiency}%`
-              }}
-            >
+            <p className="text-muted-foreground hidden truncate text-sm font-medium sm:block md:text-base">
               {/* @ts-expect-error - We know the key is valid */}
               {t(`${skill.name}.description`)}
             </p>
           </div>
         </div>
-        <span className="base-radial-gradient rounded-full px-3 py-1 text-base font-medium text-nowrap text-white backdrop-blur-md">
-          {skill.months >= 12
-            ? skill.months == 18
-              ? t('moreThanOneYear')
-              : t('years', { count: Math.floor(skill.months / 12) })
-            : t('months', { count: skill.months })}
-        </span>
+        <div className="flex-shrink-0">
+          <span className="base-radial-gradient rounded-full px-3 py-1 text-sm font-medium whitespace-nowrap text-white backdrop-blur-md md:text-base">
+            {skill.months >= 12
+              ? skill.months == 18
+                ? t('moreThanOneYear')
+                : t('years', { count: Math.floor(skill.months / 12) })
+              : t('months', { count: skill.months })}
+          </span>
+        </div>
       </div>
       <div className="bg-muted absolute top-0 left-0 z-[1] h-full w-full rounded-2xl" />
 

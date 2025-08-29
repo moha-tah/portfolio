@@ -18,6 +18,106 @@
         "NestJS": "NestJS"
       }
     },
+    "aboutMe": {
+      "badge": "About me",
+      "title": "A Snapshot of My Career",
+      "description": "A chronological journey through my key experiences and achievements, highlighting my growth as a computer engineering student.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "First years @ UTC",
+            "subtitle": "Sept. 2021 - June 2024",
+            "description": "Built strong foundations in computer science, covering algorithms, data structures, software engineering, and systems architecture.",
+            "learnMoreText": "Learn more about UTC"
+          },
+          {
+            "title": "Competitive programming",
+            "subtitle": "Sept. 2023 - June 2024",
+            "description": "In the programming club of my university, I was teaching competitive programming. We've explored algorithms, data structures, and problem-solving techniques using LeetCode. In a competition, my team and I finished at the 6th place out of around 70 teams.",
+            "learnMoreText": "Our Instagram page"
+          },
+          {
+            "title": "Internship @ Napta",
+            "subtitle": "Sept. 2024 - Feb. 2025",
+            "description": "Worked as a Data Engineer and a Backend Engineer (Python, Flask, PostgreSQL, Airflow...) to build efficient data pipelines. Collaborated within an agile team of 7 senior engineers.",
+            "learnMoreText": "Learn more about Napta"
+          },
+          {
+            "title": "Project to gain experience",
+            "subtitle": "Sept. 2024 - Present",
+            "description": "After my courses, I worked 20 hours per week as a full-stack developer (NestJS, JWT, S3, PostgreSQL, Next.js...) contributing to the development of a web app with 8 engineers. More information in the Projects section below."
+          },
+          {
+            "title": "Last year @ UTC (ISI)",
+            "subtitle": "Feb. 2025 - Feb. 2026",
+            "description": "Specialized in Computer Systems Engineering (ISI), focusing on distributed systems, advanced backend design, and architecture. The last step of my studies will be a 6-month internship beginning in February 2026.",
+            "learnMoreText": "Learn more about my specialty “ISI”"
+          }
+        ]
+      }
+    },
+    "projects": {
+      "badge": "Projects",
+      "title": "Some projects I've worked on",
+      "description": "Discover a selection of projects where I applied my skills to solve real-world challenges. Each project reflects my passion for creating impactful, well-engineered solutions.",
+      "summary": "Summary",
+      "whyThisProject": "Why this project?",
+      "features": "Features",
+      "viewCode": "View code",
+      "closedSource": "Closed Source",
+      "viewDetails": "View details",
+      "backToProjects": "Back to projects",
+      "projects": [
+        {
+          "title": "My biggest project",
+          "shortDescription": "Search engine to help students find the best courses near them.",
+          "description": "This project is a search engine to help students find the best courses near them. For example, if you are a student, you can search for courses in Paris and the surrounding areas based on filters (price, distance, etc.) and ranking of the courses. The project is still in development and will be released in October 2025.",
+          "goal": "This project is a great opportunity to learn about frontend with Next.js, backend with NestJS, database with PostgreSQL, search engine with Algolia, CI/CD with GitHub Actions, JWT authentication, role-based endpoints, etc. As a side project, it is a great opportunity to learn more during my studies.",
+          "features": "The key features of this project include a secure NestJS backend with JWT authentication and role-based endpoints connected to a PostgreSQL database hosted on AWS, a AI-powered search engine with filters and ranking made with Algolia, an modern codebase with production, development and preview environments. It also includes a chat system with real-time messaging, a back-office dashboard for teachers to manage their courses and a dashboard for students to manage their progress.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Security",
+            "JWT Authentication",
+            "GitHub Actions",
+            "Deep Search"
+          ]
+        },
+        {
+          "title": "An online multiplayer game",
+          "shortDescription": "Game built with C# & Unity to learn about UDP sockets and optimization.",
+          "description": "This project is an online multiplayer arena game where players control spheres to push each other out of the map. The game has two modes, a solo (offline) mode where you fight against AIs in a round-based system, and a multiplayer mode where you can play against friends in real-time with a lobby system. The game is playable on Windows and Mac and it can be downloaded in my GitHub repository.",
+          "goal": "I did this project to learn about game development but more specifically about how servers work and how they manage to be fast and efficient with no latency. This project was a great opportunity to learn about sockets, UDP vs. TCP, how to secure a server to prevent cheating and how to optimize what data to send to the clients and what data to calculate on the server side.",
+          "features": "Key features include physics-based movement and realistic collisions. In solo mode, you fight against AI-controlled spheres, after each round they get stronger and faster. The online mode can be played with around 10 players with no perceivable latency, you can create a private lobby to play with people you know, you can customize the game settings (score, name, etc.).",
+          "stack": [
+            "Unity",
+            "C#",
+            "Game Development",
+            "Multiplayer",
+            "Hosting",
+            "UDP Sockets",
+            "Optimization"
+          ]
+        },
+        {
+          "title": "A decentralized distributed system",
+          "shortDescription": "Low-level project using a shared database, election algorithms and collision detection.",
+          "description": "This project implements a fully decentralized distributed system where multiple types of nodes collaborate to collect, verify, and use data across different sites. The system models a real-world scenario where devices collect sensor data, verify its accuracy, and produce predictions, while ensuring correct coordination and consistency across geographically separate nodes.",
+          "goal": "This project was a great opportunity to learn about distributed systems, election algorithms, snapshots, collision detection and how to use logical clocks to ensure consistency between replicas. The core idea is that sensors might give erroneous data, perturbating the users. Thus, verifier systems are integrated to update, slowly, each data point one after the other. The goal is to observe the impact of verifier parameters on user behaviors.",
+          "features": "The system uses a decentralized architecture with no centralized database, where each node maintains and updates its own local replica. To ensure replica consistency, nodes coordinate through a distributed queue that employs logical clocks to serialize all updates. For shared data management, nodes focus on a sliding window of the latest 15 days of temperature readings. Peer-to-peer communication allows direct messaging between nodes to propagate updates and coordinate actions efficiently.",
+          "stack": [
+            "Go",
+            "Distributed Systems",
+            "Parallelism",
+            "Election Algorithms",
+            "Snapshots",
+            "Collision Detection",
+            "Logical Clocks"
+          ]
+        }
+      ]
+    },
     "testimonials": {
       "badge": "Testimonials",
       "title": "What people I've worked with say about me",
@@ -91,38 +191,7 @@
       "months": "{count, plural, one {1 month} other {# months}}",
       "moreThanOneYear": "> 1 year"
     },
-    "aboutMe": {
-      "badge": "About me",
-      "title": "A Snapshot of My Career",
-      "description": "A chronological journey through my key experiences and achievements, highlighting my growth as a computer engineering student and developer.",
-      "timeline": {
-        "steps": [
-          {
-            "title": "First years @ UTC",
-            "subtitle": "Sept. 2021 - June 2024",
-            "description": "Built strong foundations in computer science, covering algorithms, software engineering, and systems architecture. Explored various domains before specializing in computer engineering.",
-            "learnMoreText": "Learn more about UTC"
-          },
-          {
-            "title": "Internship @ Napta",
-            "subtitle": "Sept. 2024 - Feb. 2025",
-            "description": "Worked as a Data Engineer and a Backend Engineer (Python, Flask, PostgreSQL, Airflow) to build scalable and efficient data pipelines for a startup. I've had the opportunity to collaborate within an agile team of 12 developers. I've learned a lot from senior engineers and gained a lot of experience about the corporate world.",
-            "learnMoreText": "Learn more about Napta"
-          },
-          {
-            "title": "Projects to gain experience",
-            "subtitle": "Sept. 2024 - Present",
-            "description": "After my courses, I worked 20 hours per week as a full-stack developer (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS) to gain experience, contributing to the development of scalable web applications using TypeScript, NestJS, and PostgreSQL. Improved CI/CD pipelines and collaborated within an agile team of 6 developers. The project is still in development and will be released in October 2025."
-          },
-          {
-            "title": "Last year @ UTC (ISI)",
-            "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "Specialized in Computer Systems Engineering (ISI), focusing on distributed systems, advanced backend design, and architecture to prepare for a career as a software engineer. The last step of my studies will be a 6-month internship beginning in February 2026.",
-            "learnMoreText": "Learn more about my specialty “ISI”"
-          }
-        ]
-      }
-    },
+
     "faq": {
       "badge": "FAQ",
       "title": "Learn more",
@@ -199,6 +268,18 @@
       "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."
     },
     "languageSwitch": "Change language"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go back home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "We encountered an unexpected error. Please try again or return to the homepage.",
+    "technicalDetails": "Technical Details",
+    "tryAgain": "Try again",
+    "goHome": "Go back home"
   },
   "navbar": {
     "contactMe": "Contact me",

@@ -39,8 +39,10 @@ export function AnimatedTitle({
         {`${t('MohamedTahiri')},`}
       </TextShimmer>
       <br />
-      <span className="text-5xl md:text-6xl">{t('passionateAbout')}</span>
-      <span className="relative flex w-full justify-center overflow-hidden text-center text-5xl md:pt-1 md:pb-4 md:text-6xl">
+      <span className="text-4xl min-[430px]:text-5xl md:text-6xl">
+        {t('passionateAbout')}
+      </span>
+      <span className="relative flex w-full justify-center overflow-hidden text-center text-4xl min-[430px]:text-5xl md:pt-1 md:pb-4 md:text-6xl">
         &nbsp;
         {passions.map((passion: Passion, index: number) => (
           <motion.span

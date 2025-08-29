@@ -18,6 +18,106 @@
         "NestJS": "NestJS"
       }
     },
+    "aboutMe": {
+      "badge": "À propos de moi",
+      "title": "Un aperçu de mon parcours",
+      "description": "Un parcours chronologique à travers mes expériences et réalisations clés, mettant en évidence mon évolution en tant qu'étudiant en génie informatique.",
+      "timeline": {
+        "steps": [
+          {
+            "title": "Premières années à l'UTC",
+            "subtitle": "Sept. 2021 - Juin 2024",
+            "description": "Acquisition de bases solides en informatique, couvrant les algorithmes, les structures de données, le génie logiciel et l'architecture des systèmes.",
+            "learnMoreText": "En savoir plus sur l'UTC"
+          },
+          {
+            "title": "Programmation compétitive",
+            "subtitle": "Sept. 2023 - Juin 2024",
+            "description": "Au sein du club de programmation de mon université, j'enseignais la programmation compétitive. Nous avons exploré les algorithmes, les structures de données et les techniques de résolution de problèmes en utilisant LeetCode. Lors d'une compétition, mon équipe et moi avons terminé à la 6ème place sur environ 70 équipes.",
+            "learnMoreText": "Notre page Instagram"
+          },
+          {
+            "title": "Stage chez Napta",
+            "subtitle": "Sept. 2024 - Fév. 2025",
+            "description": "J'ai travaillé comme ingénieur de données et ingénieur backend (Python, Flask, PostgreSQL, Airflow...) pour construire des pipelines de données efficaces. J'ai collaboré au sein d'une équipe agile de 7 ingénieurs seniors.",
+            "learnMoreText": "En savoir plus sur Napta"
+          },
+          {
+            "title": "Projet pour acquérir de l'expérience",
+            "subtitle": "Sept. 2024 - Présent",
+            "description": "Après mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, JWT, S3, PostgreSQL, Next.js...) contribuant au développement d'une application web avec 8 ingénieurs. Plus d'informations dans la section Projets ci-dessous."
+          },
+          {
+            "title": "Dernière année à l'UTC (ISI)",
+            "subtitle": "Fév. 2025 - Fév. 2026",
+            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec un accent sur les systèmes distribués, la conception backend avancée et l'architecture. La dernière étape de mes études sera un stage de 6 mois débutant en février 2026.",
+            "learnMoreText": "En savoir plus sur ma spécialité \"ISI\""
+          }
+        ]
+      }
+    },
+    "projects": {
+      "badge": "Projets",
+      "title": "Quelques projets sur lesquels j'ai travaillé",
+      "description": "Découvrez une sélection de projets où j'ai appliqué mes compétences pour résoudre des défis concrets. Chaque projet reflète ma passion pour créer des solutions impactantes et bien conçues.",
+      "summary": "Résumé",
+      "whyThisProject": "Pourquoi ce projet ?",
+      "features": "Fonctionnalités",
+      "viewCode": "Voir le code",
+      "closedSource": "Code source fermé",
+      "viewDetails": "Voir les détails",
+      "backToProjects": "Retour aux projets",
+      "projects": [
+        {
+          "title": "Mon plus grand projet",
+          "shortDescription": "Moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux.",
+          "description": "Ce projet est un moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux. Par exemple, si vous êtes étudiant, vous pouvez rechercher des cours à Paris et dans les environs en fonction de filtres (prix, distance, etc.) et du classement des cours. Le projet est toujours en développement et sera lancé en octobre 2025.",
+          "goal": "Ce projet est une excellente opportunité d'apprendre le frontend avec Next.js, le backend avec NestJS, les bases de données avec PostgreSQL, les moteurs de recherche avec Algolia, le CI/CD avec GitHub Actions, l'authentification JWT, les endpoints basés sur les rôles, etc. En tant que projet personnel, c'est une excellente occasion d'approfondir mes connaissances pendant mes études.",
+          "features": "Les fonctionnalités clés de ce projet comprennent un backend NestJS sécurisé avec authentification JWT et endpoints basés sur les rôles connectés à une base de données PostgreSQL hébergée sur AWS, un moteur de recherche alimenté par l'IA avec filtres et classement réalisé avec Algolia, une base de code moderne avec des environnements de production, de développement et de prévisualisation. Il inclut également un système de chat avec messagerie en temps réel, un tableau de bord d'administration pour les enseignants afin de gérer leurs cours et un tableau de bord pour les étudiants afin de suivre leur progression.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Sécurité",
+            "Authentification JWT",
+            "GitHub Actions",
+            "Recherche approfondie"
+          ]
+        },
+        {
+          "title": "Un jeu multijoueur en ligne",
+          "shortDescription": "Jeu développé avec C# et Unity pour apprendre les sockets UDP et l'optimisation.",
+          "description": "Ce projet est un jeu d'arène multijoueur en ligne où les joueurs contrôlent des sphères pour se pousser mutuellement hors de la carte. Le jeu propose deux modes : un mode solo (hors ligne) où vous affrontez des IA dans un système de rounds, et un mode multijoueur où vous pouvez jouer contre des amis en temps réel avec un système de lobby. Le jeu est jouable sur Windows et Mac et peut être téléchargé depuis mon dépôt GitHub.",
+          "goal": "J'ai réalisé ce projet pour apprendre le développement de jeux, mais plus spécifiquement pour comprendre le fonctionnement des serveurs et comment ils parviennent à être rapides et efficaces sans latence. Ce projet a été une excellente opportunité d'apprendre les sockets, UDP vs TCP, comment sécuriser un serveur pour prévenir la triche et comment optimiser les données à envoyer aux clients et celles à calculer côté serveur.",
+          "features": "Les fonctionnalités clés incluent des mouvements basés sur la physique et des collisions réalistes. En mode solo, vous affrontez des sphères contrôlées par l'IA qui deviennent plus fortes et plus rapides après chaque round. Le mode en ligne peut accueillir environ 10 joueurs sans latence perceptible, vous pouvez créer un lobby privé pour jouer avec des personnes que vous connaissez et personnaliser les paramètres du jeu (score, nom, etc.).",
+          "stack": [
+            "Unity",
+            "C#",
+            "Développement de jeux",
+            "Multijoueur",
+            "Hébergement",
+            "Sockets UDP",
+            "Optimisation"
+          ]
+        },
+        {
+          "title": "Un système distribué décentralisé",
+          "shortDescription": "Projet bas niveau utilisant une base de données partagée, des algorithmes d'élection et la détection de collisions.",
+          "description": "Ce projet implémente un système distribué entièrement décentralisé où plusieurs types de nœuds collaborent pour collecter, vérifier et utiliser des données à travers différents sites. Le système modélise un scénario réel où des appareils collectent des données de capteurs, vérifient leur exactitude et produisent des prédictions, tout en assurant une coordination et une cohérence correctes entre des nœuds géographiquement séparés.",
+          "goal": "Ce projet a été une excellente opportunité d'apprendre sur les systèmes distribués, les algorithmes d'élection, les instantanés, la détection de collisions et comment utiliser des horloges logiques pour assurer la cohérence entre les réplicas. L'idée centrale est que les capteurs peuvent fournir des données erronées, perturbant les utilisateurs. Ainsi, des systèmes de vérification sont intégrés pour mettre à jour, lentement, chaque point de données l'un après l'autre. L'objectif est d'observer l'impact des paramètres de vérification sur les comportements des utilisateurs.",
+          "features": "Le système utilise une architecture décentralisée sans base de données centralisée, où chaque nœud maintient et met à jour sa propre réplique locale. Pour assurer la cohérence des répliques, les nœuds se coordonnent via une file d'attente distribuée qui emploie des horloges logiques pour sérialiser toutes les mises à jour. Pour la gestion des données partagées, les nœuds se concentrent sur une fenêtre glissante des 15 derniers jours de relevés de température. La communication pair-à-pair permet la messagerie directe entre les nœuds pour propager les mises à jour et coordonner les actions efficacement.",
+          "stack": [
+            "Go",
+            "Systèmes distribués",
+            "Parallélisme",
+            "Algorithmes d'élection",
+            "Instantanés",
+            "Détection de collisions",
+            "Horloges logiques"
+          ]
+        }
+      ]
+    },
     "testimonials": {
       "badge": "Témoignages",
       "title": "Ce que les gens avec qui j'ai travaillé disent de moi",
@@ -91,38 +191,6 @@
       "months": "{count, plural, one {1 mois} other {# mois}}",
       "moreThanOneYear": "> 1 an"
     },
-    "aboutMe": {
-      "badge": "À propos de moi",
-      "title": "Un aperçu de mon parcours",
-      "description": "Un voyage chronologique à travers mes principales expériences et réalisations, mettant en lumière mon évolution en tant qu'étudiant en ingénierie informatique et développeur.",
-      "timeline": {
-        "steps": [
-          {
-            "title": "Premières années à l'UTC",
-            "subtitle": "Sept. 2021 - Juin 2024",
-            "description": "Acquisition de bases solides en informatique, couvrant les algorithmes, l'ingénierie logicielle et l'architecture des systèmes. Exploration de divers domaines avant de me spécialiser en ingénierie informatique.",
-            "learnMoreText": "En savoir plus sur l'UTC"
-          },
-          {
-            "title": "Stage chez Napta",
-            "subtitle": "Sept. 2024 - Fév. 2025",
-            "description": "Travail en tant qu'ingénieur Data et Backend (Python, Flask, PostgreSQL, Airflow) pour concevoir des pipelines de données évolutifs et performants dans une startup. Collaboration au sein d'une équipe agile de 12 développeurs. J'ai beaucoup appris auprès d'ingénieurs seniors et acquis une solide expérience du monde professionnel.",
-            "learnMoreText": "En savoir plus sur Napta"
-          },
-          {
-            "title": "Projets pour acquérir de l'expérience",
-            "subtitle": "Sept. 2024 - Présent",
-            "description": "En parallèle de mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, TypeORM, Supabase, PostgreSQL, Next.js, TailwindCSS) afin d'acquérir de l'expérience, contribuant au développement d'applications web évolutives en TypeScript, NestJS et PostgreSQL. Amélioration des pipelines CI/CD et collaboration au sein d'une équipe agile de 6 développeurs. Le projet est toujours en cours et sera publié en octobre 2025."
-          },
-          {
-            "title": "Dernière année à l'UTC (ISI)",
-            "subtitle": "Fév. 2025 - Fév. 2026",
-            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec un focus sur les systèmes distribués, la conception avancée de backend et l'architecture, afin de préparer ma carrière d'ingénieur logiciel. La dernière étape de mon cursus sera un stage de 6 mois débutant en février 2026.",
-            "learnMoreText": "En savoir plus sur ma spécialité « ISI »"
-          }
-        ]
-      }
-    },
     "faq": {
       "badge": "FAQ",
       "title": "En savoir plus",
@@ -152,7 +220,7 @@
     }
   },
   "footer": {
-    "badge": "Site signé <linkToMe>Mohamed Tahiri</linkToMe>. Code source sur <linkToCode>GitHub</linkToCode>.",
+    "badge": "Site fait par <linkToMe>Mohamed Tahiri</linkToMe>. Code source sur <linkToCode>GitHub</linkToCode>.",
     "contact": {
       "badge": "Contact",
       "title": "Prenons contact",
@@ -199,6 +267,18 @@
       "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
     },
     "languageSwitch": "Changer de langue"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "goHome": "Retourner à l'accueil"
+  },
+  "error": {
+    "title": "Une erreur s'est produite",
+    "description": "Nous avons rencontré une erreur inattendue. Veuillez réessayer ou retourner à la page d'accueil.",
+    "technicalDetails": "Détails techniques",
+    "tryAgain": "Réessayer",
+    "goHome": "Retourner à l'accueil"
   },
   "navbar": {
     "contactMe": "Me contacter",
