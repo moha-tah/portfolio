@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 
 import { useScrollAnimation } from '@/hooks/use-scroll-animation'
+import { cn } from '@/lib/utils'
 
 interface FaqItemProps {
   question: string
@@ -32,14 +33,22 @@ export function FaqItem({ question, answer, delay = 0 }: FaqItemProps) {
         ease: 'easeOut',
         delay
       }}
-      className="bg-card border-secondary-accent/20 overflow-hidden rounded-4xl border shadow-lg"
+      className={cn(
+        'bg-card overflow-hidden rounded-4xl border shadow-lg transition-colors duration-300',
+        isOpen ? 'border-secondary/30' : 'border-secondary-accent/30'
+      )}
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="hover:bg-accent/50 flex w-full items-center justify-between p-6 text-left transition-colors duration-200"
       >
         <h3 className="text-foreground pr-4 text-xl font-medium">{question}</h3>
-        <div className="bg-secondary-accent/20 relative flex size-8 shrink-0 items-center justify-center rounded-full">
+        <div
+          className={cn(
+            'relative flex size-8 shrink-0 items-center justify-center rounded-full transition-colors duration-300',
+            isOpen ? 'bg-secondary/30' : 'bg-secondary-accent/30'
+          )}
+        >
           <motion.div
             className="bg-foreground h-0.5 w-4"
             initial={false}

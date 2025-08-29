@@ -69,6 +69,22 @@
       "backToProjects": "Back to projects",
       "projects": [
         {
+          "title": "My biggest project",
+          "shortDescription": "Search engine to help students find the best courses near them.",
+          "description": "This project is a search engine to help students find the best courses near them. For example, if you are a student, you can search for courses in Paris and the surrounding areas based on filters (price, distance, etc.) and ranking of the courses. The project is still in development and will be released in October 2025.",
+          "goal": "This project is a great opportunity to learn about frontend with Next.js, backend with NestJS, database with PostgreSQL, search engine with Algolia, CI/CD with GitHub Actions, JWT authentication, role-based endpoints, etc. As a side project, it is a great opportunity to learn more during my studies.",
+          "features": "The key features of this project include a secure NestJS backend with JWT authentication and role-based endpoints connected to a PostgreSQL database hosted on AWS, a AI-powered search engine with filters and ranking made with Algolia, an modern codebase with production, development and preview environments. It also includes a chat system with real-time messaging, a back-office dashboard for teachers to manage their courses and a dashboard for students to manage their progress.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Security",
+            "JWT Authentication",
+            "GitHub Actions",
+            "Deep Search"
+          ]
+        },
+        {
           "title": "An online multiplayer game",
           "shortDescription": "Game built with C# & Unity to learn about UDP sockets and optimization.",
           "description": "This project is an online multiplayer arena game where players control spheres to push each other out of the map. The game has two modes, a solo (offline) mode where you fight against AIs in a round-based system, and a multiplayer mode where you can play against friends in real-time with a lobby system. The game is playable on Windows and Mac and it can be downloaded in my GitHub repository.",
@@ -98,22 +114,6 @@
             "Snapshots",
             "Collision Detection",
             "Logical Clocks"
-          ]
-        },
-        {
-          "title": "My biggest project",
-          "shortDescription": "Search engine to help students find the best courses near them.",
-          "description": "This project is a search engine to help students find the best courses near them. For example, if you are a student, you can search for courses in Paris and the surrounding areas based on filters (price, distance, etc.) and ranking of the courses. The project is still in development and will be released in October 2025.",
-          "goal": "This project is a great opportunity to learn about frontend with Next.js, backend with NestJS, database with PostgreSQL, search engine with Algolia, CI/CD with GitHub Actions, JWT authentication, role-based endpoints, etc. As a side project, it is a great opportunity to learn more during my studies.",
-          "features": "The key features of this project include a secure NestJS backend with JWT authentication and role-based endpoints connected to a PostgreSQL database hosted on AWS, a AI-powered search engine with filters and ranking made with Algolia, an modern codebase with production, development and preview environments. It also includes a chat system with real-time messaging, a back-office dashboard for teachers to manage their courses and a dashboard for students to manage their progress.",
-          "stack": [
-            "Next.js",
-            "NestJS",
-            "Supabase",
-            "Security",
-            "JWT Authentication",
-            "GitHub Actions",
-            "Deep Search"
           ]
         }
       ]
@@ -272,6 +272,13 @@
   "notFound": {
     "title": "Page Not Found",
     "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go back home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "We encountered an unexpected error. Please try again or return to the homepage.",
+    "technicalDetails": "Technical Details",
+    "tryAgain": "Try again",
     "goHome": "Go back home"
   },
   "navbar": {

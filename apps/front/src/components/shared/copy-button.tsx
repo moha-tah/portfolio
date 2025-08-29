@@ -41,7 +41,7 @@ export function CopyButton({ text, copyText, copiedText }: Props) {
   return (
     <Tooltip>
       <TooltipTrigger
-        className="text-muted-foreground hover:text-foreground hover:bg-muted absolute left-full ml-1 rounded-md p-2 transition-colors md:ml-2"
+        className="text-muted-foreground hover:text-foreground hover:bg-muted absolute left-full -ml-0.5 rounded-md p-2 transition-colors sm:ml-1 md:ml-2"
         onClick={copy}
         aria-label={copyText}
       >

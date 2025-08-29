@@ -69,6 +69,22 @@
       "backToProjects": "Zurück zu Projekten",
       "projects": [
         {
+          "title": "Mein größtes Projekt",
+          "shortDescription": "Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden.",
+          "description": "Dieses Projekt ist eine Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden. Wenn du beispielsweise Student bist, kannst du nach Kursen in Paris und Umgebung suchen, basierend auf Filtern (Preis, Entfernung usw.) und dem Ranking der Kurse. Das Projekt befindet sich noch in der Entwicklung und wird im Oktober 2025 veröffentlicht.",
+          "goal": "Dieses Projekt ist eine großartige Gelegenheit, mehr über Frontend mit Next.js, Backend mit NestJS, Datenbank mit PostgreSQL, Suchmaschine mit Algolia, CI/CD mit GitHub Actions, JWT-Authentifizierung, rollenbasierte Endpunkte usw. zu lernen. Als Nebenprojekt ist es eine tolle Möglichkeit, während meines Studiums mehr zu lernen.",
+          "features": "Zu den wichtigsten Funktionen dieses Projekts gehören ein sicheres NestJS-Backend mit JWT-Authentifizierung und rollenbasierten Endpunkten, die mit einer auf AWS gehosteten PostgreSQL-Datenbank verbunden sind, eine KI-gestützte Suchmaschine mit Filtern und Ranking, die mit Algolia erstellt wurde, sowie eine moderne Codebasis mit Produktions-, Entwicklungs- und Vorschauumgebungen. Es umfasst auch ein Chatsystem mit Echtzeit-Messaging, ein Back-Office-Dashboard für Lehrer zur Verwaltung ihrer Kurse und ein Dashboard für Studenten zur Verwaltung ihres Fortschritts.",
+          "stack": [
+            "Next.js",
+            "NestJS",
+            "Supabase",
+            "Sicherheit",
+            "JWT-Authentifizierung",
+            "GitHub Actions",
+            "Deep Search"
+          ]
+        },
+        {
           "title": "Ein Online-Multiplayer-Spiel",
           "shortDescription": "Spiel entwickelt mit C# & Unity zum Erlernen von UDP-Sockets und Optimierung.",
           "description": "Dieses Projekt ist ein Online-Multiplayer-Arena-Spiel, bei dem Spieler Kugeln steuern, um sich gegenseitig aus der Karte zu drängen. Das Spiel hat zwei Modi: einen Solo-Modus (offline), in dem man gegen KIs in einem rundenbasierten System kämpft, und einen Multiplayer-Modus, in dem man in Echtzeit mit Freunden über ein Lobby-System spielen kann. Das Spiel ist auf Windows und Mac spielbar und kann in meinem GitHub-Repository heruntergeladen werden.",
@@ -98,22 +114,6 @@
             "Snapshots",
             "Kollisionserkennung",
             "Logische Uhren"
-          ]
-        },
-        {
-          "title": "Mein größtes Projekt",
-          "shortDescription": "Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden.",
-          "description": "Dieses Projekt ist eine Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden. Wenn du beispielsweise Student bist, kannst du nach Kursen in Paris und Umgebung suchen, basierend auf Filtern (Preis, Entfernung usw.) und dem Ranking der Kurse. Das Projekt befindet sich noch in der Entwicklung und wird im Oktober 2025 veröffentlicht.",
-          "goal": "Dieses Projekt ist eine großartige Gelegenheit, mehr über Frontend mit Next.js, Backend mit NestJS, Datenbank mit PostgreSQL, Suchmaschine mit Algolia, CI/CD mit GitHub Actions, JWT-Authentifizierung, rollenbasierte Endpunkte usw. zu lernen. Als Nebenprojekt ist es eine tolle Möglichkeit, während meines Studiums mehr zu lernen.",
-          "features": "Zu den wichtigsten Funktionen dieses Projekts gehören ein sicheres NestJS-Backend mit JWT-Authentifizierung und rollenbasierten Endpunkten, die mit einer auf AWS gehosteten PostgreSQL-Datenbank verbunden sind, eine KI-gestützte Suchmaschine mit Filtern und Ranking, die mit Algolia erstellt wurde, sowie eine moderne Codebasis mit Produktions-, Entwicklungs- und Vorschauumgebungen. Es umfasst auch ein Chatsystem mit Echtzeit-Messaging, ein Back-Office-Dashboard für Lehrer zur Verwaltung ihrer Kurse und ein Dashboard für Studenten zur Verwaltung ihres Fortschritts.",
-          "stack": [
-            "Next.js",
-            "NestJS",
-            "Supabase",
-            "Sicherheit",
-            "JWT-Authentifizierung",
-            "GitHub Actions",
-            "Deep Search"
           ]
         }
       ]
@@ -271,6 +271,13 @@
   "notFound": {
     "title": "Seite nicht gefunden",
     "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+    "goHome": "Zurück zur Startseite"
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut oder kehren Sie zur Startseite zurück.",
+    "technicalDetails": "Technische Details",
+    "tryAgain": "Erneut versuchen",
     "goHome": "Zurück zur Startseite"
   },
   "navbar": {

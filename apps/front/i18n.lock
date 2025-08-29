@@ -169,6 +169,11 @@ checksums:
     notFound/title: 5b1dea4722f8fd52b68f7ac5ce89875d
     notFound/description: 65ad307ba26227fe44343f17e52138de
     notFound/goHome: 377f3be7cfb6c1ffb55a75d90ce91f2f
+    error/title: a3cd2f01c073f1f5ff436d4b132d39cf
+    error/description: b51138efbd3b08b1733dd6ded83c5e30
+    error/technicalDetails: a63b544e60fd041e70e278e61b525df6
+    error/tryAgain: 33dd8820e743e35a66e6977f69e9d3b5
+    error/goHome: 377f3be7cfb6c1ffb55a75d90ce91f2f
     navbar/contactMe: a6e7fa10e8e1473c3cfae16f81e564fd
     navbar/sections/hero: 104a3db3b671c04e167eafbe21e57881
     navbar/sections/about: 2143f5406d1eec5b83cff6daa4ba873f

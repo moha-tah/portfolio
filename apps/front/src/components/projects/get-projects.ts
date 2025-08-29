@@ -19,6 +19,11 @@ interface StaticPartProject {
 
 export const staticProjects: StaticPartProject[] = [
   {
+    slug: 'my-biggest-project',
+    image: '/images/projects/project-in-progress.jpg',
+    iconUrl: '/icons/skills/TypeScript.svg'
+  },
+  {
     slug: 'online-multiplayer-game',
     image: '/images/projects/online-game.jpg',
     link: 'https://github.com/moha-tah/Sumo-Spheres-Game',
@@ -30,11 +35,6 @@ export const staticProjects: StaticPartProject[] = [
     image: '/images/projects/distributed-systems.jpg',
     link: 'https://github.com/4l3x4ndre/Distributed-System-with-Verification',
     iconUrl: '/icons/skills/Go.svg'
-  },
-  {
-    slug: 'my-biggest-project',
-    image: '/images/projects/project-in-progress.jpg',
-    iconUrl: '/icons/skills/TypeScript.svg'
   }
 ]
 
