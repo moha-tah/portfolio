@@ -33,7 +33,7 @@ export const staticProjects: StaticPartProject[] = [
   {
     slug: 'decentralized-distributed-system',
     image: '/images/projects/distributed-systems.jpg',
-    link: 'https://github.com/4l3x4ndre/Distributed-System-with-Verification',
+    link: 'https://github.com/moha-tah/decentralized-distributed-system-in-go',
     iconUrl: '/icons/skills/Go.svg'
   }
 ]
