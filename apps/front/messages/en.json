@@ -59,6 +59,7 @@
     "projects": {
       "badge": "Projects",
       "title": "Some projects I've worked on",
+      "metadataTitle": "Projects",
       "description": "Discover a selection of projects where I applied my skills to solve real-world challenges. Each project reflects my passion for creating impactful, well-engineered solutions.",
       "summary": "Summary",
       "whyThisProject": "Why this project?",

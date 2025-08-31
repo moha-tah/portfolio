@@ -48,7 +48,7 @@ export function ContactForm() {
     }
   }
 
-  const isDisabled = isLoading || isSuccess
+  const isDisabled = isLoading || isSuccess || isError || !!turnstileError
 
   const getButtonContent = () => {
     if (isLoading) {
@@ -89,7 +89,7 @@ export function ContactForm() {
       {
         'from-green-500 via-green-600 to-green-500 disabled:opacity-100':
           isSuccess,
-        'from-red-500 via-red-600 to-red-500': isError,
+        'from-red-500 via-red-600 to-red-500 disabled:opacity-100': isError,
         'from-secondary-accent via-secondary to-secondary hover:scale-95 active:scale-95':
           !isSuccess && !isError
       }
@@ -204,7 +204,7 @@ export function ContactForm() {
 
       <Button
         type="submit"
-        disabled={isDisabled || !!turnstileError}
+        disabled={isDisabled}
         className={getButtonClassName()}
       >
         <ButtonShimmer />
