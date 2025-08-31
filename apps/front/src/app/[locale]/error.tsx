@@ -1,7 +1,9 @@
 'use client'
 
 import { AlertTriangle, ArrowUpRight, RotateCcw } from 'lucide-react'
+import { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 import { AnimatedBadge } from '@/components/shared/animations/animated-badge'
 import { AnimatedButton } from '@/components/shared/animations/animated-button'
@@ -9,6 +11,15 @@ import { TextAnimate } from '@/components/shared/animations/text-animate'
 import { Button } from '@/components/ui/button'
 import { Link } from '@/i18n/navigation'
 import { env } from '@/lib/env'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('error')
+
+  return {
+    title: t('title'),
+    description: t('description')
+  }
+}
 
 interface ErrorProps {
   error: Error & { digest?: string }

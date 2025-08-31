@@ -1,14 +1,24 @@
 import { ArrowUpRight } from 'lucide-react'
+import { Metadata } from 'next'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 import { getProjects } from '@/components/projects/get-projects'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Link } from '@/i18n/navigation'
 
-export default function ProjectsPage() {
-  const t = useTranslations('HomePage.projects')
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('HomePage.projects')
+
+  return {
+    title: t('metadataTitle'),
+    description: t('description')
+  }
+}
+
+export default async function ProjectsPage() {
+  const t = await getTranslations('HomePage.projects')
 
   const projects = getProjects(t)
 
