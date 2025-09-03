@@ -10,6 +10,7 @@ import { Navbar } from '@/components/navbar/navbar'
 import { ScrollProgress } from '@/components/navbar/scroll-progress'
 import { Background } from '@/components/shared/background'
 import NoScriptBanner from '@/components/shared/no-script-banner'
+// import { WarningLocaleBanner } from '@/components/shared/warning-locale-banner'
 import { Locale, locales } from '@/i18n/config'
 import { routing } from '@/i18n/routing'
 import { getDefaultMetadata } from '@/lib/default-metadata'
@@ -55,9 +56,11 @@ export default async function LocaleLayout({ children, params, modal }: Props) {
     <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} selection:bg-primary selection:text-background relative antialiased`}
+        dir={locale === 'ar' ? 'rtl' : 'ltr'}
       >
         <ProvidersWrapper>
           <NoScriptBanner />
+          {/* <WarningLocaleBanner locale={locale} /> */}
           <ScrollProgress />
           <Background />
           <Navbar />

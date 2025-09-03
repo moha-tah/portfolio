@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 import { useAnimatedPassions } from '@/hooks/use-animated-passions'
 
@@ -12,6 +12,7 @@ import { TextAnimate } from '../shared/animations/text-animate'
 export function Hero() {
   const { currentIndex, passions } = useAnimatedPassions()
   const t = useTranslations('HomePage.hero')
+  const locale = useLocale()
 
   return (
     <section id="hero" className="w-full">
@@ -36,7 +37,7 @@ export function Hero() {
               duration={0.5}
               className="subtitle"
               animation="blurInUp"
-              by="word"
+              by={locale === 'ar' ? 'text' : 'word'}
               once
             >
               {t('readyToJoin')}
