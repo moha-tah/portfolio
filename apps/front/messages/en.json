@@ -117,7 +117,8 @@
             "Logical Clocks"
           ]
         }
-      ]
+      ],
+      "view": "View"
     },
     "testimonials": {
       "badge": "Testimonials",
@@ -192,7 +193,6 @@
       "months": "{count, plural, one {1 month} other {# months}}",
       "moreThanOneYear": "> 1 year"
     },
-
     "faq": {
       "badge": "FAQ",
       "title": "Learn more",

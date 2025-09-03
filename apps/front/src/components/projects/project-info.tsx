@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 import { Link } from '@/i18n/navigation'
 import { cn } from '@/lib/utils'
@@ -24,6 +25,8 @@ export function ProjectInfo({
   shortDescription,
   className
 }: Props) {
+  const t = useTranslations('HomePage.projects')
+
   return (
     <div
       className={cn(
@@ -57,7 +60,7 @@ export function ProjectInfo({
           className="dark:border-muted/50 base-radial-gradient h-8 gap-1 rounded-full border px-14 text-base text-white shadow-none transition-all duration-300 hover:scale-105 sm:h-12 sm:font-semibold sm:has-[>svg]:px-6"
         >
           <Link href={`/projects/${slug}`}>
-            View
+            {t('view')}
             <ArrowUpRight size={20} className="stroke-2 sm:stroke-3" />
           </Link>
         </Button>
