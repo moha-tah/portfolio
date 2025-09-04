@@ -39,6 +39,7 @@ checksums:
     HomePage/aboutMe/timeline/steps/4/learnMoreText: 16436b5c2eca54588807921d905a2652
     HomePage/projects/badge: fe8af5cfb3c95cb35534872a325b225e
     HomePage/projects/title: cca8437b3dcdddaf8648c8b07c998688
+    HomePage/projects/metadataTitle: fe8af5cfb3c95cb35534872a325b225e
     HomePage/projects/description: 1fe095903fcfe5642694fe09bd1eb3e9
     HomePage/projects/summary: 13eb7b8a239fb4702dfdaee69100a220
     HomePage/projects/whyThisProject: 472239fd646f53d86d63e9959e8bf932
@@ -47,42 +48,43 @@ checksums:
     HomePage/projects/closedSource: 8b1268b414bc98fc84c8cac1a38a6531
     HomePage/projects/viewDetails: 885f3ad1c2e448d104a45c0291b79ba5
     HomePage/projects/backToProjects: 1e6900d1bda00c970b18ed2c828e0b30
-    HomePage/projects/projects/0/title: 6bcde2ebc990de724d03ee7cacf6e596
-    HomePage/projects/projects/0/shortDescription: 23a2aae1ccad0cfbd35b3ea36acc06bc
-    HomePage/projects/projects/0/description: 7f617c0e512f7aa01a5afc46762320f7
-    HomePage/projects/projects/0/goal: 3b2a27c5f4fb746d54184681ea37a779
-    HomePage/projects/projects/0/features: 10a2600a9fc44eafebead5337849e04a
-    HomePage/projects/projects/0/stack/0: 6f3c79ede015c6cf2890e7361e5f6fd4
-    HomePage/projects/projects/0/stack/1: 49bc1ac3f70ea329006882f0b791b9c1
-    HomePage/projects/projects/0/stack/2: cd88d949088b474065aa9123d9405529
-    HomePage/projects/projects/0/stack/3: 445dbff330ffae601b5789bf7c21310d
-    HomePage/projects/projects/0/stack/4: 61e24616658dbc78508be37421aed76d
-    HomePage/projects/projects/0/stack/5: c33b6a3ab0eb78c2e37bb500b4498742
-    HomePage/projects/projects/0/stack/6: d6c4288280a622135ef93a225bfff1a6
-    HomePage/projects/projects/1/title: 6526ff87db7308c758491f446052e8b4
-    HomePage/projects/projects/1/shortDescription: 1712863e833c6fe51e6ebf68d93f7141
-    HomePage/projects/projects/1/description: 5557e80d343443f6bc23f1a029c79398
-    HomePage/projects/projects/1/goal: 70828744ccc9d8bd1503f43250bd3193
-    HomePage/projects/projects/1/features: 32d735347885c9cd93820f022b50d0f6
-    HomePage/projects/projects/1/stack/0: fab52944eac83f39473becf87aba4351
-    HomePage/projects/projects/1/stack/1: 19df6559af13aeeea62fcc45a40f5495
-    HomePage/projects/projects/1/stack/2: 1d1473df8cfd1eea9663d7b27106a28c
-    HomePage/projects/projects/1/stack/3: 8ba3424e48dba8e5c1d91a6ec26c39ac
-    HomePage/projects/projects/1/stack/4: e84d98fc88c1e695142a4dea0f99ad93
-    HomePage/projects/projects/1/stack/5: 48e97965b90c5a76473723dd3681cae5
-    HomePage/projects/projects/1/stack/6: a5c9281e08aa67da3be865428d75d084
-    HomePage/projects/projects/2/title: b26e4d3e1f6b728a158b4d80f0f4b0c3
-    HomePage/projects/projects/2/shortDescription: e76c92a7611be0c856fc6879790d24db
-    HomePage/projects/projects/2/description: 2ded50c8997484c70e130ec423c7627d
-    HomePage/projects/projects/2/goal: 9c7462af3d1b0e719fb6a35c58900d93
-    HomePage/projects/projects/2/features: 9e4cbba042032d6b9c3b935a73c791cd
-    HomePage/projects/projects/2/stack/0: 9104a97c2178733d73fd8df641a6a432
-    HomePage/projects/projects/2/stack/1: a51e2989741bba2644267a2c1bf3a151
-    HomePage/projects/projects/2/stack/2: 97e0286c2825524efb93ba79d0ff0b48
-    HomePage/projects/projects/2/stack/3: 4b34923fef858a2b9a4a914c3e822889
-    HomePage/projects/projects/2/stack/4: b836a3bccda9c2a573382518de4cc123
-    HomePage/projects/projects/2/stack/5: 2a48a79d821c16b4fd317b1bad5bdfd9
-    HomePage/projects/projects/2/stack/6: 0da880d957cec6f58741b296fb35be20
+    HomePage/projects/projects/0/title: b26e4d3e1f6b728a158b4d80f0f4b0c3
+    HomePage/projects/projects/0/shortDescription: e76c92a7611be0c856fc6879790d24db
+    HomePage/projects/projects/0/description: 2ded50c8997484c70e130ec423c7627d
+    HomePage/projects/projects/0/goal: 9c7462af3d1b0e719fb6a35c58900d93
+    HomePage/projects/projects/0/features: 9e4cbba042032d6b9c3b935a73c791cd
+    HomePage/projects/projects/0/stack/0: 9104a97c2178733d73fd8df641a6a432
+    HomePage/projects/projects/0/stack/1: a51e2989741bba2644267a2c1bf3a151
+    HomePage/projects/projects/0/stack/2: 97e0286c2825524efb93ba79d0ff0b48
+    HomePage/projects/projects/0/stack/3: 4b34923fef858a2b9a4a914c3e822889
+    HomePage/projects/projects/0/stack/4: b836a3bccda9c2a573382518de4cc123
+    HomePage/projects/projects/0/stack/5: 2a48a79d821c16b4fd317b1bad5bdfd9
+    HomePage/projects/projects/0/stack/6: 0da880d957cec6f58741b296fb35be20
+    HomePage/projects/projects/1/title: 6bcde2ebc990de724d03ee7cacf6e596
+    HomePage/projects/projects/1/shortDescription: 23a2aae1ccad0cfbd35b3ea36acc06bc
+    HomePage/projects/projects/1/description: 7f617c0e512f7aa01a5afc46762320f7
+    HomePage/projects/projects/1/goal: 3b2a27c5f4fb746d54184681ea37a779
+    HomePage/projects/projects/1/features: 10a2600a9fc44eafebead5337849e04a
+    HomePage/projects/projects/1/stack/0: 6f3c79ede015c6cf2890e7361e5f6fd4
+    HomePage/projects/projects/1/stack/1: 49bc1ac3f70ea329006882f0b791b9c1
+    HomePage/projects/projects/1/stack/2: cd88d949088b474065aa9123d9405529
+    HomePage/projects/projects/1/stack/3: 445dbff330ffae601b5789bf7c21310d
+    HomePage/projects/projects/1/stack/4: 61e24616658dbc78508be37421aed76d
+    HomePage/projects/projects/1/stack/5: c33b6a3ab0eb78c2e37bb500b4498742
+    HomePage/projects/projects/1/stack/6: d6c4288280a622135ef93a225bfff1a6
+    HomePage/projects/projects/2/title: 6526ff87db7308c758491f446052e8b4
+    HomePage/projects/projects/2/shortDescription: 1712863e833c6fe51e6ebf68d93f7141
+    HomePage/projects/projects/2/description: 5557e80d343443f6bc23f1a029c79398
+    HomePage/projects/projects/2/goal: 70828744ccc9d8bd1503f43250bd3193
+    HomePage/projects/projects/2/features: 32d735347885c9cd93820f022b50d0f6
+    HomePage/projects/projects/2/stack/0: fab52944eac83f39473becf87aba4351
+    HomePage/projects/projects/2/stack/1: 19df6559af13aeeea62fcc45a40f5495
+    HomePage/projects/projects/2/stack/2: 1d1473df8cfd1eea9663d7b27106a28c
+    HomePage/projects/projects/2/stack/3: 8ba3424e48dba8e5c1d91a6ec26c39ac
+    HomePage/projects/projects/2/stack/4: e84d98fc88c1e695142a4dea0f99ad93
+    HomePage/projects/projects/2/stack/5: 48e97965b90c5a76473723dd3681cae5
+    HomePage/projects/projects/2/stack/6: a5c9281e08aa67da3be865428d75d084
+    HomePage/projects/view: 36a9b5e3dc153c036d320460d72a03c3
     HomePage/testimonials/badge: e958aa3d3743031e2cbfbfd8f1e381f6
     HomePage/testimonials/title: bf53e8dee0e5db47b9351062bbc8f953
     HomePage/testimonials/description: 4529b990e81e6124930dffd7e6e95a1d
