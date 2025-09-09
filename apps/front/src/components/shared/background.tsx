@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
@@ -36,11 +37,18 @@ export function Background() {
   }, [])
 
   return (
-    <div
-      className="pointer-events-none fixed inset-0 -z-10 h-screen w-6xl min-w-screen overflow-visible select-none"
-      style={{ opacity: scrollOpacity }}
+    <motion.div
+      className="pointer-events-none fixed inset-0 -z-10"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
     >
-      <DarkVeil hueShift={isLightMode ? 215 : 33} />
-    </div>
+      <div
+        className="h-screen w-6xl min-w-screen overflow-visible select-none"
+        style={{ opacity: scrollOpacity }}
+      >
+        <DarkVeil hueShift={isLightMode ? 215 : 33} />
+      </div>
+    </motion.div>
   )
 }
