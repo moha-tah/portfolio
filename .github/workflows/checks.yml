@@ -1,24 +1,43 @@
-name: Basic Checks
+name: Checks
 
 on:
   push:
     branches:
       - main
   pull_request:
-    types: [opened, synchronize, reopened]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   checks:
-    name: Lint, Typecheck & Test
+    name: ${{ matrix.check.name }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        check:
+          - name: Lint
+            command: pnpm lint
+          - name: Typecheck
+            command: CI=true pnpm typecheck
+          - name: Test
+            command: pnpm test
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: "22"
-          cache: "pnpm"
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm lint
-      - run: CI=true pnpm typecheck
-      - run: pnpm test
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run ${{ matrix.check.name }}
+        run: ${{ matrix.check.command }}
