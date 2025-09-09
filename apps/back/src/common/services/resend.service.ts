@@ -19,6 +19,7 @@ export class ResendService {
   ) {
     this.apiKey = this.configService.get('RESEND_API_KEY')
     this.isEnabled = this.configService.get('SEND_EMAILS')
+
     this.resend = new Resend(this.apiKey)
   }
 
