@@ -63,12 +63,7 @@ export const BaseTestimonialCard = ({
     return (
       <MotionCard
         ref={ref}
-        className={cn(
-          'relative border-0',
-          className,
-          cardGradient && 'gradient-card'
-        )}
-        style={gradientStyle}
+        className={cn('bg-background relative border-0 py-0', className)}
         initial={{ opacity: 0, y: 40, filter: 'blur(6px)', scale: 0.95 }}
         animate={
           isInView
@@ -82,7 +77,12 @@ export const BaseTestimonialCard = ({
         }}
       >
         <TopLeftAvatar testimonial={testimonial} size={avatarSize} />
-        {children}
+        <div
+          className={cn('h-full rounded-xl', cardGradient && 'gradient-card')}
+          style={gradientStyle}
+        >
+          {children}
+        </div>
       </MotionCard>
     )
   }

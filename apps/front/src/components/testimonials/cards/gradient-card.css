@@ -2,8 +2,6 @@
 .gradient-card {
   background: var(--gradient-light);
   position: relative;
-  /* NO overflow: hidden to allow avatar scaling */
-  /* transition: all 0.3s ease-in-out; */
 }
 
 .dark .gradient-card {
@@ -20,7 +18,7 @@
   transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   z-index: 0;
-  border-radius: inherit; /* Inherit border-radius from parent card */
+  border-radius: inherit;
 }
 
 .dark .gradient-card::before {
@@ -32,7 +30,7 @@
 }
 
 /* Content needs to be above pseudo-element, but NOT the TopLeftAvatar */
-.gradient-card > *:not([class*="spring-bounce"]):not([class*="absolute"]) {
+.gradient-card > *:not([class*='spring-bounce']):not([class*='absolute']) {
   position: relative;
   z-index: 1;
 }

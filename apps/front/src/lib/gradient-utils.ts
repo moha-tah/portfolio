@@ -1,23 +1,10 @@
-export type GradientColor =
-  | 'purple'
-  | 'blue'
-  | 'green'
-  | 'orange'
-  | 'pink'
-  | 'red'
-  | 'yellow'
-  | 'cyan'
+export type GradientColor = 'blue' | 'green' | 'orange'
 
 const GRADIENT_COLORS = {
-  purple: { r: 168, g: 85, b: 247 },
   blue: { r: 54, g: 67, b: 189 },
   green: { r: 3, g: 203, b: 158 },
-  orange: { r: 255, g: 122, b: 0 },
-  pink: { r: 236, g: 72, b: 153 },
-  red: { r: 239, g: 68, b: 68 },
-  yellow: { r: 234, g: 179, b: 8 },
-  cyan: { r: 6, g: 182, b: 212 }
-} as const
+  orange: { r: 255, g: 122, b: 0 }
+}
 
 // Centralized control points for easy color adjustment
 const LIGHT_END = { r: 255, g: 255, b: 255 } // White
