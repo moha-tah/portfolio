@@ -26,7 +26,7 @@ export type Environment = z.infer<typeof envSchema>
 
 export function validate(config: Record<string, unknown>): Environment {
   // Skip validation when deploying the frontend to vercel
-  if (process.env.VERCEL_ENV) {
+  if (process.env.VERCEL_ENV || process.env.CI === 'true') {
     return config as unknown as Environment
   }
 
