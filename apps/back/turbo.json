@@ -36,10 +36,10 @@
     },
 
     "lint": {
-      "dependsOn": ["db:generate"]
+      "dependsOn": ["db:generate", "utils#build"]
     },
     "test": {
-      "dependsOn": ["db:generate"]
+      "dependsOn": ["db:generate", "utils#build"]
     },
 
     "db:generate": {
