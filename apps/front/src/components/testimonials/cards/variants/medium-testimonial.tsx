@@ -29,7 +29,7 @@ export function MediumTestimonial({
     >
       <CardContent className="h-full pt-8 pb-6">
         <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-          <p className="text-lg font-medium">{testimonial.text}</p>
+          <p className="text-base font-medium">{testimonial.text}</p>
           <AuthorSection author={testimonial.author} href={testimonial.href} />
         </blockquote>
       </CardContent>

@@ -32,7 +32,7 @@ export function SmallTestimonial({
     >
       <CardContent className="h-full pt-8 pb-6">
         <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-          <p className="font-medium">{testimonial.text}</p>
+          <p className="text-sm font-medium">{testimonial.text}</p>
           <AuthorSection author={testimonial.author} href={testimonial.href} />
         </blockquote>
       </CardContent>
