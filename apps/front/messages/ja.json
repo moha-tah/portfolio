@@ -7,16 +7,16 @@
       "readyToJoin": "2026年2月から始まる 6ヶ月間の卒業研究インターンシップで あなたのチームに参加する準備ができています。",
       "downloadResume": "履歴書をダウンロード",
       "contactMe": "お問い合わせ",
-      "passions": {
-        "computerScience": "コンピュータサイエンス",
-        "coding": "コーディング",
-        "engineering": "エンジニアリング",
-        "Python": "Python",
-        "NextJS": "Next.js",
-        "Backend": "バックエンド",
-        "TypeScript": "TypeScript",
-        "NestJS": "NestJS"
-      }
+      "passions": [
+        "コンピュータサイエンス",
+        "エンジニアリング",
+        "アルゴリズム",
+        "コーディング",
+        "アーキテクチャ",
+        "サイバーセキュリティ",
+        "バックエンド",
+        "DevOps"
+      ]
     },
     "aboutMe": {
       "badge": "私について",

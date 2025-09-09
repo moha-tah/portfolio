@@ -7,16 +7,16 @@
       "readyToJoin": "Bereit, ab Februar 2026 für ein 6-monatiges Abschlusspraktikum in Ihr Team einzusteigen.",
       "downloadResume": "Meinen Lebenslauf herunterladen",
       "contactMe": "Kontaktieren Sie mich",
-      "passions": {
-        "computerScience": "Informatik",
-        "coding": "Programmierung",
-        "engineering": "Engineering",
-        "Python": "Python",
-        "NextJS": "Next.js",
-        "Backend": "Backend",
-        "TypeScript": "TypeScript",
-        "NestJS": "NestJS"
-      }
+      "passions": [
+        "Informatik",
+        "Ingenieurwesen",
+        "Algorithmen",
+        "Programmierung",
+        "Architektur",
+        "Cybersicherheit",
+        "Backend",
+        "DevOps"
+      ]
     },
     "aboutMe": {
       "badge": "Über mich",
