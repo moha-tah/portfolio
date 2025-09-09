@@ -8,7 +8,7 @@ on:
 jobs:
   translate:
     if: ${{ github.event.label.name == 'To translate' }}
-    name: Auto Translate i18n
+    name: Translate the frontend
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,6 +19,7 @@ jobs:
           commit-message: "chore(i18n): :globe_with_meridians: update translations"
 
   remove-label:
+    name: Remove the 'To translate' label
     if: ${{ github.event.label.name == 'To translate' }}
     runs-on: ubuntu-latest
     steps:

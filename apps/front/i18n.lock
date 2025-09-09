@@ -7,14 +7,14 @@ checksums:
     HomePage/hero/readyToJoin: 3c20bc94ab6f795631ac9e7c3735b55f
     HomePage/hero/downloadResume: 921ce5a6d547ff0198e4f381bb7042c7
     HomePage/hero/contactMe: a6e7fa10e8e1473c3cfae16f81e564fd
-    HomePage/hero/passions/computerScience: 3c6244bd5c85d0085fe8c2c70ee57171
-    HomePage/hero/passions/coding: 89f117ec45b07bc87b3faab6a6ebb22b
-    HomePage/hero/passions/engineering: ce5f2aaa903a801b90e3b3d1261f9f62
-    HomePage/hero/passions/Python: f396d32607ee0981634cb9f9b7665617
-    HomePage/hero/passions/NextJS: 9104a97c2178733d73fd8df641a6a432
-    HomePage/hero/passions/Backend: 3fbd08ffd1724ca0549c7036a5543165
-    HomePage/hero/passions/TypeScript: d63d2a97f55baa75f353987658ddb0a0
-    HomePage/hero/passions/NestJS: a51e2989741bba2644267a2c1bf3a151
+    HomePage/hero/passions/0: 3c6244bd5c85d0085fe8c2c70ee57171
+    HomePage/hero/passions/1: ce5f2aaa903a801b90e3b3d1261f9f62
+    HomePage/hero/passions/2: 0ef5082d72b6a8e7f4a54ac138c3aa38
+    HomePage/hero/passions/3: 89f117ec45b07bc87b3faab6a6ebb22b
+    HomePage/hero/passions/4: f8863a4473490c0cbbe3f5171ab7ea10
+    HomePage/hero/passions/5: 4634ab03b6513ba485af6f4b708773cc
+    HomePage/hero/passions/6: 3fbd08ffd1724ca0549c7036a5543165
+    HomePage/hero/passions/7: a6beea8eb74c4ace98802cbe59cd0c93
     HomePage/aboutMe/badge: 2143f5406d1eec5b83cff6daa4ba873f
     HomePage/aboutMe/title: aa6383d6319ba85ab9fc0898b520ebb0
     HomePage/aboutMe/description: e4ce9ce93ce8028a94b377ac6c390cd5
@@ -91,7 +91,7 @@ checksums:
     HomePage/testimonials/list/first/author/name: ab2609cae73018f30b5a7d77040bebc7
     HomePage/testimonials/list/first/author/handle: a60c831b5ea49b01908bd8e01e0f27de
     HomePage/testimonials/list/first/text: 4c9c7e6844a698f6a2097b93ea935d5f
-    HomePage/testimonials/list/second/author/name: febee8e9ab40b2fe5106d72675228d00
+    HomePage/testimonials/list/second/author/name: e92cbec5e11f0f56e930a93fb7a4d78e
     HomePage/testimonials/list/second/author/handle: 0d416eb93da488657815b76a1e3925dc
     HomePage/testimonials/list/second/text: 28b0c06d43fad30c4da809411e451968
     HomePage/testimonials/list/third/author/name: 72b763be6e813529e1cd248138aae590
@@ -134,7 +134,7 @@ checksums:
     HomePage/faq/questions/3/question: cd21e5b12a620d6a155f78d4f0b06939
     HomePage/faq/questions/3/answer: b9f6852c175ff4e4455ff874bd42c53a
     HomePage/faq/questions/4/question: 6a2136b6dba6ea508b09850929621e05
-    HomePage/faq/questions/4/answer: c36ef57dd7f486004ab97f6155ab0e50
+    HomePage/faq/questions/4/answer: 91bba871ab934324179073dc15fcb49b
     footer/badge: 8b48aa9cca77a080eceeca20cebb42b5
     footer/contact/badge: 9afa39bc47019ee6dec6c74b6273967c
     footer/contact/title: 35323605e31c113fd664486afc33f3eb

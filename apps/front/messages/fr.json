@@ -7,16 +7,16 @@
       "readyToJoin": "Prêt à rejoindre votre équipe pour un stage de fin d'études de 6 mois à partir de février 2026.",
       "downloadResume": "Téléchargez mon CV",
       "contactMe": "Contactez-moi",
-      "passions": {
-        "computerScience": "l'informatique",
-        "coding": "le code",
-        "engineering": "l'ingénierie",
-        "Python": "Python",
-        "NextJS": "Next.js",
-        "Backend": "le backend",
-        "TypeScript": "TypeScript",
-        "NestJS": "NestJS"
-      }
+      "passions": [
+        "informatique",
+        "ingénierie",
+        "algorithmes",
+        "programmation",
+        "architecture",
+        "cybersécurité",
+        "Backend",
+        "DevOps"
+      ]
     },
     "aboutMe": {
       "badge": "À propos de moi",
@@ -134,7 +134,7 @@
         },
         "second": {
           "author": {
-            "name": "John Doe",
+            "name": "Ibrahim Zehhaf",
             "handle": "Architecte Informatique passé chez Orange, IAD, etc."
           },
           "text": "« J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration. »"
@@ -216,7 +216,7 @@
         },
         {
           "question": "Quelles langues parles-tu couramment ?",
-          "answer": "Je parle couramment le français et l'anglais."
+          "answer": "Je suis francophone natif de Paris, et je parle couramment anglais (niveau C1, TOEIC 985/990)."
         }
       ]
     }

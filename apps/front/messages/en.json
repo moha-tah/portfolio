@@ -7,16 +7,16 @@
       "readyToJoin": "Ready to join your team for a 6-month end-of-study internship starting in February 2026.",
       "downloadResume": "Download my resume",
       "contactMe": "Contact me",
-      "passions": {
-        "computerScience": "computer science",
-        "coding": "coding",
-        "engineering": "engineering",
-        "Python": "Python",
-        "NextJS": "Next.js",
-        "Backend": "Backend",
-        "TypeScript": "TypeScript",
-        "NestJS": "NestJS"
-      }
+      "passions": [
+        "computer science",
+        "engineering",
+        "algorithms",
+        "coding",
+        "architecture",
+        "cybersecurity",
+        "Backend",
+        "DevOps"
+      ]
     },
     "aboutMe": {
       "badge": "About me",
@@ -134,7 +134,7 @@
         },
         "second": {
           "author": {
-            "name": "John Doe",
+            "name": "Ibrahim Zehhaf",
             "handle": "Senior Software Architect @ Orange, IAD, etc."
           },
           "text": "“I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.”"
@@ -216,7 +216,7 @@
         },
         {
           "question": "Which languages do you speak fluently?",
-          "answer": "I speak French (native) as I am from Paris, I am also fluent in English."
+          "answer": "I am a native French speaker from Paris, and I am fluent in English (C1 level, TOEIC 985/990)."
         }
       ]
     }

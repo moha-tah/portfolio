@@ -26,7 +26,7 @@ function LinkWrapper({
   return (
     <Tooltip>
       <TooltipTrigger aria-label={name}>
-        <Link href={href} aria-label={name} className="cursor-default">
+        <Link href={href} aria-label={name}>
           <div className="transition-all duration-300 hover:scale-115">
             {children}
           </div>

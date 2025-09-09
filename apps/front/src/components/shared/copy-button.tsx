@@ -45,7 +45,7 @@ export function CopyButton({ text, copyText, copiedText }: Props) {
         onClick={copy}
         aria-label={copyText}
       >
-        <div className="relative size-4 md:size-5">
+        <div className="relative size-4 cursor-pointer md:size-5">
           <Check
             className={cn(
               'absolute size-4 transition-all duration-300 md:size-5',

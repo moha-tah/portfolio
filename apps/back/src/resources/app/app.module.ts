@@ -13,8 +13,8 @@ import { APP_GUARD } from '@nestjs/core'
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: ['.env'],
-      validate: validate
+      envFilePath: [process.env.NODE_ENV === 'test' ? '.env.test' : '.env'],
+      validate
     }),
     ThrottlerModule.forRoot(throttlerConfig),
     ContactModule

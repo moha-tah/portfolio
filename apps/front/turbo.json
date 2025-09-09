@@ -33,7 +33,9 @@
     "lint:fix": {
       "outputs": ["next-env.d.ts"]
     },
-    "typecheck": {},
+    "typecheck": {
+      "dependsOn": ["api:generate"]
+    },
 
     "api:generate": {
       "dependsOn": ["back#swagger:generate"],
