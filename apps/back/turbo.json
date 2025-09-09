@@ -34,6 +34,14 @@
     "dev": {
       "with": ["utils#dev"]
     },
+
+    "lint": {
+      "dependsOn": ["db:generate"]
+    },
+    "test": {
+      "dependsOn": ["db:generate"]
+    },
+
     "db:generate": {
       "env": ["DATABASE_URL"]
     },
