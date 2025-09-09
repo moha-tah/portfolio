@@ -10,7 +10,6 @@ import { AnimatedButton } from '@/components/shared/animations/animated-button'
 import { TextAnimate } from '@/components/shared/animations/text-animate'
 import { Button } from '@/components/ui/button'
 import { Link } from '@/i18n/navigation'
-import { env } from '@/lib/env'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('error')
@@ -22,11 +21,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 interface ErrorProps {
-  error: Error & { digest?: string }
   reset: () => void
 }
 
-export default function Error({ error, reset }: ErrorProps) {
+export default function Error({ reset }: ErrorProps) {
   const t = useTranslations('error')
 
   return (
@@ -59,17 +57,6 @@ export default function Error({ error, reset }: ErrorProps) {
               >
                 {t('description')}
               </TextAnimate>
-              {env.NODE_ENV === 'local' && (
-                <details className="mt-4 text-left">
-                  <summary className="text-muted-foreground hover:text-foreground cursor-pointer text-sm">
-                    {t('technicalDetails')}
-                  </summary>
-                  <pre className="bg-muted text-muted-foreground mt-2 overflow-x-auto rounded-md p-4 text-xs">
-                    {error.message}
-                    {error.digest && `\nDigest: ${error.digest}`}
-                  </pre>
-                </details>
-              )}
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
               <AnimatedButton delay={1.0} duration={0.5}>

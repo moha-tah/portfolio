@@ -2,24 +2,31 @@
 
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
 
-import { Passion } from './passions'
 import { TextShimmer } from '../shared/text-shimmer'
 
 interface Props {
-  currentIndex: number
   delay: number
   duration: number
-  passions: Passion[]
 }
 
-export function AnimatedTitle({
-  currentIndex,
-  delay,
-  duration,
-  passions
-}: Props) {
+export function AnimatedTitle({ delay, duration }: Props) {
   const t = useTranslations('HomePage.hero')
+
+  const [passionNumber, setPassionNumber] = useState(0)
+  const passions = t.raw('passions') as string[]
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      if (passionNumber === passions.length - 1) {
+        setPassionNumber(0)
+      } else {
+        setPassionNumber(passionNumber + 1)
+      }
+    }, 2000)
+    return () => clearTimeout(timeoutId)
+  }, [passionNumber, passions])
 
   return (
     <motion.h1
@@ -44,27 +51,27 @@ export function AnimatedTitle({
       </span>
       <span className="relative flex w-full justify-center overflow-hidden text-center text-4xl min-[430px]:text-5xl md:pt-1 md:pb-4 md:text-6xl">
         &nbsp;
-        {passions.map((passion: Passion, index: number) => (
+        {passions.map((passion: string, index: number) => (
           <motion.span
             key={index}
             className="base-radial-gradient absolute bg-clip-text font-bold text-nowrap text-transparent"
             initial={{ opacity: 0, y: '-100', filter: 'blur(10px)' }}
             transition={{ type: 'spring', stiffness: 50 }}
             animate={
-              currentIndex === index
+              passionNumber === index
                 ? {
                     y: 0,
                     opacity: 1,
                     filter: 'blur(0px)'
                   }
                 : {
-                    y: currentIndex > index ? -150 : 150,
+                    y: passionNumber > index ? -150 : 150,
                     opacity: 0,
                     filter: 'blur(10px)'
                   }
             }
           >
-            {t(`passions.${passion.name}`)}
+            {passion}
           </motion.span>
         ))}
       </span>

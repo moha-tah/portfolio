@@ -75,7 +75,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
         ref={buttonRef}
         onClick={changeTheme}
         className={cn(
-          'transition-transform duration-300 hover:scale-110 hover:rotate-12',
+          'cursor-pointer transition-transform duration-300 hover:scale-110 hover:rotate-12',
           className
         )}
         aria-label={t('toggle')}
