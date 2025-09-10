@@ -27,7 +27,7 @@
           {
             "title": "Premières années à l'UTC",
             "subtitle": "Sept. 2021 - Juin 2024",
-            "description": "Acquisition de bases solides en informatique, couvrant les algorithmes, les structures de données, le génie logiciel et l'architecture des systèmes.",
+            "description": "J'ai étudié à l'UTC, une école d'ingénieurs française, où j'ai acquis de solides bases en informatique, notamment en algorithmes, structures de données, génie logiciel et architecture des systèmes.",
             "learnMoreText": "En savoir plus sur l'UTC"
           },
           {
@@ -48,9 +48,9 @@
             "description": "Après mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, JWT, S3, PostgreSQL, Next.js...) contribuant au développement d'une application web avec 8 ingénieurs. Plus d'informations dans la section Projets ci-dessous."
           },
           {
-            "title": "Dernière année à l'UTC (ISI)",
+            "title": "5ème année @ UTC (ISI)",
             "subtitle": "Fév. 2025 - Fév. 2026",
-            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec un accent sur les systèmes distribués, la conception backend avancée et l'architecture. La dernière étape de mes études sera un stage de 6 mois débutant en février 2026.",
+            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec une spécialisation en systèmes distribués, conception backend et architecture logicielle. Le programme se conclura par un stage de 6 mois débutant en février 2026.",
             "learnMoreText": "En savoir plus sur ma spécialité \"ISI\""
           }
         ]
@@ -122,36 +122,36 @@
     },
     "testimonials": {
       "badge": "Témoignages",
-      "title": "Ce que les gens avec qui j'ai travaillé disent de moi",
-      "description": "J'ai travaillé avec beaucoup de gens et j'ai appris beaucoup de choses de leur part. Voici quelques-uns des commentaires qu'ils m'ont laissés.",
+      "title": "Ce que disent de moi les personnes avec qui j'ai travaillé",
+      "description": "J'ai travaillé avec beaucoup de personnes et j'ai énormément appris d'elles. Voici quelques-uns de leurs commentaires à mon sujet.",
       "list": {
         "first": {
           "author": {
-            "name": "Rabie Menad",
-            "handle": "Développeur Frontend chez Décathlon"
+            "name": "Julien G. Lopes",
+            "handle": "Tuteur de stage @ Napta"
           },
-          "text": "« J'ai eu l'opportunité de travailler avec Mohamed pendant un an et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets complets (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et scalables. Son attention au détail est remarquable : chaque livrable est propre, optimisé et durable.<newline></newline>Cette rigueur a été une qualité précieuse pour respecter les deadlines dans les projets que nous avons mené ensemble. Je suis convaincu que Mohamed saura exceller dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe qui souhaite avancer sereinement. »"
+          "text": "« Je recommande vivement Mohamed ! Sa forte capacité d'adaptation, sa curiosité sincère (qui l'a amené à explorer et approfondir ses connaissances dans de nombreuses technologies), et son état d'esprit orienté produit sont de véritables atouts.<newline></newline>Durant son stage chez Napta, Mohamed a eu l'occasion de travailler sur des tâches d'intégration et de synchronisation de données, des sujets DevOps, la CI, ainsi que des améliorations de produit. Il s'est rapidement familiarisé avec la base de code et s'est adapté à nos processus, ce qui lui a permis non seulement d'être productif au sein de l'équipe très rapidement, mais aussi d'apporter des idées précieuses.<newline></newline>Mohamed a fait preuve d'une grande curiosité sur des sujets très différents. Il a constamment formulé des propositions constructives et a su mener avec succès des initiatives internes — de l'idée à l'adoption par l'équipe, en passant par le développement et l'assurance qualité.<newline></newline>Toute l'équipe de Napta a beaucoup apprécié travailler avec lui ! »"
         },
         "second": {
           "author": {
-            "name": "Ibrahim Zehhaf",
-            "handle": "Architecte Informatique passé chez Orange, IAD, etc."
+            "name": "Rabie Menad",
+            "handle": "Développeur Frontend @ Décathlon"
           },
-          "text": "« J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration. »"
+          "text": "« J'ai eu l'opportunité de travailler avec Mohamed pendant un an, et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets de bout en bout (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et évolutives. Son souci du détail est remarquable : chaque livrable est propre, optimisé et pérenne.<newline></newline>Cette rigueur a été un atout précieux pour respecter les délais des projets sur lesquels nous avons travaillé ensemble. Je suis convaincu que Mohamed excellera dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe souhaitant avancer avec confiance. »"
         },
         "third": {
           "author": {
-            "name": "Julien G. Lopes",
-            "handle": "Tuteur de stage chez Napta"
+            "name": "Olivier Knell",
+            "handle": "Senior Engineering Manager @ Napta"
           },
           "text": "« En attente d'un témoignage. »"
         },
         "fourth": {
           "author": {
-            "name": "Olivier Knell",
-            "handle": "Senior Engineering Manager chez Napta"
+            "name": "Ibrahim Zehhaf",
+            "handle": "Senior Software Architect @ Orange, IAD, etc."
           },
-          "text": "« En attente d'un témoignage. »"
+          "text": "« J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration. »"
         }
       }
     },

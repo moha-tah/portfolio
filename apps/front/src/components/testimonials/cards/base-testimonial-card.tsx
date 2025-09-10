@@ -30,6 +30,16 @@ export interface TestimonialCardProps {
   gradientColor?: GradientColor
 }
 
+interface Props {
+  testimonial: TestimonialCardProps
+  children: React.ReactNode
+  className?: string
+  gradientColor?: GradientColor
+  avatarSize?: string
+  animationDelay?: number
+  enableScrollAnimation?: boolean
+}
+
 export const BaseTestimonialCard = ({
   testimonial,
   children,
@@ -38,15 +48,7 @@ export const BaseTestimonialCard = ({
   avatarSize = 'size-10',
   animationDelay = 0,
   enableScrollAnimation = false
-}: {
-  testimonial: TestimonialCardProps
-  children: React.ReactNode
-  className?: string
-  gradientColor?: GradientColor
-  avatarSize?: string
-  animationDelay?: number
-  enableScrollAnimation?: boolean
-}) => {
+}: Props) => {
   const { cardGradient, gradientStyle } = useTestimonialGradient(
     testimonial.gradientColor,
     gradientColor

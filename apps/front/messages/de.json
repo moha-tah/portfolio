@@ -27,7 +27,7 @@
           {
             "title": "Erste Jahre an der UTC",
             "subtitle": "Sept. 2021 - Juni 2024",
-            "description": "Aufbau solider Grundlagen in der Informatik, einschließlich Algorithmen, Datenstrukturen, Software-Engineering und Systemarchitektur.",
+            "description": "Studium an der UTC, einer französischen Hochschule für Ingenieurwissenschaften, wo ich solide Grundlagen in der Informatik aufbaute, einschließlich Algorithmen, Datenstrukturen, Software-Engineering und Systemarchitektur.",
             "learnMoreText": "Mehr über UTC erfahren"
           },
           {
@@ -48,9 +48,9 @@
             "description": "Nach meinen Kursen arbeitete ich 20 Stunden pro Woche als Full-Stack-Entwickler (NestJS, JWT, S3, PostgreSQL, Next.js...) und trug zur Entwicklung einer Web-App mit 8 Ingenieuren bei. Weitere Informationen im Abschnitt Projekte unten."
           },
           {
-            "title": "Letztes Jahr @ UTC (ISI)",
+            "title": "5. Jahr @ UTC (M.Sc.)",
             "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "Spezialisierung auf Computer Systems Engineering (ISI) mit Schwerpunkt auf verteilten Systemen, fortgeschrittenem Backend-Design und Architektur. Der letzte Schritt meines Studiums wird ein 6-monatiges Praktikum sein, das im Februar 2026 beginnt.",
+            "description": "M.Sc. in Computer Systems Engineering (ISI) mit Schwerpunkt auf verteilten Systemen, Backend-Design und Software-Architektur. Das Programm wird mit einem 6-monatigen Praktikum abgeschlossen, das im Februar 2026 beginnt.",
             "learnMoreText": "Mehr über meine Spezialisierung \"ISI\" erfahren"
           }
         ]
@@ -127,31 +127,31 @@
       "list": {
         "first": {
           "author": {
-            "name": "Rabie Menad",
-            "handle": "Frontend-Entwickler @ Décathlon"
-          },
-          "text": "\"Ich hatte die Gelegenheit, ein Jahr lang mit Mohamed zusammenzuarbeiten, und ich kann ihn für seine zukünftigen Projekte nur wärmstens empfehlen.<newline></newline>Er ist ein vielseitiger Ingenieur, der in der Lage ist, End-to-End-Themen (DevOps, Frontend, Backend usw.) zu bearbeiten und dabei leistungsstarke und skalierbare Lösungen zu entwickeln. Seine Liebe zum Detail ist bemerkenswert: Jedes Ergebnis ist sauber, optimiert und nachhaltig.<newline></newline>Diese Genauigkeit war ein wertvoller Vorteil bei der Einhaltung der Fristen für die Projekte, an denen wir gemeinsam gearbeitet haben. Ich bin überzeugt, dass Mohamed dank seiner Fähigkeiten, seiner Professionalität und seiner positiven Einstellung in seinen zukünftigen Aufgaben erfolgreich sein wird.<newline></newline>Ein echter Gewinn für jedes Team, das mit Zuversicht vorankommen möchte.\""
-        },
-        "second": {
-          "author": {
-            "name": "Ibrahim Zehhaf",
-            "handle": "Senior Software Architekt @ Orange, IAD, etc."
-          },
-          "text": "\"Ich hatte das Vergnügen, mit Mohamed zusammenzuarbeiten, und ich kann seine Selbstständigkeit und die außergewöhnliche Qualität seiner Arbeit bestätigen.<newline></newline>Er war immer sehr zuverlässig und hat während der gesamten Zusammenarbeit wesentlich dazu beigetragen.\""
-        },
-        "third": {
-          "author": {
             "name": "Julien G. Lopes",
             "handle": "Praktikumsbetreuer @ Napta"
           },
-          "text": "\"Warte auf ein Testimonial.\""
+          "text": "“Ich empfehle Mohamed von ganzem Herzen! Seine starke Anpassungsfähigkeit, echte Neugier (die ihn dazu brachte, viele Technologien zu erforschen und sein Wissen zu vertiefen) und seine produktorientierte Denkweise sind wahre Stärken.<newline></newline>Während seines Praktikums bei Napta hatte Mohamed die Gelegenheit, an Datenintegrations- und Synchronisierungsaufgaben, DevOps-Themen, CI sowie Produktverbesserungen zu arbeiten. Er machte sich schnell mit der Codebasis vertraut und passte sich unseren Prozessen an, was ihm nicht nur ermöglichte, innerhalb des Teams sehr schnell produktiv zu werden, sondern auch wertvolle Ideen beizusteuern.<newline></newline>Mohamed zeigte große Neugier bei sehr unterschiedlichen Themen. Er machte durchweg konstruktive Vorschläge und konnte interne Initiativen erfolgreich leiten – von der Idee bis zur Teamübernahme, einschließlich Entwicklung und Qualitätssicherung.<newline></newline>Das gesamte Napta-Team hat die Zusammenarbeit mit ihm sehr genossen!”"
         },
-        "fourth": {
+        "second": {
+          "author": {
+            "name": "Rabie Menad",
+            "handle": "Frontend-Entwickler @ Décathlon"
+          },
+          "text": "“Ich hatte die Gelegenheit, ein Jahr lang mit Mohamed zusammenzuarbeiten, und ich kann ihn für seine zukünftigen Projekte nur wärmstens empfehlen.<newline></newline>Er ist ein vielseitiger Ingenieur, der in der Lage ist, End-to-End-Themen (DevOps, Frontend, Backend usw.) zu bearbeiten und dabei leistungsstarke und skalierbare Lösungen zu entwickeln. Seine Liebe zum Detail ist bemerkenswert: Jedes Ergebnis ist sauber, optimiert und nachhaltig.<newline></newline>Diese Genauigkeit war ein wertvoller Vorteil bei der Einhaltung der Fristen für die Projekte, an denen wir gemeinsam gearbeitet haben. Ich bin zuversichtlich, dass Mohamed dank seiner Fähigkeiten, seiner Professionalität und seiner positiven Einstellung in seinen zukünftigen Aufgaben erfolgreich sein wird.<newline></newline>Eine echte Bereicherung für jedes Team, das mit Zuversicht vorankommen möchte.”"
+        },
+        "third": {
           "author": {
             "name": "Olivier Knell",
             "handle": "Senior Engineering Manager @ Napta"
           },
-          "text": "\"Warte auf ein Testimonial.\""
+          "text": "„Wartet auf ein Testimonial.“"
+        },
+        "fourth": {
+          "author": {
+            "name": "Ibrahim Zehhaf",
+            "handle": "Senior Software Architect @ Orange, IAD, etc."
+          },
+          "text": "„Ich hatte das Vergnügen, mit Mohamed zusammenzuarbeiten, und ich kann seine Eigenständigkeit und die außergewöhnliche Qualität seiner Arbeit bestätigen.<newline></newline>Er war stets sehr zuverlässig und hat während der gesamten Zusammenarbeit erheblich beigetragen.“"
         }
       }
     },

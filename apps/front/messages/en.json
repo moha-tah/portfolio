@@ -127,31 +127,31 @@
       "list": {
         "first": {
           "author": {
+            "name": "Julien G. Lopes",
+            "handle": "Internship Tutor @ Napta"
+          },
+          "text": "“I wholeheartedly recommend Mohamed! His strong adaptability, genuine curiosity (which led him to explore and deepen his knowledge in many technologies), and his product-oriented mindset are true assets.<newline></newline>During his internship at Napta, Mohamed had the opportunity to work on data integration and synchronization tasks, DevOps topics, CI, as well as product enhancements. He quickly got familiar with the codebase and adapted to our processes, which not only allowed him to become productive within the team very quickly, but also to contribute valuable ideas.<newline></newline>Mohamed demonstrated strong curiosity across very different topics. He consistently made constructive proposals and was able to successfully lead internal initiatives — from idea to team adoption, including development and quality assurance.<newline></newline>The whole Napta team greatly enjoyed working with him!”"
+        },
+        "second": {
+          "author": {
             "name": "Rabie Menad",
             "handle": "Frontend Developer @ Décathlon"
           },
           "text": "“I had the opportunity to work with Mohamed for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing high-performance and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting the deadlines of the projects we worked on together. I am confident that Mohamed will excel in his future missions, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.”"
         },
-        "second": {
-          "author": {
-            "name": "Ibrahim Zehhaf",
-            "handle": "Senior Software Architect @ Orange, IAD, etc."
-          },
-          "text": "“I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.”"
-        },
         "third": {
-          "author": {
-            "name": "Julien G. Lopes",
-            "handle": "Internship Tutor @ Napta"
-          },
-          "text": "“Awaiting for a testimonial.”"
-        },
-        "fourth": {
           "author": {
             "name": "Olivier Knell",
             "handle": "Senior Engineering Manager @ Napta"
           },
           "text": "“Awaiting for a testimonial.”"
+        },
+        "fourth": {
+          "author": {
+            "name": "Ibrahim Zehhaf",
+            "handle": "Senior Software Architect @ Orange, IAD, etc."
+          },
+          "text": "“I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.”"
         }
       }
     },
