@@ -27,7 +27,7 @@
           {
             "title": "First years @ UTC",
             "subtitle": "Sept. 2021 - June 2024",
-            "description": "Built strong foundations in computer science, covering algorithms, data structures, software engineering, and systems architecture.",
+            "description": "Studied at UTC, a French Graduate School of Engineering, where I built strong foundations in computer science, including algorithms, data structures, software engineering, and systems architecture.",
             "learnMoreText": "Learn more about UTC"
           },
           {
@@ -48,9 +48,9 @@
             "description": "After my courses, I worked 20 hours per week as a full-stack developer (NestJS, JWT, S3, PostgreSQL, Next.js...) contributing to the development of a web app with 8 engineers. More information in the Projects section below."
           },
           {
-            "title": "Last year @ UTC (ISI)",
+            "title": "5th year @ UTC (M.Sc.)",
             "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "Specialized in Computer Systems Engineering (ISI), focusing on distributed systems, advanced backend design, and architecture. The last step of my studies will be a 6-month internship beginning in February 2026.",
+            "description": "M.Sc. in Computer Systems Engineering (ISI), with a focus on distributed systems, backend design, and software architecture. The program will conclude with a 6-month internship starting in February 2026.",
             "learnMoreText": "Learn more about my specialty “ISI”"
           }
         ]
