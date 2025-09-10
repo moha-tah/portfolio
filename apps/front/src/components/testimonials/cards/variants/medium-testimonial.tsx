@@ -1,23 +1,26 @@
 import { CardContent } from '@/components/ui/card'
 import { GradientColor } from '@/lib/gradient-utils'
 
+import { ExpandableText } from '../../expandable-text'
 import { AuthorSection } from '../author-section'
 import {
   BaseTestimonialCard,
   TestimonialCardProps
 } from '../base-testimonial-card'
 
+interface Props {
+  testimonial: TestimonialCardProps
+  gradientColor?: GradientColor
+  enableScrollAnimation?: boolean
+  animationDelay?: number
+}
+
 export function MediumTestimonial({
   testimonial,
   gradientColor,
   enableScrollAnimation,
   animationDelay
-}: {
-  testimonial: TestimonialCardProps
-  gradientColor?: GradientColor
-  enableScrollAnimation?: boolean
-  animationDelay?: number
-}) {
+}: Props) {
   return (
     <BaseTestimonialCard
       testimonial={testimonial}
@@ -29,7 +32,11 @@ export function MediumTestimonial({
     >
       <CardContent className="h-full pt-8 pb-6">
         <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-          <p className="text-base font-medium">{testimonial.text}</p>
+          <ExpandableText
+            text={testimonial.text}
+            textSize="text-sm sm:text-base"
+            maxHeight={140}
+          />
           <AuthorSection author={testimonial.author} href={testimonial.href} />
         </blockquote>
       </CardContent>

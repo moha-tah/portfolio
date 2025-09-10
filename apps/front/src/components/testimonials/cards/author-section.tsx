@@ -8,11 +8,13 @@ import { TestimonialAuthor } from './base-testimonial-card'
 export const AuthorSection = ({
   author,
   href,
-  className
+  className,
+  textSize = 'text-sm'
 }: {
   author: TestimonialAuthor
   href?: string
   className?: string
+  textSize?: string
 }) => {
   const content = (
     <div
@@ -36,7 +38,7 @@ export const AuthorSection = ({
           {author.name}
           {href && <ExternalLink className="text-muted-foreground size-4" />}
         </cite>
-        <span className="text-muted-foreground block text-sm">
+        <span className={cn('text-muted-foreground block', textSize)}>
           {author.handle}
         </span>
       </div>

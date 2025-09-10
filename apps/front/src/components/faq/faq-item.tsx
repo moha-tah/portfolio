@@ -40,9 +40,11 @@ export function FaqItem({ question, answer, delay = 0 }: FaqItemProps) {
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="hover:bg-accent/50 flex w-full cursor-pointer items-center justify-between p-6 text-left transition-colors duration-200"
+        className="hover:bg-accent/50 flex w-full cursor-pointer items-center justify-between p-4 text-left transition-colors duration-200 sm:p-6"
       >
-        <h3 className="text-foreground pr-4 text-xl font-medium">{question}</h3>
+        <h3 className="text-foreground pr-4 text-base font-medium sm:text-xl">
+          {question}
+        </h3>
         <div
           className={cn(
             'relative flex size-8 shrink-0 items-center justify-center rounded-full transition-colors duration-300',

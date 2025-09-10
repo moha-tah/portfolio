@@ -20,16 +20,16 @@ export function AnimatedTestimonialsGrid({
   delay = 0.6
 }: AnimatedTestimonialsGridProps) {
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2">
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
       <BigTestimonial
         testimonial={testimonials[0]}
-        gradientColor="blue"
+        gradientColor="green"
         enableScrollAnimation
         animationDelay={delay}
       />
       <MediumTestimonial
         testimonial={testimonials[1]}
-        gradientColor="orange"
+        gradientColor="blue"
         enableScrollAnimation
         animationDelay={delay + 0.1}
       />
@@ -41,7 +41,7 @@ export function AnimatedTestimonialsGrid({
       />
       <SmallTestimonial
         testimonial={testimonials[3]}
-        gradientColor="green"
+        gradientColor="orange"
         enableScrollAnimation
         animationDelay={delay + 0.3}
       />

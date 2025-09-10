@@ -48,22 +48,6 @@ export function getTestimonials(
 ] {
   return [
     createTestimonial(t, 'first', {
-      avatar: '/images/profile-pictures/rabie-menad.webp',
-      companyName: 'Décathlon',
-      companyAvatar: '/images/logos/decathlon.webp',
-      companyUrl: 'https://decathlon.com',
-      initials: 'RM',
-      href: 'https://rabiemenad.fr'
-    }),
-    createTestimonial(t, 'second', {
-      avatar: '/images/profile-pictures/ibrahim-zehhaf.webp',
-      companyName: 'Orange',
-      companyAvatar: '/images/logos/orange.webp',
-      companyUrl: 'https://orange.com',
-      initials: '',
-      href: 'https://github.com/ibrahim-zehhaf'
-    }),
-    createTestimonial(t, 'third', {
       avatar: '/images/profile-pictures/julien-g-lopes.webp',
       companyName: 'Napta',
       companyAvatar: '/images/logos/napta.webp',
@@ -71,13 +55,29 @@ export function getTestimonials(
       initials: 'JGL',
       href: 'https://www.linkedin.com/in/julien-gaspar-lopes-430191b5'
     }),
-    createTestimonial(t, 'fourth', {
+    createTestimonial(t, 'second', {
+      avatar: '/images/profile-pictures/rabie-menad.webp',
+      companyName: 'Décathlon',
+      companyAvatar: '/images/logos/decathlon.webp',
+      companyUrl: 'https://decathlon.com',
+      initials: 'RM',
+      href: 'https://rabie-menad.vercel.app/'
+    }),
+    createTestimonial(t, 'third', {
       avatar: '/images/profile-pictures/olivier-knell.webp',
       companyName: 'Napta',
       companyAvatar: '/images/logos/napta.webp',
       companyUrl: 'https://www.napta.io',
       initials: 'OK',
       href: 'https://www.linkedin.com/in/olivier-knell-156021a8'
+    }),
+    createTestimonial(t, 'fourth', {
+      avatar: '/images/profile-pictures/ibrahim-zehhaf.webp',
+      companyName: 'Orange',
+      companyAvatar: '/images/logos/orange.webp',
+      companyUrl: 'https://orange.com',
+      initials: '',
+      href: 'https://github.com/ibrahim-zehhaf'
     })
   ]
 }
