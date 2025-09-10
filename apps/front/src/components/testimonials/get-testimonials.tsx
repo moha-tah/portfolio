@@ -61,7 +61,7 @@ export function getTestimonials(
       companyAvatar: '/images/logos/decathlon.webp',
       companyUrl: 'https://decathlon.com',
       initials: 'RM',
-      href: 'https://rabiemenad.fr'
+      href: 'https://rabie-menad.vercel.app/'
     }),
     createTestimonial(t, 'third', {
       avatar: '/images/profile-pictures/olivier-knell.webp',
