@@ -85,7 +85,7 @@ export function ContactForm() {
 
   const getButtonClassName = () => {
     return cn(
-      'group relative overflow-hidden h-12 w-full rounded-4xl text-base shadow-none transition-all duration-300 ease-in-out disabled:opacity-50 border text-white bg-radial-[at_0%_0%]',
+      'group relative overflow-hidden h-12 w-full rounded-4xl text-base shadow-none transition-all duration-300 ease-in-out disabled:opacity-50 border-0 text-white bg-radial-[at_0%_0%]',
       {
         'from-green-500 via-green-600 to-green-500 disabled:opacity-100':
           isSuccess,

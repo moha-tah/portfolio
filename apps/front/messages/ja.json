@@ -268,7 +268,9 @@
     "noScriptBanner": {
       "message": "お使いのブラウザでJavaScriptが無効になっています。このウェブサイトを最適な状態で表示するには有効にしてください。"
     },
-    "languageSwitch": "言語を変更"
+    "languageSwitch": "言語を変更",
+    "close": "閉じる",
+    "readMore": "もっと読む"
   },
   "notFound": {
     "title": "ページが見つかりません",

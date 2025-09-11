@@ -268,7 +268,9 @@
     "noScriptBanner": {
       "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
     },
-    "languageSwitch": "Changer de langue"
+    "languageSwitch": "Changer de langue",
+    "close": "Fermer",
+    "readMore": "Lire plus"
   },
   "notFound": {
     "title": "Page introuvable",

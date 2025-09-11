@@ -168,6 +168,8 @@ checksums:
     shared/modeToggle/toggle: cf4f92cd5b5304031f4cd10b8ad93a2b
     shared/noScriptBanner/message: 0c08704849d9594520639071d518b9aa
     shared/languageSwitch: 53bea3a813015ca3bf2e4cc6a269fb74
+    shared/close: 2c2e22f8424a1031de89063bd0022e16
+    shared/readMore: 66926b6290ca357f9544aa4f11b67b5a
     notFound/title: 5b1dea4722f8fd52b68f7ac5ce89875d
     notFound/description: 65ad307ba26227fe44343f17e52138de
     notFound/goHome: 377f3be7cfb6c1ffb55a75d90ce91f2f

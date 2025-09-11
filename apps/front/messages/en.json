@@ -268,7 +268,9 @@
     "noScriptBanner": {
       "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."
     },
-    "languageSwitch": "Change language"
+    "languageSwitch": "Change language",
+    "close": "Close",
+    "readMore": "Read more"
   },
   "notFound": {
     "title": "Page Not Found",

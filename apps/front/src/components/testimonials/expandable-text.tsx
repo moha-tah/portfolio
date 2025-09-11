@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import {
   useCallback,
   useEffect,
@@ -30,6 +31,8 @@ export function ExpandableText({
   const [needsExpansion, setNeedsExpansion] = useState(false)
   const [actualHeight, setActualHeight] = useState<number | null>(null)
   const contentRef = useRef<HTMLDivElement>(null)
+
+  const t = useTranslations('shared')
 
   const measureHeight = useCallback(() => {
     if (!contentRef.current) return
@@ -127,7 +130,7 @@ export function ExpandableText({
                     ease: 'easeInOut'
                   }}
                 >
-                  {isExpanded ? 'Close' : 'Read more'}
+                  {isExpanded ? t('close') : t('readMore')}
                 </motion.span>
               </AnimatePresence>
             </div>

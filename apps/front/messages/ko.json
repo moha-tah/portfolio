@@ -268,7 +268,9 @@
     "noScriptBanner": {
       "message": "브라우저에서 JavaScript가 비활성화되어 있습니다. 이 웹사이트를 최상의 상태로 보려면 활성화해 주세요."
     },
-    "languageSwitch": "언어 변경"
+    "languageSwitch": "언어 변경",
+    "close": "닫기",
+    "readMore": "더 읽기"
   },
   "notFound": {
     "title": "페이지를 찾을 수 없습니다",
