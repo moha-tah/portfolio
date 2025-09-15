@@ -74,7 +74,12 @@ export function TimelineCard({
         </p>
 
         {url && (
-          <a href={url} className="text-primary">
+          <a
+            href={url}
+            className="text-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button size="lg" variant="outline" className="mt-8 shadow-none">
               {step.learnMoreText}
               <ExternalLink className="text-muted-foreground ml-px" />

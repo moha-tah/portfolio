@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 import { AnimatedTitle } from './animated-title'
 import { CallToAction } from './cta'
@@ -9,6 +9,7 @@ import { TextAnimate } from '../shared/animations/text-animate'
 
 export function Hero() {
   const t = useTranslations('HomePage.hero')
+  const locale = useLocale()
 
   return (
     <section id="hero" className="w-full">
@@ -34,7 +35,7 @@ export function Hero() {
               {t('readyToJoin')}
             </TextAnimate>
           </div>
-          <CallToAction t={t} delay={1.5} duration={0.5} />
+          <CallToAction t={t} locale={locale} delay={1.5} duration={0.5} />
         </div>
       </div>
     </section>

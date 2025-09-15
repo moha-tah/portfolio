@@ -33,9 +33,6 @@ export function Skills() {
         </div>
 
         <div className="mx-auto flex max-w-[700px] flex-col items-center gap-2 px-6">
-          <span className="text-muted-foreground w-full text-start text-sm">
-            {t('note')}
-          </span>
           {skillsData.map((skill) => (
             <SkillCard key={skill.name} skill={skill} />
           ))}

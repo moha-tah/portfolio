@@ -1,6 +1,7 @@
 import { File, PhoneCall } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
+import { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
 
 import { AnimatedButton } from '../shared/animations/animated-button'
@@ -8,15 +9,20 @@ import { Button } from '../ui/button'
 
 interface Props {
   t: ReturnType<typeof useTranslations>
+  locale: Locale
   delay: number
   duration?: number
 }
 
-export function CallToAction({ t, delay, duration = 0.3 }: Props) {
+export function CallToAction({ t, locale, delay, duration = 0.3 }: Props) {
   return (
     <div className="flex flex-col gap-6 select-none sm:flex-row">
       <AnimatedButton delay={delay} duration={duration}>
-        <a href="/cv-en.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href={`https://cv.mohamedtahiri.com/${locale === 'fr' ? 'fr' : 'en'}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button
             size="xl"
             className="from-primary via-primary to-muted-foreground/50 dark:to-muted/40 border-muted-foreground/50 dark:border-muted/70 border-2 bg-radial-[at_100%_100%]"
