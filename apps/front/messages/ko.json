@@ -293,5 +293,8 @@
       "testimonials": "추천사",
       "faq": "FAQ"
     }
+  },
+  "header": {
+    "note": "Next.js로 처음부터 만든 웹사이트입니다. 코드는 <linkToCode>제 GitHub</linkToCode>에 있습니다."
   }
 }

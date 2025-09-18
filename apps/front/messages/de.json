@@ -293,5 +293,8 @@
       "testimonials": "Referenzen",
       "faq": "FAQ"
     }
+  },
+  "header": {
+    "note": "Website von Grund auf mit Next.js erstellt. Code auf <linkToCode>meinem GitHub</linkToCode>."
   }
 }

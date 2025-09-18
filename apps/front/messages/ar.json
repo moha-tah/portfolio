@@ -293,5 +293,8 @@
       "testimonials": "الشهادات",
       "faq": "الأسئلة الشائعة"
     }
+  },
+  "header": {
+    "note": "موقع إلكتروني مصنوع من الصفر باستخدام Next.js. الكود متوفر على <linkToCode>حسابي على GitHub</linkToCode>."
   }
 }

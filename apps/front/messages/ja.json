@@ -293,5 +293,8 @@
       "testimonials": "推薦の声",
       "faq": "よくある質問"
     }
+  },
+  "header": {
+    "note": "Next.jsで一から作成したウェブサイトです。コードは<linkToCode>私のGitHub</linkToCode>にあります。"
   }
 }

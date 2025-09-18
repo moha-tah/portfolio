@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
 
 import { Footer } from '@/components/footer/footer'
+import { HeaderText } from '@/components/navbar/header-text'
 import { Navbar } from '@/components/navbar/navbar'
 import { ScrollProgress } from '@/components/navbar/scroll-progress'
 import { Background } from '@/components/shared/background'
@@ -65,7 +66,8 @@ export default async function LocaleLayout({ children, params, modal }: Props) {
           <Background />
           <Navbar />
           {modal}
-          <div className="py-12 sm:py-24">{children}</div>
+          <HeaderText />
+          <div className="py-12">{children}</div>
           <Footer />
         </ProvidersWrapper>
       </body>

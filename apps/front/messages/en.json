@@ -293,5 +293,8 @@
       "testimonials": "Testimonials",
       "faq": "FAQ"
     }
+  },
+  "header": {
+    "note": "Website made from scratch with Next.js. Code on <linkToCode>my GitHub</linkToCode>."
   }
 }

@@ -293,5 +293,8 @@
       "testimonials": "Témoignages",
       "faq": "FAQ"
     }
+  },
+  "header": {
+    "note": "Site créé avec Next.js, sans template. Code sur <linkToCode>mon GitHub</linkToCode>."
   }
 }

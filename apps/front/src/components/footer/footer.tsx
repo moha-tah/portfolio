@@ -112,7 +112,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="hover:text-foreground font-semibold underline hover:no-underline">
+                  <span className="hover:text-foreground font-semibold underline transition-colors duration-300 hover:no-underline">
                     {chunks}
                   </span>
                 </a>
