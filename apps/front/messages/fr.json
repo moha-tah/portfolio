@@ -86,19 +86,21 @@
           ]
         },
         {
-          "title": "Un jeu multijoueur en ligne",
-          "shortDescription": "Jeu développé avec C# et Unity pour apprendre les sockets UDP et l'optimisation.",
-          "description": "Ce projet est un jeu d'arène multijoueur en ligne où les joueurs contrôlent des sphères pour se pousser mutuellement hors de la carte. Le jeu propose deux modes : un mode solo (hors ligne) où vous affrontez des IA dans un système de rounds, et un mode multijoueur où vous pouvez jouer contre des amis en temps réel avec un système de lobby. Le jeu est jouable sur Windows et Mac et peut être téléchargé depuis mon dépôt GitHub.",
-          "goal": "J'ai réalisé ce projet pour apprendre le développement de jeux, mais plus spécifiquement pour comprendre le fonctionnement des serveurs et comment ils parviennent à être rapides et efficaces sans latence. Ce projet a été une excellente opportunité d'apprendre les sockets, UDP vs TCP, comment sécuriser un serveur pour prévenir la triche et comment optimiser les données à envoyer aux clients et celles à calculer côté serveur.",
-          "features": "Les fonctionnalités clés incluent des mouvements basés sur la physique et des collisions réalistes. En mode solo, vous affrontez des sphères contrôlées par l'IA qui deviennent plus fortes et plus rapides après chaque round. Le mode en ligne peut accueillir environ 10 joueurs sans latence perceptible, vous pouvez créer un lobby privé pour jouer avec des personnes que vous connaissez et personnaliser les paramètres du jeu (score, nom, etc.).",
+          "title": "LVMH Careers CLI",
+          "shortDescription": "Recherchez des emplois chez LVMH directement depuis votre terminal.",
+          "description": "Développement d'une interface en ligne de commande pour LVMH Careers utilisant TypeScript, Node.js, Commander et Enquirer, permettant aux utilisateurs de rechercher des emplois LVMH directement depuis la ligne de commande.",
+          "goal": "J'ai réalisé ce projet pour approfondir mes connaissances en développement CLI avancé, car c'était explicitement mentionné dans la description du poste. Cela m'a permis d'explorer comment structurer une CLI avec TypeScript et Node.js, gérer les interactions utilisateur avec Commander et Enquirer, et intégrer efficacement des API externes tout en maintenant un flux de travail professionnel avec une documentation appropriée et CI/CD.",
+          "features": "Utilise l'API LVMH Careers pour rechercher des emplois par mots-clés et/ou filtres (lieu, expérience requise, etc.). Possibilité de sauvegarder les résultats dans un fichier XML ou JSON.",
           "stack": [
-            "Unity",
-            "C#",
-            "Développement de jeux",
-            "Multijoueur",
-            "Hébergement",
-            "Sockets UDP",
-            "Optimisation"
+            "TypeScript",
+            "Node.js",
+            "Commander",
+            "Enquirer",
+            "LVMH Careers API",
+            "CI/CD",
+            "XML",
+            "JSON",
+            "Confluence"
           ]
         },
         {

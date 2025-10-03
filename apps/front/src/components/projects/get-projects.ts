@@ -24,10 +24,10 @@ export const staticProjects: StaticPartProject[] = [
     iconUrl: '/icons/skills/TypeScript.svg'
   },
   {
-    slug: 'online-multiplayer-game',
-    image: '/images/projects/online-game.jpg',
-    link: 'https://github.com/moha-tah/Sumo-Spheres-Game',
-    iconUrl: '/icons/skills/Unity.svg',
+    slug: 'lvmh-careers-cli',
+    image: '/images/projects/lvmh-careers-cli.png',
+    link: 'https://github.com/moha-tah/lvmh-careers-cli',
+    iconUrl: '/icons/skills/TypeScript.svg',
     invertIcon: true
   },
   {

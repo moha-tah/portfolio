@@ -86,19 +86,21 @@
           ]
         },
         {
-          "title": "An online multiplayer game",
-          "shortDescription": "Game built with C# & Unity to learn about UDP sockets and optimization.",
-          "description": "This project is an online multiplayer arena game where players control spheres to push each other out of the map. The game has two modes, a solo (offline) mode where you fight against AIs in a round-based system, and a multiplayer mode where you can play against friends in real-time with a lobby system. The game is playable on Windows and Mac and it can be downloaded in my GitHub repository.",
-          "goal": "I did this project to learn about game development but more specifically about how servers work and how they manage to be fast and efficient with no latency. This project was a great opportunity to learn about sockets, UDP vs. TCP, how to secure a server to prevent cheating and how to optimize what data to send to the clients and what data to calculate on the server side.",
-          "features": "Key features include physics-based movement and realistic collisions. In solo mode, you fight against AI-controlled spheres, after each round they get stronger and faster. The online mode can be played with around 10 players with no perceivable latency, you can create a private lobby to play with people you know, you can customize the game settings (score, name, etc.).",
+          "title": "LVMH Careers CLI",
+          "shortDescription": "Search for jobs at LVMH directly from your terminal.",
+          "description": "Development of a CLI for LVMH Careers using TypeScript, Node.js, Commander, and Enquirer, allowing users to search for LVMH jobs directly from the command line.",
+          "goal": "I did this project to deepen my knowledge of advanced CLI development, as it was explicitly mentioned in the job description. It allowed me to explore how to structure a CLI with TypeScript and Node.js, manage user interactions with Commander and Enquirer, and integrate external APIs effectively while maintaining a professional workflow with proper documentation and CI/CD.",
+          "features": "Uses the LVMH Careers API to search for jobs by keywords and/or filters (location, required experience, etc.). Ability to save results in an XML or JSON file.",
           "stack": [
-            "Unity",
-            "C#",
-            "Game Development",
-            "Multiplayer",
-            "Hosting",
-            "UDP Sockets",
-            "Optimization"
+            "TypeScript",
+            "Node.js",
+            "Commander",
+            "Enquirer",
+            "LVMH Careers API",
+            "CI/CD",
+            "XML",
+            "JSON",
+            "Confluence"
           ]
         },
         {
