@@ -152,7 +152,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 
-  --shadow-custom: 0 8px 20px 1px rgba(135, 185, 254, 0.15);
+  --shadow-custom: 0 8px 20px 1px rgba(237, 175, 68, 0.15);
 }
 
 @layer base {

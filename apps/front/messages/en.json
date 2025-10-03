@@ -4,7 +4,7 @@
       "available": "Available",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "passionate about",
-      "readyToJoin": "Ready to join your team for a 6-month end-of-study internship starting in February 2026.",
+      "readyToJoin": "Ready to join LVMH Perfumes & Cosmetics for a 6-month end-of-study internship starting in January 2026.",
       "downloadResume": "Download my resume",
       "contactMe": "Contact me",
       "passions": [
@@ -50,7 +50,7 @@
           {
             "title": "5th year @ UTC (M.Sc.)",
             "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "M.Sc. in Computer Systems Engineering (ISI), with a focus on distributed systems, backend design, and software architecture. The program will conclude with a 6-month internship starting in February 2026.",
+            "description": "M.Sc. in Computer Systems Engineering (ISI), with a focus on distributed systems, backend design, and software architecture. The program will conclude with a 6-month internship starting in January 2026.",
             "learnMoreText": "Learn more about my specialty “ISI”"
           }
         ]
@@ -200,7 +200,7 @@
       "questions": [
         {
           "question": "What is the duration of the internship and when are you available?",
-          "answer": "I'm looking for a 5-6 month internship and will be available starting February 2026."
+          "answer": "I'm looking for a 5-6 month internship and will be available starting January 2026."
         },
         {
           "question": "Are you open to a full-time position after the internship?",

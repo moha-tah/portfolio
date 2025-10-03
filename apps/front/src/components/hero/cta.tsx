@@ -14,12 +14,12 @@ interface Props {
   duration?: number
 }
 
-export function CallToAction({ t, locale, delay, duration = 0.3 }: Props) {
+export function CallToAction({ t, delay, duration = 0.3 }: Props) {
   return (
     <div className="flex flex-col gap-6 select-none sm:flex-row">
       <AnimatedButton delay={delay} duration={duration}>
         <a
-          href={`https://cv.mohamedtahiri.com/${locale === 'fr' ? 'fr' : 'en'}`}
+          href={'/files/CV-Mohamed-Tahiri.pdf'}
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -275,8 +275,8 @@ export function Background() {
     if (!canvas || !ctx) return
 
     // Pattern size
-    const patternWidth = window.innerWidth < 600 ? 100 : 240
-    const patternHeight = window.innerWidth < 600 ? 160 : 400
+    const patternWidth = 240
+    const patternHeight = 400
 
     // Create pattern
     const pattern = createDiamondPattern(

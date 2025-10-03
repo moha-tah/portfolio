@@ -4,7 +4,7 @@
       "available": "Disponible",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "passionné par",
-      "readyToJoin": "Prêt à rejoindre votre équipe pour un stage de fin d'études de 6 mois à partir de février 2026.",
+      "readyToJoin": "Prêt à rejoindre LVMH Parfums & Cosmétiques pour un stage de fin d'études de 6 mois à partir de janvier 2026.",
       "downloadResume": "Téléchargez mon CV",
       "contactMe": "Contactez-moi",
       "passions": [
@@ -50,7 +50,7 @@
           {
             "title": "5ème année @ UTC (ISI)",
             "subtitle": "Fév. 2025 - Fév. 2026",
-            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec une spécialisation en systèmes distribués, conception backend et architecture logicielle. Le programme se conclura par un stage de 6 mois débutant en février 2026.",
+            "description": "Master en Ingénierie des Systèmes Informatiques (ISI), avec une spécialisation en systèmes distribués, conception backend et architecture logicielle. Le programme se conclura par un stage de 6 mois débutant en janvier 2026.",
             "learnMoreText": "En savoir plus sur ma spécialité \"ISI\""
           }
         ]
@@ -200,7 +200,7 @@
       "questions": [
         {
           "question": "Quelle est la durée du stage et quand es-tu disponible ?",
-          "answer": "Je recherche un stage de 5 à 6 mois et je suis disponible dès février 2026."
+          "answer": "Je recherche un stage de 5-6 mois et serai disponible à partir de janvier 2026."
         },
         {
           "question": "Es-tu ouvert à un CDI après le stage ?",
