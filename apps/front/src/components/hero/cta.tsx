@@ -8,7 +8,7 @@ import { AnimatedButton } from '../shared/animations/animated-button'
 import { Button } from '../ui/button'
 
 interface Props {
-  t: ReturnType<typeof useTranslations>
+  t: ReturnType<typeof useTranslations<'HomePage.hero'>>
   locale: Locale
   delay: number
   duration?: number
@@ -33,13 +33,13 @@ export function CallToAction({ t, delay, duration = 0.3 }: Props) {
         </a>
       </AnimatedButton>
       <AnimatedButton delay={delay + 0.2} duration={duration}>
-        <Link href="#contact">
+        <Link href="/projects/lvmh-careers-cli">
           <Button
             size="xl"
             className="border-secondary-accent from-secondary via-secondary to-secondary-accent w-full border-2 bg-radial-[at_100%_100%] text-white transition-colors duration-500 ease-in-out"
           >
             <PhoneCall className="h-4 w-4" />
-            {t('contactMe')}
+            {t('viewLvmhCli')}
           </Button>
         </Link>
       </AnimatedButton>
