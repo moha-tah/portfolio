@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl'
 
 import { AnimatedTitle } from './animated-title'
@@ -14,7 +15,14 @@ export function Hero() {
   return (
     <section id="hero" className="w-full">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center gap-8 px-6 pb-28 sm:py-20 lg:py-32">
+        <div className="flex flex-col items-center justify-center gap-8 px-6 pb-28 sm:py-8 lg:py-16">
+          <Image
+            src="/images/logos/lvmh.png"
+            alt="LVMH logo"
+            width={200}
+            height={200}
+            className="dark:invert"
+          />
           <AnimatedBadge>
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-2 animate-ping rounded-full bg-green-400 opacity-75"></span>
