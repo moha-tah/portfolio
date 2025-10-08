@@ -25,7 +25,7 @@ export function CallToAction({ t, delay, duration = 0.3 }: Props) {
         >
           <Button
             size="xl"
-            className="from-primary via-primary to-muted-foreground/50 dark:to-muted/40 border-muted-foreground/50 dark:border-muted/70 border-2 bg-radial-[at_100%_100%]"
+            className="from-primary via-primary to-muted-foreground/50 dark:to-muted/40 border-muted-foreground/50 dark:border-muted/70 w-full border-2 bg-radial-[at_100%_100%]"
           >
             <File className="h-4 w-4" />
             {t('downloadResume')}
