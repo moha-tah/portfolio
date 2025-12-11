@@ -2,10 +2,11 @@
   "HomePage": {
     "hero": {
       "available": "Verfügbar",
+      "notAvailable": "Im Abschlusspraktikum",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "begeistert von",
-      "readyToJoin": "Bereit, ab Februar 2026 für ein 6-monatiges Abschlusspraktikum in Ihr Team einzusteigen.",
-      "downloadResume": "Meinen Lebenslauf herunterladen",
+      "readyToJoin": "Begeistert von künstlicher Intelligenz und Softwarearchitektur verwandle ich gerne Ideen in konkrete Lösungen.",
+      "downloadResume": "Laden Sie meinen Lebenslauf herunter",
       "contactMe": "Kontaktieren Sie mich",
       "passions": [
         "Informatik",
@@ -15,42 +16,44 @@
         "Architektur",
         "Cybersicherheit",
         "Backend",
+        "DevOps",
+        "Backend",
         "DevOps"
       ]
     },
     "aboutMe": {
       "badge": "Über mich",
-      "title": "Ein Überblick meiner Karriere",
-      "description": "Eine chronologische Reise durch meine wichtigsten Erfahrungen und Erfolge, die meine Entwicklung als Student der Informatik hervorhebt.",
+      "title": "Ein Einblick in meinen Werdegang",
+      "description": "Eine chronologische Reise durch meine wichtigsten Erfahrungen und Erfolge, die meine Entwicklung als Student der Informatik hervorheben.",
       "timeline": {
         "steps": [
           {
             "title": "Erste Jahre an der UTC",
-            "subtitle": "Sept. 2021 - Juni 2024",
-            "description": "Studium an der UTC, einer französischen Hochschule für Ingenieurwissenschaften, wo ich solide Grundlagen in der Informatik aufbaute, einschließlich Algorithmen, Datenstrukturen, Software-Engineering und Systemarchitektur.",
-            "learnMoreText": "Mehr über UTC erfahren"
+            "subtitle": "Feb. 2022 - Juni 2024",
+            "description": "Ich habe an der UTC studiert, einer französischen Ingenieurschule, wo ich solide Grundlagen in Informatik erworben habe, insbesondere in Algorithmen, Datenstrukturen, Software-Engineering und Systemarchitektur.",
+            "learnMoreText": "Mehr über die UTC erfahren"
           },
           {
-            "title": "Wettbewerbsprogrammierung",
-            "subtitle": "Sept. 2023 - Juni 2024",
-            "description": "Im Programmierclub meiner Universität unterrichtete ich Wettbewerbsprogrammierung. Wir haben Algorithmen, Datenstrukturen und Problemlösungstechniken mit LeetCode erforscht. Bei einem Wettbewerb belegte mein Team und ich den 6. Platz von etwa 70 Teams.",
+            "title": "Competitive Programming",
+            "subtitle": "Feb. 2023 - Feb. 2024",
+            "description": "Im Programmier-Club meiner Universität unterrichtete ich Competitive Programming. Wir haben Algorithmen, Datenstrukturen und Problemlösungstechniken mit LeetCode erforscht. Bei einem Wettbewerb belegten mein Team und ich den 6. Platz von etwa 70 Teams.",
             "learnMoreText": "Unsere Instagram-Seite"
           },
           {
-            "title": "Praktikum @ Napta",
+            "title": "Praktikum bei Napta",
             "subtitle": "Sept. 2024 - Feb. 2025",
-            "description": "Arbeitete als Data Engineer und Backend Engineer (Python, Flask, PostgreSQL, Airflow...), um effiziente Datenpipelines zu erstellen. Zusammenarbeit in einem agilen Team von 7 Senior-Ingenieuren.",
+            "description": "Ich arbeitete als Data Engineer und Backend-Ingenieur (Python, Flask, PostgreSQL, Airflow...), um effiziente Datenpipelines aufzubauen. Ich arbeitete in einem agilen Team von 7 Senior-Ingenieuren zusammen.",
             "learnMoreText": "Mehr über Napta erfahren"
           },
           {
-            "title": "Projekt zum Sammeln von Erfahrungen",
+            "title": "Projekt zur Erfahrungsgewinnung",
             "subtitle": "Sept. 2024 - Heute",
-            "description": "Nach meinen Kursen arbeitete ich 20 Stunden pro Woche als Full-Stack-Entwickler (NestJS, JWT, S3, PostgreSQL, Next.js...) und trug zur Entwicklung einer Web-App mit 8 Ingenieuren bei. Weitere Informationen im Abschnitt Projekte unten."
+            "description": "Nach meinen Vorlesungen habe ich ~20 Stunden pro Woche als Full-Stack-Entwickler (NestJS, JWT, S3, PostgreSQL, Next.js...) gearbeitet und zur Entwicklung einer Webanwendung mit 8 Ingenieuren beigetragen. Weitere Informationen finden Sie im Abschnitt Projekte unten."
           },
           {
-            "title": "5. Jahr @ UTC (M.Sc.)",
-            "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "M.Sc. in Computer Systems Engineering (ISI) mit Schwerpunkt auf verteilten Systemen, Backend-Design und Software-Architektur. Das Programm wird mit einem 6-monatigen Praktikum abgeschlossen, das im Februar 2026 beginnt.",
+            "title": "5. Jahr @ UTC (ISI)",
+            "subtitle": "Feb. 2025 - Jan. 2026",
+            "description": "Spezialisierung in Informatik-Systemtechnik (ISI) mit Schwerpunkt auf verteilten Systemen, Backend-Design und Softwarearchitektur. Das Programm wird mit einer 6-monatigen Berufserfahrung abgeschlossen, die im Februar 2026 beginnt.",
             "learnMoreText": "Mehr über meine Spezialisierung \"ISI\" erfahren"
           }
         ]
@@ -60,21 +63,21 @@
       "badge": "Projekte",
       "title": "Einige Projekte, an denen ich gearbeitet habe",
       "metadataTitle": "Projekte",
-      "description": "Entdecken Sie eine Auswahl von Projekten, bei denen ich meine Fähigkeiten eingesetzt habe, um reale Herausforderungen zu lösen. Jedes Projekt spiegelt meine Leidenschaft für die Entwicklung wirkungsvoller, gut konstruierter Lösungen wider.",
+      "description": "Entdecken Sie eine Auswahl von Projekten, in denen ich meine Fähigkeiten angewendet habe, um konkrete Herausforderungen zu lösen. Jedes Projekt spiegelt meine Leidenschaft wider, wirkungsvolle und gut durchdachte Lösungen zu schaffen.",
       "summary": "Zusammenfassung",
       "whyThisProject": "Warum dieses Projekt?",
       "features": "Funktionen",
       "viewCode": "Code ansehen",
-      "closedSource": "Geschlossene Quelle",
-      "viewDetails": "Details anzeigen",
-      "backToProjects": "Zurück zu Projekten",
+      "closedSource": "Geschlossener Quellcode",
+      "viewDetails": "Details ansehen",
+      "backToProjects": "Zurück zu den Projekten",
       "projects": [
         {
           "title": "Mein größtes Projekt",
-          "shortDescription": "Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden.",
-          "description": "Dieses Projekt ist eine Suchmaschine, die Studenten hilft, die besten Kurse in ihrer Nähe zu finden. Wenn du beispielsweise Student bist, kannst du nach Kursen in Paris und Umgebung suchen, basierend auf Filtern (Preis, Entfernung usw.) und dem Ranking der Kurse. Das Projekt befindet sich noch in der Entwicklung und wird im Oktober 2025 veröffentlicht.",
-          "goal": "Dieses Projekt ist eine großartige Gelegenheit, mehr über Frontend mit Next.js, Backend mit NestJS, Datenbank mit PostgreSQL, Suchmaschine mit Algolia, CI/CD mit GitHub Actions, JWT-Authentifizierung, rollenbasierte Endpunkte usw. zu lernen. Als Nebenprojekt ist es eine tolle Möglichkeit, während meines Studiums mehr zu lernen.",
-          "features": "Zu den wichtigsten Funktionen dieses Projekts gehören ein sicheres NestJS-Backend mit JWT-Authentifizierung und rollenbasierten Endpunkten, die mit einer auf AWS gehosteten PostgreSQL-Datenbank verbunden sind, eine KI-gestützte Suchmaschine mit Filtern und Ranking, die mit Algolia erstellt wurde, sowie eine moderne Codebasis mit Produktions-, Entwicklungs- und Vorschauumgebungen. Es umfasst auch ein Chatsystem mit Echtzeit-Messaging, ein Back-Office-Dashboard für Lehrer zur Verwaltung ihrer Kurse und ein Dashboard für Studenten zur Verwaltung ihres Fortschritts.",
+          "shortDescription": "Suchmaschine, um Studenten zu helfen, die besten Kurse in ihrer Nähe zu finden.",
+          "description": "Dieses Projekt ist eine Suchmaschine, um Studenten zu helfen, die besten Kurse in ihrer Nähe zu finden. Wenn Sie beispielsweise Student sind, können Sie nach Kursen in Paris und Umgebung suchen, basierend auf Filtern (Preis, Entfernung usw.) und dem Ranking der Kurse. Das Projekt befindet sich noch in der Entwicklung und wird in Kürze gestartet.",
+          "goal": "Dieses Projekt ist eine großartige Gelegenheit, Frontend mit Next.js, Backend mit NestJS, Datenbanken mit PostgreSQL, Suchmaschinen mit Algolia, CI/CD mit GitHub Actions, JWT-Authentifizierung, rollenbasierte Endpoints usw. zu lernen. Als persönliches Projekt ist es eine hervorragende Gelegenheit, mein Wissen während meines Studiums zu vertiefen.",
+          "features": "Die Hauptfunktionen dieses Projekts umfassen ein sicheres NestJS-Backend mit JWT-Authentifizierung und rollenbasierten Endpunkten, die mit einer auf AWS gehosteten PostgreSQL-Datenbank verbunden sind, eine KI-gestützte Suchmaschine mit Filtern und Ranking, realisiert mit Algolia, eine moderne Codebasis mit Produktions-, Entwicklungs- und Vorschau-Umgebungen. Es beinhaltet außerdem ein Chat-System mit Echtzeit-Messaging, ein Admin-Dashboard für Lehrkräfte zur Verwaltung ihrer Kurse und ein Dashboard für Studierende zur Verfolgung ihres Fortschritts.",
           "stack": [
             "Next.js",
             "NestJS",
@@ -82,15 +85,15 @@
             "Sicherheit",
             "JWT-Authentifizierung",
             "GitHub Actions",
-            "Deep Search"
+            "Erweiterte Suche"
           ]
         },
         {
           "title": "Ein Online-Multiplayer-Spiel",
-          "shortDescription": "Spiel entwickelt mit C# & Unity zum Erlernen von UDP-Sockets und Optimierung.",
-          "description": "Dieses Projekt ist ein Online-Multiplayer-Arena-Spiel, bei dem Spieler Kugeln steuern, um sich gegenseitig aus der Karte zu drängen. Das Spiel hat zwei Modi: einen Solo-Modus (offline), in dem man gegen KIs in einem rundenbasierten System kämpft, und einen Multiplayer-Modus, in dem man in Echtzeit mit Freunden über ein Lobby-System spielen kann. Das Spiel ist auf Windows und Mac spielbar und kann in meinem GitHub-Repository heruntergeladen werden.",
-          "goal": "Ich habe dieses Projekt durchgeführt, um mehr über Spieleentwicklung zu lernen, aber insbesondere darüber, wie Server funktionieren und wie sie schnell und effizient ohne Latenz arbeiten können. Dieses Projekt war eine großartige Gelegenheit, mehr über Sockets, UDP vs. TCP, die Absicherung eines Servers gegen Betrug und die Optimierung der an die Clients zu sendenden Daten sowie der serverseitig zu berechnenden Daten zu lernen.",
-          "features": "Zu den Hauptfunktionen gehören physikbasierte Bewegungen und realistische Kollisionen. Im Solo-Modus kämpft man gegen KI-gesteuerte Kugeln, die nach jeder Runde stärker und schneller werden. Der Online-Modus kann mit etwa 10 Spielern ohne wahrnehmbare Latenz gespielt werden. Man kann eine private Lobby erstellen, um mit bekannten Personen zu spielen, und die Spieleinstellungen anpassen (Punktzahl, Name usw.).",
+          "shortDescription": "Mit C# und Unity entwickeltes Spiel zum Erlernen von UDP-Sockets und Optimierung.",
+          "description": "Dieses Projekt ist ein Online-Multiplayer-Arena-Spiel, bei dem Spieler Kugeln steuern, um sich gegenseitig von der Karte zu stoßen. Das Spiel bietet zwei Modi: einen Solo-Modus (offline), in dem Sie gegen KI in einem Rundensystem antreten, und einen Multiplayer-Modus, in dem Sie in Echtzeit mit einem Lobby-System gegen Freunde spielen können. Das Spiel ist auf Windows und Mac spielbar und kann von meinem GitHub-Repository heruntergeladen werden.",
+          "goal": "Ich habe dieses Projekt realisiert, um Spieleentwicklung zu lernen, aber insbesondere um zu verstehen, wie Server funktionieren und wie sie es schaffen, schnell und effizient ohne Latenz zu sein. Dieses Projekt war eine hervorragende Gelegenheit, Sockets, UDP vs. TCP, die Absicherung eines Servers zur Verhinderung von Cheating und die Optimierung der an Clients zu sendenden Daten sowie der serverseitig zu berechnenden Daten zu erlernen.",
+          "features": "Zu den Hauptfunktionen gehören physikbasierte Bewegungen und realistische Kollisionen. Im Einzelspielermodus treten Sie gegen KI-gesteuerte Kugeln an, die nach jeder Runde stärker und schneller werden. Der Online-Modus kann etwa 10 Spieler ohne spürbare Latenz aufnehmen, Sie können eine private Lobby erstellen, um mit Bekannten zu spielen, und die Spieleinstellungen (Punktzahl, Name usw.) anpassen.",
           "stack": [
             "Unity",
             "C#",
@@ -104,13 +107,13 @@
         {
           "title": "Ein dezentrales verteiltes System",
           "shortDescription": "Low-Level-Projekt mit gemeinsamer Datenbank, Wahlalgorithmen und Kollisionserkennung.",
-          "description": "Dieses Projekt implementiert ein vollständig dezentrales verteiltes System, in dem mehrere Arten von Knoten zusammenarbeiten, um Daten über verschiedene Standorte hinweg zu sammeln, zu überprüfen und zu nutzen. Das System modelliert ein reales Szenario, in dem Geräte Sensordaten sammeln, deren Genauigkeit überprüfen und Vorhersagen erstellen, während die korrekte Koordination und Konsistenz über geografisch getrennte Knoten hinweg sichergestellt wird.",
-          "goal": "Dieses Projekt war eine großartige Gelegenheit, mehr über verteilte Systeme, Wahlalgorithmen, Snapshots, Kollisionserkennung und die Verwendung logischer Uhren zur Gewährleistung der Konsistenz zwischen Replikaten zu lernen. Die Kernidee besteht darin, dass Sensoren fehlerhafte Daten liefern können, die die Benutzer stören. Daher werden Verifizierer-Systeme integriert, um langsam jeden Datenpunkt nacheinander zu aktualisieren. Das Ziel ist es, die Auswirkungen der Verifizierer-Parameter auf das Benutzerverhalten zu beobachten.",
-          "features": "Das System verwendet eine dezentralisierte Architektur ohne zentrale Datenbank, bei der jeder Knoten sein eigenes lokales Replikat verwaltet und aktualisiert. Um die Konsistenz der Replikate zu gewährleisten, koordinieren sich die Knoten über eine verteilte Warteschlange, die logische Uhren einsetzt, um alle Aktualisierungen zu serialisieren. Für die gemeinsame Datenverwaltung konzentrieren sich die Knoten auf ein gleitendes Fenster der letzten 15 Tage von Temperaturmessungen. Die Peer-to-Peer-Kommunikation ermöglicht direkte Nachrichten zwischen den Knoten, um Aktualisierungen zu verbreiten und Aktionen effizient zu koordinieren.",
+          "description": "Dieses Projekt implementiert ein vollständig dezentrales verteiltes System, in dem mehrere Knotentypen zusammenarbeiten, um Daten über verschiedene Standorte hinweg zu sammeln, zu verifizieren und zu nutzen. Das System bildet ein reales Szenario ab, in dem Geräte Sensordaten sammeln, deren Genauigkeit überprüfen und Vorhersagen erstellen, während gleichzeitig eine korrekte Koordination und Konsistenz zwischen geografisch getrennten Knoten gewährleistet wird.",
+          "goal": "Dieses Projekt war eine hervorragende Gelegenheit, mehr über verteilte Systeme, Wahlalgorithmen, Snapshots, Kollisionserkennung und die Verwendung logischer Uhren zur Gewährleistung der Konsistenz zwischen Replikaten zu lernen. Die zentrale Idee ist, dass Sensoren fehlerhafte Daten liefern können, die Benutzer stören. Daher sind Verifizierungssysteme integriert, um jeden Datenpunkt nach und nach langsam zu aktualisieren. Das Ziel ist es, die Auswirkungen der Verifizierungsparameter auf das Benutzerverhalten zu beobachten.",
+          "features": "Das System verwendet eine dezentrale Architektur ohne zentralisierte Datenbank, bei der jeder Knoten seine eigene lokale Replik pflegt und aktualisiert. Um die Konsistenz der Replikate zu gewährleisten, koordinieren sich die Knoten über eine verteilte Warteschlange, die logische Uhren verwendet, um alle Updates zu serialisieren. Für die Verwaltung gemeinsamer Daten konzentrieren sich die Knoten auf ein gleitendes Fenster der letzten 15 Tage an Temperaturmessungen. Die Peer-to-Peer-Kommunikation ermöglicht direktes Messaging zwischen den Knoten, um Updates zu verbreiten und Aktionen effizient zu koordinieren.",
           "stack": [
             "Go",
             "Verteilte Systeme",
-            "Parallelismus",
+            "Parallelität",
             "Wahlalgorithmen",
             "Snapshots",
             "Kollisionserkennung",
@@ -118,51 +121,44 @@
           ]
         }
       ],
-      "view": "Sicht"
+      "view": "Ansehen"
     },
     "testimonials": {
       "badge": "Referenzen",
-      "title": "Was Menschen, mit denen ich zusammengearbeitet habe, über mich sagen",
-      "description": "Ich habe mit vielen Menschen zusammengearbeitet und viel von ihnen gelernt. Hier sind einige ihrer Aussagen über mich.",
+      "title": "Was Menschen sagen, mit denen ich zusammengearbeitet habe",
+      "description": "Ich habe mit vielen Menschen zusammengearbeitet und enorm viel von ihnen gelernt. Hier sind einige ihrer Kommentare über mich.",
       "list": {
         "first": {
           "author": {
             "name": "Julien G. Lopes",
             "handle": "Praktikumsbetreuer @ Napta"
           },
-          "text": "“Ich empfehle Mohamed von ganzem Herzen! Seine starke Anpassungsfähigkeit, echte Neugier (die ihn dazu brachte, viele Technologien zu erforschen und sein Wissen zu vertiefen) und seine produktorientierte Denkweise sind wahre Stärken.<newline></newline>Während seines Praktikums bei Napta hatte Mohamed die Gelegenheit, an Datenintegrations- und Synchronisierungsaufgaben, DevOps-Themen, CI sowie Produktverbesserungen zu arbeiten. Er machte sich schnell mit der Codebasis vertraut und passte sich unseren Prozessen an, was ihm nicht nur ermöglichte, innerhalb des Teams sehr schnell produktiv zu werden, sondern auch wertvolle Ideen beizusteuern.<newline></newline>Mohamed zeigte große Neugier bei sehr unterschiedlichen Themen. Er machte durchweg konstruktive Vorschläge und konnte interne Initiativen erfolgreich leiten – von der Idee bis zur Teamübernahme, einschließlich Entwicklung und Qualitätssicherung.<newline></newline>Das gesamte Napta-Team hat die Zusammenarbeit mit ihm sehr genossen!”"
+          "text": "„Ich kann Mohamed wärmstens empfehlen! Seine ausgeprägte Anpassungsfähigkeit, seine aufrichtige Neugier (die ihn dazu gebracht hat, viele Technologien zu erkunden und zu vertiefen) und seine produktorientierte Denkweise sind echte Stärken.<newline></newline>Während seines Praktikums bei Napta hatte Mohamed die Gelegenheit, an Datenintegrations- und Synchronisationsaufgaben, DevOps-Themen, CI sowie Produktverbesserungen zu arbeiten. Er hat sich schnell mit der Codebasis vertraut gemacht und sich an unsere Prozesse angepasst, was es ihm ermöglichte, nicht nur sehr schnell im Team produktiv zu werden, sondern auch wertvolle Ideen einzubringen.<newline></newline>Mohamed zeigte große Neugier bei sehr unterschiedlichen Themen. Er formulierte stets konstruktive Vorschläge und konnte interne Initiativen erfolgreich umsetzen – von der Idee über die Entwicklung und Qualitätssicherung bis hin zur Übernahme durch das Team.<newline></newline>Das gesamte Napta-Team hat die Zusammenarbeit mit ihm sehr geschätzt! »"
         },
         "second": {
           "author": {
             "name": "Rabie Menad",
             "handle": "Frontend-Entwickler @ Décathlon"
           },
-          "text": "“Ich hatte die Gelegenheit, ein Jahr lang mit Mohamed zusammenzuarbeiten, und ich kann ihn für seine zukünftigen Projekte nur wärmstens empfehlen.<newline></newline>Er ist ein vielseitiger Ingenieur, der in der Lage ist, End-to-End-Themen (DevOps, Frontend, Backend usw.) zu bearbeiten und dabei leistungsstarke und skalierbare Lösungen zu entwickeln. Seine Liebe zum Detail ist bemerkenswert: Jedes Ergebnis ist sauber, optimiert und nachhaltig.<newline></newline>Diese Genauigkeit war ein wertvoller Vorteil bei der Einhaltung der Fristen für die Projekte, an denen wir gemeinsam gearbeitet haben. Ich bin zuversichtlich, dass Mohamed dank seiner Fähigkeiten, seiner Professionalität und seiner positiven Einstellung in seinen zukünftigen Aufgaben erfolgreich sein wird.<newline></newline>Eine echte Bereicherung für jedes Team, das mit Zuversicht vorankommen möchte.”"
+          "text": "„Ich hatte die Gelegenheit, ein Jahr lang mit Mohamed an einem persönlichen Projekt zu arbeiten, und ich kann ihn für seine zukünftigen Projekte nur wärmstens empfehlen.<newline></newline>Er ist ein vielseitiger Ingenieur, der in der Lage ist, Themen von Anfang bis Ende zu bearbeiten (DevOps, Frontend, Backend usw.) und dabei leistungsstarke und skalierbare Lösungen zu entwickeln. Seine Liebe zum Detail ist bemerkenswert: Jedes Ergebnis ist sauber, optimiert und nachhaltig.<newline></newline>Diese Sorgfalt war ein wertvolles Asset, um die Fristen der Projekte einzuhalten, an denen wir gemeinsam gearbeitet haben. Ich bin überzeugt, dass Mohamed in seinen zukünftigen Aufgaben hervorragende Leistungen erbringen wird, dank seiner Fähigkeiten, seiner Professionalität und seiner positiven Einstellung.<newline></newline>Ein echter Gewinn für jedes Team, das mit Zuversicht vorankommen möchte. »"
         },
         "third": {
           "author": {
             "name": "Olivier Knell",
             "handle": "Senior Engineering Manager @ Napta"
           },
-          "text": "„Wartet auf ein Testimonial.“"
-        },
-        "fourth": {
-          "author": {
-            "name": "Ibrahim Zehhaf",
-            "handle": "Senior Software Architect @ Orange, IAD, etc."
-          },
-          "text": "„Ich hatte das Vergnügen, mit Mohamed zusammenzuarbeiten, und ich kann seine Eigenständigkeit und die außergewöhnliche Qualität seiner Arbeit bestätigen.<newline></newline>Er war stets sehr zuverlässig und hat während der gesamten Zusammenarbeit erheblich beigetragen.“"
+          "text": "\"Es war mir eine große Freude, die hervorragende Arbeit von Mohamed während seines Praktikums als Backend-/Dateningenieur bei Napta zu betreuen. Als sein Nachfolger konnte ich seinen bedeutenden Einfluss feststellen und bin aufrichtig begeistert von seinen Beiträgen.<newline></newline>Mohamed etablierte sich schnell als wichtige Bereicherung für das Team. Seine Anpassungsfähigkeit und technische Neugier haben uns beeindruckt; er machte sich rasch mit dem Code und den Prozessen vertraut, was für komplexe Themen wie Datenintegration, DevOps/CI und Workflow-Automatisierung (Airflow/Python) unerlässlich ist.<newline></newline>Was Mohamed wirklich auszeichnet, ist sein produktorienterter Ansatz und sein Sinn für Initiative. Er war nicht nur ein Ausführender; er machte stets konstruktive Vorschläge und leitete sogar erfolgreich interne Initiativen (von der Idee bis zum Deployment, einschließlich Qualitätssicherung) – ein Engagement- und Reifegrad, der die Erwartungen an einen Praktikanten bei weitem übertrifft.<newline></newline>Ich empfehle Mohamed von ganzem Herzen. Sein technisches Potenzial, seine Proaktivität und seine Fähigkeit, sofortigen Mehrwert zu schaffen, sind seltene und sehr gefragte Qualitäten. Das gesamte Napta-Team hat die Zusammenarbeit mit ihm sehr geschätzt.\""
         }
       }
     },
     "skills": {
-      "badge": "Toolkit",
+      "badge": "Werkzeugkasten",
       "title": "Die Technologien, mit denen ich arbeite",
-      "description": "Unten finden Sie eine nicht vollständige Liste der Technologien, die ich verwende, um zuverlässige und leistungsstarke Lösungen zu erstellen.",
-      "note": "Hinweis: Die angegebene Dauer spiegelt die Zeit wider, in der ich aktiv mit der Technologie in der Schule, in persönlichen Projekten und in meinem Praktikum gearbeitet habe, und nicht die traditionellen 'Jahre an Erfahrung'.",
+      "description": "Nachfolgend eine nicht erschöpfende Liste von Technologien, die ich nutze, um zuverlässige und leistungsstarke Lösungen zu entwickeln.",
+      "note": "Hinweis: Die angegebene Dauer entspricht meiner praktischen Erfahrung mit jeder Technologie (Studium, persönliche Projekte und Praktikum) und nicht den traditionellen 'Jahren Berufserfahrung'.",
       "python": {
         "name": "Python",
-        "description": "Entwicklung robuster Backend-Systeme und Datenpipelines."
+        "description": "Entwicklung robuster Systeme und Datenpipelines."
       },
       "typeScript": {
         "name": "TypeScript",
@@ -170,15 +166,15 @@
       },
       "postgreSQL": {
         "name": "PostgreSQL",
-        "description": "Aufbau komplexer, skalierbarer und effizienter Datenbanken."
+        "description": "Erstellung komplexer, skalierbarer und effizienter Datenbanken."
       },
       "nextJs": {
         "name": "Next.js",
-        "description": "Entwicklung leistungsstarker Websites."
+        "description": "Entwicklung performanter Websites."
       },
       "nestJs": {
         "name": "NestJS",
-        "description": "Entwicklung komplexer & sicherer APIs."
+        "description": "Entwicklung komplexer und sicherer APIs."
       },
       "ciCd": {
         "name": "CI/CD, GitHub Actions, Shell",
@@ -188,7 +184,7 @@
         "name": "C, C++, C#, Go, etc.",
         "description": "Scripting und Low-Level-Programmierung."
       },
-      "andOther": "und viele mehr...",
+      "andOther": "und vieles mehr...",
       "years": "{count, plural, one {1 Jahr} other {# Jahre}}",
       "months": "{count, plural, one {1 Monat} other {# Monate}}",
       "moreThanOneYear": "> 1 Jahr"
@@ -196,47 +192,39 @@
     "faq": {
       "badge": "FAQ",
       "title": "Mehr erfahren",
-      "description": "Hier finden Sie alle wichtigen Informationen über die Dauer, Verfügbarkeit und Möglichkeiten im Zusammenhang mit meinem Praktikum, die Ihnen einen klaren Überblick über mein Profil geben.",
+      "description": "Hier finden Sie alle wichtigen Informationen zu Dauer, Verfügbarkeit und Möglichkeiten meines Praktikums, um Ihnen einen klaren Überblick über meine Bewerbung zu geben.",
       "questions": [
         {
-          "question": "Wie lange dauert das Praktikum und wann sind Sie verfügbar?",
-          "answer": "Ich suche ein 5-6 monatiges Praktikum und werde ab Februar 2026 verfügbar sein."
+          "question": "Bist du offen für internationale Möglichkeiten?",
+          "answer": "Ja, der Beitritt zu einem internationalen Team motiviert mich besonders – neue Kulturen und Arbeitsmethoden kennenzulernen ist für mich ein echter Mehrwert."
         },
         {
-          "question": "Sind Sie offen für eine Vollzeitstelle nach dem Praktikum?",
-          "answer": "Absolut. Wenn die Zusammenarbeit gut läuft, bin ich mehr als offen dafür, in Vollzeit weiterzumachen."
+          "question": "In welchen Bereichen möchtest du dich weiterentwickeln?",
+          "answer": "Ich bin begeistert von Softwarearchitektur, künstlicher Intelligenz und Backend-Entwicklung – zuverlässige und skalierbare Lösungen zu schaffen, das motiviert mich."
         },
         {
-          "question": "Sind Sie offen für internationale Möglichkeiten?",
-          "answer": "Ja, ich würde mich freuen, einem internationalen Team beizutreten — neue Kulturen und Arbeitsweisen zu erkunden ist etwas, das ich schätze."
-        },
-        {
-          "question": "In welchen Bereichen möchten Sie sich weiterentwickeln?",
-          "answer": "Ich begeistere mich für Softwarearchitektur, Backend-Entwicklung und Cybersicherheit — zuverlässige, skalierbare Lösungen zu entwickeln ist das, was mich antreibt."
-        },
-        {
-          "question": "Welche Sprachen sprechen Sie fließend?",
-          "answer": "Ich spreche Französisch (Muttersprache), da ich aus Paris komme, und ich spreche auch fließend Englisch."
+          "question": "Welche Sprachen sprichst du fließend?",
+          "answer": "Ich bin französischer Muttersprachler aus Paris und spreche fließend Englisch (Niveau C1, TOEIC 985/990)."
         }
       ]
     }
   },
   "footer": {
-    "badge": "Erstellt von <linkToMe>Mohamed Tahiri</linkToMe>. Quellcode auf <linkToCode>GitHub</linkToCode>.",
+    "badge": "Website erstellt von <linkToMe>Mohamed Tahiri</linkToMe>. Quellcode auf <linkToGitHub>GitHub</linkToGitHub>.",
     "contact": {
       "badge": "Kontakt",
-      "title": "Nehmen Sie Kontakt auf",
+      "title": "Kontaktieren Sie mich",
       "subtitle": {
-        "first": "Denken Sie, dass mein Profil gut zu Ihren Anforderungen passen könnte?",
-        "second": "Füllen Sie gerne dieses Formular aus oder kontaktieren Sie mich direkt über die unten stehenden Links."
+        "first": "Denken Sie, dass mein Profil zu Ihren Anforderungen passen könnte?",
+        "second": "Zögern Sie nicht, mich direkt über die untenstehenden Links zu kontaktieren."
       },
       "or": "oder",
       "copyEmail": "In die Zwischenablage kopieren",
       "copied": "In die Zwischenablage kopiert",
       "form": {
         "namePlaceholder": "Geben Sie Ihren Namen ein",
-        "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
-        "companyPlaceholder": "Geben Sie den Namen Ihrer Firma ein",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "companyPlaceholder": "Geben Sie Ihren Firmennamen ein",
         "messagePlaceholder": "Geben Sie Ihre Nachricht ein (optional)",
         "sendButton": "Nachricht senden",
         "sendingButton": "Wird gesendet...",
@@ -245,44 +233,44 @@
         "rateLimitMessage": "Nachricht bereits gesendet!",
         "validation": {
           "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-          "nameMinLength": "Der Name muss mindestens {min} Zeichen lang sein.",
-          "nameMaxLength": "Der Name darf {max} Zeichen nicht überschreiten.",
-          "companyMinLength": "Der Firmenname muss mindestens {min} Zeichen lang sein.",
-          "companyMaxLength": "Der Firmenname darf {max} Zeichen nicht überschreiten.",
-          "messageMinLength": "Die Nachricht muss mindestens {min} Zeichen lang sein.",
-          "messageMaxLength": "Die Nachricht darf {max} Zeichen nicht überschreiten."
+          "nameMinLength": "Der Name muss mindestens {min} Zeichen enthalten.",
+          "nameMaxLength": "Der Name darf nicht mehr als {max} Zeichen enthalten.",
+          "companyMinLength": "Der Firmenname muss mindestens {min} Zeichen enthalten.",
+          "companyMaxLength": "Der Firmenname darf nicht mehr als {max} Zeichen enthalten.",
+          "messageMinLength": "Die Nachricht muss mindestens {min} Zeichen enthalten.",
+          "messageMaxLength": "Die Nachricht darf nicht mehr als {max} Zeichen enthalten."
         },
-        "turnstileError": "Sie haben die CAPTCHA -Sicherheitsprüfung nicht bestanden. \nBitte versuchen Sie es erneut."
+        "turnstileError": "Sie haben die CAPTCHA-Sicherheitsprüfung nicht bestanden. \nBitte versuchen Sie es erneut."
       }
     }
   },
   "shared": {
     "defaultTitle": "Mohamed Tahiri",
-    "defaultDescription": "Informatikstudent an der UTC (Frankreich), spezialisiert auf Computersysteme und leidenschaftlich an der Entwicklung komplexer Software interessiert.",
+    "defaultDescription": "Informatik-Ingenieurstudent an der UTC (Frankreich), spezialisiert auf Computersysteme und leidenschaftlich an der Entwicklung komplexer Software interessiert.",
     "modeToggle": {
       "light": "Hell",
       "dark": "Dunkel",
       "system": "System",
-      "toggle": "Thema ändern"
+      "toggle": "Design wechseln"
     },
     "noScriptBanner": {
-      "message": "JavaScript ist in Ihrem Browser deaktiviert. Bitte aktivieren Sie es, um diese Website optimal zu nutzen."
+      "message": "JavaScript ist in Ihrem Browser deaktiviert. Bitte aktivieren Sie es, um diese Website korrekt anzuzeigen."
     },
-    "languageSwitch": "Sprache ändern",
+    "languageSwitch": "Sprache wechseln",
     "close": "Schließen",
     "readMore": "Mehr lesen"
   },
   "notFound": {
     "title": "Seite nicht gefunden",
     "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
-    "goHome": "Zurück zur Startseite"
+    "goHome": "Zur Startseite zurückkehren"
   },
   "error": {
-    "title": "Etwas ist schiefgelaufen",
-    "description": "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut oder kehren Sie zur Startseite zurück.",
+    "title": "Ein Fehler ist aufgetreten",
+    "description": "Wir sind auf einen unerwarteten Fehler gestoßen. Bitte versuchen Sie es erneut oder kehren Sie zur Startseite zurück.",
     "technicalDetails": "Technische Details",
     "tryAgain": "Erneut versuchen",
-    "goHome": "Zurück zur Startseite"
+    "goHome": "Zur Startseite zurückkehren"
   },
   "navbar": {
     "contactMe": "Kontaktieren Sie mich",
@@ -295,6 +283,6 @@
     }
   },
   "header": {
-    "note": "Website von Grund auf mit Next.js erstellt. Code auf <linkToCode>meinem GitHub</linkToCode>."
+    "note": "Website erstellt mit Next.js. Code auf <linkToCode>meinem GitHub</linkToCode>."
   }
 }

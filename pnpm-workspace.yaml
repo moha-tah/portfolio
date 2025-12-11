@@ -2,3 +2,12 @@ packages:
   - apps/front
   - apps/back
   - packages/utils
+onlyBuiltDependencies:
+  - '@nestjs/core'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@scarf/scarf'
+  - '@tailwindcss/oxide'
+  - prisma
+  - sharp
+  - unrs-resolver

@@ -2,56 +2,59 @@
   "HomePage": {
     "hero": {
       "available": "Available",
+      "notAvailable": "UTC engineer",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "passionate about",
-      "readyToJoin": "Ready to join your team for a 6-month end-of-study internship starting in February 2026.",
+      "readyToJoin": "Passionate about artificial intelligence and software architecture, I love transforming ideas into concrete solutions.",
       "downloadResume": "Download my resume",
       "contactMe": "Contact me",
       "passions": [
         "computer science",
+        "AI",
+        "deep learning",
         "engineering",
         "algorithms",
-        "coding",
+        "programming",
         "architecture",
-        "cybersecurity",
         "Backend",
+        "DevOps",
         "DevOps"
       ]
     },
     "aboutMe": {
       "badge": "About me",
-      "title": "A Snapshot of My Career",
-      "description": "A chronological journey through my key experiences and achievements, highlighting my growth as a computer engineering student.",
+      "title": "A glimpse into my journey",
+      "description": "A chronological journey through my key experiences and achievements, highlighting my evolution as a computer engineering student.",
       "timeline": {
         "steps": [
           {
-            "title": "First years @ UTC",
-            "subtitle": "Sept. 2021 - June 2024",
-            "description": "Studied at UTC, a French Graduate School of Engineering, where I built strong foundations in computer science, including algorithms, data structures, software engineering, and systems architecture.",
+            "title": "Early years at UTC",
+            "subtitle": "Feb. 2022 - June 2024",
+            "description": "I studied at UTC, a French engineering school, where I built a solid foundation in computer science, including algorithms, data structures, software engineering, and systems architecture.",
             "learnMoreText": "Learn more about UTC"
           },
           {
             "title": "Competitive programming",
-            "subtitle": "Sept. 2023 - June 2024",
-            "description": "In the programming club of my university, I was teaching competitive programming. We've explored algorithms, data structures, and problem-solving techniques using LeetCode. In a competition, my team and I finished at the 6th place out of around 70 teams.",
+            "subtitle": "Feb. 2023 - Feb. 2024",
+            "description": "Within my university's programming club, I taught competitive programming. We explored algorithms, data structures, and problem-solving techniques using LeetCode. During one competition, my team and I finished in 6th place out of approximately 70 teams.",
             "learnMoreText": "Our Instagram page"
           },
           {
-            "title": "Internship @ Napta",
+            "title": "Internship at Napta",
             "subtitle": "Sept. 2024 - Feb. 2025",
-            "description": "Worked as a Data Engineer and a Backend Engineer (Python, Flask, PostgreSQL, Airflow...) to build efficient data pipelines. Collaborated within an agile team of 7 senior engineers.",
+            "description": "I worked as a data engineer and backend engineer (Python, Flask, PostgreSQL, Airflow...) to build efficient data pipelines. I collaborated within an agile team of 7 senior engineers.",
             "learnMoreText": "Learn more about Napta"
           },
           {
             "title": "Project to gain experience",
             "subtitle": "Sept. 2024 - Present",
-            "description": "After my courses, I worked 20 hours per week as a full-stack developer (NestJS, JWT, S3, PostgreSQL, Next.js...) contributing to the development of a web app with 8 engineers. More information in the Projects section below."
+            "description": "After my classes, I worked ~20 hours per week as a full-stack developer (NestJS, JWT, S3, PostgreSQL, Next.js...) contributing to the development of a web application with 8 engineers. More information in the Projects section below."
           },
           {
-            "title": "5th year @ UTC (M.Sc.)",
-            "subtitle": "Feb. 2025 - Feb. 2026",
-            "description": "M.Sc. in Computer Systems Engineering (ISI), with a focus on distributed systems, backend design, and software architecture. The program will conclude with a 6-month internship starting in February 2026.",
-            "learnMoreText": "Learn more about my specialty “ISI”"
+            "title": "5th year @ UTC (ISI)",
+            "subtitle": "Feb. 2025 - Jan. 2026",
+            "description": "Specialization in Computer Systems Engineering (ISI), with a focus on distributed systems, backend design, and software architecture. The program will conclude with a 6-month professional experience starting in February 2026.",
+            "learnMoreText": "Learn more about my “ISI“ specialization"
           }
         ]
       }
@@ -60,61 +63,61 @@
       "badge": "Projects",
       "title": "Some projects I've worked on",
       "metadataTitle": "Projects",
-      "description": "Discover a selection of projects where I applied my skills to solve real-world challenges. Each project reflects my passion for creating impactful, well-engineered solutions.",
+      "description": "Discover a selection of projects where I've applied my skills to solve real-world challenges. Each project reflects my passion for creating impactful and well-designed solutions.",
       "summary": "Summary",
       "whyThisProject": "Why this project?",
       "features": "Features",
       "viewCode": "View code",
-      "closedSource": "Closed Source",
+      "closedSource": "Closed source",
       "viewDetails": "View details",
       "backToProjects": "Back to projects",
       "projects": [
         {
           "title": "My biggest project",
           "shortDescription": "Search engine to help students find the best courses near them.",
-          "description": "This project is a search engine to help students find the best courses near them. For example, if you are a student, you can search for courses in Paris and the surrounding areas based on filters (price, distance, etc.) and ranking of the courses. The project is still in development and will be released in October 2025.",
-          "goal": "This project is a great opportunity to learn about frontend with Next.js, backend with NestJS, database with PostgreSQL, search engine with Algolia, CI/CD with GitHub Actions, JWT authentication, role-based endpoints, etc. As a side project, it is a great opportunity to learn more during my studies.",
-          "features": "The key features of this project include a secure NestJS backend with JWT authentication and role-based endpoints connected to a PostgreSQL database hosted on AWS, a AI-powered search engine with filters and ranking made with Algolia, an modern codebase with production, development and preview environments. It also includes a chat system with real-time messaging, a back-office dashboard for teachers to manage their courses and a dashboard for students to manage their progress.",
+          "description": "This project is a search engine to help students find the best courses near them. For example, if you're a student, you can search for courses in Paris and surrounding areas based on filters (price, distance, etc.) and course rankings. The project is still in development and will be launched soon.",
+          "goal": "This project is a great opportunity to learn frontend with Next.js, backend with NestJS, databases with PostgreSQL, search engines with Algolia, CI/CD with GitHub Actions, JWT authentication, role-based endpoints, etc. As a personal project, it's an excellent opportunity to deepen my knowledge during my studies.",
+          "features": "The key features of this project include a secure NestJS backend with JWT authentication and role-based endpoints connected to a PostgreSQL database hosted on AWS, an AI-powered search engine with filters and ranking built with Algolia, a modern codebase with production, development, and preview environments. It also includes a chat system with real-time messaging, an admin dashboard for teachers to manage their courses, and a dashboard for students to track their progress.",
           "stack": [
             "Next.js",
             "NestJS",
             "Supabase",
             "Security",
-            "JWT Authentication",
+            "JWT authentication",
             "GitHub Actions",
-            "Deep Search"
+            "Advanced search"
           ]
         },
         {
           "title": "An online multiplayer game",
-          "shortDescription": "Game built with C# & Unity to learn about UDP sockets and optimization.",
-          "description": "This project is an online multiplayer arena game where players control spheres to push each other out of the map. The game has two modes, a solo (offline) mode where you fight against AIs in a round-based system, and a multiplayer mode where you can play against friends in real-time with a lobby system. The game is playable on Windows and Mac and it can be downloaded in my GitHub repository.",
-          "goal": "I did this project to learn about game development but more specifically about how servers work and how they manage to be fast and efficient with no latency. This project was a great opportunity to learn about sockets, UDP vs. TCP, how to secure a server to prevent cheating and how to optimize what data to send to the clients and what data to calculate on the server side.",
-          "features": "Key features include physics-based movement and realistic collisions. In solo mode, you fight against AI-controlled spheres, after each round they get stronger and faster. The online mode can be played with around 10 players with no perceivable latency, you can create a private lobby to play with people you know, you can customize the game settings (score, name, etc.).",
+          "shortDescription": "Game developed with C# and Unity to learn UDP sockets and optimization.",
+          "description": "This project is an online multiplayer arena game where players control spheres to push each other off the map. The game offers two modes: a solo mode (offline) where you face AI opponents in a round-based system, and a multiplayer mode where you can play against friends in real-time with a lobby system. The game is playable on Windows and Mac and can be downloaded from my GitHub repository.",
+          "goal": "I built this project to learn game development, but more specifically to understand how servers work and how they manage to be fast and efficient without latency. This project was an excellent opportunity to learn about sockets, UDP vs TCP, how to secure a server to prevent cheating, and how to optimize the data to send to clients versus what to calculate server-side.",
+          "features": "Key features include physics-based movements and realistic collisions. In solo mode, you face AI-controlled spheres that become stronger and faster after each round. Online mode can accommodate around 10 players without noticeable latency, you can create a private lobby to play with people you know and customize game settings (score, name, etc.).",
           "stack": [
             "Unity",
             "C#",
-            "Game Development",
+            "Game development",
             "Multiplayer",
             "Hosting",
-            "UDP Sockets",
+            "UDP sockets",
             "Optimization"
           ]
         },
         {
           "title": "A decentralized distributed system",
-          "shortDescription": "Low-level project using a shared database, election algorithms and collision detection.",
-          "description": "This project implements a fully decentralized distributed system where multiple types of nodes collaborate to collect, verify, and use data across different sites. The system models a real-world scenario where devices collect sensor data, verify its accuracy, and produce predictions, while ensuring correct coordination and consistency across geographically separate nodes.",
-          "goal": "This project was a great opportunity to learn about distributed systems, election algorithms, snapshots, collision detection and how to use logical clocks to ensure consistency between replicas. The core idea is that sensors might give erroneous data, perturbating the users. Thus, verifier systems are integrated to update, slowly, each data point one after the other. The goal is to observe the impact of verifier parameters on user behaviors.",
-          "features": "The system uses a decentralized architecture with no centralized database, where each node maintains and updates its own local replica. To ensure replica consistency, nodes coordinate through a distributed queue that employs logical clocks to serialize all updates. For shared data management, nodes focus on a sliding window of the latest 15 days of temperature readings. Peer-to-peer communication allows direct messaging between nodes to propagate updates and coordinate actions efficiently.",
+          "shortDescription": "Low-level project using a shared database, election algorithms, and collision detection.",
+          "description": "This project implements a fully decentralized distributed system where multiple types of nodes collaborate to collect, verify, and use data across different sites. The system models a real-world scenario where devices collect sensor data, verify its accuracy, and produce predictions, while ensuring proper coordination and consistency between geographically separated nodes.",
+          "goal": "This project was an excellent opportunity to learn about distributed systems, election algorithms, snapshots, collision detection, and how to use logical clocks to ensure consistency between replicas. The core idea is that sensors can provide erroneous data, disrupting users. Thus, verification systems are integrated to update, slowly, each data point one after another. The goal is to observe the impact of verification parameters on user behaviors.",
+          "features": "The system uses a decentralized architecture without a centralized database, where each node maintains and updates its own local replica. To ensure replica consistency, nodes coordinate via a distributed queue that employs logical clocks to serialize all updates. For shared data management, nodes focus on a sliding window of the last 15 days of temperature readings. Peer-to-peer communication enables direct messaging between nodes to propagate updates and coordinate actions efficiently.",
           "stack": [
             "Go",
-            "Distributed Systems",
+            "Distributed systems",
             "Parallelism",
-            "Election Algorithms",
+            "Election algorithms",
             "Snapshots",
-            "Collision Detection",
-            "Logical Clocks"
+            "Collision detection",
+            "Logical clocks"
           ]
         }
       ],
@@ -123,54 +126,47 @@
     "testimonials": {
       "badge": "Testimonials",
       "title": "What people I've worked with say about me",
-      "description": "I've worked with a lot of people and I've learned a lot from them. Here are some of the things they've said about me.",
+      "description": "I've worked with many people and learned a lot from them. Here are some of their comments about me.",
       "list": {
         "first": {
           "author": {
             "name": "Julien G. Lopes",
-            "handle": "Internship Tutor @ Napta"
+            "handle": "Internship supervisor @ Napta"
           },
-          "text": "“I wholeheartedly recommend Mohamed! His strong adaptability, genuine curiosity (which led him to explore and deepen his knowledge in many technologies), and his product-oriented mindset are true assets.<newline></newline>During his internship at Napta, Mohamed had the opportunity to work on data integration and synchronization tasks, DevOps topics, CI, as well as product enhancements. He quickly got familiar with the codebase and adapted to our processes, which not only allowed him to become productive within the team very quickly, but also to contribute valuable ideas.<newline></newline>Mohamed demonstrated strong curiosity across very different topics. He consistently made constructive proposals and was able to successfully lead internal initiatives — from idea to team adoption, including development and quality assurance.<newline></newline>The whole Napta team greatly enjoyed working with him!”"
+          "text": "“I highly recommend Mohamed! His strong adaptability, genuine curiosity (which led him to explore and deepen his knowledge across many technologies), and product-oriented mindset are real assets.<newline></newline>During his internship at Napta, Mohamed had the opportunity to work on data integration and synchronization tasks, DevOps topics, CI, as well as product improvements. He quickly became familiar with the codebase and adapted to our processes, which allowed him not only to be productive within the team very quickly, but also to bring valuable ideas.<newline></newline>Mohamed demonstrated great curiosity across very different topics. He consistently formulated constructive proposals and successfully led internal initiatives — from idea to team adoption, through development and quality assurance.<newline></newline>The entire Napta team really enjoyed working with him!“"
         },
         "second": {
           "author": {
             "name": "Rabie Menad",
-            "handle": "Frontend Developer @ Décathlon"
+            "handle": "Frontend developer @ Decathlon"
           },
-          "text": "“I had the opportunity to work with Mohamed for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing high-performance and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting the deadlines of the projects we worked on together. I am confident that Mohamed will excel in his future missions, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.”"
+          "text": "“I had the opportunity to work with Mohamed on a personal project for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing performant and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting deadlines for the projects we worked on together. I am convinced that Mohamed will excel in his future assignments, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.“"
         },
         "third": {
           "author": {
             "name": "Olivier Knell",
             "handle": "Senior Engineering Manager @ Napta"
           },
-          "text": "“Awaiting for a testimonial.”"
-        },
-        "fourth": {
-          "author": {
-            "name": "Ibrahim Zehhaf",
-            "handle": "Senior Software Architect @ Orange, IAD, etc."
-          },
-          "text": "“I had the pleasure of working with Mohamed and I can attest to his autonomy and the exceptional quality of his work.<newline></newline>He has always been very reliable and has contributed significantly during the entire collaboration period.”"
+          "text": "“It was a great pleasure to oversee Mohamed's excellent work during his internship as a Backend/Data Engineer at Napta. As his N+2, I was able to observe his significant impact from a broader perspective, and I am genuinely very pleased with his contributions.<newline></newline>Mohamed quickly established himself as a major asset to the team. He impressed us with his adaptability and technical curiosity, rapidly familiarizing himself with the codebase and processes, which is critical for complex topics like data integration, DevOps/CI, and workflow automation (Airflow/Python).<newline></newline>What truly sets Mohamed apart is his product-oriented mindset and sense of initiative. He was not just an executor; he consistently made constructive proposals and even successfully led internal initiatives (from idea to deployment, including QA), a level of engagement and maturity far exceeding expectations for an intern.<newline></newline>I wholeheartedly recommend Mohamed. His technical potential, proactivity, and ability to deliver immediate added value are rare and highly sought-after qualities. The entire Napta team thoroughly enjoyed working with him.”"
         }
       }
     },
     "skills": {
       "badge": "Toolkit",
-      "title": "The technologies I work with",
-      "description": "Below is a non-exhaustive list of technologies I use to create reliable and performant solutions.",
-      "note": "Note: The indicated duration reflects the time I've actively worked with the technology in school, in personal projects and in my internship, rather than traditional 'years of experience'.",
+      "title": "Technologies I work with",
+      "description": "Below is a non-exhaustive list of technologies I use to build reliable and high-performance solutions.",
+      "note": "Note: The duration shown reflects my hands-on experience with each technology (school, personal projects, and internship), and not traditional 'years of experience.'",
       "python": {
         "name": "Python",
-        "description": "Building robust backend systems and data pipelines."
+        "description": "Building robust systems and data pipelines."
       },
       "typeScript": {
         "name": "TypeScript",
-        "description": "Building high-performance full-stack web applications."
+        "description": "Creating high-performance full-stack web applications."
       },
       "postgreSQL": {
         "name": "PostgreSQL",
-        "description": "Building complex, scalable and efficient databases."
+        "description": "Designing complex, scalable, and efficient databases."
       },
       "nextJs": {
         "name": "Next.js",
@@ -178,7 +174,7 @@
       },
       "nestJs": {
         "name": "NestJS",
-        "description": "Building complex & secure APIs."
+        "description": "Creating complex and secure APIs."
       },
       "ciCd": {
         "name": "CI/CD, GitHub Actions, Shell",
@@ -196,39 +192,31 @@
     "faq": {
       "badge": "FAQ",
       "title": "Learn more",
-      "description": "Here you’ll find all the key information about the duration, availability, and opportunities related to my internship, giving you a clear overview of my profile.",
+      "description": "Find here all the key information regarding the duration, availability, and opportunities related to my internship to give you a clear vision of my application.",
       "questions": [
         {
-          "question": "What is the duration of the internship and when are you available?",
-          "answer": "I'm looking for a 5-6 month internship and will be available starting February 2026."
-        },
-        {
-          "question": "Are you open to a full-time position after the internship?",
-          "answer": "Absolutely. If the collaboration goes well, I'm more than open to continuing full-time."
-        },
-        {
           "question": "Are you open to international opportunities?",
-          "answer": "Yes, I'd be thrilled to join an international team — exploring new cultures and ways of working is something I value."
+          "answer": "Yes, joining an international team particularly motivates me — discovering new cultures and working methods is a real plus for me."
         },
         {
-          "question": "In which fields do you want to grow?",
-          "answer": "I'm passionate about software architecture, backend development, and cybersecurity — building reliable, scalable solutions is what drives me."
+          "question": "What fields do you want to work in?",
+          "answer": "I'm passionate about software architecture, artificial intelligence, and backend development — creating reliable and scalable solutions is what drives me."
         },
         {
-          "question": "Which languages do you speak fluently?",
-          "answer": "I am a native French speaker from Paris, and I am fluent in English (C1 level, TOEIC 985/990)."
+          "question": "What languages do you speak fluently?",
+          "answer": "I'm a native French speaker from Paris, and I speak English fluently (C1 level, TOEIC 985/990)."
         }
       ]
     }
   },
   "footer": {
-    "badge": "Built by <linkToMe>Mohamed Tahiri</linkToMe>. Source code on <linkToCode>GitHub</linkToCode>.",
+    "badge": "Site made by <linkToMe>Mohamed Tahiri</linkToMe>. Source code on <linkToCode>GitHub</linkToCode>.",
     "contact": {
       "badge": "Contact",
-      "title": "Get in touch",
+      "title": "Let's get in touch",
       "subtitle": {
-        "first": "Do you think my profile could be a good fit for your needs?",
-        "second": "Feel free to fill out this form or contact me directly through the links below."
+        "first": "Do you think my profile could match your needs?",
+        "second": "Feel free to contact me directly via the links below."
       },
       "or": "or",
       "copyEmail": "Copy to clipboard",
@@ -236,12 +224,12 @@
       "form": {
         "namePlaceholder": "Enter your name",
         "emailPlaceholder": "Enter your email",
-        "companyPlaceholder": "Enter the name of your company",
+        "companyPlaceholder": "Enter your company name",
         "messagePlaceholder": "Enter your message (optional)",
         "sendButton": "Send message",
         "sendingButton": "Sending...",
         "successMessage": "Message sent successfully!",
-        "errorMessage": "An error occurred...",
+        "errorMessage": "Something went wrong...",
         "rateLimitMessage": "Message already sent!",
         "validation": {
           "emailInvalid": "Please enter a valid email address.",
@@ -252,37 +240,37 @@
           "messageMinLength": "Message must be at least {min} characters.",
           "messageMaxLength": "Message must not exceed {max} characters."
         },
-        "turnstileError": "You failed the CAPTCHA security check. Please try again."
+        "turnstileError": "You failed the CAPTCHA security check. \nPlease try again."
       }
     }
   },
   "shared": {
     "defaultTitle": "Mohamed Tahiri",
-    "defaultDescription": "Computer Engineering student at UTC (France), specialized in computer systems and passionate about developing complex software.",
+    "defaultDescription": "Computer engineering student at UTC (France), specializing in computer systems and passionate about developing complex software.",
     "modeToggle": {
       "light": "Light",
       "dark": "Dark",
       "system": "System",
-      "toggle": "Change theme"
+      "toggle": "Toggle theme"
     },
     "noScriptBanner": {
-      "message": "JavaScript is disabled in your browser. Please enable it to see this website at its best."
+      "message": "JavaScript is disabled in your browser. Please enable it to view this website properly."
     },
-    "languageSwitch": "Change language",
+    "languageSwitch": "Switch language",
     "close": "Close",
     "readMore": "Read more"
   },
   "notFound": {
-    "title": "Page Not Found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
-    "goHome": "Go back home"
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Return to home"
   },
   "error": {
-    "title": "Something went wrong",
-    "description": "We encountered an unexpected error. Please try again or return to the homepage.",
-    "technicalDetails": "Technical Details",
+    "title": "An error occurred",
+    "description": "We encountered an unexpected error. Please try again or return to the home page.",
+    "technicalDetails": "Technical details",
     "tryAgain": "Try again",
-    "goHome": "Go back home"
+    "goHome": "Return to home"
   },
   "navbar": {
     "contactMe": "Contact me",
@@ -295,6 +283,6 @@
     }
   },
   "header": {
-    "note": "Website made from scratch with Next.js. Code on <linkToCode>my GitHub</linkToCode>."
+    "note": "Site created with Next.js. Code on <linkToCode>my GitHub</linkToCode>."
   }
 }

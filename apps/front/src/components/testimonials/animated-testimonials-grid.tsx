@@ -6,12 +6,12 @@ import { MediumTestimonial } from './cards/variants/medium-testimonial'
 import { SmallTestimonial } from './cards/variants/small-testimonial'
 
 interface AnimatedTestimonialsGridProps {
-  // To make sure we have exactly 4 testimonials
+  // To make sure we have exactly 3 testimonials
   testimonials: [
     TestimonialCardProps,
     TestimonialCardProps,
-    TestimonialCardProps,
     TestimonialCardProps
+    // TestimonialCardProps
   ]
   delay?: number
 }
@@ -34,19 +34,20 @@ export function AnimatedTestimonialsGrid({
         enableScrollAnimation
         animationDelay={delay + 0.1}
       />
-      {/* <SmallTestimonial
+      <SmallTestimonial
+        className="md:col-span-4 lg:col-span-2"
         testimonial={testimonials[2]}
         gradientColor="green"
         enableScrollAnimation
         animationDelay={delay + 0.2}
-      /> */}
-      <SmallTestimonial
+      />
+      {/* <SmallTestimonial
         className="md:col-span-4 lg:col-span-2"
         testimonial={testimonials[3]}
         gradientColor="orange"
         enableScrollAnimation
         animationDelay={delay + 0.3}
-      />
+      /> */}
     </div>
   )
 }

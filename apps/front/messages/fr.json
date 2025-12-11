@@ -2,20 +2,23 @@
   "HomePage": {
     "hero": {
       "available": "Disponible",
+      "notAvailable": "Ingénieur de l'UTC",
       "MohamedTahiri": "Mohamed Tahiri",
       "passionateAbout": "passionné par",
-      "readyToJoin": "Prêt à rejoindre votre équipe pour un stage de fin d'études de 6 mois à partir de février 2026.",
+      "readyToJoin": "Passionné par l'intelligence artificielle et l'architecture logicielle, j'aime transformer des idées en solutions concrètes.",
       "downloadResume": "Téléchargez mon CV",
       "contactMe": "Contactez-moi",
       "passions": [
-        "informatique",
-        "ingénierie",
-        "algorithmes",
-        "programmation",
-        "architecture",
-        "cybersécurité",
-        "Backend",
-        "DevOps"
+        "l'informatique",
+        "l'IA",
+        "le deep learning",
+        "l'ingénierie",
+        "les algorithmes",
+        "la programmation",
+        "l'architecture",
+        "la cybersécurité",
+        "le backend",
+        "le DevOps"
       ]
     },
     "aboutMe": {
@@ -26,13 +29,13 @@
         "steps": [
           {
             "title": "Premières années à l'UTC",
-            "subtitle": "Sept. 2021 - Juin 2024",
+            "subtitle": "Fév. 2022 - Juin 2024",
             "description": "J'ai étudié à l'UTC, une école d'ingénieurs française, où j'ai acquis de solides bases en informatique, notamment en algorithmes, structures de données, génie logiciel et architecture des systèmes.",
             "learnMoreText": "En savoir plus sur l'UTC"
           },
           {
             "title": "Programmation compétitive",
-            "subtitle": "Sept. 2023 - Juin 2024",
+            "subtitle": "Fév. 2023 - Fév. 2024",
             "description": "Au sein du club de programmation de mon université, j'enseignais la programmation compétitive. Nous avons exploré les algorithmes, les structures de données et les techniques de résolution de problèmes en utilisant LeetCode. Lors d'une compétition, mon équipe et moi avons terminé à la 6ème place sur environ 70 équipes.",
             "learnMoreText": "Notre page Instagram"
           },
@@ -45,12 +48,12 @@
           {
             "title": "Projet pour acquérir de l'expérience",
             "subtitle": "Sept. 2024 - Présent",
-            "description": "Après mes cours, j'ai travaillé 20 heures par semaine en tant que développeur full-stack (NestJS, JWT, S3, PostgreSQL, Next.js...) contribuant au développement d'une application web avec 8 ingénieurs. Plus d'informations dans la section Projets ci-dessous."
+            "description": "Après mes cours, j'ai travaillé ~20 heures par semaine en tant que développeur full-stack (NestJS, JWT, S3, PostgreSQL, Next.js...) contribuant au développement d'une application web avec 8 ingénieurs. Plus d'informations dans la section Projets ci-dessous."
           },
           {
             "title": "5ème année @ UTC (ISI)",
-            "subtitle": "Fév. 2025 - Fév. 2026",
-            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec une spécialisation en systèmes distribués, conception backend et architecture logicielle. Le programme se conclura par un stage de 6 mois débutant en février 2026.",
+            "subtitle": "Fév. 2025 - Jan. 2026",
+            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec une spécialisation en systèmes distribués, conception backend et architecture logicielle. Le programme se conclura par une expérience professionnelle de 6 mois débutant en février 2026.",
             "learnMoreText": "En savoir plus sur ma spécialité \"ISI\""
           }
         ]
@@ -72,7 +75,7 @@
         {
           "title": "Mon plus grand projet",
           "shortDescription": "Moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux.",
-          "description": "Ce projet est un moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux. Par exemple, si vous êtes étudiant, vous pouvez rechercher des cours à Paris et dans les environs en fonction de filtres (prix, distance, etc.) et du classement des cours. Le projet est toujours en développement et sera lancé en octobre 2025.",
+          "description": "Ce projet est un moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux. Par exemple, si vous êtes étudiant, vous pouvez rechercher des cours à Paris et dans les environs en fonction de filtres (prix, distance, etc.) et du classement des cours. Le projet est toujours en développement et sera lancé prochainement.",
           "goal": "Ce projet est une excellente opportunité d'apprendre le frontend avec Next.js, le backend avec NestJS, les bases de données avec PostgreSQL, les moteurs de recherche avec Algolia, le CI/CD avec GitHub Actions, l'authentification JWT, les endpoints basés sur les rôles, etc. En tant que projet personnel, c'est une excellente occasion d'approfondir mes connaissances pendant mes études.",
           "features": "Les fonctionnalités clés de ce projet comprennent un backend NestJS sécurisé avec authentification JWT et endpoints basés sur les rôles connectés à une base de données PostgreSQL hébergée sur AWS, un moteur de recherche alimenté par l'IA avec filtres et classement réalisé avec Algolia, une base de code moderne avec des environnements de production, de développement et de prévisualisation. Il inclut également un système de chat avec messagerie en temps réel, un tableau de bord d'administration pour les enseignants afin de gérer leurs cours et un tableau de bord pour les étudiants afin de suivre leur progression.",
           "stack": [
@@ -123,7 +126,7 @@
     "testimonials": {
       "badge": "Témoignages",
       "title": "Ce que disent de moi les personnes avec qui j'ai travaillé",
-      "description": "J'ai travaillé avec beaucoup de personnes et j'ai énormément appris d'elles. Voici quelques-uns de leurs commentaires à mon sujet.",
+      "description": "J'ai travaillé avec beaucoup de personnes et j'ai énormément appris d'elles. Voici quelques-uns de leurs commentaires à mon sujet, aussi disponibles sur ma page LinkedIn.",
       "list": {
         "first": {
           "author": {
@@ -137,21 +140,14 @@
             "name": "Rabie Menad",
             "handle": "Développeur Frontend @ Décathlon"
           },
-          "text": "« J'ai eu l'opportunité de travailler avec Mohamed pendant un an, et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets de bout en bout (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et évolutives. Son souci du détail est remarquable : chaque livrable est propre, optimisé et pérenne.<newline></newline>Cette rigueur a été un atout précieux pour respecter les délais des projets sur lesquels nous avons travaillé ensemble. Je suis convaincu que Mohamed excellera dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe souhaitant avancer avec confiance. »"
+          "text": "« J'ai eu l'opportunité de travailler avec Mohamed sur un projet personnel pendant un an, et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets de bout en bout (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et évolutives. Son souci du détail est remarquable : chaque livrable est propre, optimisé et pérenne.<newline></newline>Cette rigueur a été un atout précieux pour respecter les délais des projets sur lesquels nous avons travaillé ensemble. Je suis convaincu que Mohamed excellera dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe souhaitant avancer avec confiance. »"
         },
         "third": {
           "author": {
             "name": "Olivier Knell",
             "handle": "Senior Engineering Manager @ Napta"
           },
-          "text": "« En attente d'un témoignage. »"
-        },
-        "fourth": {
-          "author": {
-            "name": "Ibrahim Zehhaf",
-            "handle": "Senior Software Architect @ Orange, IAD, etc."
-          },
-          "text": "« J'ai eu le plaisir de travailler avec Mohamed et je peux attester de son autonomie et de la qualité exceptionnelle de son travail.<newline></newline>Il a toujours été très fiable et a contribué de manière significative pendant toute la période de collaboration. »"
+          "text": "« Ce fut un réel plaisir de superviser l'excellent travail de Mohamed lors de son stage en tant qu'ingénieur backend/données chez Napta. En tant que son successeur, j'ai pu constater son impact significatif et je suis sincèrement ravi de ses contributions.<newline></newline>Mohamed s'est rapidement imposé comme un atout majeur pour l'équipe. Son adaptabilité et sa curiosité technique nous ont impressionnés ; il s'est rapidement familiarisé avec le code et les processus, ce qui est essentiel pour des sujets complexes comme l'intégration de données, le DevOps/CI et l'automatisation des flux de travail (Airflow/Python).<newline></newline>Ce qui distingue véritablement Mohamed, c'est son approche produit et son sens de l'initiative. Il n'était pas un simple exécutant ; il a toujours formulé des propositions constructives et a même mené avec succès des initiatives internes (de l'idée au déploiement, en passant par l'assurance qualité) – un niveau d'engagement et de maturité bien supérieur aux attentes pour un stagiaire.<newline></newline>Je recommande chaleureusement Mohamed. Son potentiel technique, sa proactivité et sa capacité à apporter une valeur ajoutée immédiate sont des qualités rares et très recherchées. Toute l'équipe Napta a beaucoup apprécié travailler avec lui. »"
         }
       }
     },
@@ -196,23 +192,16 @@
     "faq": {
       "badge": "FAQ",
       "title": "En savoir plus",
-      "description": "Retrouvez ici toutes les informations clés concernant la durée, la disponibilité, et les opportunités liées à mon stage afin de vous donner une vision claire de ma candidature.",
+      "description": "Retrouvez ici toutes les informations clés afin de vous donner une vision claire de mon profil.",
       "questions": [
-        {
-          "question": "Quelle est la durée du stage et quand es-tu disponible ?",
-          "answer": "Je recherche un stage de 5 à 6 mois et je suis disponible dès février 2026."
-        },
-        {
-          "question": "Es-tu ouvert à un CDI après le stage ?",
-          "answer": "Absolument. Si la collaboration se passe bien, je suis plus que partant pour continuer en CDI."
-        },
+
         {
           "question": "Es-tu ouvert à des opportunités à l'international ?",
           "answer": "Oui, rejoindre une équipe internationale me motive particulièrement — découvrir de nouvelles cultures et méthodes de travail est un vrai plus pour moi."
         },
         {
           "question": "Dans quels domaines souhaites-tu évoluer ?",
-          "answer": "Je suis passionné par l'architecture logicielle, le développement backend et la cybersécurité — créer des solutions fiables et évolutives, c’est ce qui me motive."
+          "answer": "Je suis passionné par l'architecture logicielle, l'intelligence artificielle et le développement backend — créer des solutions fiables et évolutives, c’est ce qui me motive."
         },
         {
           "question": "Quelles langues parles-tu couramment ?",
@@ -228,7 +217,7 @@
       "title": "Prenons contact",
       "subtitle": {
         "first": "Pensez-vous que mon profil pourrait correspondre à vos besoins ?",
-        "second": "N'hésitez pas à remplir ce formulaire ou à me contacter directement via les liens ci-dessous."
+        "second": "N'hésitez pas à me contacter directement via les liens ci-dessous."
       },
       "or": "ou",
       "copyEmail": "Copier dans le presse-papiers",
@@ -295,6 +284,6 @@
     }
   },
   "header": {
-    "note": "Site créé avec Next.js, sans template. Code sur <linkToCode>mon GitHub</linkToCode>."
+    "note": "Site créé avec Next.js. Code sur <linkToCode>mon GitHub</linkToCode>."
   }
 }

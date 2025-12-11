@@ -9,7 +9,7 @@ export const newline = () => (
   </>
 )
 
-type TestimonialKey = 'first' | 'second' | 'third' | 'fourth'
+type TestimonialKey = 'first' | 'second' | 'third'
 
 const createTestimonial = (
   t: ReturnType<typeof useTranslations<'HomePage.testimonials'>>,
@@ -43,8 +43,8 @@ export function getTestimonials(
 ): [
   TestimonialCardProps,
   TestimonialCardProps,
-  TestimonialCardProps,
   TestimonialCardProps
+  // TestimonialCardProps
 ] {
   return [
     createTestimonial(t, 'first', {
@@ -70,14 +70,6 @@ export function getTestimonials(
       companyUrl: 'https://www.napta.io',
       initials: 'OK',
       href: 'https://www.linkedin.com/in/olivier-knell-156021a8'
-    }),
-    createTestimonial(t, 'fourth', {
-      avatar: '/images/profile-pictures/ibrahim-zehhaf.webp',
-      companyName: 'Orange',
-      companyAvatar: '/images/logos/orange.webp',
-      companyUrl: 'https://orange.com',
-      initials: '',
-      href: 'https://github.com/ibrahim-zehhaf'
     })
   ]
 }

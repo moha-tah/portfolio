@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
 
 import { Footer } from '@/components/footer/footer'
-import { HeaderText } from '@/components/navbar/header-text'
+// import { HeaderText } from '@/components/navbar/header-text'
 import { Navbar } from '@/components/navbar/navbar'
 import { ScrollProgress } from '@/components/navbar/scroll-progress'
 import { Background } from '@/components/shared/background'
@@ -41,6 +41,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return await getDefaultMetadata()
 }
 
+function getDir(locale: Locale) {
+  const rtlLocales: Locale[] = ['ar']
+  return rtlLocales.includes(locale) ? 'rtl' : 'ltr'
+}
+
 interface Props {
   modal: React.ReactNode
   children: React.ReactNode
@@ -57,7 +62,7 @@ export default async function LocaleLayout({ children, params, modal }: Props) {
     <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} selection:bg-primary selection:text-background relative antialiased`}
-        dir={locale === 'ar' ? 'rtl' : 'ltr'}
+        dir={getDir(locale)}
       >
         <ProvidersWrapper>
           <NoScriptBanner />
@@ -66,7 +71,7 @@ export default async function LocaleLayout({ children, params, modal }: Props) {
           <Background />
           <Navbar />
           {modal}
-          <HeaderText />
+          {/* <HeaderText /> */}
           <div className="py-12">{children}</div>
           <Footer />
         </ProvidersWrapper>
