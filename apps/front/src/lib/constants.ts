@@ -8,18 +8,18 @@ export const SOCIAL_LINKS = {
 
 export const METADATA_KEYWORDS = [
   'Mohamed Tahiri',
-  'Portfolio',
-  'Portfolio Mohamed Tahiri',
   'Software Engineer',
-  'Full Stack Developer',
-  'UTC',
-  'Université de Technologie de Compiègne',
-  'University of Technology of Compiègne',
-  'Internship',
-  'End of studies internship',
-  'Computer Science',
-  'Frontend',
-  'Backend',
+  'AI Engineer',
+  'Ingénieur logiciel',
+  'Ingénieur IA',
+  'RAG',
+  'AI agents',
+  'LLM evaluation',
+  'Hybrid search',
+  'Next.js',
+  'TypeScript',
+  'Python',
+  'Miami',
   'Paris',
-  'France'
+  'UTC Compiègne'
 ]

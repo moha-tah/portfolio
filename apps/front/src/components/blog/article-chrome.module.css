@@ -1,0 +1,53 @@
+.progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 2px;
+  z-index: 60;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+  transform-origin: left;
+}
+
+[dir='rtl'] .progress {
+  transform-origin: right;
+}
+
+.toc {
+  position: sticky;
+  top: calc(var(--header-h) + 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-inline-start: 1px solid var(--line);
+}
+
+.toc li a {
+  display: block;
+  padding: 6px 14px;
+  margin-inline-start: -1px;
+  border-inline-start: 1px solid transparent;
+  color: var(--mute);
+  font-size: 14px;
+  line-height: 1.35;
+  transition:
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.toc li a:hover,
+.toc li[data-on] a {
+  color: var(--fg);
+}
+
+.toc li[data-on] a {
+  border-color: var(--accent);
+}

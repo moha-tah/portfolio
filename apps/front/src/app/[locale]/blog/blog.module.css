@@ -1,0 +1,41 @@
+.page {
+  padding-top: calc(var(--header-h) + 72px);
+  padding-bottom: 40px;
+}
+
+.title {
+  font-size: clamp(56px, 10vw, 156px);
+  line-height: 0.88;
+}
+
+.title em {
+  font-style: normal;
+  color: var(--mute);
+  font-weight: 300;
+}
+
+.intro {
+  max-width: 52ch;
+  color: var(--mute);
+  font-size: clamp(18px, 1.6vw, 21px);
+  margin-block: 26px 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 72px);
+  margin-top: clamp(40px, 7vh, 80px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

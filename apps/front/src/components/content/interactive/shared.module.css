@@ -1,0 +1,204 @@
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--panel);
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.head > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.head > span:first-child::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px 4px 16px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--bg);
+  transition: border-color 0.3s;
+}
+
+.input:focus-within {
+  border-color: var(--accent);
+}
+
+.input input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 16px;
+  color: var(--fg);
+  background: none;
+  border: 0;
+  outline: none;
+  padding: 10px 0;
+}
+
+.input button {
+  font-family: var(--font-code);
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 9px 14px;
+  border-radius: 99px;
+  color: var(--mute);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chips button {
+  font-size: 13.5px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
+}
+
+.chips button:hover {
+  border-color: var(--fg);
+}
+
+.chips button[aria-pressed='true'] {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-code);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.range output {
+  color: var(--fg);
+  min-width: 3ch;
+  font-variant-numeric: tabular-nums;
+}
+
+.range input[type='range'] {
+  accent-color: var(--accent);
+  width: 140px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-code);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--mute);
+  cursor: pointer;
+}
+
+.toggle i {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  border-radius: 99px;
+  background: var(--line);
+  transition: background 0.3s;
+}
+
+.toggle i::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  inset-inline-start: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--fg);
+  transition: transform 0.4s var(--ease);
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle input:checked + i {
+  background: var(--accent);
+}
+
+.toggle input:checked + i::after {
+  transform: translateX(14px);
+  background: var(--on-accent);
+}
+
+[dir='rtl'] .toggle input:checked + i::after {
+  transform: translateX(-14px);
+}
+
+.toggle input:focus-visible + i {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.note {
+  color: var(--mute);
+  font-size: 13.5px;
+}
+
+.loading {
+  height: 420px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: linear-gradient(100deg, var(--panel) 30%, var(--raise) 50%, var(--panel) 70%) 0 0 / 300% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -100% 0;
+  }
+}

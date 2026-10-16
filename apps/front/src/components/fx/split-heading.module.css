@@ -1,0 +1,11 @@
+/* motion only, no fade: the words stay fully readable before and after the reveal */
+.w {
+  display: inline-block;
+  white-space: pre;
+  transform: translateY(0.28em);
+  transition: transform 1s var(--ease);
+}
+
+.split[data-in] .w {
+  transform: none;
+}

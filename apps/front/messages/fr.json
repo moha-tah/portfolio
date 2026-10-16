@@ -1,265 +1,272 @@
 {
-  "HomePage": {
-    "hero": {
-      "available": "Disponible",
-      "notAvailable": "Ingénieur de l'UTC",
-      "MohamedTahiri": "Mohamed Tahiri",
-      "passionateAbout": "passionné par",
-      "readyToJoin": "Passionné par l'intelligence artificielle et l'architecture logicielle, j'aime transformer des idées en solutions concrètes.",
-      "downloadResume": "Téléchargez mon CV",
-      "contactMe": "Contactez-moi",
-      "passions": [
-        "l'informatique",
-        "l'IA",
-        "le deep learning",
-        "l'ingénierie",
-        "les algorithmes",
-        "la programmation",
-        "l'architecture",
-        "la cybersécurité",
-        "le backend",
-        "le DevOps"
-      ]
+  "meta": {
+    "title": "Mohamed Tahiri",
+    "description": "Ingénieur logiciel. Je construis des systèmes d’IA qui tiennent en production : agents, recherche hybride, évaluations, et les produits autour. Basé à Miami.",
+    "blogTitle": "Blog",
+    "blogDescription": "Des articles sur l’IA en production, la recherche et les produits, avec des démos interactives."
+  },
+  "nav": {
+    "label": "Navigation principale",
+    "home": "Accueil",
+    "work": "Travaux",
+    "path": "Parcours",
+    "blog": "Blog",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Fermer",
+    "language": "Langue",
+    "skip": "Aller au contenu"
+  },
+  "hero": {
+    "h1": "Mohamed Tahiri, ingénieur logiciel",
+    "steps": {
+      "name": "Nom",
+      "route": "Paris → Miami",
+      "network": "Réseau"
     },
-    "aboutMe": {
-      "badge": "À propos de moi",
-      "title": "Un aperçu de mon parcours",
-      "description": "Un parcours chronologique à travers mes expériences et réalisations clés, mettant en évidence mon évolution en tant qu'étudiant en génie informatique.",
-      "timeline": {
-        "steps": [
-          {
-            "title": "Premières années à l'UTC",
-            "subtitle": "Fév. 2022 - Juin 2024",
-            "description": "J'ai étudié à l'UTC, une école d'ingénieurs française, où j'ai acquis de solides bases en informatique, notamment en algorithmes, structures de données, génie logiciel et architecture des systèmes.",
-            "learnMoreText": "En savoir plus sur l'UTC"
-          },
-          {
-            "title": "Programmation compétitive",
-            "subtitle": "Fév. 2023 - Fév. 2024",
-            "description": "Au sein du club de programmation de mon université, j'enseignais la programmation compétitive. Nous avons exploré les algorithmes, les structures de données et les techniques de résolution de problèmes en utilisant LeetCode. Lors d'une compétition, mon équipe et moi avons terminé à la 6ème place sur environ 70 équipes.",
-            "learnMoreText": "Notre page Instagram"
-          },
-          {
-            "title": "Stage chez Napta",
-            "subtitle": "Sept. 2024 - Fév. 2025",
-            "description": "J'ai travaillé comme ingénieur de données et ingénieur backend (Python, Flask, PostgreSQL, Airflow...) pour construire des pipelines de données efficaces. J'ai collaboré au sein d'une équipe agile de 7 ingénieurs seniors.",
-            "learnMoreText": "En savoir plus sur Napta"
-          },
-          {
-            "title": "Projet pour acquérir de l'expérience",
-            "subtitle": "Sept. 2024 - Présent",
-            "description": "Après mes cours, j'ai travaillé ~20 heures par semaine en tant que développeur full-stack (NestJS, JWT, S3, PostgreSQL, Next.js...) contribuant au développement d'une application web avec 8 ingénieurs. Plus d'informations dans la section Projets ci-dessous."
-          },
-          {
-            "title": "5ème année @ UTC (ISI)",
-            "subtitle": "Fév. 2025 - Jan. 2026",
-            "description": "Spécialisation en Ingénierie des Systèmes Informatiques (ISI), avec une spécialisation en systèmes distribués, conception backend et architecture logicielle. Le programme se conclura par une expérience professionnelle de 6 mois débutant en février 2026.",
-            "learnMoreText": "En savoir plus sur ma spécialité \"ISI\""
-          }
-        ]
+    "caption0": "<b>Ingénieur logiciel.</b> Je construis des systèmes d’IA qui tiennent en production.",
+    "caption1": "<b>Paris → Miami.</b> Formé en France, en poste à Miami depuis 2026.",
+    "caption2": "<b>Agents, recherche, évaluation.</b> Et les produits qui vont autour.",
+    "ctaWork": "Voir les travaux",
+    "ctaContact": "Me contacter"
+  },
+  "manifesto": {
+    "eyebrow": "En deux phrases",
+    "text": "Je fais passer l’IA de la démo à la production. Des agents qui utilisent de vrais outils, une recherche qui trouve la bonne source, des évaluations qui disent la vérité, et l’infra qui tient le tout.",
+    "accents": "démo|production"
+  },
+  "work": {
+    "eyebrow": "Travaux choisis",
+    "titleLead": "Ce que j’ai",
+    "titleTail": "construit.",
+    "count": "{count, plural, one {# projet} other {# projets}} · ouvrez-en un pour lire l’étude de cas",
+    "read": "Lire l’étude de cas",
+    "kind": {
+      "pro": "pro",
+      "personal": "perso",
+      "openSource": "open source"
+    }
+  },
+  "tags": {
+    "agents": "Agents",
+    "rag": "RAG",
+    "evals": "Évals",
+    "automation": "Automatisation",
+    "claudeCode": "Claude Code",
+    "remotion": "Remotion",
+    "tts": "Synthèse vocale",
+    "product": "Produit",
+    "infra": "Infra",
+    "openSource": "Open source",
+    "python": "Python",
+    "typescript": "TypeScript"
+  },
+  "mocks": {
+    "chat": {
+      "bar": "Buddy · démo fictive",
+      "q": "Cette pièce revient encore. C’est récurrent ?",
+      "t1": "6 interventions",
+      "t2": "3 sur le même joint",
+      "t3": "2 passages",
+      "a1": "Oui, 4 fois en 12 mois",
+      "a2": "La documentation recommande de tout changer"
+    },
+    "dash": {
+      "bar": "Agent · journal du jour",
+      "k1": "outils publiés",
+      "k2": "tests",
+      "k3": "humain qui valide",
+      "l1": "Veille marché",
+      "l2": "Nouvel outil",
+      "done": "fait",
+      "pending": "à valider"
+    },
+    "video": {
+      "bar": "Studio · nouvelle formation",
+      "scene": "Scène 3 / 8",
+      "title": "Les bons gestes, en 2 minutes"
+    },
+    "search": {
+      "bar": "Recherche",
+      "q": "Cours près de chez moi"
+    },
+    "packages": {
+      "bar": "Paquets publiés",
+      "py": "SDK Python",
+      "ts": "SDK TypeScript",
+      "ha": "intégration"
+    }
+  },
+  "skills": {
+    "eyebrow": "Compétences",
+    "titleLead": "L’IA au centre,",
+    "titleTail": "le reste autour.",
+    "groups": {
+      "ai": "IA appliquée",
+      "web": "Produit web",
+      "infra": "Infra",
+      "data": "Data",
+      "motion": "Motion & voix",
+      "os": "Open source"
+    },
+    "evals": "Évals",
+    "nativeApps": "Apps natives",
+    "tts": "Synthèse vocale",
+    "aria": "Carte des compétences : l’IA appliquée au centre, reliée au produit web, à l’infra, à la data, à la motion et à l’open source.",
+    "hint": "Survolez un point"
+  },
+  "path": {
+    "eyebrow": "Parcours",
+    "titleLead": "De Compiègne",
+    "titleTail": "à Miami.",
+    "places": {
+      "compiegne": "Compiègne",
+      "paris": "Paris",
+      "miami": "Miami"
+    },
+    "hop": "{from} → {to} · ≈ {km} km",
+    "mapAria": "Carte du parcours : de Compiègne à Paris, puis de Paris à Miami.",
+    "legs": {
+      "utc": {
+        "when": "2022 → 2026 · Compiègne",
+        "title": "Ingénieur, UTC",
+        "text": "Filière ingénierie des systèmes d’information : systèmes distribués, architecture, et une 6ᵉ place sur 70 en programmation compétitive."
+      },
+      "napta": {
+        "when": "2024 → 2025 · Paris",
+        "title": "Data & backend, Napta",
+        "text": "Six mois de pipelines Python et Airflow, de PostgreSQL et de CI, au sein d’une équipe de sept ingénieurs seniors."
+      },
+      "barfield": {
+        "when": "2026 → · Miami",
+        "title": "Ingénieur IA, Barfield",
+        "text": "Groupe Air France-KLM. Stage de fin d’études puis VIE : je conçois et mets en production des outils d’IA pour les équipes techniques."
       }
-    },
-    "projects": {
-      "badge": "Projets",
-      "title": "Quelques projets sur lesquels j'ai travaillé",
-      "metadataTitle": "Projets",
-      "description": "Découvrez une sélection de projets où j'ai appliqué mes compétences pour résoudre des défis concrets. Chaque projet reflète ma passion pour créer des solutions impactantes et bien conçues.",
-      "summary": "Résumé",
-      "whyThisProject": "Pourquoi ce projet ?",
-      "features": "Fonctionnalités",
-      "viewCode": "Voir le code",
-      "closedSource": "Code source fermé",
-      "viewDetails": "Voir les détails",
-      "backToProjects": "Retour aux projets",
-      "projects": [
-        {
-          "title": "Mon plus grand projet",
-          "shortDescription": "Moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux.",
-          "description": "Ce projet est un moteur de recherche pour aider les étudiants à trouver les meilleurs cours près de chez eux. Par exemple, si vous êtes étudiant, vous pouvez rechercher des cours à Paris et dans les environs en fonction de filtres (prix, distance, etc.) et du classement des cours. Le projet est toujours en développement et sera lancé prochainement.",
-          "goal": "Ce projet est une excellente opportunité d'apprendre le frontend avec Next.js, le backend avec NestJS, les bases de données avec PostgreSQL, les moteurs de recherche avec Algolia, le CI/CD avec GitHub Actions, l'authentification JWT, les endpoints basés sur les rôles, etc. En tant que projet personnel, c'est une excellente occasion d'approfondir mes connaissances pendant mes études.",
-          "features": "Les fonctionnalités clés de ce projet comprennent un backend NestJS sécurisé avec authentification JWT et endpoints basés sur les rôles connectés à une base de données PostgreSQL hébergée sur AWS, un moteur de recherche alimenté par l'IA avec filtres et classement réalisé avec Algolia, une base de code moderne avec des environnements de production, de développement et de prévisualisation. Il inclut également un système de chat avec messagerie en temps réel, un tableau de bord d'administration pour les enseignants afin de gérer leurs cours et un tableau de bord pour les étudiants afin de suivre leur progression.",
-          "stack": [
-            "Next.js",
-            "NestJS",
-            "Supabase",
-            "Sécurité",
-            "Authentification JWT",
-            "GitHub Actions",
-            "Recherche approfondie"
-          ]
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Ils en parlent",
+    "titleLead": "Ce qu’en disent",
+    "titleTail": "mes collègues.",
+    "more": "Lire en entier",
+    "less": "Réduire",
+    "source": "Profil",
+    "list": {
+      "first": {
+        "author": {
+          "name": "Julien G. Lopes",
+          "handle": "Tuteur de stage @ Napta"
         },
-        {
-          "title": "Un jeu multijoueur en ligne",
-          "shortDescription": "Jeu développé avec C# et Unity pour apprendre les sockets UDP et l'optimisation.",
-          "description": "Ce projet est un jeu d'arène multijoueur en ligne où les joueurs contrôlent des sphères pour se pousser mutuellement hors de la carte. Le jeu propose deux modes : un mode solo (hors ligne) où vous affrontez des IA dans un système de rounds, et un mode multijoueur où vous pouvez jouer contre des amis en temps réel avec un système de lobby. Le jeu est jouable sur Windows et Mac et peut être téléchargé depuis mon dépôt GitHub.",
-          "goal": "J'ai réalisé ce projet pour apprendre le développement de jeux, mais plus spécifiquement pour comprendre le fonctionnement des serveurs et comment ils parviennent à être rapides et efficaces sans latence. Ce projet a été une excellente opportunité d'apprendre les sockets, UDP vs TCP, comment sécuriser un serveur pour prévenir la triche et comment optimiser les données à envoyer aux clients et celles à calculer côté serveur.",
-          "features": "Les fonctionnalités clés incluent des mouvements basés sur la physique et des collisions réalistes. En mode solo, vous affrontez des sphères contrôlées par l'IA qui deviennent plus fortes et plus rapides après chaque round. Le mode en ligne peut accueillir environ 10 joueurs sans latence perceptible, vous pouvez créer un lobby privé pour jouer avec des personnes que vous connaissez et personnaliser les paramètres du jeu (score, nom, etc.).",
-          "stack": [
-            "Unity",
-            "C#",
-            "Développement de jeux",
-            "Multijoueur",
-            "Hébergement",
-            "Sockets UDP",
-            "Optimisation"
-          ]
+        "text": "Je recommande vivement Mohamed ! Sa forte capacité d'adaptation, sa curiosité sincère (qui l'a amené à explorer et approfondir ses connaissances dans de nombreuses technologies), et son état d'esprit orienté produit sont de véritables atouts.<newline></newline>Durant son stage chez Napta, Mohamed a eu l'occasion de travailler sur des tâches d'intégration et de synchronisation de données, des sujets DevOps, la CI, ainsi que des améliorations de produit. Il s'est rapidement familiarisé avec la base de code et s'est adapté à nos processus, ce qui lui a permis non seulement d'être productif au sein de l'équipe très rapidement, mais aussi d'apporter des idées précieuses.<newline></newline>Mohamed a fait preuve d'une grande curiosité sur des sujets très différents. Il a constamment formulé des propositions constructives et a su mener avec succès des initiatives internes — de l'idée à l'adoption par l'équipe, en passant par le développement et l'assurance qualité.<newline></newline>Toute l'équipe de Napta a beaucoup apprécié travailler avec lui !"
+      },
+      "second": {
+        "author": {
+          "name": "Rabie Menad",
+          "handle": "Développeur Frontend @ Décathlon"
         },
-        {
-          "title": "Un système distribué décentralisé",
-          "shortDescription": "Projet bas niveau utilisant une base de données partagée, des algorithmes d'élection et la détection de collisions.",
-          "description": "Ce projet implémente un système distribué entièrement décentralisé où plusieurs types de nœuds collaborent pour collecter, vérifier et utiliser des données à travers différents sites. Le système modélise un scénario réel où des appareils collectent des données de capteurs, vérifient leur exactitude et produisent des prédictions, tout en assurant une coordination et une cohérence correctes entre des nœuds géographiquement séparés.",
-          "goal": "Ce projet a été une excellente opportunité d'apprendre sur les systèmes distribués, les algorithmes d'élection, les instantanés, la détection de collisions et comment utiliser des horloges logiques pour assurer la cohérence entre les réplicas. L'idée centrale est que les capteurs peuvent fournir des données erronées, perturbant les utilisateurs. Ainsi, des systèmes de vérification sont intégrés pour mettre à jour, lentement, chaque point de données l'un après l'autre. L'objectif est d'observer l'impact des paramètres de vérification sur les comportements des utilisateurs.",
-          "features": "Le système utilise une architecture décentralisée sans base de données centralisée, où chaque nœud maintient et met à jour sa propre réplique locale. Pour assurer la cohérence des répliques, les nœuds se coordonnent via une file d'attente distribuée qui emploie des horloges logiques pour sérialiser toutes les mises à jour. Pour la gestion des données partagées, les nœuds se concentrent sur une fenêtre glissante des 15 derniers jours de relevés de température. La communication pair-à-pair permet la messagerie directe entre les nœuds pour propager les mises à jour et coordonner les actions efficacement.",
-          "stack": [
-            "Go",
-            "Systèmes distribués",
-            "Parallélisme",
-            "Algorithmes d'élection",
-            "Instantanés",
-            "Détection de collisions",
-            "Horloges logiques"
-          ]
-        }
-      ],
-      "view": "Voir"
-    },
-    "testimonials": {
-      "badge": "Témoignages",
-      "title": "Ce que disent de moi les personnes avec qui j'ai travaillé",
-      "description": "J'ai travaillé avec beaucoup de personnes et j'ai énormément appris d'elles. Voici quelques-uns de leurs commentaires à mon sujet, aussi disponibles sur ma page LinkedIn.",
-      "list": {
-        "first": {
-          "author": {
-            "name": "Julien G. Lopes",
-            "handle": "Tuteur de stage @ Napta"
-          },
-          "text": "« Je recommande vivement Mohamed ! Sa forte capacité d'adaptation, sa curiosité sincère (qui l'a amené à explorer et approfondir ses connaissances dans de nombreuses technologies), et son état d'esprit orienté produit sont de véritables atouts.<newline></newline>Durant son stage chez Napta, Mohamed a eu l'occasion de travailler sur des tâches d'intégration et de synchronisation de données, des sujets DevOps, la CI, ainsi que des améliorations de produit. Il s'est rapidement familiarisé avec la base de code et s'est adapté à nos processus, ce qui lui a permis non seulement d'être productif au sein de l'équipe très rapidement, mais aussi d'apporter des idées précieuses.<newline></newline>Mohamed a fait preuve d'une grande curiosité sur des sujets très différents. Il a constamment formulé des propositions constructives et a su mener avec succès des initiatives internes — de l'idée à l'adoption par l'équipe, en passant par le développement et l'assurance qualité.<newline></newline>Toute l'équipe de Napta a beaucoup apprécié travailler avec lui ! »"
+        "text": "J'ai eu l'opportunité de travailler avec Mohamed sur un projet personnel pendant un an, et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets de bout en bout (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et évolutives. Son souci du détail est remarquable : chaque livrable est propre, optimisé et pérenne.<newline></newline>Cette rigueur a été un atout précieux pour respecter les délais des projets sur lesquels nous avons travaillé ensemble. Je suis convaincu que Mohamed excellera dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe souhaitant avancer avec confiance."
+      },
+      "third": {
+        "author": {
+          "name": "Olivier Knell",
+          "handle": "Senior Engineering Manager @ Napta"
         },
-        "second": {
-          "author": {
-            "name": "Rabie Menad",
-            "handle": "Développeur Frontend @ Décathlon"
-          },
-          "text": "« J'ai eu l'opportunité de travailler avec Mohamed sur un projet personnel pendant un an, et je ne peux que le recommander vivement pour ses futurs projets.<newline></newline>C'est un ingénieur polyvalent, capable de gérer des sujets de bout en bout (DevOps, Frontend, Backend, etc.) tout en concevant des solutions performantes et évolutives. Son souci du détail est remarquable : chaque livrable est propre, optimisé et pérenne.<newline></newline>Cette rigueur a été un atout précieux pour respecter les délais des projets sur lesquels nous avons travaillé ensemble. Je suis convaincu que Mohamed excellera dans ses futures missions, grâce à ses compétences, son professionnalisme et son attitude positive.<newline></newline>Un véritable atout pour toute équipe souhaitant avancer avec confiance. »"
-        },
-        "third": {
-          "author": {
-            "name": "Olivier Knell",
-            "handle": "Senior Engineering Manager @ Napta"
-          },
-          "text": "« Ce fut un réel plaisir de superviser l'excellent travail de Mohamed lors de son stage en tant qu'ingénieur backend/données chez Napta. En tant que son successeur, j'ai pu constater son impact significatif et je suis sincèrement ravi de ses contributions.<newline></newline>Mohamed s'est rapidement imposé comme un atout majeur pour l'équipe. Son adaptabilité et sa curiosité technique nous ont impressionnés ; il s'est rapidement familiarisé avec le code et les processus, ce qui est essentiel pour des sujets complexes comme l'intégration de données, le DevOps/CI et l'automatisation des flux de travail (Airflow/Python).<newline></newline>Ce qui distingue véritablement Mohamed, c'est son approche produit et son sens de l'initiative. Il n'était pas un simple exécutant ; il a toujours formulé des propositions constructives et a même mené avec succès des initiatives internes (de l'idée au déploiement, en passant par l'assurance qualité) – un niveau d'engagement et de maturité bien supérieur aux attentes pour un stagiaire.<newline></newline>Je recommande chaleureusement Mohamed. Son potentiel technique, sa proactivité et sa capacité à apporter une valeur ajoutée immédiate sont des qualités rares et très recherchées. Toute l'équipe Napta a beaucoup apprécié travailler avec lui. »"
-        }
+        "text": "Ce fut un réel plaisir de superviser l'excellent travail de Mohamed lors de son stage en tant qu'ingénieur backend/données chez Napta. En tant que son successeur, j'ai pu constater son impact significatif et je suis sincèrement ravi de ses contributions.<newline></newline>Mohamed s'est rapidement imposé comme un atout majeur pour l'équipe. Son adaptabilité et sa curiosité technique nous ont impressionnés ; il s'est rapidement familiarisé avec le code et les processus, ce qui est essentiel pour des sujets complexes comme l'intégration de données, le DevOps/CI et l'automatisation des flux de travail (Airflow/Python).<newline></newline>Ce qui distingue véritablement Mohamed, c'est son approche produit et son sens de l'initiative. Il n'était pas un simple exécutant ; il a toujours formulé des propositions constructives et a même mené avec succès des initiatives internes (de l'idée au déploiement, en passant par l'assurance qualité) – un niveau d'engagement et de maturité bien supérieur aux attentes pour un stagiaire.<newline></newline>Je recommande chaleureusement Mohamed. Son potentiel technique, sa proactivité et sa capacité à apporter une valeur ajoutée immédiate sont des qualités rares et très recherchées. Toute l'équipe Napta a beaucoup apprécié travailler avec lui."
       }
-    },
-    "skills": {
-      "badge": "Boîte à outils",
-      "title": "Les technologies avec lesquelles je travaille",
-      "description": "Ci-dessous une liste non-exhaustive de technologies que j'utilise pour créer des solutions fiables et performantes.",
-      "note": "Remarque : La durée indiquée correspond à mon expérience pratique avec chaque technologie (école, projets personnels et stage), et non à des 'années d'expérience' traditionnelles.",
-      "python": {
-        "name": "Python",
-        "description": "Création de systèmes robustes et de pipelines de données."
+    }
+  },
+  "notes": {
+    "eyebrow": "Blog",
+    "titleLead": "Ce que j’apprends,",
+    "titleTail": "par écrit.",
+    "all": "Tous les articles"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Construisons quelque chose.",
+    "copy": "Copier l’adresse",
+    "copied": "Copiée",
+    "localTime": "Miami · il est {time}",
+    "form": {
+      "title": "Ou laissez un message",
+      "nameLabel": "Nom",
+      "emailLabel": "E-mail",
+      "companyLabel": "Entreprise",
+      "messageLabel": "Message (facultatif)",
+      "sendButton": "Envoyer le message",
+      "sendingButton": "Envoi en cours...",
+      "successMessage": "Message envoyé avec succès !",
+      "errorMessage": "Une erreur s'est produite...",
+      "rateLimitMessage": "Message déjà envoyé !",
+      "validation": {
+        "emailInvalid": "Veuillez entrer une adresse email valide.",
+        "nameMinLength": "Le nom doit contenir au moins {min} caractères.",
+        "nameMaxLength": "Le nom ne doit pas dépasser {max} caractères.",
+        "companyMinLength": "L'entreprise doit contenir au moins {min} caractères.",
+        "companyMaxLength": "L'entreprise ne doit pas dépasser {max} caractères.",
+        "messageMinLength": "Le message doit contenir au moins {min} caractères.",
+        "messageMaxLength": "Le message ne doit pas dépasser {max} caractères."
       },
-      "typeScript": {
-        "name": "TypeScript",
-        "description": "Création d'applications web full-stack performantes."
-      },
-      "postgreSQL": {
-        "name": "PostgreSQL",
-        "description": "Création de bases de données complexes, scalables et efficaces."
-      },
-      "nextJs": {
-        "name": "Next.js",
-        "description": "Création de sites web performants."
-      },
-      "nestJs": {
-        "name": "NestJS",
-        "description": "Création d'API complexes et sécurisées."
-      },
-      "ciCd": {
-        "name": "CI/CD, GitHub Actions, Shell",
-        "description": "Automatisation de workflows et de tâches."
-      },
-      "lowLevel": {
-        "name": "C, C++, C#, Go, etc.",
-        "description": "Scripting et programmation bas-niveau."
-      },
-      "andOther": "et bien d'autres...",
-      "years": "{count, plural, one {1 an} other {# ans}}",
-      "months": "{count, plural, one {1 mois} other {# mois}}",
-      "moreThanOneYear": "> 1 an"
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "En savoir plus",
-      "description": "Retrouvez ici toutes les informations clés afin de vous donner une vision claire de mon profil.",
-      "questions": [
-
-        {
-          "question": "Es-tu ouvert à des opportunités à l'international ?",
-          "answer": "Oui, rejoindre une équipe internationale me motive particulièrement — découvrir de nouvelles cultures et méthodes de travail est un vrai plus pour moi."
-        },
-        {
-          "question": "Dans quels domaines souhaites-tu évoluer ?",
-          "answer": "Je suis passionné par l'architecture logicielle, l'intelligence artificielle et le développement backend — créer des solutions fiables et évolutives, c’est ce qui me motive."
-        },
-        {
-          "question": "Quelles langues parles-tu couramment ?",
-          "answer": "Je suis francophone natif de Paris, et je parle couramment anglais (niveau C1, TOEIC 985/990)."
-        }
-      ]
+      "turnstileError": "Vous avez échoué le contrôle de sécurité CAPTCHA. \nVeuillez réessayer."
     }
   },
   "footer": {
-    "badge": "Site fait par <linkToMe>Mohamed Tahiri</linkToMe>. Code source sur <linkToCode>GitHub</linkToCode>.",
-    "contact": {
-      "badge": "Contact",
-      "title": "Prenons contact",
-      "subtitle": {
-        "first": "Pensez-vous que mon profil pourrait correspondre à vos besoins ?",
-        "second": "N'hésitez pas à me contacter directement via les liens ci-dessous."
-      },
-      "or": "ou",
-      "copyEmail": "Copier dans le presse-papiers",
-      "copied": "Copié dans le presse-papiers",
-      "form": {
-        "namePlaceholder": "Entrez votre nom",
-        "emailPlaceholder": "Entrez votre email",
-        "companyPlaceholder": "Entrez le nom de votre entreprise",
-        "messagePlaceholder": "Entrez votre message (optionnel)",
-        "sendButton": "Envoyer le message",
-        "sendingButton": "Envoi en cours...",
-        "successMessage": "Message envoyé avec succès !",
-        "errorMessage": "Une erreur s'est produite...",
-        "rateLimitMessage": "Message déjà envoyé !",
-        "validation": {
-          "emailInvalid": "Veuillez entrer une adresse email valide.",
-          "nameMinLength": "Le nom doit contenir au moins {min} caractères.",
-          "nameMaxLength": "Le nom ne doit pas dépasser {max} caractères.",
-          "companyMinLength": "L'entreprise doit contenir au moins {min} caractères.",
-          "companyMaxLength": "L'entreprise ne doit pas dépasser {max} caractères.",
-          "messageMinLength": "Le message doit contenir au moins {min} caractères.",
-          "messageMaxLength": "Le message ne doit pas dépasser {max} caractères."
-        },
-        "turnstileError": "Vous avez échoué le contrôle de sécurité CAPTCHA. \nVeuillez réessayer."
-      }
-    }
+    "rights": "© {year} Mohamed Tahiri",
+    "game": "Pause café ? Posez l’avion",
+    "gameClose": "Ranger le jeu",
+    "source": "Code source",
+    "top": "Haut de page ↑"
   },
-  "shared": {
-    "defaultTitle": "Mohamed Tahiri",
-    "defaultDescription": "Étudiant en ingénierie informatique à l'UTC (France), spécialisé en systèmes informatiques et passionné par le développement de logiciels complexes.",
-    "modeToggle": {
-      "light": "Clair",
-      "dark": "Sombre",
-      "system": "Système",
-      "toggle": "Changer le thème"
+  "game": {
+    "aria": "Mini-jeu : posez l’avion. Maintenez espace, la flèche haut ou le doigt pour cabrer.",
+    "idle": "Cliquez ou appuyez sur espace pour lancer l’approche",
+    "idleTouch": "Touchez pour lancer l’approche",
+    "short": "Posé avant la piste.",
+    "shortHint": "Gardez deux feux blancs jusqu’au seuil · touchez pour réessayer",
+    "hard": "Atterrissage dur · {fpm} ft/min",
+    "hardHint": "Cabrez juste avant le sol · touchez pour réessayer",
+    "kiss": "Kiss landing",
+    "nice": "Joli toucher",
+    "landed": "Posé",
+    "record": "record",
+    "inZone": "Dans la zone de toucher",
+    "long": "Un peu long",
+    "replay": "touchez pour rejouer",
+    "goAround": "Trop long, remise des gaz.",
+    "goAroundHint": "Relâchez plus tôt · touchez pour réessayer",
+    "hold": "Maintenez pour cabrer",
+    "onSlope": "= sur le plan",
+    "best": "Record {fpm} ft/min",
+    "noBest": "Pas encore de record"
+  },
+  "blog": {
+    "categories": {
+      "ai": "IA",
+      "product": "Produit",
+      "infra": "Infra",
+      "data": "Data",
+      "motion": "Motion"
     },
-    "noScriptBanner": {
-      "message": "JavaScript est désactivé dans votre navigateur. Veuillez l'activer pour voir ce site web correctement."
-    },
-    "languageSwitch": "Changer de langue",
-    "close": "Fermer",
-    "readMore": "Lire plus"
+    "minutes": "{count, number} min de lecture",
+    "eyebrow": "Blog",
+    "titleLead": "Ce que j’apprends,",
+    "titleTail": "par écrit.",
+    "intro": "Des articles sur l’IA en production, la recherche et les produits. Quand une idée se comprend mieux en la manipulant, l’article contient une démo.",
+    "langNote": "Les articles sont écrits en français et en anglais.",
+    "empty": "Les premiers articles arrivent bientôt.",
+    "back": "Tous les articles",
+    "toc": "Sommaire",
+    "share": "Copier le lien",
+    "copied": "Lien copié",
+    "role": "Ingénieur logiciel",
+    "thanks": "Merci de m’avoir lu.",
+    "next": "À lire aussi"
+  },
+  "case": {
+    "back": "Tous les travaux",
+    "stack": "Stack",
+    "next": "Projet suivant",
+    "langNote": "Cette étude de cas n’existe qu’en français et en anglais."
   },
   "notFound": {
     "title": "Page introuvable",
@@ -272,18 +279,5 @@
     "technicalDetails": "Détails techniques",
     "tryAgain": "Réessayer",
     "goHome": "Retourner à l'accueil"
-  },
-  "navbar": {
-    "contactMe": "Me contacter",
-    "sections": {
-      "hero": "Accueil",
-      "about": "À propos de moi",
-      "projects": "Projets",
-      "testimonials": "Témoignages",
-      "faq": "FAQ"
-    }
-  },
-  "header": {
-    "note": "Site créé avec Next.js. Code sur <linkToCode>mon GitHub</linkToCode>."
   }
 }

@@ -1,0 +1,22 @@
+# Mohamed Tahiri
+
+> Software engineer based in Miami. I build AI systems that hold up in production: agents with real tools, hybrid search, evaluation, and the products around them. Currently an AI engineer at Barfield (Air France-KLM group). Trained at UTC Compiègne, France.
+
+The site is available in English and French, with the home page also in German, Japanese, Korean and Arabic. Case studies and articles are written in English and French.
+
+## Work
+
+- [Buddy](https://mohamedtahiri.com/en/projects/buddy): an AI agent in production for maintenance teams, with hybrid search, tools, sourced answers and continuous evaluation.
+- [Agent entrepreneur](https://mohamedtahiri.com/en/projects/agent-entrepreneur): an experiment where an AI agent runs a small online business, with a human approving every spend.
+- [Barfield Studio](https://mohamedtahiri.com/en/projects/barfield-studio): a Claude Code plugin that lets non-technical teams produce videos and trainings.
+- [Course platform](https://mohamedtahiri.com/en/projects/plateforme-de-cours): web and native apps, over 1,000 commits, infrastructure fully as code.
+- [Open-source SDKs](https://mohamedtahiri.com/en/projects/sdk-open-source): typed Python and TypeScript libraries generated from an OpenAPI spec checked in CI, plus a Home Assistant integration.
+
+## Writing
+
+- [Hybrid search, explained by playing with it](https://mohamedtahiri.com/en/blog/recherche-hybride): why embeddings alone miss obvious answers, and how BM25, reciprocal rank fusion and reranking fix it. Includes interactive simulations.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/moha-tah)
+- [GitHub](https://github.com/moha-tah)
