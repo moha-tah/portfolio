@@ -1,0 +1,140 @@
+.page {
+  padding-top: calc(var(--header-h) + 64px);
+}
+
+.head {
+  max-width: 1180px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.back {
+  color: var(--mute);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  margin-bottom: 18px;
+  transition: color 0.3s;
+}
+
+.back:hover {
+  color: var(--fg);
+}
+
+.title {
+  font-size: clamp(56px, 10vw, 156px);
+  line-height: 0.86;
+  animation: rise 1s var(--ease);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+.tldr {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-variation-settings: 'wdth' 80;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  max-width: 32ch;
+  margin-top: 14px;
+  text-wrap: pretty;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  margin: 28px 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+.langNote {
+  text-transform: none;
+}
+
+.cover {
+  max-width: 1180px;
+  margin: clamp(48px, 7vh, 88px) auto 0;
+}
+
+.cover > div {
+  aspect-ratio: 21 / 9;
+  border-radius: 28px;
+}
+
+.body {
+  margin-top: clamp(56px, 9vh, 110px);
+}
+
+.stack {
+  max-width: 680px;
+  margin: 72px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stack h2 {
+  font-family: var(--font-code);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.next {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 1180px;
+  margin: clamp(96px, 14vh, 160px) auto 0;
+  padding-block: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.next b {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-variation-settings: 'wdth' 80;
+  font-size: clamp(40px, 7vw, 104px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  transition:
+    color 0.3s,
+    transform 0.6s var(--ease);
+}
+
+.next:hover b {
+  color: var(--accent);
+  transform: translateX(12px);
+}
+
+@media (max-width: 900px) {
+  .meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cover > div {
+    aspect-ratio: 4 / 3;
+  }
+}

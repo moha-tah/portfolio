@@ -1,0 +1,104 @@
+.legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend li::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--k);
+}
+
+.stage {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--fg) 9%, transparent) 1px, transparent 0) 0 0 / 24px 24px,
+    var(--bg);
+  overflow: hidden;
+}
+
+.stage svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.doc circle {
+  fill: var(--k);
+  opacity: 0.55;
+  transition:
+    opacity 0.4s,
+    r 0.4s var(--ease);
+}
+
+.doc[data-near] circle {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px var(--k));
+}
+
+.doc text {
+  fill: var(--fg);
+  font-family: var(--font-body);
+  font-size: 13px;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 4px;
+}
+
+.link {
+  stroke: var(--accent);
+  stroke-width: 1.2;
+  stroke-dasharray: 3 5;
+  animation: dash 1.2s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+.query {
+  transition: transform 0.9s var(--ease);
+}
+
+.query circle {
+  fill: var(--accent);
+}
+
+.query .halo {
+  fill: color-mix(in srgb, var(--accent) 14%, transparent);
+  stroke: color-mix(in srgb, var(--accent) 45%, transparent);
+  animation: pulse 2.4s var(--ease) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.query[data-lost] circle {
+  fill: var(--mute);
+}
+
+.query[data-lost] .halo {
+  fill: none;
+  stroke: var(--mute);
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.25);
+    opacity: 0.4;
+  }
+}

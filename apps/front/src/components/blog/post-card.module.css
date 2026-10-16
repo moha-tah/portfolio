@@ -1,0 +1,87 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card[data-featured] {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 48px);
+  align-items: center;
+}
+
+.cover {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--panel);
+  max-width: 100%;
+}
+
+.cover i {
+  position: absolute;
+  inset: -25%;
+  background: conic-gradient(from var(--a), var(--k), transparent 30%, var(--k) 60%, transparent 80%);
+  filter: blur(34px);
+  opacity: 0.55;
+  transition: transform 1.4s var(--ease);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--fg) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--fg) 7%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at 50% 50%, black, transparent 75%);
+}
+
+.card:hover .cover i {
+  transform: rotate(30deg) scale(1.12);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.body h3 {
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.1;
+  transition: color 0.3s;
+}
+
+.card[data-featured] h3 {
+  font-size: clamp(30px, 3.6vw, 54px);
+  line-height: 1;
+}
+
+.card:hover h3 {
+  color: var(--accent);
+}
+
+.body p {
+  color: var(--mute);
+  font-size: 17px;
+  line-height: 1.5;
+  max-width: 48ch;
+}
+
+@media (max-width: 900px) {
+  .card[data-featured] {
+    grid-template-columns: 1fr;
+  }
+}

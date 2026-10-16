@@ -3,7 +3,7 @@ import { SharedConstants } from 'utils'
 import { z } from 'zod'
 
 export function getContactFormSchema(
-  t: ReturnType<typeof useTranslations<'footer.contact.form'>>
+  t: ReturnType<typeof useTranslations<'contact.form'>>
 ) {
   return z.object({
     turnstileToken: z.string().min(1, 'Turnstile token is required'),

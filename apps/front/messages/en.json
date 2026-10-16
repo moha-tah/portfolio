@@ -1,264 +1,272 @@
 {
-  "HomePage": {
-    "hero": {
-      "available": "Available",
-      "notAvailable": "UTC engineer",
-      "MohamedTahiri": "Mohamed Tahiri",
-      "passionateAbout": "passionate about",
-      "readyToJoin": "Passionate about artificial intelligence and software architecture, I love transforming ideas into concrete solutions.",
-      "downloadResume": "Download my resume",
-      "contactMe": "Contact me",
-      "passions": [
-        "computer science",
-        "AI",
-        "deep learning",
-        "engineering",
-        "algorithms",
-        "programming",
-        "architecture",
-        "Backend",
-        "DevOps",
-        "DevOps"
-      ]
+  "meta": {
+    "title": "Mohamed Tahiri",
+    "description": "Software engineer. I build AI systems that hold up in production: agents, hybrid search, evaluations, and the products around them. Based in Miami.",
+    "blogTitle": "Blog",
+    "blogDescription": "Articles on AI in production, search and product engineering, with interactive demos."
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "work": "Work",
+    "path": "Path",
+    "blog": "Blog",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "h1": "Mohamed Tahiri, software engineer",
+    "steps": {
+      "name": "Name",
+      "route": "Paris → Miami",
+      "network": "Network"
     },
-    "aboutMe": {
-      "badge": "About me",
-      "title": "A glimpse into my journey",
-      "description": "A chronological journey through my key experiences and achievements, highlighting my evolution as a computer engineering student.",
-      "timeline": {
-        "steps": [
-          {
-            "title": "Early years at UTC",
-            "subtitle": "Feb. 2022 - June 2024",
-            "description": "I studied at UTC, a French engineering school, where I built a solid foundation in computer science, including algorithms, data structures, software engineering, and systems architecture.",
-            "learnMoreText": "Learn more about UTC"
-          },
-          {
-            "title": "Competitive programming",
-            "subtitle": "Feb. 2023 - Feb. 2024",
-            "description": "Within my university's programming club, I taught competitive programming. We explored algorithms, data structures, and problem-solving techniques using LeetCode. During one competition, my team and I finished in 6th place out of approximately 70 teams.",
-            "learnMoreText": "Our Instagram page"
-          },
-          {
-            "title": "Internship at Napta",
-            "subtitle": "Sept. 2024 - Feb. 2025",
-            "description": "I worked as a data engineer and backend engineer (Python, Flask, PostgreSQL, Airflow...) to build efficient data pipelines. I collaborated within an agile team of 7 senior engineers.",
-            "learnMoreText": "Learn more about Napta"
-          },
-          {
-            "title": "Project to gain experience",
-            "subtitle": "Sept. 2024 - Present",
-            "description": "After my classes, I worked ~20 hours per week as a full-stack developer (NestJS, JWT, S3, PostgreSQL, Next.js...) contributing to the development of a web application with 8 engineers. More information in the Projects section below."
-          },
-          {
-            "title": "5th year @ UTC (ISI)",
-            "subtitle": "Feb. 2025 - Jan. 2026",
-            "description": "Specialization in Computer Systems Engineering (ISI), with a focus on distributed systems, backend design, and software architecture. The program will conclude with a 6-month professional experience starting in February 2026.",
-            "learnMoreText": "Learn more about my “ISI“ specialization"
-          }
-        ]
+    "caption0": "<b>Software engineer.</b> I build AI systems that hold up in production.",
+    "caption1": "<b>Paris → Miami.</b> Trained in France, working in Miami since 2026.",
+    "caption2": "<b>Agents, search, evaluation.</b> And the products around them.",
+    "ctaWork": "See the work",
+    "ctaContact": "Get in touch"
+  },
+  "manifesto": {
+    "eyebrow": "In two sentences",
+    "text": "I take AI from demo to production. Agents that use real tools, search that finds the right source, evaluations that tell the truth, and the infrastructure that holds it all together.",
+    "accents": "demo|production"
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "titleLead": "What I’ve",
+    "titleTail": "built.",
+    "count": "{count, plural, one {# project} other {# projects}} · open one to read the case study",
+    "read": "Read the case study",
+    "kind": {
+      "pro": "work",
+      "personal": "personal",
+      "openSource": "open source"
+    }
+  },
+  "tags": {
+    "agents": "Agents",
+    "rag": "RAG",
+    "evals": "Evals",
+    "automation": "Automation",
+    "claudeCode": "Claude Code",
+    "remotion": "Remotion",
+    "tts": "Text to speech",
+    "product": "Product",
+    "infra": "Infra",
+    "openSource": "Open source",
+    "python": "Python",
+    "typescript": "TypeScript"
+  },
+  "mocks": {
+    "chat": {
+      "bar": "Buddy · fictional demo",
+      "q": "This part keeps coming back. Is it recurring?",
+      "t1": "6 interventions",
+      "t2": "3 on the same seal",
+      "t3": "2 passages",
+      "a1": "Yes, 4 times in 12 months",
+      "a2": "The documentation says to replace the whole set"
+    },
+    "dash": {
+      "bar": "Agent · today’s log",
+      "k1": "tools published",
+      "k2": "tests",
+      "k3": "human approving",
+      "l1": "Market watch",
+      "l2": "New tool",
+      "done": "done",
+      "pending": "to approve"
+    },
+    "video": {
+      "bar": "Studio · new training",
+      "scene": "Scene 3 / 8",
+      "title": "The right moves, in 2 minutes"
+    },
+    "search": {
+      "bar": "Search",
+      "q": "Classes near me"
+    },
+    "packages": {
+      "bar": "Published packages",
+      "py": "Python SDK",
+      "ts": "TypeScript SDK",
+      "ha": "integration"
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "titleLead": "AI in the middle,",
+    "titleTail": "everything else around it.",
+    "groups": {
+      "ai": "Applied AI",
+      "web": "Web product",
+      "infra": "Infra",
+      "data": "Data",
+      "motion": "Motion & voice",
+      "os": "Open source"
+    },
+    "evals": "Evals",
+    "nativeApps": "Native apps",
+    "tts": "Text to speech",
+    "aria": "Skills map: applied AI in the middle, connected to web product, infrastructure, data, motion and open source.",
+    "hint": "Hover a dot"
+  },
+  "path": {
+    "eyebrow": "Path",
+    "titleLead": "From Compiègne",
+    "titleTail": "to Miami.",
+    "places": {
+      "compiegne": "Compiègne",
+      "paris": "Paris",
+      "miami": "Miami"
+    },
+    "hop": "{from} → {to} · ≈ {km} km",
+    "mapAria": "Map of the path: from Compiègne to Paris, then from Paris to Miami.",
+    "legs": {
+      "utc": {
+        "when": "2022 → 2026 · Compiègne",
+        "title": "Engineer, UTC",
+        "text": "Information systems engineering: distributed systems, architecture, and 6th out of 70 in competitive programming."
+      },
+      "napta": {
+        "when": "2024 → 2025 · Paris",
+        "title": "Data & backend, Napta",
+        "text": "Six months of Python and Airflow pipelines, PostgreSQL and CI, in a team of seven senior engineers."
+      },
+      "barfield": {
+        "when": "2026 → · Miami",
+        "title": "AI engineer, Barfield",
+        "text": "Air France-KLM group. Final-year internship, then a VIE contract: I design and ship AI tools for technical teams."
       }
-    },
-    "projects": {
-      "badge": "Projects",
-      "title": "Some projects I've worked on",
-      "metadataTitle": "Projects",
-      "description": "Discover a selection of projects where I've applied my skills to solve real-world challenges. Each project reflects my passion for creating impactful and well-designed solutions.",
-      "summary": "Summary",
-      "whyThisProject": "Why this project?",
-      "features": "Features",
-      "viewCode": "View code",
-      "closedSource": "Closed source",
-      "viewDetails": "View details",
-      "backToProjects": "Back to projects",
-      "projects": [
-        {
-          "title": "My biggest project",
-          "shortDescription": "Search engine to help students find the best courses near them.",
-          "description": "This project is a search engine to help students find the best courses near them. For example, if you're a student, you can search for courses in Paris and surrounding areas based on filters (price, distance, etc.) and course rankings. The project is still in development and will be launched soon.",
-          "goal": "This project is a great opportunity to learn frontend with Next.js, backend with NestJS, databases with PostgreSQL, search engines with Algolia, CI/CD with GitHub Actions, JWT authentication, role-based endpoints, etc. As a personal project, it's an excellent opportunity to deepen my knowledge during my studies.",
-          "features": "The key features of this project include a secure NestJS backend with JWT authentication and role-based endpoints connected to a PostgreSQL database hosted on AWS, an AI-powered search engine with filters and ranking built with Algolia, a modern codebase with production, development, and preview environments. It also includes a chat system with real-time messaging, an admin dashboard for teachers to manage their courses, and a dashboard for students to track their progress.",
-          "stack": [
-            "Next.js",
-            "NestJS",
-            "Supabase",
-            "Security",
-            "JWT authentication",
-            "GitHub Actions",
-            "Advanced search"
-          ]
+    }
+  },
+  "testimonials": {
+    "eyebrow": "In their words",
+    "titleLead": "What my colleagues",
+    "titleTail": "say.",
+    "more": "Read it all",
+    "less": "Show less",
+    "source": "Profile",
+    "list": {
+      "first": {
+        "author": {
+          "name": "Julien G. Lopes",
+          "handle": "Internship supervisor @ Napta"
         },
-        {
-          "title": "An online multiplayer game",
-          "shortDescription": "Game developed with C# and Unity to learn UDP sockets and optimization.",
-          "description": "This project is an online multiplayer arena game where players control spheres to push each other off the map. The game offers two modes: a solo mode (offline) where you face AI opponents in a round-based system, and a multiplayer mode where you can play against friends in real-time with a lobby system. The game is playable on Windows and Mac and can be downloaded from my GitHub repository.",
-          "goal": "I built this project to learn game development, but more specifically to understand how servers work and how they manage to be fast and efficient without latency. This project was an excellent opportunity to learn about sockets, UDP vs TCP, how to secure a server to prevent cheating, and how to optimize the data to send to clients versus what to calculate server-side.",
-          "features": "Key features include physics-based movements and realistic collisions. In solo mode, you face AI-controlled spheres that become stronger and faster after each round. Online mode can accommodate around 10 players without noticeable latency, you can create a private lobby to play with people you know and customize game settings (score, name, etc.).",
-          "stack": [
-            "Unity",
-            "C#",
-            "Game development",
-            "Multiplayer",
-            "Hosting",
-            "UDP sockets",
-            "Optimization"
-          ]
+        "text": "I highly recommend Mohamed! His strong adaptability, genuine curiosity (which led him to explore and deepen his knowledge across many technologies), and product-oriented mindset are real assets.<newline></newline>During his internship at Napta, Mohamed had the opportunity to work on data integration and synchronization tasks, DevOps topics, CI, as well as product improvements. He quickly became familiar with the codebase and adapted to our processes, which allowed him not only to be productive within the team very quickly, but also to bring valuable ideas.<newline></newline>Mohamed demonstrated great curiosity across very different topics. He consistently formulated constructive proposals and successfully led internal initiatives — from idea to team adoption, through development and quality assurance.<newline></newline>The entire Napta team really enjoyed working with him!"
+      },
+      "second": {
+        "author": {
+          "name": "Rabie Menad",
+          "handle": "Frontend developer @ Decathlon"
         },
-        {
-          "title": "A decentralized distributed system",
-          "shortDescription": "Low-level project using a shared database, election algorithms, and collision detection.",
-          "description": "This project implements a fully decentralized distributed system where multiple types of nodes collaborate to collect, verify, and use data across different sites. The system models a real-world scenario where devices collect sensor data, verify its accuracy, and produce predictions, while ensuring proper coordination and consistency between geographically separated nodes.",
-          "goal": "This project was an excellent opportunity to learn about distributed systems, election algorithms, snapshots, collision detection, and how to use logical clocks to ensure consistency between replicas. The core idea is that sensors can provide erroneous data, disrupting users. Thus, verification systems are integrated to update, slowly, each data point one after another. The goal is to observe the impact of verification parameters on user behaviors.",
-          "features": "The system uses a decentralized architecture without a centralized database, where each node maintains and updates its own local replica. To ensure replica consistency, nodes coordinate via a distributed queue that employs logical clocks to serialize all updates. For shared data management, nodes focus on a sliding window of the last 15 days of temperature readings. Peer-to-peer communication enables direct messaging between nodes to propagate updates and coordinate actions efficiently.",
-          "stack": [
-            "Go",
-            "Distributed systems",
-            "Parallelism",
-            "Election algorithms",
-            "Snapshots",
-            "Collision detection",
-            "Logical clocks"
-          ]
-        }
-      ],
-      "view": "View"
-    },
-    "testimonials": {
-      "badge": "Testimonials",
-      "title": "What people I've worked with say about me",
-      "description": "I've worked with many people and learned a lot from them. Here are some of their comments about me.",
-      "list": {
-        "first": {
-          "author": {
-            "name": "Julien G. Lopes",
-            "handle": "Internship supervisor @ Napta"
-          },
-          "text": "“I highly recommend Mohamed! His strong adaptability, genuine curiosity (which led him to explore and deepen his knowledge across many technologies), and product-oriented mindset are real assets.<newline></newline>During his internship at Napta, Mohamed had the opportunity to work on data integration and synchronization tasks, DevOps topics, CI, as well as product improvements. He quickly became familiar with the codebase and adapted to our processes, which allowed him not only to be productive within the team very quickly, but also to bring valuable ideas.<newline></newline>Mohamed demonstrated great curiosity across very different topics. He consistently formulated constructive proposals and successfully led internal initiatives — from idea to team adoption, through development and quality assurance.<newline></newline>The entire Napta team really enjoyed working with him!“"
+        "text": "I had the opportunity to work with Mohamed on a personal project for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing performant and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting deadlines for the projects we worked on together. I am convinced that Mohamed will excel in his future assignments, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence."
+      },
+      "third": {
+        "author": {
+          "name": "Olivier Knell",
+          "handle": "Senior Engineering Manager @ Napta"
         },
-        "second": {
-          "author": {
-            "name": "Rabie Menad",
-            "handle": "Frontend developer @ Decathlon"
-          },
-          "text": "“I had the opportunity to work with Mohamed on a personal project for a year, and I can only highly recommend him for his future projects.<newline></newline>He is a versatile engineer, capable of handling end-to-end topics (DevOps, Frontend, Backend, etc.) while designing performant and scalable solutions. His attention to detail is remarkable: every deliverable is clean, optimized, and sustainable.<newline></newline>This rigor has been a valuable asset in meeting deadlines for the projects we worked on together. I am convinced that Mohamed will excel in his future assignments, thanks to his skills, professionalism, and positive attitude.<newline></newline>A true asset for any team looking to move forward with confidence.“"
-        },
-        "third": {
-          "author": {
-            "name": "Olivier Knell",
-            "handle": "Senior Engineering Manager @ Napta"
-          },
-          "text": "“It was a great pleasure to oversee Mohamed's excellent work during his internship as a Backend/Data Engineer at Napta. As his N+2, I was able to observe his significant impact from a broader perspective, and I am genuinely very pleased with his contributions.<newline></newline>Mohamed quickly established himself as a major asset to the team. He impressed us with his adaptability and technical curiosity, rapidly familiarizing himself with the codebase and processes, which is critical for complex topics like data integration, DevOps/CI, and workflow automation (Airflow/Python).<newline></newline>What truly sets Mohamed apart is his product-oriented mindset and sense of initiative. He was not just an executor; he consistently made constructive proposals and even successfully led internal initiatives (from idea to deployment, including QA), a level of engagement and maturity far exceeding expectations for an intern.<newline></newline>I wholeheartedly recommend Mohamed. His technical potential, proactivity, and ability to deliver immediate added value are rare and highly sought-after qualities. The entire Napta team thoroughly enjoyed working with him.”"
-        }
+        "text": "It was a great pleasure to oversee Mohamed's excellent work during his internship as a Backend/Data Engineer at Napta. As his N+2, I was able to observe his significant impact from a broader perspective, and I am genuinely very pleased with his contributions.<newline></newline>Mohamed quickly established himself as a major asset to the team. He impressed us with his adaptability and technical curiosity, rapidly familiarizing himself with the codebase and processes, which is critical for complex topics like data integration, DevOps/CI, and workflow automation (Airflow/Python).<newline></newline>What truly sets Mohamed apart is his product-oriented mindset and sense of initiative. He was not just an executor; he consistently made constructive proposals and even successfully led internal initiatives (from idea to deployment, including QA), a level of engagement and maturity far exceeding expectations for an intern.<newline></newline>I wholeheartedly recommend Mohamed. His technical potential, proactivity, and ability to deliver immediate added value are rare and highly sought-after qualities. The entire Napta team thoroughly enjoyed working with him."
       }
-    },
-    "skills": {
-      "badge": "Toolkit",
-      "title": "Technologies I work with",
-      "description": "Below is a non-exhaustive list of technologies I use to build reliable and high-performance solutions.",
-      "note": "Note: The duration shown reflects my hands-on experience with each technology (school, personal projects, and internship), and not traditional 'years of experience.'",
-      "python": {
-        "name": "Python",
-        "description": "Building robust systems and data pipelines."
+    }
+  },
+  "notes": {
+    "eyebrow": "Blog",
+    "titleLead": "What I learn,",
+    "titleTail": "written down.",
+    "all": "All articles"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s build something.",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "localTime": "Miami · it’s {time}",
+    "form": {
+      "title": "Or leave a message",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "companyLabel": "Company",
+      "messageLabel": "Message (optional)",
+      "sendButton": "Send message",
+      "sendingButton": "Sending...",
+      "successMessage": "Message sent successfully!",
+      "errorMessage": "Something went wrong...",
+      "rateLimitMessage": "Message already sent!",
+      "validation": {
+        "emailInvalid": "Please enter a valid email address.",
+        "nameMinLength": "Name must be at least {min} characters.",
+        "nameMaxLength": "Name must not exceed {max} characters.",
+        "companyMinLength": "Company must be at least {min} characters.",
+        "companyMaxLength": "Company must not exceed {max} characters.",
+        "messageMinLength": "Message must be at least {min} characters.",
+        "messageMaxLength": "Message must not exceed {max} characters."
       },
-      "typeScript": {
-        "name": "TypeScript",
-        "description": "Creating high-performance full-stack web applications."
-      },
-      "postgreSQL": {
-        "name": "PostgreSQL",
-        "description": "Designing complex, scalable, and efficient databases."
-      },
-      "nextJs": {
-        "name": "Next.js",
-        "description": "Building high-performance websites."
-      },
-      "nestJs": {
-        "name": "NestJS",
-        "description": "Creating complex and secure APIs."
-      },
-      "ciCd": {
-        "name": "CI/CD, GitHub Actions, Shell",
-        "description": "Automating workflows and tasks."
-      },
-      "lowLevel": {
-        "name": "C, C++, C#, Go, etc.",
-        "description": "Scripting and low-level programming."
-      },
-      "andOther": "and many more...",
-      "years": "{count, plural, one {1 year} other {# years}}",
-      "months": "{count, plural, one {1 month} other {# months}}",
-      "moreThanOneYear": "> 1 year"
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "Learn more",
-      "description": "Find here all the key information regarding the duration, availability, and opportunities related to my internship to give you a clear vision of my application.",
-      "questions": [
-        {
-          "question": "Are you open to international opportunities?",
-          "answer": "Yes, joining an international team particularly motivates me — discovering new cultures and working methods is a real plus for me."
-        },
-        {
-          "question": "What fields do you want to work in?",
-          "answer": "I'm passionate about software architecture, artificial intelligence, and backend development — creating reliable and scalable solutions is what drives me."
-        },
-        {
-          "question": "What languages do you speak fluently?",
-          "answer": "I'm a native French speaker from Paris, and I speak English fluently (C1 level, TOEIC 985/990)."
-        }
-      ]
+      "turnstileError": "You failed the CAPTCHA security check. \nPlease try again."
     }
   },
   "footer": {
-    "badge": "Site made by <linkToMe>Mohamed Tahiri</linkToMe>. Source code on <linkToCode>GitHub</linkToCode>.",
-    "contact": {
-      "badge": "Contact",
-      "title": "Let's get in touch",
-      "subtitle": {
-        "first": "Do you think my profile could match your needs?",
-        "second": "Feel free to contact me directly via the links below."
-      },
-      "or": "or",
-      "copyEmail": "Copy to clipboard",
-      "copied": "Copied to clipboard",
-      "form": {
-        "namePlaceholder": "Enter your name",
-        "emailPlaceholder": "Enter your email",
-        "companyPlaceholder": "Enter your company name",
-        "messagePlaceholder": "Enter your message (optional)",
-        "sendButton": "Send message",
-        "sendingButton": "Sending...",
-        "successMessage": "Message sent successfully!",
-        "errorMessage": "Something went wrong...",
-        "rateLimitMessage": "Message already sent!",
-        "validation": {
-          "emailInvalid": "Please enter a valid email address.",
-          "nameMinLength": "Name must be at least {min} characters.",
-          "nameMaxLength": "Name must not exceed {max} characters.",
-          "companyMinLength": "Company must be at least {min} characters.",
-          "companyMaxLength": "Company must not exceed {max} characters.",
-          "messageMinLength": "Message must be at least {min} characters.",
-          "messageMaxLength": "Message must not exceed {max} characters."
-        },
-        "turnstileError": "You failed the CAPTCHA security check. \nPlease try again."
-      }
-    }
+    "rights": "© {year} Mohamed Tahiri",
+    "game": "Coffee break? Land the plane",
+    "gameClose": "Put the game away",
+    "source": "Source code",
+    "top": "Back to top ↑"
   },
-  "shared": {
-    "defaultTitle": "Mohamed Tahiri",
-    "defaultDescription": "Computer engineering student at UTC (France), specializing in computer systems and passionate about developing complex software.",
-    "modeToggle": {
-      "light": "Light",
-      "dark": "Dark",
-      "system": "System",
-      "toggle": "Toggle theme"
+  "game": {
+    "aria": "Mini game: land the plane. Hold space, the up arrow or your finger to pull up.",
+    "idle": "Click or press space to start the approach",
+    "idleTouch": "Tap to start the approach",
+    "short": "Landed short of the runway.",
+    "shortHint": "Keep two white lights until the threshold · tap to retry",
+    "hard": "Hard landing · {fpm} ft/min",
+    "hardHint": "Pull up just before the ground · tap to retry",
+    "kiss": "Kiss landing",
+    "nice": "Nice touchdown",
+    "landed": "Landed",
+    "record": "record",
+    "inZone": "In the touchdown zone",
+    "long": "A little long",
+    "replay": "tap to play again",
+    "goAround": "Too long, go around.",
+    "goAroundHint": "Release earlier · tap to retry",
+    "hold": "Hold to pull up",
+    "onSlope": "= on the glide path",
+    "best": "Best {fpm} ft/min",
+    "noBest": "No record yet"
+  },
+  "blog": {
+    "categories": {
+      "ai": "AI",
+      "product": "Product",
+      "infra": "Infra",
+      "data": "Data",
+      "motion": "Motion"
     },
-    "noScriptBanner": {
-      "message": "JavaScript is disabled in your browser. Please enable it to view this website properly."
-    },
-    "languageSwitch": "Switch language",
-    "close": "Close",
-    "readMore": "Read more"
+    "minutes": "{count, number} min read",
+    "eyebrow": "Blog",
+    "titleLead": "What I learn,",
+    "titleTail": "written down.",
+    "intro": "Articles on AI in production, search and products. When an idea is easier to grasp by playing with it, the article includes a demo.",
+    "langNote": "Articles are written in French and English.",
+    "empty": "The first articles are coming soon.",
+    "back": "All articles",
+    "toc": "Contents",
+    "share": "Copy link",
+    "copied": "Link copied",
+    "role": "Software engineer",
+    "thanks": "Thanks for reading.",
+    "next": "Read next"
+  },
+  "case": {
+    "back": "All work",
+    "stack": "Stack",
+    "next": "Next project",
+    "langNote": "This case study is only available in French and English."
   },
   "notFound": {
     "title": "Page not found",
@@ -271,18 +279,5 @@
     "technicalDetails": "Technical details",
     "tryAgain": "Try again",
     "goHome": "Return to home"
-  },
-  "navbar": {
-    "contactMe": "Contact me",
-    "sections": {
-      "hero": "Home",
-      "about": "About me",
-      "projects": "Projects",
-      "testimonials": "Testimonials",
-      "faq": "FAQ"
-    }
-  },
-  "header": {
-    "note": "Site created with Next.js. Code on <linkToCode>my GitHub</linkToCode>."
   }
 }

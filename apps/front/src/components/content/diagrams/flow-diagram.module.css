@@ -1,0 +1,138 @@
+.fig {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--fg) 8%, transparent) 1px, transparent 0) 0 0 / 22px 22px,
+    var(--panel);
+  padding: clamp(12px, 2vw, 24px);
+}
+
+.scroll svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.box rect {
+  fill: var(--raise);
+  stroke: var(--line);
+  transition: stroke 0.3s;
+}
+
+.box[data-tone] rect {
+  stroke: color-mix(in srgb, var(--tone) 55%, transparent);
+}
+
+.box circle {
+  fill: var(--tone);
+}
+
+.box:hover rect {
+  stroke: var(--fg);
+}
+
+.title {
+  fill: var(--fg);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sub {
+  fill: var(--mute);
+  font-family: var(--font-code);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  fill: var(--mute);
+  font-family: var(--font-code);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+
+.frame rect {
+  fill: none;
+  stroke: var(--line);
+  stroke-dasharray: 5 6;
+}
+
+.frame text {
+  fill: var(--mute);
+  font-family: var(--font-code);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+
+.main,
+.loop,
+.faint {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.main {
+  stroke: var(--accent);
+  stroke-width: 1.6;
+  stroke-dasharray: 4 7;
+  animation: flow 1.4s linear infinite;
+}
+
+.loop {
+  stroke: var(--c-data);
+  stroke-width: 1.4;
+  stroke-dasharray: 3 6;
+  animation: flow 2s linear infinite reverse;
+}
+
+.faint {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+
+/* reveal: boxes pop in, then lines fade in; everything is visible without JS */
+.fig[data-in] .box,
+.fig[data-in] path {
+  opacity: 1;
+  transform: none;
+}
+
+.fig:not([data-in]) .box {
+  opacity: 0.25;
+  transform: translateY(8px);
+}
+
+.fig:not([data-in]) path {
+  opacity: 0;
+}
+
+.box {
+  transition:
+    opacity 0.7s var(--ease),
+    transform 0.7s var(--ease);
+  transform-box: fill-box;
+}
+
+.fig path {
+  transition: opacity 0.8s;
+}
+
+.fig figcaption {
+  text-transform: none;
+  letter-spacing: 0.01em;
+}

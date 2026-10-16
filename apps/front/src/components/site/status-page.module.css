@@ -1,0 +1,41 @@
+.page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  padding-block: 140px 80px;
+}
+
+.code {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-variation-settings: 'wdth' 75;
+  font-size: clamp(120px, 26vw, 360px);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--fg) 45%, transparent);
+  background: radial-gradient(circle at 30% 40%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.title {
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 0.95;
+}
+
+.text {
+  color: var(--mute);
+  max-width: 46ch;
+  font-size: 18px;
+}
+
+.acts {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}

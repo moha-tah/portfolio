@@ -10,7 +10,7 @@ import {
 
 export function useContactForm() {
   const mutation = useContactMutation()
-  const t = useTranslations('footer.contact.form')
+  const t = useTranslations('contact.form')
 
   const contactFormSchema = getContactFormSchema(t)
 

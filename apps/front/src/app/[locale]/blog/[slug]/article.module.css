@@ -1,0 +1,153 @@
+.page {
+  padding-top: calc(var(--header-h) + 64px);
+}
+
+.head {
+  max-width: 1080px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.back {
+  color: var(--mute);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.back:hover {
+  color: var(--fg);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+
+.meta > * + *::before {
+  content: '·';
+  margin-inline-end: 18px;
+  color: var(--line);
+}
+
+.title {
+  font-size: clamp(44px, 7.4vw, 112px);
+  line-height: 0.92;
+  max-width: 14ch;
+  margin-bottom: 10px;
+  animation: rise 1s var(--ease);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+.lead {
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.4;
+  color: var(--mute);
+  max-width: 44ch;
+  text-wrap: pretty;
+}
+
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  width: 100%;
+}
+
+.byline > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.byline b {
+  font-weight: 600;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--on-accent);
+  background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--accent) 60%, white), var(--accent));
+}
+
+.langNote {
+  text-transform: none;
+}
+
+.body {
+  position: relative;
+  margin-top: clamp(48px, 8vh, 96px);
+}
+
+/* the table of contents lives in the left margin, only where there is room for it */
+.side {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: var(--gut);
+  width: 168px;
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .side {
+    display: block;
+  }
+}
+
+.end {
+  max-width: 1080px;
+  margin: clamp(80px, 12vh, 140px) auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.endRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.moreGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 700px) {
+  .moreGrid {
+    grid-template-columns: 1fr;
+  }
+}

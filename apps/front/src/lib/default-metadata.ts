@@ -1,24 +1,34 @@
-import { getLocale, getTranslations } from 'next-intl/server'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
+import { Locale, locales } from '@/i18n/config'
 import { METADATA_KEYWORDS } from '@/lib/constants'
 import { env } from '@/lib/env'
 
-export async function getDefaultMetadata() {
-  const t = await getTranslations('shared')
-  const locale = await getLocale()
+/** Canonical + hreflang alternates for a path that exists in every locale. */
+export function alternatesFor(
+  path: string,
+  locale: Locale,
+  only: readonly Locale[] = locales
+) {
+  const base = env.NEXT_PUBLIC_FRONT_URL
+  return {
+    canonical: `${base}/${locale}${path}`,
+    languages: Object.fromEntries(only.map((l) => [l, `${base}/${l}${path}`]))
+  }
+}
 
-  const baseUrl = env.NEXT_PUBLIC_FRONT_URL
-  const title = t('defaultTitle')
-  const description = t('defaultDescription')
+export async function getDefaultMetadata(locale: Locale): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'meta' })
+  const title = t('title')
+  const description = t('description')
 
   return {
-    metadataBase: new URL(baseUrl),
-    title: {
-      default: title,
-      template: `%s | ${title}`
-    },
+    metadataBase: new URL(env.NEXT_PUBLIC_FRONT_URL),
+    title: { default: title, template: `%s · ${title}` },
     description,
     keywords: METADATA_KEYWORDS,
+    alternates: alternatesFor('', locale),
     icons: {
       icon: [
         {
@@ -34,26 +44,10 @@ export async function getDefaultMetadata() {
     openGraph: {
       title,
       description,
-      siteName: title,
+      siteName: 'Mohamed Tahiri',
       locale,
-      url: baseUrl,
-      type: 'website',
-      images: [
-        {
-          url: `${baseUrl}/images/metadatas/og-preview-${locale === 'fr' ? 'fr' : 'en'}.jpg`,
-          width: 1200,
-          height: 630,
-          alt: title
-        }
-      ]
+      type: 'website'
     },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [
-        `${baseUrl}/images/metadatas/twitter-preview-${locale === 'fr' ? 'fr' : 'en'}.jpg`
-      ]
-    }
+    twitter: { card: 'summary_large_image', title, description }
   }
 }

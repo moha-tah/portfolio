@@ -1,13 +1,19 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["NODE_ENV"],
+  "globalEnv": [
+    "NODE_ENV"
+  ],
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": [
+        "^build"
+      ]
     },
     "start": {
-      "dependsOn": ["build"]
+      "dependsOn": [
+        "build"
+      ]
     },
     "dev": {
       "cache": false,
@@ -16,14 +22,14 @@
     "lint": {},
     "lint:fix": {},
     "typecheck": {
-      "dependsOn": ["^build"]
+      "dependsOn": [
+        "^build"
+      ]
     },
     "test": {
-      "dependsOn": ["^build"]
-    },
-    "translate": {
-      "dependsOn": ["^build"],
-      "outputs": ["apps/front/messages/*.json", "apps/front/i18n.lock"]
+      "dependsOn": [
+        "^build"
+      ]
     }
   }
 }

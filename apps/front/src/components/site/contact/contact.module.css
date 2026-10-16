@@ -1,0 +1,224 @@
+.big {
+  font-size: clamp(52px, 11vw, 184px);
+  line-height: 0.88;
+}
+
+.big span {
+  display: inline-block;
+  transition:
+    color 0.3s,
+    transform 0.6s var(--ease);
+}
+
+.big span:hover {
+  color: var(--accent);
+  transform: translateY(-0.06em);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 96px);
+  align-items: end;
+  margin-top: clamp(40px, 7vh, 72px);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.mail {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-variation-settings: 'wdth' 80;
+  font-size: clamp(26px, 3.6vw, 56px);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  border-bottom: 2px solid var(--line);
+  align-self: flex-start;
+  word-break: break-word;
+  transition: border-color 0.3s;
+}
+
+.mail:hover {
+  border-color: var(--accent);
+}
+
+.acts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: clamp(18px, 2.4vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--panel);
+  min-width: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 18px;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+
+.field[data-wide] {
+  grid-column: 1 / -1;
+}
+
+.field input,
+.field textarea {
+  font: inherit;
+  font-size: 16px;
+  color: var(--fg);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0 10px;
+  outline: none;
+  resize: none;
+  border-radius: 0;
+  transition: border-color 0.3s;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--accent);
+}
+
+.field input[aria-invalid],
+.field textarea[aria-invalid] {
+  border-color: #ff7a6b;
+}
+
+/* label sits in the field, then floats up once there is focus or text */
+.field label {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 26px;
+  color: var(--mute);
+  pointer-events: none;
+  transition:
+    transform 0.35s var(--ease),
+    color 0.3s,
+    font-size 0.35s var(--ease);
+  transform-origin: left top;
+}
+
+.field :is(input, textarea):focus + label,
+.field :is(input, textarea):not(:placeholder-shown) + label {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: var(--fg);
+}
+
+.err {
+  color: #ff7a6b;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.captcha:not([data-started]) {
+  display: none;
+}
+
+.send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-code);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 16px 22px;
+  border-radius: 99px;
+  background: var(--fg);
+  color: var(--bg);
+  transition:
+    background 0.3s,
+    opacity 0.3s;
+}
+
+.send i {
+  font-style: normal;
+  transition: transform 0.4s var(--ease);
+}
+
+.send:hover:not(:disabled) i {
+  transform: translateX(6px);
+}
+
+.send:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.send[data-state='ok'] {
+  background: var(--accent);
+  color: var(--on-accent);
+  opacity: 1;
+}
+
+.send[data-state='ko'] {
+  background: #ff7a6b;
+  opacity: 1;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  color: var(--mute);
+  padding-block: 40px calc(env(safe-area-inset-bottom, 0px) + 40px);
+  border-top: 1px solid var(--line);
+}
+
+.foot a,
+.foot button {
+  color: var(--mute);
+  border-bottom: 1px solid var(--line);
+  text-transform: uppercase;
+  transition:
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.foot a:hover,
+.foot button:hover {
+  color: var(--fg);
+  border-color: var(--fg);
+}
+
+.footLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

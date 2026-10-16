@@ -1,21 +1,31 @@
-'use server'
+import { setRequestLocale } from 'next-intl/server'
 
-import { AboutMe } from '@/components/about-me/about-me'
-import { FAQ } from '@/components/faq/faq'
-import { Hero } from '@/components/hero/hero'
-import { Projects } from '@/components/projects/projects'
-import { Skills } from '@/components/skills/skills'
-import { Testimonials } from '@/components/testimonials/testimonials'
+import { Hero } from '@/components/home/hero/hero'
+import { Manifesto } from '@/components/home/manifesto'
+import { Notes } from '@/components/home/notes'
+import { Path } from '@/components/home/path/path'
+import { Skills } from '@/components/home/skills/skills'
+import { Testimonials } from '@/components/home/testimonials/testimonials'
+import { Work } from '@/components/home/work/work'
+import type { Locale } from '@/i18n/config'
 
-export default async function Home() {
+export default async function Home({
+  params
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
   return (
-    <div className="flex flex-col items-center justify-center gap-12 sm:gap-24">
+    <>
       <Hero />
-      <AboutMe />
-      <Projects />
+      <Manifesto />
+      <Work locale={locale} />
       <Skills />
+      <Path />
       <Testimonials />
-      <FAQ />
-    </div>
+      <Notes locale={locale} />
+    </>
   )
 }

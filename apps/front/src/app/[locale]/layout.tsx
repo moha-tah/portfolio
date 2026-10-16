@@ -1,79 +1,81 @@
 import '../globals.css'
 
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Bricolage_Grotesque, Martian_Mono } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-import { Footer } from '@/components/footer/footer'
-// import { HeaderText } from '@/components/navbar/header-text'
-import { Navbar } from '@/components/navbar/navbar'
-import { ScrollProgress } from '@/components/navbar/scroll-progress'
-import { Background } from '@/components/shared/background'
-import NoScriptBanner from '@/components/shared/no-script-banner'
-// import { WarningLocaleBanner } from '@/components/shared/warning-locale-banner'
+import { SiteFooter } from '@/components/site/site-footer'
+import { SiteHeader } from '@/components/site/site-header'
+import { SmoothScroll } from '@/components/site/smooth-scroll'
 import { Locale, locales } from '@/i18n/config'
 import { routing } from '@/i18n/routing'
 import { getDefaultMetadata } from '@/lib/default-metadata'
 import { ProvidersWrapper } from '@/lib/providers/providers-wrapper'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin', 'latin-ext'],
+  axes: ['opsz', 'wdth'],
+  variable: '--font-bricolage',
   display: 'swap'
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+const martian = Martian_Mono({
+  subsets: ['latin', 'latin-ext'],
+  axes: ['wdth'],
+  variable: '--font-martian',
   display: 'swap'
 })
 
 export const viewport: Viewport = {
-  themeColor: 'var(--color-background)'
+  themeColor: '#07080b',
+  colorScheme: 'dark'
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return locales.map((locale: Locale) => ({ locale }))
 }
 
-export async function generateMetadata(): Promise<Metadata> {
-  return await getDefaultMetadata()
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: Locale }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  return getDefaultMetadata(locale)
 }
 
-function getDir(locale: Locale) {
-  const rtlLocales: Locale[] = ['ar']
-  return rtlLocales.includes(locale) ? 'rtl' : 'ltr'
-}
+const RTL: Locale[] = ['ar']
 
 interface Props {
-  modal: React.ReactNode
   children: React.ReactNode
   params: Promise<{ locale: Locale }>
 }
 
-export default async function LocaleLayout({ children, params, modal }: Props) {
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params
-  if (!hasLocale(routing.locales, locale)) {
-    notFound()
-  }
+  if (!hasLocale(routing.locales, locale)) notFound()
+  setRequestLocale(locale)
+  const t = await getTranslations('nav')
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} selection:bg-primary selection:text-background relative antialiased`}
-        dir={getDir(locale)}
-      >
+    <html
+      lang={locale}
+      dir={RTL.includes(locale) ? 'rtl' : 'ltr'}
+      className={`${bricolage.variable} ${martian.variable}`}
+      suppressHydrationWarning
+    >
+      <body>
         <ProvidersWrapper>
-          <NoScriptBanner />
-          {/* <WarningLocaleBanner locale={locale} /> */}
-          <ScrollProgress />
-          <Background />
-          <Navbar />
-          {modal}
-          {/* <HeaderText /> */}
-          <div className="py-12">{children}</div>
-          <Footer />
+          <SmoothScroll>
+            <a href="#main" className="sr-only">
+              {t('skip')}
+            </a>
+            <SiteHeader />
+            <main id="main">{children}</main>
+            <SiteFooter />
+          </SmoothScroll>
         </ProvidersWrapper>
       </body>
     </html>
