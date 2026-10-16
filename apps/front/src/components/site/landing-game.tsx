@@ -83,6 +83,8 @@ export function LandingGame() {
       y: Y0,
       vy: 0,
       roll: 0,
+      pitch: 0,
+      light: 0,
       smoke: [] as { x: number; r: number; l: number }[]
     }
     const reset = () =>
@@ -91,6 +93,7 @@ export function LandingGame() {
         y: Y0,
         vy: (GY - Y0) / ((AIM - X0) / SPEED),
         roll: 0,
+        pitch: 0,
         smoke: []
       })
     const idle = () =>
@@ -173,6 +176,11 @@ export function LandingGame() {
         p.x += p.roll * dt
         if (p.roll < 0.01) st = 'done'
       }
+      // nose level on the glide, up while the stick is held, then lowered onto the runway
+      const aim =
+        st === 'fly' ? Math.min(0.3, Math.max(-0.06, (SINK - p.vy) * 0.6)) : 0
+      p.pitch += (aim - p.pitch) * Math.min(1, dt * 8)
+      p.light += ((st === 'done' ? 0 : 1) - p.light) * Math.min(1, dt * 3)
       for (const s of p.smoke) {
         s.r += 10 * dt
         s.l -= 1.1 * dt
@@ -254,6 +262,53 @@ export function LandingGame() {
       g.restore()
     }
 
+    // landing light: a cone from the nose gear, cut by the ground, and the pool it throws there
+    const beam = (
+      px: number,
+      py: number,
+      rot: number,
+      s: number,
+      gy: number
+    ) => {
+      if (p.light < 0.02) return
+      const ox = px + (Math.cos(rot) * 16 - Math.sin(rot) * 4) * s
+      const oy = py + (Math.sin(rot) * 16 + Math.cos(rot) * 4) * s
+      const a = rot + 0.16
+      const reach = Math.min(W * 0.45, 320)
+      const hit = Math.sin(a) > 0.02 ? (gy - oy) / Math.sin(a) : Infinity
+      g.save()
+      g.beginPath()
+      g.rect(0, 0, W, gy)
+      g.clip()
+      g.translate(ox, oy)
+      g.rotate(a)
+      const cone = g.createLinearGradient(0, 0, reach, 0)
+      cone.addColorStop(0, `rgba(255,236,200,${0.12 * p.light})`)
+      cone.addColorStop(0.4, `rgba(255,236,200,${0.04 * p.light})`)
+      cone.addColorStop(1, 'rgba(255,236,200,0)')
+      g.fillStyle = cone
+      g.beginPath()
+      g.moveTo(0, -1)
+      g.lineTo(reach, -reach * 0.07)
+      g.lineTo(reach, reach * 0.07)
+      g.lineTo(0, 1)
+      g.fill()
+      g.restore()
+      if (hit >= reach) return
+      const k = p.light * (1 - (hit / reach) ** 2)
+      g.save()
+      g.translate(ox + Math.cos(a) * hit, gy)
+      g.scale(1, 0.2)
+      const pool = g.createRadialGradient(0, 0, 0, 0, 0, 90)
+      pool.addColorStop(0, `rgba(255,236,200,${0.55 * k})`)
+      pool.addColorStop(1, 'rgba(255,236,200,0)')
+      g.fillStyle = pool
+      g.beginPath()
+      g.arc(0, 0, 90, 0, 6.283)
+      g.fill()
+      g.restore()
+    }
+
     const draw = (now: number) => {
       if (!W) return
       const X = (x: number) => x * W
@@ -318,14 +373,10 @@ export function LandingGame() {
           10
         )
       g.shadowBlur = 0
-      if (p.y > GY - 0.25 && st !== 'done') {
-        const hx = X(Math.min(p.x + 0.07, R1))
-        const L = g.createRadialGradient(hx, gy, 2, hx, gy, 60)
-        L.addColorStop(0, 'rgba(255,236,200,.4)')
-        L.addColorStop(1, 'rgba(255,236,200,0)')
-        g.fillStyle = L
-        g.fillRect(hx - 70, gy - 30, 140, 40)
-      }
+      const sc = W < 600 ? 0.8 : 1
+      const px = X(p.x)
+      const py = Y(p.y) - 10
+      beam(px, py, -p.pitch, sc, gy)
       for (const s of p.smoke) {
         g.globalAlpha = s.l * 0.35
         g.fillStyle = C['n-fg']
@@ -334,8 +385,8 @@ export function LandingGame() {
         g.fill()
       }
       g.globalAlpha = 1
-      const pitch = st === 'fly' ? -Math.atan2(p.vy - 0.12, 0.6) * 0.9 : 0
-      plane(X(p.x), Y(p.y) - 10, pitch, now, W < 600 ? 0.8 : 1)
+      // negative rotation lifts the nose (canvas y points down)
+      plane(px, py, -p.pitch, now, sc)
     }
 
     const loop = (now: number) => {

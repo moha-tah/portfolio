@@ -11,6 +11,9 @@ type Props = {
   label: string
 }
 
+// seconds for the Paris → Miami flight
+const FLIGHT = 3.4
+
 const grid = (l: number, r: number, b: number, t: number, g: number) => {
   const out: LonLat[] = []
   for (let la = t; la > b; la -= g)
@@ -51,6 +54,10 @@ export function RouteMap({ at, places, label }: Props) {
     let visible = false
     const cam = { cx: 2.7, cy: 49.25, span: 11 }
     let hop = 0
+    // flight progress (time-based, 0..1) and the arc's opacity when leaving the Miami leg
+    let fly = 0
+    let shown = 0
+    let last = 0
 
     const view = (i: number) =>
       i === 0
@@ -62,6 +69,49 @@ export function RouteMap({ at, places, label }: Props) {
     const ss = (a: number, b: number, v: number) => {
       const t = Math.min(1, Math.max(0, (v - a) / (b - a)))
       return t * t * (3 - 2 * t)
+    }
+    const mix = (a: number, b: number, t: number) => a + (b - a) * t
+
+    // point at fraction f of the arc, interpolated between samples
+    const along = <T extends readonly [number, number]>(
+      pts: T[],
+      f: number
+    ) => {
+      const pos = f * (pts.length - 1)
+      const i = Math.min(pts.length - 2, Math.floor(pos))
+      const t = pos - i
+      return [
+        mix(pts[i][0], pts[i + 1][0], t),
+        mix(pts[i][1], pts[i + 1][1], t)
+      ] as const
+    }
+
+    // frames what has been flown so far, so the camera pulls out as the plane advances
+    const flightView = (f: number) => {
+      const head = along(arc, f)
+      let l = head[0]
+      let r = head[0]
+      let b = head[1]
+      let t = head[1]
+      for (let i = 0; i / (arc.length - 1) <= f; i++) {
+        const [lo, la] = arc[i]
+        l = Math.min(l, lo)
+        r = Math.max(r, lo)
+        b = Math.min(b, la)
+        t = Math.max(t, la)
+      }
+      const span = Math.max(
+        10,
+        (r - l) * 1.4,
+        ((t - b) * 1.4 * W) / Math.max(1, H)
+      )
+      const end = view(2)
+      const e = ss(0.65, 1, f)
+      return {
+        cx: mix((l + r) / 2, end.cx, e),
+        cy: mix((b + t) / 2, end.cy, e),
+        span: Math.exp(mix(Math.log(span), Math.log(end.span), e))
+      }
     }
 
     const size = () => {
@@ -79,8 +129,19 @@ export function RouteMap({ at, places, label }: Props) {
       raf = 0
       if (!visible || !W) return
       const at = atRef.current
-      const tv = view(at)
-      const k = reduce ? 1 : 0.055
+      const dt = last ? Math.min(0.05, (now - last) / 1000) : 0
+      last = now
+      if (at === 2) {
+        fly = reduce ? 1 : Math.min(1, fly + dt / FLIGHT)
+        shown += (1 - shown) * (reduce ? 1 : 0.2)
+      } else {
+        shown += (0 - shown) * (reduce ? 1 : 0.15)
+        if (shown < 0.02) shown = fly = 0
+      }
+      // ease in and out: slow off Paris, cruise over the Atlantic, slow into Miami
+      const f = 0.5 - Math.cos(Math.PI * fly) / 2
+      const tv = at === 2 ? flightView(f) : view(at)
+      const k = reduce ? 1 : at === 2 ? 0.2 : 0.055
       cam.cx += (tv.cx - cam.cx) * k
       cam.cy += (tv.cy - cam.cy) * k
       cam.span = Math.exp(
@@ -133,10 +194,11 @@ export function RouteMap({ at, places, label }: Props) {
         x.globalAlpha = 1
       }
 
-      const ap = at === 2 ? ss(0.2, 0.95, zt) : 0
-      if (ap > 0.01) {
+      if (shown > 0.01 && f > 0.001) {
         const pts = arc.map(P)
-        const n = Math.max(1, Math.round(ap * (pts.length - 1)))
+        const head = along(pts, f)
+        const n = Math.floor(f * (pts.length - 1))
+        x.globalAlpha = shown
         x.strokeStyle = acc
         x.lineWidth = 1.6
         x.shadowColor = acc
@@ -144,12 +206,13 @@ export function RouteMap({ at, places, label }: Props) {
         x.beginPath()
         x.moveTo(...pts[0])
         for (let i = 1; i <= n; i++) x.lineTo(...pts[i])
+        x.lineTo(...head)
         x.stroke()
         x.shadowBlur = 0
         const a = pts[Math.min(n, pts.length - 2)]
         const b = pts[Math.min(n + 1, pts.length - 1)]
         x.save()
-        x.translate(...pts[n])
+        x.translate(...head)
         x.rotate(Math.atan2(b[1] - a[1], b[0] - a[0]))
         x.fillStyle = fg
         x.beginPath()
@@ -160,6 +223,7 @@ export function RouteMap({ at, places, label }: Props) {
         x.closePath()
         x.fill()
         x.restore()
+        x.globalAlpha = 1
       }
 
       const marks: [LonLat, string, number, number][] = [
